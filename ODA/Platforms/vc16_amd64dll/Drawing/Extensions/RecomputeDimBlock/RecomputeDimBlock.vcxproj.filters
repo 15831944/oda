@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdRecomputeDimBlockModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdRadialDimRecomputor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdOrdinateDimRecomputor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdArcDimRecomputor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\Od2LineAngularDimRecomputor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdRecomputorEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdDiametricDimRecomputor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdAlignedRecomputorEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdAlignedDimRecomputor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdAngularRecomputorEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdRadialRecomputorEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\Od3PointAngularDimRecomputor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdDimRecomputor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdRadialDimLargeRecomputor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdRotatedDimRecomputor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdBreakDimEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdMLeaderRecomputor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdOrdinateDimRecomputor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdAngularRecomputorEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdDiametricDimRecomputor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdAlignedDimRecomputor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\Od2LineAngularDimRecomputor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdRecomputeDimBlockModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdRadialRecomputorEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdRadialDimRecomputor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdRadialDimLargeRecomputor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdRecomputorEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdArcDimRecomputor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\Od3PointAngularDimRecomputor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdAlignedRecomputorEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdDimRecomputor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdRotatedDimRecomputor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdBreakDimEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\OdMLeaderRecomputor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\..\..\Drawing\Extensions\RecomputeDimBlock\RecomputeDimBlock.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6E80807A-5314-3798-B94C-14F74EB6D754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FF1B111D-1056-33F6-8908-C799A3AAA2A0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

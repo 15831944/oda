@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=%PRODUCT%
+Comment=ODA SDK® for .dwg files %VERSION%, Open Design Alliance Inc.
+TryExec=/usr/bin/%PRODUCT%
+Exec=/usr/bin/%PRODUCT% %U
+Icon=%PRODUCT%
+Terminal=false
+Type=Application
+Categories=Graphics;3DGraphics;VectorGraphics;RasterGraphics;Viewer;

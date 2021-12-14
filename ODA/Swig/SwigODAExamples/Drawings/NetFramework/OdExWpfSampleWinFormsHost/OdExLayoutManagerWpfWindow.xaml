@@ -1,0 +1,14 @@
+﻿<Window x:Class="OdExWpfSampleWinFormsHost.OdExLayoutManagerWpfWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OdExWpfSampleWinFormsHost"
+             mc:Ignorable="d" 
+             d:DesignHeight="234.983" d:DesignWidth="190.274"
+        Height="250" Width="250"
+        WindowStartupLocation="CenterOwner">
+    <Grid>
+        <ListBox Name ="listBox"  HorizontalAlignment="Stretch" Margin="10,10,10,10" VerticalAlignment="Stretch"  RenderTransformOrigin="0.5,0.5"/>
+    </Grid>
+</Window>

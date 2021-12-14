@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\OdDgGripPointsModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgElementGripPoints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgLineGripPoints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgDetailingSymbolGripPoints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgArcGripPoints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgEllipseGripPoints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgLineStringGripPoints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgMultilineGripPoints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgBSplineCurveGripPoints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgConeGripPoints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgCurveGripPoints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgDimensionGripPoints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgShapeGripPoints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgTextGripPoints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\OdDgGripPointsModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgElementGripPoints.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgLineGripPoints.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgDetailingSymbolGripPoints.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgArcGripPoints.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgEllipseGripPoints.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgLineStringGripPoints.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgMultilineGripPoints.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgBSplineCurveGripPoints.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgConeGripPoints.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgCurveGripPoints.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgDimensionGripPoints.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgShapeGripPoints.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgTextGripPoints.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgGripPoints.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6E80807A-5314-3798-B94C-14F74EB6D754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FF1B111D-1056-33F6-8908-C799A3AAA2A0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

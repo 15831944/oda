@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\CSwitchModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\SummDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\OpenDGN_ViewerVectorizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\OpenDGN_ViewerDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\OpenDGN_Viewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\ChildFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\StaticAppSelDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\SetRegVars.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\KernelBase\Extensions\alloc\OdAllocOp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\ChildFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\OpenDGN_ViewerDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Dgn\Extensions\ExServices\ExDgnHostAppServices.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\OpenDGN_Viewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Dgn\Extensions\ExServices\ExDgnServices.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\SetRegVars.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\RegKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\SummDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\CSwitchModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\OpenDGN_ViewerVectorizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\res\OpenDGN_ViewerDoc.ico" />
+    <None Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\res\OpenDGN_Viewer.rc2" />
+    <None Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\res\Toolbar.bmp" />
+    <None Include="..\..\..\..\..\..\Kernel\Logo\Icon-ODA.ico" />
+    <None Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\res\mainfram.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\OpenDGN_Viewer.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6E80807A-5314-3798-B94C-14F74EB6D754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FF1B111D-1056-33F6-8908-C799A3AAA2A0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

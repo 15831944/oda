@@ -1,0 +1,1338 @@
+<?xml version="1.0"?>
+<!--
+Warning! Do not edit the contents of this file.
+If you attempt to edit this file using an XML editor, you could lose customization and migration functionality.
+If you need to change information in the customization file, use the Customize User Interface dialog box in the product.
+To access the Customize User Interface dialog box, click the Tools menu > Customize > Interface, or enter CUI on the command line. 
+-->
+<CustSection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FileVersion MajorVersion="0" MinorVersion="5" IncrementalVersion="1" UserVersion="1" />
+  <Header>
+    <CommonConfiguration>
+      <CommonItems>
+        <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+      </CommonItems>
+    </CommonConfiguration>
+    <WorkspaceRoot>
+      <WorkspaceConfigRoot />
+    </WorkspaceRoot>
+  </Header>
+  <MenuGroup Name="ODQ_MENU_BASE" DisplayName="ODQ_MENU_BASE">
+    <MacroGroup Name="User">
+      <MenuMacro UID="ID_Open">
+        <Macro type="File">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_30">Open...</Name>
+          <Command>open</Command>
+          <HelpString xlate="true" UID="ACAD_1561">Opens an existing drawing file</HelpString>
+          <SmallImage Name="qrc:/images/file_open.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Open">OPEN</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Recover">
+        <Macro type="File">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="0" />
+          <Name xlate="true" UID="ACAD_39">Recover...</Name>
+          <Command>recover</Command>
+          <HelpString xlate="true" UID="ACAD_1608">Repairs and then opens a damaged drawing file</HelpString>
+          <SmallImage Name="qrc:/images/file_open.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Recover">RECOVER</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_DWG_CLOSE">
+        <Macro type="File">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_1932">Close</Name>
+          <Command>^C^C close</Command>
+          <HelpString xlate="true" UID="ACAD_1933">Closes the current drawing</HelpString>
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_DWG_CLOSE">CLOSE</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Import">
+        <Macro type="File">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_428">Import...</Name>
+          <Command>^C^C import</Command>
+          <HelpString xlate="true" UID="ACAD_1514">Imports files of different formats</HelpString>
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Import">IMPORT</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Export">
+        <Macro type="File">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_33">Export...</Name>
+          <Command>^C^C export</Command>
+          <HelpString xlate="true" UID="ACAD_1490">Exports to a different file format</HelpString>
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Export">EXPORT</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Quit">
+        <Macro type="File">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_51">Exit</Name>
+          <Command>^C^C quit</Command>
+          <HelpString xlate="true" UID="ACAD_2621">Quit the application; prompts to save documents</HelpString>
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Quit">QUIT</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_MRU">
+        <Macro type="File">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_50">Drawing History</Name>
+          <Command />
+          <HelpString xlate="true" UID="ACAD_1549">Opens this drawing</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_ZoomExten">
+        <Macro type="View">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_75">Zoom Extents</Name>
+          <Command>zoom e</Command>
+          <HelpString xlate="true" UID="ACAD_1734">Zooms to display the drawing extents</HelpString>
+          <SmallImage Name="qrc:/images/zoom_ext.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_ZoomExten">ZOOM</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_ZoomWindo">
+        <Macro type="View">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_69">Zoom Window</Name>
+          <Command>zoom w</Command>
+          <HelpString xlate="true" UID="ACAD_1740">Zooms to display an area specified by a rectangular window</HelpString>
+          <SmallImage Name="qrc:/images/zoom_win.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_ZoomWindo">ZOOM</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_ZoomIn">
+        <Macro type="View">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_72">Zoom, In</Name>
+          <Command>zoom 2x </Command>
+          <HelpString xlate="true" UID="ACAD_1735">Zooms to increase the apparent size of objects</HelpString>
+          <SmallImage Name="qrc:/images/zoom_in.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_ZoomIn">ZOOM</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_ZoomOut">
+        <Macro type="View">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_73">Zoom, Out</Name>
+          <Command>zoom .5x</Command>
+          <HelpString xlate="true" UID="ACAD_1736">Zooms to decrease the apparent size of objects</HelpString>
+          <SmallImage Name="qrc:/images/zoom_out.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_ZoomOut">ZOOM</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Regen">
+        <Macro type="View">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_64">Regen</Name>
+          <Command>regen</Command>
+          <HelpString xlate="true" UID="ACAD_1612">Regenerates the entire drawing from the drawing database</HelpString>
+          <SmallImage Name="qrc:/images/regen.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Regen">REGEN</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Regenall">
+        <Macro type="View">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_65">Regen All</Name>
+          <Command>regenall</Command>
+          <HelpString xlate="true" UID="ACAD_65" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Regenall">REGENALL</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Pan">
+        <Macro type="View">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_77">Pan, Realtime</Name>
+          <Command>pan</Command>
+          <HelpString xlate="true" UID="ACAD_1575">Moves the view in the current viewport</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Pan">PAN</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Constrained_Orbit">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_6304">3D Constrained Orbit</Name>
+          <Command>3dorbit</Command>
+          <HelpString xlate="true" UID="XLS_6305">Constrained orbit around your model</HelpString>
+          <SmallImage Name="qrc:/images/orbit/orbit_constrained.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Constrained_Orbit">3DORBIT</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Free_Orbit">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_4169">3D Free Orbit</Name>
+          <Command>3dforbit</Command>
+          <HelpString xlate="true" UID="XLS_4233">Freely orbit around your model</HelpString>
+          <SmallImage Name="qrc:/images/orbit/orbit_free.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Free_Orbit">3DFORBIT</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_3dcorbit">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_2036">3D Continuous Orbit</Name>
+          <Command>3dcorbit</Command>
+          <HelpString xlate="true" UID="ACAD_2041">Starts the 3DORBIT command with continuous orbit active in the 3D view</HelpString>
+          <SmallImage Name="qrc:/images/orbit/orbit_continuous.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_3dcorbit">3DCORBIT</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_VpointTop">
+        <Macro type="View">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_116">View, Top</Name>
+          <Command>view top</Command>
+          <HelpString xlate="true" UID="ACAD_1715">Sets the view point to top</HelpString>
+          <SmallImage Name="qrc:/images/view_top.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_VpointTop">VIEW</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_VpointBot">
+        <Macro type="View">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_117">View, Bottom</Name>
+          <Command>view bottom</Command>
+          <HelpString xlate="true" UID="ACAD_1706">Sets the view point to bottom</HelpString>
+          <SmallImage Name="qrc:/images/view_bottom.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_VpointBot">VIEW</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_VpointLef">
+        <Macro type="View">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_118">View, Left</Name>
+          <Command>view left</Command>
+          <HelpString xlate="true" UID="ACAD_1708">Sets the view point to left</HelpString>
+          <SmallImage Name="qrc:/images/view_left.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_VpointLef">VIEW</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_VpointRig">
+        <Macro type="View">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_119">View, Right</Name>
+          <Command>view right</Command>
+          <HelpString xlate="true" UID="ACAD_1711">Sets the view point to right</HelpString>
+          <SmallImage Name="qrc:/images/view_right.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_VpointRig">VIEW</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_VpointFro">
+        <Macro type="View">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_120">View, Front</Name>
+          <Command>view front</Command>
+          <HelpString xlate="true" UID="ACAD_1707">Sets the view point to front</HelpString>
+          <SmallImage Name="qrc:/images/view_front.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_VpointFro">VIEW</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_VpointBac">
+        <Macro type="View">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_121">View, Back</Name>
+          <Command>view back</Command>
+          <HelpString xlate="true" UID="ACAD_1705">Sets the view point to back</HelpString>
+          <SmallImage Name="qrc:/images/view_back.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_VpointBac">VIEW</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_VpointSW">
+        <Macro type="View">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_122">View, SW Isometric</Name>
+          <Command>view swiso</Command>
+          <HelpString xlate="true" UID="ACAD_1714">Sets the view point to southwest isometric</HelpString>
+          <SmallImage Name="qrc:/images/view_sw.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_VpointSW">VIEW</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_VpointSE">
+        <Macro type="View">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_123">View, SE Isometric</Name>
+          <Command>view seiso</Command>
+          <HelpString xlate="true" UID="ACAD_1713">Sets the view point to southeast isometric</HelpString>
+          <SmallImage Name="qrc:/images/view_se.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_VpointSE">VIEW</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_VpointNE">
+        <Macro type="View">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_124">View, NE Isometric</Name>
+          <Command>view neiso</Command>
+          <HelpString xlate="true" UID="ACAD_1709">Sets the view point to northeast isometric</HelpString>
+          <SmallImage Name="qrc:/images/view_ne.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_VpointNE">VIEW</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_VpointNW">
+        <Macro type="View">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_125">View, NW Isometric</Name>
+          <Command>view nwiso</Command>
+          <HelpString xlate="true" UID="ACAD_1710">Sets the view point to northwest isometric</HelpString>
+          <SmallImage Name="qrc:/images/view_nw.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_VpointNW">VIEW</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MM_1725">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_6299">Visual Styles, 2D Wireframe</Name>
+          <Command>vscurrent 2dwireframe</Command>
+          <HelpString xlate="true" UID="XLS_6300">2D Wireframe</HelpString>
+          <SmallImage Name="qrc:/images/visual_style/2d_wireframe.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_MM_1725" />
+          <ToolTip HelpTopic="VSCURRENT" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MM_1722">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_6290">Visual Styles, Wireframe</Name>
+          <Command>vscurrent Wireframe</Command>
+          <HelpString xlate="true" UID="XLS_6291">3D Wireframe Visual Style</HelpString>
+          <SmallImage Name="qrc:/images/visual_style/3d_wireframe.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_MM_1722" />
+          <ToolTip HelpTopic="VSCURRENT" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MM_1723">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_6293">Visual Styles, Hidden</Name>
+          <Command>vscurrent 3dhidden</Command>
+          <HelpString xlate="true" UID="XLS_6294">3D Hidden Visual Style</HelpString>
+          <SmallImage Name="qrc:/images/visual_style/3d_hidden.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_MM_1723" />
+          <ToolTip HelpTopic="VSCURRENT" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MM_1721">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_6287">Visual Styles, Realistic</Name>
+          <Command>vscurrent realistic</Command>
+          <HelpString xlate="true" UID="XLS_6288">Realistic Visual Style</HelpString>
+          <SmallImage Name="qrc:/images/visual_style/realistic.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_MM_1721" />
+          <ToolTip HelpTopic="VSCURRENT" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MM_1726">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_6284">Visual Styles, Conceptual</Name>
+          <Command>vscurrent conceptual</Command>
+          <HelpString xlate="true" UID="XLS_6285">Conceptual Visual Style</HelpString>
+          <SmallImage Name="qrc:/images/visual_style/conceptual.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_MM_1726" />
+          <ToolTip HelpTopic="VSCURRENT" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_About">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_384">About</Name>
+          <Command>about</Command>
+          <HelpString xlate="true" UID="ACAD_1367">Displays information about this product</HelpString>
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_About">ABOUT</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Appload">
+        <Macro type="Tools">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_196">Load Application...</Name>
+          <Command>appload</Command>
+          <HelpString xlate="true" UID="ACAD_1382">Loads and unloads applications and defines which applications to load at startup</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Appload">APPLOAD</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_REGCOMMANDS">
+        <Macro type="Tools">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_REGCOMMANDS">Registered Commands...</Name>
+          <Command />
+          <HelpString xlate="true" UID="ACAD_HELP_REGCOMMANDS">Sorted by group all registered commands</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_REGCOMMANDS" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Script">
+        <Macro type="Tools">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_197">Run Script...</Name>
+          <Command>script</Command>
+          <HelpString xlate="true" UID="ACAD_1628">Executes a sequence of commands from a script file</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Script">SCRIPT</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Snap">
+        <Macro type="Tools">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_SNAP1">Turn Snap On / Off</Name>
+          <Command>snap $(if,$(eq,$(getvar,snap),1),false,true)</Command>
+          <HelpString xlate="true" UID="ACAD_SNAP2">Turn snap on / off if it is supported</HelpString>
+          <SmallImage Name="qrc:/images/check/$(if,$(eq,$(getvar,snap),1),check_on.png,check_off.png)" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Snap">SNAP</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_OSMode1">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_6300">Snap Object Modes, Endpoint</Name>
+          <Command>osnap endpoint $(if,$(and,$(getvar,osmode),1),no,yes)</Command>
+          <HelpString xlate="true" UID="XLS_6300">Endpoint</HelpString>
+          <SmallImage Name="qrc:/images/check/$(if,$(and,$(getvar,osmode),1),check_on.png,check_off.png)" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_OSModes" />
+          <ToolTip HelpTopic="OSMODES" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_OSMode2">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_6300">Snap Object Modes, Midpoint</Name>
+          <Command>osnap midpoint $(if,$(and,$(getvar,osmode),2),no,yes)</Command>
+          <HelpString xlate="true" UID="XLS_6300">Midpoint</HelpString>
+          <SmallImage Name="qrc:/images/check/$(if,$(and,$(getvar,osmode),2),check_on.png,check_off.png)" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_OSModes" />
+          <ToolTip HelpTopic="OSMODES" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_OSMode3">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_6300">Snap Object Modes, Center</Name>
+          <Command>osnap center $(if,$(and,$(getvar,osmode),4),no,yes)</Command>
+          <HelpString xlate="true" UID="XLS_6300">Center</HelpString>
+          <SmallImage Name="qrc:/images/check/$(if,$(and,$(getvar,osmode),4),check_on.png,check_off.png)" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_OSModes" />
+          <ToolTip HelpTopic="OSMODES" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_OSMode4">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_6300">Snap Object Modes, Node</Name>
+          <Command>osnap node $(if,$(and,$(getvar,osmode),8),no,yes)</Command>
+          <HelpString xlate="true" UID="XLS_6300"> Node</HelpString>
+          <SmallImage Name="qrc:/images/check/$(if,$(and,$(getvar,osmode),8),check_on.png,check_off.png)" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_OSModes" />
+          <ToolTip HelpTopic="OSMODES" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_OSMode5">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_6300">Snap Object Modes, Quadrant</Name>
+          <Command>osnap quadrant $(if,$(and,$(getvar,osmode),16),no,yes)</Command>
+          <HelpString xlate="true" UID="XLS_6300">Quadrant</HelpString>
+          <SmallImage Name="qrc:/images/check/$(if,$(and,$(getvar,osmode),16),check_on.png,check_off.png)" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_OSModes" />
+          <ToolTip HelpTopic="OSMODES" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_OSMode7">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_6300">Snap Object Modes, Insertion</Name>
+          <Command>osnap insertion $(if,$(and,$(getvar,osmode),64),no,yes)</Command>
+          <HelpString xlate="true" UID="XLS_6300">Insertion</HelpString>
+          <SmallImage Name="qrc:/images/check/$(if,$(and,$(getvar,osmode),64),check_on.png,check_off.png)" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_OSModes" />
+          <ToolTip HelpTopic="OSMODES" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_OSMode8">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_6300">Snap Object Modes, Perpendicular</Name>
+          <Command>osnap perpendicular $(if,$(and,$(getvar,osmode),128),no,yes)</Command>
+          <HelpString xlate="true" UID="XLS_6300">Perpendicular</HelpString>
+          <SmallImage Name="qrc:/images/check/$(if,$(and,$(getvar,osmode),128),check_on.png,check_off.png)" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_OSModes" />
+          <ToolTip HelpTopic="OSMODES" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_OSMode9">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_6300">Snap Object Modes, Tangent</Name>
+          <Command>osnap tangent $(if,$(and,$(getvar,osmode),256),no,yes)</Command>
+          <HelpString xlate="true" UID="XLS_6300">Tangent</HelpString>
+          <SmallImage Name="qrc:/images/check/$(if,$(and,$(getvar,osmode),256),check_on.png,check_off.png)" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_OSModes" />
+          <ToolTip HelpTopic="OSMODES" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_OSMode10">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_6300">Snap Object Modes, Nearest</Name>
+          <Command>osnap nearest $(if,$(and,$(getvar,osmode),512),no,yes)</Command>
+          <HelpString xlate="true" UID="XLS_6300">Nearest</HelpString>
+          <SmallImage Name="qrc:/images/check/$(if,$(and,$(getvar,osmode),512),check_on.png,check_off.png)" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_OSModes" />
+          <ToolTip HelpTopic="OSMODES" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_OSMode11">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_6301">Snap Marker Color</Name>
+          <Command>snapcolor dialog</Command>
+          <HelpString xlate="true" UID="XLS_6301">Nearest</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_SnapColor" />
+          <ToolTip HelpTopic="SNAPCOLOR" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Save">
+        <Macro type="File">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_31">Save</Name>
+          <Command>qsave</Command>
+          <HelpString xlate="true" UID="ACAD_1604">Saves the current drawing</HelpString>
+          <SmallImage Name="qrc:/images/file_save.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Save">QSAVE</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Saveas">
+        <Macro type="File">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_32">Save As...</Name>
+          <Command>saveas</Command>
+          <HelpString xlate="true" UID="ACAD_1624">Saves a copy of the current drawing under a new file name</HelpString>
+          <SmallImage Name="qrc:/images/file_save_as.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Saveas">SAVEAS</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Caustic">
+        <Macro type="View">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_134">Caustic</Name>
+          <Command>caustic inv</Command>
+          <HelpString xlate="true" UID="ACAD_1615" />
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Caustic">CAUSTIC</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Background">
+        <Macro type="View">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_1808">3D Background Color</Name>
+          <Command>bclrtoapp background dialog apptobclr regenall</Command>
+          <HelpString xlate="true" UID="ACAD_1834" />
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Background">BACKGROUND</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Layer">
+        <Macro type="Format">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_166">Layer Properties</Name>
+          <Command>layer</Command>
+          <HelpString xlate="true" UID="ACAD_1518">Manages layers and layer properties</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Layer">LAYER</CLICommand>
+          <ToolTip HelpTopic="LAYER" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0002">
+        <Macro type="View">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_64">Regen</Name>
+          <Command>regenall</Command>
+          <HelpString xlate="true" UID="ACAD_1612">Regenerates the entire drawing from the drawing database</HelpString>
+          <SmallImage Name="qrc:/images/regen.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Regen">REGEN</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_CmdLine">
+        <Macro type="Tools">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_2669">Command Line</Name>
+          <Command>$M=$(if,$(and,$(&gt;,$(getvar,clistate),0)),commandlinehide,commandline)</Command>
+          <HelpString xlate="true" UID="ACAD_2670">Shows the command line window</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_CmdLine">COMMANDLINE</CLICommand>
+          <ToolTip HelpTopic="COMMANDLINE" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Help">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_379">Help\tF1</Name>
+          <Command>help</Command>
+          <HelpString xlate="true" UID="ACAD_1507">Displays help</HelpString>
+          <SmallImage Name="qrc:/images/hlp.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Help">HELP</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Print">
+        <Macro type="File">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_36">Plot...</Name>
+          <Command>plot</Command>
+          <HelpString xlate="true" UID="ACAD_1588">Prints a DWG-drawing to a plotter, printer, or file</HelpString>
+          <SmallImage Name="qrc:/images/file_print.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Print">PLOT</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_New">
+        <Macro type="File">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_29">New...</Name>
+          <Command>new</Command>
+          <HelpString xlate="true" UID="ACAD_1559">Creates a new drawing file</HelpString>
+          <SmallImage Name="qrc:/images/file_new.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_New">NEW</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_WINDOW_CLOSEALL">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_2326">Close All</Name>
+          <Command>closeall</Command>
+          <HelpString xlate="true" UID="ACAD_2326" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_WINDOW_CLOSEALL">CLOSEALL</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_WINDOW_CASCADE">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_1927">Cascade</Name>
+          <Command>syswindows cascade</Command>
+          <HelpString xlate="true" UID="ACAD_1927" />
+          <SmallImage Name="qrc:/images/syswindows/syswindows_cascade.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_WINDOW_CASCADE">SYSWINDOWS</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_WINDOW_TILE_HORZ">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_1928">Tile Horizontally</Name>
+          <Command>syswindows hor</Command>
+          <HelpString xlate="true" UID="ACAD_1928" />
+          <SmallImage Name="qrc:/images/syswindows/syswindows_hor.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_WINDOW_TILE_HORZ">SYSWINDOWS</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_WINDOW_TILE_VERT">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_1929">Tile Vertically</Name>
+          <Command>syswindows vert</Command>
+          <HelpString xlate="true" UID="ACAD_1929" />
+          <SmallImage Name="qrc:/images/syswindows/syswindows_vert.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_WINDOW_TILE_VERT">SYSWINDOWS</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_WINDOW_ARRANGE">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_1930">Arrange Windows</Name>
+          <Command>syswindows arrange</Command>
+          <HelpString xlate="true" UID="ACAD_1930" />
+          <SmallImage Name="qrc:/images/syswindows/syswindows_arrange.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_WINDOW_ARRANGE">SYSWINDOWS</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_SYSWINDOWS">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_SYSWINDOWS">List of opened windows</Name>
+          <Command />
+          <HelpString xlate="true" UID="ACAD_SYSWINDOWS">Activate window by title</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_SYSWINDOWS">SYSWINDOW</CLICommand>
+        </Macro>
+      </MenuMacro>
+    </MacroGroup>
+    <MenuRoot>
+      <AcceleratorRoot />
+      <OverrideRoot />
+      <MouseButtonRoot />
+      <DigitizerButtonRoot />
+      <PopMenuRoot>
+        <PopMenu hasDiesel="false" UID="PMU_0001">
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Alias>POP1</Alias>
+          <Alias>FILE</Alias>
+          <Name xlate="true" UID="XLS_0001">File</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="true" UID="PMIU_0191">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014407" xlate="true">$(if,$(or,$(eq,$(getvar,"iscmd(line)"),1),$(eq,$(getvar,"iscmd(exline)"),1)),&amp;New...,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_New" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0001">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0002" xlate="true">&amp;Open...</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Open" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMI_0045">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="0" />
+            <NameRef UID="ACAD_39" xlate="true">&amp;Recover...</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Recover" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="true" UID="PMIU_0002">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0004" xlate="true">$(if,$(&gt;,$(strlen,$(getvar,filename)),0),,~)&amp;Close</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_DWG_CLOSE" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="true" UID="PMIU_0007">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0004" xlate="true">$(if,$(&gt;,$(strlen,$(getvar,dwgname)),0),,~)&amp;Import</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Import" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0170">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="true" UID="PMIU_0171">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014405" xlate="true">$(if,$(&gt;,$(strlen,$(getvar,filename)),0),,~)&amp;Save</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Save" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="true" UID="PMIU_0172">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014406" xlate="true">$(if,$(&gt;,$(strlen,$(getvar,filename)),0),,~)Save &amp;As...</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Saveas" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="true" UID="PMIU_0008">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0004" xlate="true">$(if,$(&gt;,$(strlen,$(getvar,filename)),0),,~)&amp;Export</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Export" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0183">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="true" UID="PMIU_0182">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014406" xlate="true">$(if,$(eq,$(getvar,"iscmd(plot)"),1),$(if,$(&gt;,$(strlen,$(getvar,dwgname)),0),,~)&amp;Plot...,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Print" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0004">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0005">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0009" xlate="true">Drawing History</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_MRU" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0006">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0003">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0006" xlate="true">E&amp;xit</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Quit" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu hasDiesel="true" UID="PMU_0003">
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Alias>POP2</Alias>
+          <Alias>VIEW</Alias>
+          <Name xlate="true" UID="XLS_0025">$(if,$(&gt;,$(strlen,$(getvar,filename)),0),&amp;View,)</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0176">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014406" xlate="true">Re&amp;gen</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0002" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0178">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuRef pUID="ID_MnZoom" UID="PMRU_0002">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuRef>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0147">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014400" xlate="true">Pan</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Pan" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuRef pUID="PM_0030" UID="PMRU_0003">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuRef>
+          <PopMenuRef pUID="ID_MnViewpoi" UID="PMRU_0005">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuRef>
+          <PopMenuRef pUID="PM_0044" UID="PMRU_0006">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuRef>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0184">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0174">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014407" xlate="true">3D &amp;Background Color</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Background" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu hasDiesel="true" UID="ID_MnFormat">
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Alias>POP5</Alias>
+          <Name xlate="true" UID="XLS_00014405">$(if,$(&gt;,$(strlen,$(getvar,filename)),0),F&amp;ormat,)</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0175">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014406" xlate="true">&amp;Layer...</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Layer" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu hasDiesel="false" UID="PMU_0002">
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Alias>POP3</Alias>
+          <Alias>TOOLS</Alias>
+          <Name xlate="true" UID="XLS_00014404">Tools</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0179">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014406" xlate="true">&amp;Command Line\tCTRL+9</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_CmdLine" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0180">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="true" UID="PMIU_0168">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014405" xlate="true">$(if,$(eq,$(getvar,"iscmd(appload)"),1),&amp;Load Application...,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Appload" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_REGCOMMANDS">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_REGCOMMANDS" xlate="true">Registered Commands...</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_REGCOMMANDS" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0169">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014406" xlate="true">&amp;Run Script...</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Script" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0206">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuRef pUID="ID_OSModes" UID="PMRU_0008">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuRef>
+          <PopMenuItem IsSeparator="false" hasDiesel="true" UID="PMIU_0207">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014407" xlate="true">$(if,$(&gt;,$(strlen,$(getvar,dwgname)),0),&amp;Snap,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Snap" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu hasDiesel="true" UID="ID_MnWindow">
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Alias>POP10</Alias>
+          <Alias>WINDOW</Alias>
+          <Name xlate="true" UID="XLS_00014407">$(if,$(&gt;,$(strlen,$(getvar,filename)),0),&amp;Window,)</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="true" UID="PMIU_0192">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014408" xlate="true">$(if,$(&gt;,$(strlen,$(getvar,filename)),0),,~)Cl&amp;ose</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_DWG_CLOSE" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="true" UID="PMIU_0193">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014409" xlate="true">$(if,$(&gt;,$(strlen,$(getvar,filename)),0),,~)C&amp;lose All</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_WINDOW_CLOSEALL" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0194">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="true" UID="PMIU_0202">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014418" xlate="true">$(if,$(&gt;,$(strlen,$(getvar,filename)),0),,~)&amp;Cascade</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_WINDOW_CASCADE" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="true" UID="PMIU_0203">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014419" xlate="true">$(if,$(&gt;,$(strlen,$(getvar,filename)),0),,~)Tile &amp;Horizontally</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_WINDOW_TILE_HORZ" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="true" UID="PMIU_0204">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014420" xlate="true">$(if,$(&gt;,$(strlen,$(getvar,filename)),0),,~)&amp;Tile Vertically</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_WINDOW_TILE_VERT" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="true" UID="PMIU_0205">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014421" xlate="true">$(if,$(&gt;,$(strlen,$(getvar,filename)),0),,~)&amp;Arrange Windows</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_WINDOW_ARRANGE" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0195">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_SYSWINDOWS">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_SYSWINDOWS" xlate="true">Activate window by title</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_SYSWINDOWS" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu hasDiesel="false" UID="PMU_0004">
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Alias>POP4</Alias>
+          <Alias>HELP</Alias>
+          <Name xlate="true" UID="XLS_0003">Help</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0181">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014406" xlate="true">&amp;Help\tF1</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Help" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0139">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0138" xlate="true">&amp;About</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_About" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu hasDiesel="false" UID="ID_MnZoom">
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0029">&amp;Zoom</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0143">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014405" xlate="true">&amp;Window</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_ZoomWindo" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0140">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0144">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014406" xlate="true">&amp;In</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_ZoomIn" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0145">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014407" xlate="true">&amp;Out</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_ZoomOut" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0146">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0142">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014404" xlate="true">&amp;Extents</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_ZoomExten" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu hasDiesel="true" UID="PM_0030">
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00014399">$(if,$(eq,$(getvar,tilemode),1),,~)Or&amp;bit</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0148">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014400" xlate="true">&amp;Constrained Orbit</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Constrained_Orbit" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0149">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014401" xlate="true">&amp;Free Orbit</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Free_Orbit" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0150">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014402" xlate="true">Continuous &amp;Orbit</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_3dcorbit" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu hasDiesel="false" UID="ID_MnViewpoi">
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00014403">&amp;3D Views</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0157">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014410" xlate="true">&amp;Top</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_VpointTop" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="true" UID="PMIU_0158">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014411" xlate="true">$(if,$(eq,$(getvar,tilemode),1),,~)&amp;Bottom</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_VpointBot" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="true" UID="PMIU_0159">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014412" xlate="true">$(if,$(eq,$(getvar,tilemode),1),,~)&amp;Left</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_VpointLef" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="true" UID="PMIU_0160">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014413" xlate="true">$(if,$(eq,$(getvar,tilemode),1),,~)&amp;Right</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_VpointRig" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="true" UID="PMIU_0161">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014414" xlate="true">$(if,$(eq,$(getvar,tilemode),1),,~)&amp;Front</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_VpointFro" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="true" UID="PMIU_0162">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014415" xlate="true">$(if,$(eq,$(getvar,tilemode),1),,~)Bac&amp;k</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_VpointBac" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0163">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="true" UID="PMIU_0164">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014416" xlate="true">$(if,$(eq,$(getvar,tilemode),1),,~)&amp;SW Isometric</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_VpointSW" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="true" UID="PMIU_0165">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014417" xlate="true">$(if,$(eq,$(getvar,tilemode),1),,~)S&amp;E Isometric</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_VpointSE" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="true" UID="PMIU_0166">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014418" xlate="true">$(if,$(eq,$(getvar,tilemode),1),,~)&amp;NE Isometric</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_VpointNE" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="true" UID="PMIU_0167">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014419" xlate="true">$(if,$(eq,$(getvar,tilemode),1),,~)N&amp;W Isometric</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_VpointNW" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu hasDiesel="true" UID="PM_0044">
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00014406">$(if,$(and,$(eq,$(getvar,tilemode),0),$(eq,$(getvar,cvport),1)),~,)Visual &amp;Styles</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0185">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014407" xlate="true">&amp;2D Wireframe</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MM_1725" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0186">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0187">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014408" xlate="true">&amp;3D Wireframe</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MM_1722" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0188">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014409" xlate="true">&amp;3D Hidden</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MM_1723" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0189">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014410" xlate="true">&amp;Realistic</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MM_1721" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0190">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00014411" xlate="true">&amp;Conceptual</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="MM_1726" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu hasDiesel="true" UID="ID_OSModes">
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_00015000">$(if,$(&gt;,$(strlen,$(getvar,dwgname)),0),$(if,$(eq,$(getvar,snap),1),,~)&amp;Snap Object Modes,)</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0208">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00015001" xlate="true">&amp;Endpoint</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_OSMode1" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0214">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00015002" xlate="true">&amp;Midpoint</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_OSMode2" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0215">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00015003" xlate="true">&amp;Center</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_OSMode3" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0216">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00015004" xlate="true">No&amp;de</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_OSMode4" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0217">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00015005" xlate="true">&amp;Quadrant</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_OSMode5" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0218">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00015006" xlate="true">&amp;Insertion</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_OSMode7" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0219">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00015007" xlate="true">&amp;Perpendicular</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_OSMode8" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0220">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00015008" xlate="true">Ta&amp;ngent</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_OSMode9" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0221">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00015009" xlate="true">Ne&amp;arest</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_OSMode10" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0221">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_00015010" xlate="true">&amp;Marker Color</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_OSMode11" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+      </PopMenuRoot>
+      <ToolbarRoot />
+      <ScreenMenuRoot />
+      <ImageMenuRoot />
+      <TabletMenuRoot />
+      <DoubleClickRoot />
+      <ToolPanelRoot />
+      <PanelSetRoot>
+        <PanelSet UID="PSTU_0001" />
+      </PanelSetRoot>
+      <QuickPropertiesRoot />
+      <RolloverTooltipRoot />
+    </MenuRoot>
+  </MenuGroup>
+</CustSection>

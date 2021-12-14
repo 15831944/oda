@@ -1,0 +1,42 @@
+// ExCustObjCOM.idl : IDL source for ExCustObjCOM
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ExCustObjCOM.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(6F10A128-FA75-4A88-823A-37FB0F16A41D),
+	version(1.0),
+	helpstring("ExCustObjCOM 1.0 Type Library")
+]
+library ExCustObjCOMLib
+{
+	importlib("stdole2.tlb");
+  importlib("OdaX.tlb");
+
+  [
+    odl,
+    uuid(BFF2426C-A401-45D2-A5CA-63C756B4983E),
+    dual,
+    helpstring("IExCustEntityWrapper Interface"),
+    oleautomation
+  ]
+  interface IExCustEntityWrapper : IDispatch
+  {
+    [propget, id(9), helpstring("property Count")] HRESULT Count([out, retval] SHORT* pVal);
+    [propput, id(9), helpstring("property Count")] HRESULT Count([in] SHORT newVal);
+  };
+
+  [
+		uuid(8D0E4AE8-D8B1-4C26-92E9-264D1C9D5C79),
+		helpstring("ExCustEntityWrapper Class")
+	]
+	coclass ExCustEntityWrapper
+	{
+		[default] interface IExCustEntityWrapper;
+    interface IAcadCircle;
+	};
+};

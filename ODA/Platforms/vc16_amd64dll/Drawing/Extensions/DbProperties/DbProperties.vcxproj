@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7D417246-4F63-3549-ADD2-1B3D5309E210}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>DbProperties</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\..\exe\vc16_amd64dll\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">DbProperties.dir\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">DbProperties_22.5_16</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.tx</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Drawing\Include;..\..\..\..\..\Kernel\Include;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;_TOOLKIT_IN_DLL_;CMAKE_INTDIR="Release";DbProperties_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Release\";DbProperties_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Drawing\Include;..\..\..\..\..\Kernel\Include;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Drawing\Include;..\..\..\..\..\Kernel\Include;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>TD_Db.lib;TD_DbRoot.lib;TD_Gi.lib;TD_Ge.lib;TD_Root.lib;TD_Alloc.lib;RText.lib;TD_DbEntities.lib;TD_DbIO.lib;TD_DbCore.lib;ATEXT.lib;ISM.lib;WipeOut.lib;AcMPolygonObj15.lib;ACCAMERA.lib;SCENEOE.lib;UTF.lib;Secur32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\exe\vc16_amd64dll;..\..\..\..\..\lib\vc16_amd64dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>..\..\..\..\..\lib\vc16_amd64dll\DbProperties.lib</ImportLibrary>
+      <ProgramDataBaseFile>..\..\..\..\..\exe\vc16_amd64dll\DbProperties_22.5_16.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbPropertiesModule.cpp" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbProperties.h" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbDatabaseProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbObjectProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbSymbolTableProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbBodyProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbLineProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbCurveProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbEntityProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbIBLBackgroundProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbSkyBackgroundProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbDictionaryProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\Db3dSolidProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbArcProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbCircleProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbEllipseProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbPolylineProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbBlockReferenceProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbMLeaderProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbTableProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbMInsertBlockProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\Db2dPolylineProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\Db3dPolylineProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbRayProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbLeaderProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbSplineProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbHelixProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbXlineProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbDimensionProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\Db2LineAngularDimensionProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\Db3PointAngularDimensionProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbAlignedDimensionProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbArcDimensionProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbDiametricDimensionProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbOrdinateDimensionProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbRadialDimensionProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbRadialDimensionLargeProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbRotatedDimensionProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbFaceProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbFcfProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbGeoPositionMarkerProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbHatchProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbMlineProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbMTextProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbOle2FrameProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbPointProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbPolyFaceMeshProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbPolygonMeshProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbProxyEntityProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbRegionProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbSectionProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbShapeProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbSolidProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbSubDMeshProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbLightProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbSurfaceProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbExtrudedSurfaceProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbLoftedSurfaceProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbNurbSurfaceProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbRevolvedSurfaceProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbSweptSurfaceProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbSunProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbSolidBackgroundProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbTextProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbAttributeProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbAttributeDefinitionProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbTraceProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbUnderlayReferenceProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\Db2dVertexProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\Db3dPolylineVertexProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbViewportProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbGroupProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbMaterialProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbMlineStyleProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbModelDocViewStyleProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbPlotSettingsProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbLayoutProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbProxyObjectProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbRenderEnvironmentProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbRenderGlobalProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbRenderSettingsProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbMentalRayRenderSettingsProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbRapidRTRenderSettingsProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbSymbolTableRecordProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbAbstractViewTableRecordProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbViewportTableRecordProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbViewTableRecordProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbBlockTableRecordProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbDimStyleTableRecordProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbLayerTableRecordProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbLinetypeTableRecordProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbTextStyleTableRecordProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbUCSTableRecordProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbTableStyleProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbUnderlayDefinitionProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbDgnDefinitionProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbDwfDefinitionProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbVisualStyleProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbMLeaderStyleProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbBlockTableProps.cpp" />
+    <ResourceCompile Include="..\..\..\..\..\Drawing\Extensions\DbProperties\DbProperties.rc" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

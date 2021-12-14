@@ -1,0 +1,70 @@
+# sequense installation : pre install+files post
+#  sequense uninstallation : preun ... postun
+#
+# generate to /usr/src/packages/RPMS/%ARCH%/%PRODUCT%-%VERSION%-1.%ARCH%.rpm
+# install: root> rpm -ivh package_name.rpm
+# remove:  root> rpm -ev package_name
+# list:    root> rpm -qa package_name
+#
+# It's better use YaST or
+#    Dolphin (to install rpm)
+#    and Computer/Install Software (to uninstall rpm)
+#  to prevent problem with icon-cache etc
+
+# spec file for %PRODUCT% %VERSION%
+Summary: %DESCRIPTION%
+Name: %PRODUCT%
+Version: %VERSION%
+Release: 1
+Group: Application/Misc
+URL: http://www.opendesign.com/guestfiles
+Distribution: PCLinux
+Vendor: ODA
+Packager: ODA <oda@opendesign.com>
+License: Other
+#Copyright: ODA SDK® for .dwg files %VERSION%, Open Design Alliance Inc
+#Source0: %PRODUCT%-%VERSION%.tar.gz
+
+%description
+  This software was created with using ODA SDK for .dwg, .dwf files and Qt.
+  To install from console:
+  sudo rpm -i PackageName.rpm
+#%pre
+
+#%install
+
+%post
+chmod 777 /usr/local/bin/%PRODUCT%*
+chmod 777 /usr/local/bin/%PRODUCT%_%VERSION%* -R
+chmod 777 /etc/skel/Desktop/%PRODUCT%.desktop
+chmod 777 /usr/share/applications/%PRODUCT%.desktop
+ldconfig
+rm -f /home/*/Desktop/%PRODUCT%.desktop
+find /home/*/Desktop -type d -exec cp -f /etc/skel/Desktop/%PRODUCT%.desktop '{}' ';'
+cp -f /etc/skel/Desktop/%PRODUCT%.desktop /root/Desktop
+echo post completed
+#%update-desktop-database-post
+if test ! -f /usr/local/bin/%PRODUCT%_%VERSION%/TG_Db.tx && test -f /usr/local/bin/%PRODUCT%_%VERSION%/libTG_Db.so ; then
+  mv /usr/local/bin/%PRODUCT%_%VERSION%/libTG_Db.so /usr/local/bin/%PRODUCT%_%VERSION%/TG_Db.tx # rename back to native name
+fi
+
+%files
+%defattr(-,root,root,-)
+/usr/local/bin/%PRODUCT%
+/usr/local/bin/%PRODUCT%*/*
+/usr/share/applications/%PRODUCT%.desktop
+/usr/share/icons/hicolor/*/apps/*.png
+/etc/skel/Desktop/%PRODUCT%.desktop
+
+#%clean
+
+%preun
+if test -f /usr/local/bin/%PRODUCT%_%VERSION%/TG_Db.tx && test ! -f /usr/local/bin/%PRODUCT%_%VERSION%/libTG_Db.so ; then
+  mv /usr/local/bin/%PRODUCT%_%VERSION%/TG_Db.tx /usr/local/bin/%PRODUCT%_%VERSION%/libTG_Db.so
+fi
+
+%postun
+rm -f /home/*/Desktop/%PRODUCT%.desktop
+rm -f /root/Desktop/%PRODUCT%.desktop
+rmdir $RPM_BUILD_ROOT/usr/local/bin/%PRODUCT%_%VERSION%
+rm -f $RPM_BUILD_ROOT/usr/local/bin/%PRODUCT%

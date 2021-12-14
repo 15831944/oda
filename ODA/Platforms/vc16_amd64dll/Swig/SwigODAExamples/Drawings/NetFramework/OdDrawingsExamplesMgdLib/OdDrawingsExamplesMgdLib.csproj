@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D03C0BB6-5C5B-3234-A5E9-384C8918995A}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>OdDrawingsExamplesMgdLib</RootNamespace>
+    <Platform>x64</Platform>
+    <ProjectName>OdDrawingsExamplesMgdLib</ProjectName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <OutputPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\</OutputPath>
+    <PlatformToolset>v142</PlatformToolset>
+    <AssemblyName>OdDrawingsExamplesMgdLib</AssemblyName>
+    <AdditionalOptions>/langversion:latest</AdditionalOptions>
+    <DebugType>none</DebugType>
+    <DefineConstants>WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;NET48</DefineConstants>
+    <ErrorReport>queue</ErrorReport>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\OdExPgetLocalTimeSample.cs">
+      <Link>OdExPgetLocalTimeSample.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\OdExLyLayerFilterManagerDumper.cs">
+      <Link>OdExLyLayerFilterManagerDumper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\OdExConvertToMesh.cs">
+      <Link>OdExConvertToMesh.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\OdExAuxUtilities.cs">
+      <Link>OdExAuxUtilities.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\OdExOtherExamples.cs">
+      <Link>OdExOtherExamples.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExDbLayout\OdDbLayoutExamples.cs">
+      <Link>ExDbLayout\OdDbLayoutExamples.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExDbLayout\OdExDbLayoutManagerReactor.cs">
+      <Link>ExDbLayout\OdExDbLayoutManagerReactor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExExecuteCommands\OdExExecuteCommands.cs">
+      <Link>ExExecuteCommands\OdExExecuteCommands.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExExecuteCommands\OdExCmdDatabaseReactorClass.cs">
+      <Link>ExExecuteCommands\OdExCmdDatabaseReactorClass.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExExecuteCommands\OdExCmdDatabaseReactor.cs">
+      <Link>ExExecuteCommands\OdExCmdDatabaseReactor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExExecuteCommands\OdExCommandReactor.cs">
+      <Link>ExExecuteCommands\OdExCommandReactor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExDbAudit\OdExDbAppAuditInfo.cs">
+      <Link>ExDbAudit\OdExDbAppAuditInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExSelection\OdExPathNode.cs">
+      <Link>ExSelection\OdExPathNode.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExSelection\OdExSelectionSubEntityReactor.cs">
+      <Link>ExSelection\OdExSelectionSubEntityReactor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExSelection\OdExSubEntitySelection.cs">
+      <Link>ExSelection\OdExSubEntitySelection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExSelection\OdExTopLevelSelectionReactor.cs">
+      <Link>ExSelection\OdExTopLevelSelectionReactor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExSelection\OdExViewSelectionObjectByPoint.cs">
+      <Link>ExSelection\OdExViewSelectionObjectByPoint.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExSelection\OdExViewSelectionObjectByRectangle.cs">
+      <Link>ExSelection\OdExViewSelectionObjectByRectangle.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExSelection\OdExViewSelectionObjectsByMouse.cs">
+      <Link>ExSelection\OdExViewSelectionObjectsByMouse.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExView\OdExViewDrawingRenderDevice.cs">
+      <Link>ExView\OdExViewDrawingRenderDevice.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExTrackers\OdExLineTracker.cs">
+      <Link>ExTrackers\OdExLineTracker.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExTrackers\OdExCircleTracker.cs">
+      <Link>ExTrackers\OdExCircleTracker.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExTrackers\OdExRadiusTracker.cs">
+      <Link>ExTrackers\OdExRadiusTracker.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExTrackers\OdExStringTracker.cs">
+      <Link>ExTrackers\OdExStringTracker.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExJigs\OdExCircleRadiusJig.cs">
+      <Link>ExJigs\OdExCircleRadiusJig.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExJigs\OdExLineJig.cs">
+      <Link>ExJigs\OdExLineJig.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExJigs\OdExTextJig.cs">
+      <Link>ExJigs\OdExTextJig.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExGripPoints\OdExDrawingGripManager.cs">
+      <Link>ExGripPoints\OdExDrawingGripManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExGripPoints\OdExDrawingGripDrag.cs">
+      <Link>ExGripPoints\OdExDrawingGripDrag.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExGripPoints\OdExGripDataExt.cs">
+      <Link>ExGripPoints\OdExGripDataExt.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExGripPoints\OdExGripDataSubent.cs">
+      <Link>ExGripPoints\OdExGripDataSubent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExGripPoints\OdExGripDataSubentCollection.cs">
+      <Link>ExGripPoints\OdExGripDataSubentCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExGripPoints\OdExDrawingGripData.cs">
+      <Link>ExGripPoints\OdExDrawingGripData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExGripPoints\OdExDrawingGripDataCollection.cs">
+      <Link>ExGripPoints\OdExDrawingGripDataCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExGripPoints\OdExDrawingGripDragCollection.cs">
+      <Link>ExGripPoints\OdExDrawingGripDragCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\ExEditors\OdExDrawingEditor.cs">
+      <Link>ExEditors\OdExDrawingEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\Export\Pdf\OdExDwgToPdfExportParamsFiller.cs">
+      <Link>Export\Pdf\OdExDwgToPdfExportParamsFiller.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\Export\Svg\OdExDwgToSvgExport.cs">
+      <Link>Export\Svg\OdExDwgToSvgExport.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\Export\Svg\OdExSVGExportParamsAsCmdFiller.cs">
+      <Link>Export\Svg\OdExSVGExportParamsAsCmdFiller.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\Export\Dwf\OdExDwgToDwfExportParamsFiller.cs">
+      <Link>Export\Dwf\OdExDwgToDwfExportParamsFiller.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\Import\Dwf\OdExDwfImport.cs">
+      <Link>Import\Dwf\OdExDwfImport.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\Import\Dwf\OdExDwfImportByCommand.cs">
+      <Link>Import\Dwf\OdExDwfImportByCommand.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\Import\Dwf\OdExDwfToDwgExportParamsFiller.cs">
+      <Link>Import\Dwf\OdExDwfToDwgExportParamsFiller.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\Import\Pdf\OdExPDF2dImport.cs">
+      <Link>Import\Pdf\OdExPDF2dImport.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\Import\Pdf\OdExPDF2dImportParamsFiller.cs">
+      <Link>Import\Pdf\OdExPDF2dImportParamsFiller.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\Import\Dgn\OdExDgnImport.cs">
+      <Link>Import\Dgn\OdExDgnImport.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdDrawingsExamplesMgdLib\Import\Dgn\OdExDGNImportParamsFiller.cs">
+      <Link>Import\Dgn\OdExDGNImportParamsFiller.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\Common\GeneralAssemblyInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Core">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="OdKernelExamplesMgdLib">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\OdKernelExamplesMgdLib.dll</HintPath>
+    </Reference>
+    <Reference Include="TD_SwigCoreMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\TD_SwigCoreMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="TD_SwigDbMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\TD_SwigDbMgd.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Kernel\NetFramework\OdKernelExamplesMgdLib\OdKernelExamplesMgdLib.csproj">
+      <Project>{5C84E7DE-1BEB-325E-8316-06D434B090AE}</Project>
+      <Name>OdKernelExamplesMgdLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+  </PropertyGroup>
+  <PropertyGroup>
+    <BuildDependsOn>
+      $(BuildDependsOn)
+</BuildDependsOn>
+  </PropertyGroup>
+</Project>

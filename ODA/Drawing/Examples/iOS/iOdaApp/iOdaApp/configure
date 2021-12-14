@@ -1,0 +1,26 @@
+#!/bin/bash
+
+usage="$(basename "$0") [-r RootPath] [-p platform] -- program to generate xcode project
+
+where:
+    -r Path to ODA main source root
+    -p Platform name (e.g. iphone_12.0)"
+
+
+while [[ "$1" =~ ^- && ! "$1" == "--" ]]; do case $1 in
+   -r )
+     shift; RootPath=$1
+     ;;
+   -p )
+     shift; Platform=$1
+     ;;
+   \?) printf "illegal option: -%s\n" "$OPTARG" >&2
+     echo "$usage" >&2
+     exit 1
+     ;;
+   esac; shift; 
+done
+
+cmake -DRootPath=$RootPath -DODA_PLATFORM=$Platform -DCMAKE_TOOLCHAIN_FILE=./ios.cmake -DIOS_PLATFORM=OS -H. -Bbuild.ios -GXcode
+
+

@@ -1,0 +1,132 @@
+<DIV align="center">
+<!-- A href="http://www.opendesign.com/"><IMG width="300" height="50" src=":/odalogofull.png" /></A -->
+<A href="http://www.opendesign.com/"><IMG width="300" height="50" src=":/odalogofull.png" /></A>
+</DIV>
+<!-- h2><a href="help.html" title="Help">Home</a> &raquo; <strong>$(TD_APP_NAME) Command Reference</strong></h2 --> 
+<h2><a href="help.html" title="Help">Home</a> &raquo; <strong>$(TD_APP_NAME) Reference for TX Developers</strong></h2>
+<p>This  document includes information for TX developers about how to customize and extend $(TD_APP_NAME).</p> 
+
+<h1>Building the Qt Examples</h1>
+<p>For details about building the Qt sample files, with additional information for Linux developers, ODA members can see <a href="#" title="http://wiki.opendesign.com/index.php/How_do_I_build_the_sample_files_for_Linux%3F">Building Qt Sample Files</a> by logging in to <a href="#" title="wiki.opendesign.com">wiki.opendesign.com</a>.</p>
+<h1>Customizing $(TD_APP_NAME) with C++ TX Modules</h1>
+<h2>Preparing ODA SDK C++ files for $(TD_APP_NAME)</h2>
+<ol>
+  <li> Download and unzip the ODA SDK Xtension (TX) SDK from <a href="http://www.opendesign.com/guestfiles/tx_sdk">www.opendesign.com</a>. 
+    <br>
+    <strong>Note: </strong>The compiler version of Visual Studio should match 
+    the compiler version used for $(TD_APP_NAME). </li>
+  <li> In the unzipped "Platforms" folder, navigate to your configuration folder, 
+    and run the .sln file.</li>
+  <li> Build the solution. You can build all of the solutions or only the examples 
+    you need.</li>
+</ol>
+<h2>Loading TX modules in $(TD_APP_NAME)</h2>
+<ol>
+  <li>Start $(TD_APP_NAME).</li>
+  <li>Do one of the following: 
+    <ul>
+      <li>Choose Tools > Load Application. </li>
+      <li>Type APPLOAD in the command line.</li>
+    </ul>
+  </li>
+  <li>Navigate to the .tx files and click Load. Modules that are loaded successfully 
+    display in the Loaded Applications list.</li>
+  <li>Click Close.</li>
+</ol>
+<p>Now you can run commands from the loaded modules.</p>
+<h1>Working with the Properties Palette</h1>
+<p>  The OdaQtPropSystem module contains functionality for the Properties palette. This module is linked with Qt and is required for implementing the Qt docking window(QDockWidget) with the QTabWidget. Real content for each opened drawing is implemented through OdPropServices and does not use Qt. OdPropServices is a common $(TD_APP_NAME) service. It is also used in the implementation of the appload command. TX developers can use this service for their own dialogs too.</p>
+<p>  Currently the Properties palette works with .dwg file entities only. The engine takes the list of entity-inherited class names and collects properties in reverse order using .xml files located in this folder: Drawing/Examples/Qt/OdaQtApp/data/prop-patterns. The folder contains OdDbEntity.xml, OdDbLine.xml, OdDbCircle.xml, OdDbArc.xml, etc. These patterns are placed in the resources of $(TD_APP_NAME). You can also define your own folder with pattern files to override the default set. Type &#8220;PROPPATTERNPATHS DIALOG&#8221; in the console and choose your folder.</p>
+<p>  For example, for the OdDbLine entity, the sequence to collect properties is: OdDbEntity.xml, OdDbLine.xml. OdDbEntity.xml contains rules for properties of the General and 3d Visualization categories. These are common patterns of all .dwg file entities. OdDbLine.xml contains rules for properties in the Geometry category and the Thickness property of the General category.</p>
+<h3>  XML-pattern file format</h3>
+<p>The .xml-pattern files use the standard XML format with a linear list of Property-nodes (elements). These elements describe rules that are used to collect properties through attributes. </p>
+<pre>  &lt;?xml version='1.0' encoding='windows-1252'?&gt;<br>
+  &lt;Properties&gt;<br>
+    &lt;Property &#8230; /&gt;<br>
+    &#8230;<br>
+    &lt;Property &#8230; /&gt;<br>
+  &lt;/Properties&gt;</pre>
+<p>The following attributes apply:</p>
+<ul>
+  <li>  Path (and) Name &#8212; Describe the internal property hierarchy. These values cannot contain spaces. The Name attribute is visible for the category of the property in the palette if the attribute &#8220;VisibleName&#8221; is undefined. All elements with an empty attribute &#8220;Path&#8221;(=&#8221;&#8221;) are categories. Elements without internal children are properties in corresponding categories. </li>
+  <li>
+    Type &#8212; Defines property behavior. The following types are supported: 
+  &quot;category&quot;, &quot;string&quot;, &quot;combo&quot;, &quot;bool&quot;, &quot;int&quot;, &quot;double&quot; and &quot;odcolor&quot;.</li>
+  <li>
+    GrCode &#8212; Defines a group code to get/set the property value from/to OdResBuf of OdBagFiller. A simple digital group code value indicates searching in resbuf for the section by .xml-pattern name. Such sections start with the group code 100 (OdResBuf::kDxfSubclass). It is possible to use the section name as a prefix (&quot;Circle:210&quot; for example in OdDbArc.xml) if you want to get the group code in another section.</li>
+  <li>
+    Value &#8212; Defines the default property value if the group code is not overridden (is absent) in resbuf.</li>
+  <li>
+    Image &#8212; Defines a .png file path of the illustrating picture for the category.</li>
+</ul>
+<p>For example, the next 2 elements in OdDbLine.xml add the Thickness property to the end of the other properties in the &#8220;General&#8221; category defined in OdDbEntity.xml:</p>
+<pre>&lt;Property Name=&quot;General&quot; Path=&quot;&quot; Type=&quot;category&quot; /&gt;<br>&lt;Property GrCode=&quot;39&quot; Name=&quot;Thickness&quot; Path=&quot;General&quot; Type=&quot;double&quot; Value=&quot;0.0000&quot;/&gt;</pre>
+<p>In many cases, some kind of special conversion to and from the resbuf value and the palette display is needed, which can be done using a TX module with its own functions. 
+  For example, you can redefine your own OdDbLine.xml value of the property thickness through MYLINEAR convertor to display a value with standard precision in the .dwg file database.</p>
+<pre>&lt;Property Name=&quot;General&quot; Path=&quot;&quot; Type=&quot;category&quot; /&gt;<br>&lt;Property GrCode=&quot;39&quot; Name=&quot;Thickness&quot; Path=&quot;General&quot; Type=&quot;double&quot; Value=&quot;$(MYLINEAR,%1)&quot; /&gt;</pre>
+<p>where the following apply:</p>
+<ul>
+  <li>%1 &#8211; Value from resbuf of the selected line through group code 39.</li>
+  <li>
+        %2 &#8211; Found group code (39 or empty if you define Value=&quot;$(MYLINEAR,%2) ).</li>
+</ul>
+<p>
+  The following convertors are currently implemented  (with supported arguments after &quot;,&quot;):</p>
+<p>
+        LINETYPE,%1<br>
+  LINEWEIGHT,%1           <br>
+  LAYER,%1                <br>
+  PLOTSTYLE,%2,%1<br>
+  MATERIAL,%1             <br>
+  HYPERLINK               LINEAR,%1                                        <br>
+  ANGULAR,%1<br>
+  X,default_value,%1      <br>
+  Y,default_value,%1      <br>
+  Z,default_value,%1      <br>
+  START,coord_xyz_or_angle<br>
+  END,coord_xyz_or_angle  <br>
+  DELTA,coord_xyz         <br>
+  LENGTH                  <br>
+  ANGLE<br>
+  AREA                    <br>
+  RADIUS,major_or_minor      <br>
+  AXIS,major_or_minor,coord_xyz</p>
+<p>
+  Some of the converters get and set the value directly to the entity and the group code is skipped. These convertors are without arguments in list above.</p>
+<p>The convertor from the entered value in the Properties palette back to the resbuf string is invoked automatically if it is added as an argument in the addConvertor call.</p>
+<p>The following code should be in a custom TX module to add or remove the MYLINEAR convertor:</p>
+<pre>  #include &#8220;PropServices.h&#8221;<br>
+  ...<br>
+  static OdString convertorResBufToDispl_MYLINEAR(const OdString&amp; sResBufValue, OdDbStub* id)<br>
+  {<br>
+    double dValue = 0.0;<br>
+    if (!sResBufValue.isEmpty())<br>
+      dValue = odStrToD(sResBufValue);<br>
+    OdDbDatabase* pDwgDb = OdDbDatabase::cast(::baseDatabaseBy(id));<br>
+    return pDwgDb-&gt;formatter().formatLinear(dValue);<br>
+  }<br>
+  ...<br>
+  ODRX_NO_CONS_DEFINE_MEMBERS(OdPropServices, OdRxObject);<br>
+  ...<br>
+  static bool s_bUnlinkedWithPropServices = false;<br>
+  void MyModuleImpl::initApp()<br>
+  {<br>
+    if (s_bUnlinkedWithPropServices = !OdPropServices::g_pDesc)<br>
+      OdPropServices::g_pDesc = OdRxClass::cast(::odrxClassDictionary()-&gt;getAt(OD_T(&quot;OdPropServices&quot;))).get();<br>
+    OdPropServicesPtr pPropServices = ::odrxSysRegistry()-&gt;getAt(OD_PROP_SERVICES).get();<br>
+    pPropServices-&gt;controllerOfResBufPropValueConvertors()<br>
+                     -&gt;addConvertor(L&quot;MYLINEAR&quot;,<br>
+                                    convertorResBufToDispl_MYLINEAR,<br>
+                                    NULL, // convertorDiplToResBuf<br>
+                                    NULL); // getPossibleValues &#8211; for properties with Type=&#8221;combo&#8221;<br>
+  }<br>
+  void MyModuleImpl::uninitApp()<br>
+  {<br>
+    {<br>
+      OdPropServicesPtr pPropServices = ::odrxSysRegistry()-&gt;getAt(OD_PROP_SERVICES);<br>
+      pPropServices-&gt;controllerOfResBufPropValueConvertors()-&gt;removeConvertor(L&quot;MYLINEAR&quot;);<br>
+    }<br>
+    if (s_bUnlinkedWithPropServices)<br>
+      OdPropServices::g_pDesc = NULL;<br>
+  }<br>
+</pre>

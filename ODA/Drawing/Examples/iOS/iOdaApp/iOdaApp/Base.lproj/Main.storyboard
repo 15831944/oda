@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sD5-0n-ecH">
+    <device id="ipad10_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Files-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rin-Nx-cWN">
+                                <rect key="frame" x="15" y="72" width="804" height="1032"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FileCell" id="hay-Al-S7u">
+                                        <rect key="frame" x="0.0" y="28" width="804" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hay-Al-S7u" id="iEH-2E-sIO">
+                                            <rect key="frame" x="0.0" y="0.0" width="771" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="f1A-yW-QsU" kind="show" identifier="ShowFile" id="Ynm-9T-D3P"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="91f-jv-YBw"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="nAs-He-e0g"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rin-Nx-cWN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-5" id="AgM-Fu-XVB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rin-Nx-cWN" secondAttribute="trailing" constant="-5" id="Mwu-3h-ZWX"/>
+                            <constraint firstItem="rin-Nx-cWN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="TrT-B2-cfi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rin-Nx-cWN" secondAttribute="bottom" constant="8" id="ctB-vm-8UJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Files" id="9qE-PJ-rYG"/>
+                    <connections>
+                        <outlet property="tableView" destination="rin-Nx-cWN" id="elv-HU-o3R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1112" y="397"/>
+        </scene>
+        <!--DwgViewController-->
+        <scene sceneID="Obx-xx-jhS">
+            <objects>
+                <glkViewController title="DwgViewController" preferredFramesPerSecond="30" id="f1A-yW-QsU" customClass="DwgViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8c7-hO-VE5"/>
+                        <viewControllerLayoutGuide type="bottom" id="mjM-nV-Sv3"/>
+                    </layoutGuides>
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="yGF-Ir-yq8">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="HXv-yj-8Op" appends="YES" id="5W5-Ov-bcS"/>
+                            <outletCollection property="gestureRecognizers" destination="Xx6-J0-9VX" appends="YES" id="Bi3-Go-4Pq"/>
+                            <outletCollection property="gestureRecognizers" destination="eHN-SA-oFB" appends="YES" id="BUW-0i-W9J"/>
+                        </connections>
+                    </glkView>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fvh-aa-iSv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="HXv-yj-8Op">
+                    <connections>
+                        <action selector="handlePinch:" destination="f1A-yW-QsU" id="B28-kU-Z0l"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="Xx6-J0-9VX">
+                    <connections>
+                        <action selector="handleRotate:" destination="f1A-yW-QsU" id="Yz7-6U-c1G"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="eHN-SA-oFB">
+                    <connections>
+                        <action selector="handlePan:" destination="f1A-yW-QsU" id="LDp-w5-FhP"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1797" y="339"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Te0-NB-mUz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sD5-0n-ecH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pQX-qn-3cH">
+                        <rect key="frame" x="0.0" y="20" width="834" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XVe-ZA-6Tm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x8p-1L-Geq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="300" y="397"/>
+        </scene>
+    </scenes>
+</document>

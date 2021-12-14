@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+
+
+    defaultConfig {
+        applicationId "com.opendesign.android"
+        minSdkVersion 15
+        targetSdkVersion 28
+        ndk {
+
+            abiFilters 'armeabi-v7a'
+        }
+        externalNativeBuild {
+            cmake {
+                // Available argumetns are inside ${SDK}/cmake/.../android.toolchain.cmake file
+                //ANDROID_STL STREQUAL c++_static
+                cmake {
+                    cppFlags ""
+                    arguments "-DANDROID_STL=c++_shared"
+                }
+                arguments '-DANDROID_PLATFORM=android-21',
+                        '-DANDROID_TOOLCHAIN=clang', '-DANDROID_STL=c++_static'
+            }
+        }
+    }
+
+    buildTypes {
+  /*      release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }*/
+        customDebugType {
+            debuggable true
+         }
+    }
+
+    /*sourceSets {
+        main {
+            // let gradle pack the shared library into apk
+            jniLibs.srcDirs = ['../distribution/libs']
+        }
+    }*/
+    externalNativeBuild {
+        cmake {
+            path 'src/main/cpp/CMakeLists.txt'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0-rc01'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.android.support:design:28.0.0-rc01'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

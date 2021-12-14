@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{51F2C39A-8027-3B87-B25C-B64CEB5C5A90}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>TrXml</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\..\..\exe\vc16_amd64dll\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TrXml.dir\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TrXml_22.5_16</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.txr</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\KernelBase\Include;..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\..\Kernel\Include\Tr;..\..\..\..\..\..\Kernel\Include\Tr\render;..\..\..\..\..\..\Kernel\Extensions\ExRender;..\..\..\..\..\..\Kernel\Include;..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\KernelBase\Source;..\..\..\..\..\..\ThirdParty\freetype\freetype-2.10.4\include;..\..\..\..\..\..\ThirdParty\freetype\freetype-2.10.4\include\freetype;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;DWFDB_ENABLED;ODTRXML_EXPORTS;FREETYPE_VER_2_10_4;_TOOLKIT_IN_DLL_;CMAKE_INTDIR="Release";TrXml_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;DWFDB_ENABLED;ODTRXML_EXPORTS;FREETYPE_VER_2_10_4;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Release\";TrXml_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\KernelBase\Include;..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\..\Kernel\Include\Tr;..\..\..\..\..\..\Kernel\Include\Tr\render;..\..\..\..\..\..\Kernel\Extensions\ExRender;..\..\..\..\..\..\Kernel\Include;..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\KernelBase\Source;..\..\..\..\..\..\ThirdParty\freetype\freetype-2.10.4\include;..\..\..\..\..\..\ThirdParty\freetype\freetype-2.10.4\include\freetype;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\KernelBase\Include;..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\..\Kernel\Include\Tr;..\..\..\..\..\..\Kernel\Include\Tr\render;..\..\..\..\..\..\Kernel\Extensions\ExRender;..\..\..\..\..\..\Kernel\Include;..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\KernelBase\Source;..\..\..\..\..\..\ThirdParty\freetype\freetype-2.10.4\include;..\..\..\..\..\..\ThirdParty\freetype\freetype-2.10.4\include\freetype;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>TrBase.lib;TD_Ge.lib;TD_Root.lib;FreeType.lib;TD_Alloc.lib;Secur32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\..\exe\vc16_amd64dll;..\..\..\..\..\..\lib\vc16_amd64dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>..\..\..\..\..\..\lib\vc16_amd64dll\TrXml.lib</ImportLibrary>
+      <ProgramDataBaseFile>..\..\..\..\..\..\exe\vc16_amd64dll\TrXml_22.5_16.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\TrXml\TrXmlIdRegistratorImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\TrXml\TrXmlRenderModule.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\TrXml\TrXmlRendition.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\TrXml\TrXmlExports.h" />
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\TrXml\TrXmlIdRegistratorImpl.h" />
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\TrXml\TrXmlRendition.h" />
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\TrXml\XmlServer.h" />
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\TrXml\XmlServerBaseImpl.h" />
+    <ResourceCompile Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\TrXml\TrXml.rc" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

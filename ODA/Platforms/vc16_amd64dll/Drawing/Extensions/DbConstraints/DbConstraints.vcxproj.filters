@@ -1,0 +1,863 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocEdgePersSubentId.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbConstraints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\ModuleReactor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssoc2dConstraintGroup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocValueProviderPE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocDimDependencyBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocVariable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedGeometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocNetwork.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocActionBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocAction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocActionParam.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayActionBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayModifyActionBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayCommonParameters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayPathParameters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayPolarParameters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayRectangularParameters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayParameters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocParamBasedActionBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocDimDependencyBodyBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocMLeaderActionBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocRotatedDimActionBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocAlignedDimActionBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssoc3PointAngularDimActionBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocOrdinateDimActionBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbBlockParameterDependencyBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocGeomDependency.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocDependency.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdExplicitConstr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocValueDependency.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocDependencyBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdImplicitConstr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstraintGroupNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocPersSubentId.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdGeomConstraint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocLinePersSubentIdPE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocCurvePersSubentIdPE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocDependencyPE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocEllArcPersSubentIdPE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocXLinePersSubentIdPE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocPointPersSubentIdPE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocRayPersSubentIdPE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocPersSubentIdPE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocCirclePersSubentIdPE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocArcPersSubentIdPE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocSplinePersSubentIdPE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocPolylinePersSubentIdPE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocBlockReferncePersSubentIdPE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocNetCloneCtx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocNetworkDeepCloneReactor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocNetworkLongTransactionReactor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbSmartCenterActionBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbSmartCenterActionBodyBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbSmartCenterObjectsParameters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocViewPortPersSubentIdPE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbCenterLineActionBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbCenterMarkActionBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocSurfaceActionBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocLoftedSurfaceActionBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocBlendSurfaceActionBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocEdgeChamferActionBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocEdgeFilletActionBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocExtendSurfaceActionBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocExtrudedSurfaceActionBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocNetworkSurfaceActionBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocPatchSurfaceActionBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocPlaneSurfaceActionBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocRevolvedSurfaceActionBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocSweptSurfaceActionBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocTrimSurfaceActionBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocRestoreEntityStateActionBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocSurfacesParameters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocFilletSurfaceActionBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocOffsetSurfaceActionBody.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssoc3dSolidPersSubentIdPE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocSurfacePersSubentIdPE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocTextPersSubentIdPE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdCompositeConstraintImpl.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdAngleConstraintImpl.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocVariable.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdHelpParameterImpl.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedEllipseImpl.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedBoundedEllipseImpl.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\AssocActionPE.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdGeomConstraintImpl.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdParallelConstraintImpl.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedPointImpl.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedLineImpl.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedRigidSetImpl.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedGeometryImpl.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedCircleImpl.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdRadiusDiameterConstraintImpl.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdExplicitConstraintImpl.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedSplineImpl.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedCurveImpl.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedBoundedLineImpl.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssoc2dConstraintGroup.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocNetwork.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\Od3PointAngleConstraintImpl.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedArcImpl.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstraintGroupNodeImpl.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedImplicitPointImpl.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocAction.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocActionParam.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocArrayParameters.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocActionBody.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedConstructionLineImpl.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDistanceConstraintImpl.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocDependency.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocGeomDependency.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocValueDependency.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpCenterMarkActionBody.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpCenterLineActionBody.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpSmartCenterActionBody.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpSmartCenterObjectsParameters.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocMLeaderActionBody.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocRotatedDimActionBody.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocAlignedDimActionBody.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssoc3PointAngularDimActionBody.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocOrdinateDimActionBody.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocExtrudedSurfaceActionBody.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocRestoreEntityStateActionBody.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocSurfacesParameters.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocBlendSurfaceActionBody.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocFilletSurfaceActionBody.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocSweptSurfaceActionBody.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocRevolvedSurfaceActionBody.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocOffsetSurfaceActionBody.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocExtendSurfaceActionBody.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocPatchSurfaceActionBody.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocPathBasedSurfaceActionBody.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocLoftedSurfaceActionBody.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocNetworkSurfaceActionBody.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocPlaneSurfaceActionBody.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocTrimSurfaceActionBody.cpp">
+      <Filter>Source Files\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbEvalVariant.cpp">
+      <Filter>Source Files\core_data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdExpression.cpp">
+      <Filter>Source Files\core_data</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocEdgePersSubentId.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocNetwork.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocPersSubentId.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocValueProviderPE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdGeomConstraint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocDependencyBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdImplicitConstr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocValueDependency.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssoc2dConstraintGroup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocGeomDependency.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbConstraintsExports.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstraintGroupNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocVariable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdExplicitConstr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocDimDependencyBodyBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbBlockParameterDependencyBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocActionBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocGlobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocActionParam.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayActionBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayModifyActionBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayCommonParameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayPathParameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayPolarParameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayRectangularParameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayParameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocParamBasedActionBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedGeometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocDimDependencyBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocDependency.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocMLeaderActionBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocRotatedDimActionBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocAlignedDimActionBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssoc3PointAngularDimActionBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocOrdinateDimActionBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocLinePersSubentIdPE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocPointPersSubentIdPE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocEllArcPersSubentIdPE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocCurvePersSubentIdPE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocRayPersSubentIdPE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocXLinePersSubentIdPE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocDependencyPE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocPersSubentIdPE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocCirclePersSubentIdPE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocSplinePersSubentIdPE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocArcPersSubentIdPE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocSurfaceActionBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocLoftedSurfaceActionBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocBlendSurfaceActionBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocEdgeChamferActionBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocEdgeFilletActionBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocExtendSurfaceActionBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocExtrudedSurfaceActionBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocNetworkSurfaceActionBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocPatchSurfaceActionBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocPlaneSurfaceActionBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocRevolvedSurfaceActionBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocSweptSurfaceActionBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocTrimSurfaceActionBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbSmartCenterActionBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbSmartCenterActionBodyBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbSmartCenterObjectsParameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocBlockReferncePersSubentIdPE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocViewPortPersSubentIdPE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbCenterLineActionBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbCenterMarkActionBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocRestoreEntityStateActionBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocSurfacesParameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocFilletSurfaceActionBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocOffsetSurfaceActionBody.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssoc3dSolidPersSubentIdPE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocSurfacePersSubentIdPE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocTextPersSubentIdPE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdHelpParameterImpl.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedBoundedEllipseImpl.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdAngleConstraintImpl.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdCompositeConstraintImpl.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedArcImpl.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedLineImpl.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedEllipseImpl.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedCurveImpl.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\AssocActionPE.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocNetwork.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedImplicitPointImpl.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocVariable.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedBoundedLineImpl.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedSplineImpl.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedCircleImpl.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdGeomConstraintImpl.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstraintGroupNodeImpl.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocAction.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocActionParam.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocArrayParameters.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocActionBody.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedGeometryImpl.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdRadiusDiameterConstraintImpl.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDistanceConstraintImpl.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssoc2dConstraintGroup.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdParallelConstraintImpl.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\Od3PointAngleConstraintImpl.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedPointImpl.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdExplicitConstraintImpl.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedConstructionLineImpl.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedRigidSetImpl.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocValueDependency.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocGeomDependency.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocDependency.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpCenterMarkActionBody.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpCenterLineActionBody.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpSmartCenterActionBody.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpSmartCenterObjectsParameters.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocMLeaderActionBody.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocRotatedDimActionBody.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocAlignedDimActionBody.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssoc3PointAngularDimActionBody.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocOrdinateDimActionBody.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocExtrudedSurfaceActionBody.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocRestoreEntityStateActionBody.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocSurfacesParameters.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocBlendSurfaceActionBody.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocFilletSurfaceActionBody.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocSweptSurfaceActionBody.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocRevolvedSurfaceActionBody.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocOffsetSurfaceActionBody.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocExtendSurfaceActionBody.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocPatchSurfaceActionBody.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocPathBasedSurfaceActionBody.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocLoftedSurfaceActionBody.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocNetworkSurfaceActionBody.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocPlaneSurfaceActionBody.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocTrimSurfaceActionBody.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Kernel\DevInclude\DbRoot\OdDbStub.h">
+      <Filter>Header Files\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbEvalVariant.h">
+      <Filter>Header Files\core_data</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbConstraints.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbConstraints.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6E80807A-5314-3798-B94C-14F74EB6D754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core_data">
+      <UniqueIdentifier>{29BAC6DE-B161-3A9C-8BBE-716437CAFE49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\impl">
+      <UniqueIdentifier>{D3DD9F1A-3FD4-37ED-BFD8-6E9169574F4F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FF1B111D-1056-33F6-8908-C799A3AAA2A0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core_data">
+      <UniqueIdentifier>{27B18167-9C58-3F08-81C5-6BBC4728BA31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\impl">
+      <UniqueIdentifier>{19259381-61FD-35D8-818E-4C5F7E87D632}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

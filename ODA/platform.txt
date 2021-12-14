@@ -1,0 +1,6 @@
+Windows
+x64
+vc16
+22.5.0.0
+DRAWINGS.NET
+.84574

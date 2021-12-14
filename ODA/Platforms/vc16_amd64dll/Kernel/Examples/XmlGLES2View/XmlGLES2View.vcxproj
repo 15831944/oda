@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{52DC5E24-BF8A-3C37-A9D7-C2CB5054C19B}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>XmlGLES2View</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\..\exe\vc16_amd64dll\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">XmlGLES2View.dir\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">XmlGLES2View</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Kernel;..\..\..\..\..\Kernel\Include;..\..\..\..\..\Kernel\Include\Tr;..\..\..\..\..\Kernel\Include\Tr\render;..\..\..\..\..\Kernel\Include\Tr\extbar;..\..\..\..\..\Kernel\Extensions\ExRender;..\..\..\..\..\Kernel\Extensions\ExRender\TrXml;..\..\..\..\..\Kernel\Extensions\ExRender\TrXml\IO;..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;..\..\..\..\..\ThirdParty\tinyxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;DWFDB_ENABLED;_TOOLKIT_IN_DLL_;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;DWFDB_ENABLED;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Kernel;..\..\..\..\..\Kernel\Include;..\..\..\..\..\Kernel\Include\Tr;..\..\..\..\..\Kernel\Include\Tr\render;..\..\..\..\..\Kernel\Include\Tr\extbar;..\..\..\..\..\Kernel\Extensions\ExRender;..\..\..\..\..\Kernel\Extensions\ExRender\TrXml;..\..\..\..\..\Kernel\Extensions\ExRender\TrXml\IO;..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;..\..\..\..\..\ThirdParty\tinyxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Kernel;..\..\..\..\..\Kernel\Include;..\..\..\..\..\Kernel\Include\Tr;..\..\..\..\..\Kernel\Include\Tr\render;..\..\..\..\..\Kernel\Include\Tr\extbar;..\..\..\..\..\Kernel\Extensions\ExRender;..\..\..\..\..\Kernel\Extensions\ExRender\TrXml;..\..\..\..\..\Kernel\Extensions\ExRender\TrXml\IO;..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;..\..\..\..\..\ThirdParty\tinyxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>TD_Root.lib;TD_Ge.lib;TrBase.lib;..\..\..\..\..\lib\vc16_amd64dll\TrXmlIO.lib;..\..\..\..\..\lib\vc16_amd64dll\TrExtBar.lib;TD_ExamplesCommon.lib;TD_Alloc.lib;tinyxml.lib;TD_SpatialIndex.lib;Secur32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\exe\vc16_amd64dll;..\..\..\..\..\lib\vc16_amd64dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /entry:wWinMainCRTStartup</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>XmlGLES2View.lib</ImportLibrary>
+      <ProgramDataBaseFile>..\..\..\..\..\exe\vc16_amd64dll\XmlGLES2View.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Kernel\Examples\XmlGLES2View\WinMain.cpp" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Examples\XmlGLES2View\AppClient.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Examples\XmlGLES2View\AnimationHost.h" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Examples\XmlGLES2View\AnimationHost.cpp" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Examples\XmlGLES2View\XmlViewClient.cpp" />
+    <ResourceCompile Include="..\..\..\..\..\Kernel\Examples\XmlGLES2View\XmlGLES2View.rc" />
+    <ClCompile Include="..\..\..\..\..\KernelBase\Extensions\alloc\OdAllocOp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Extensions\win\TrExtBar\TrExtBar.vcxproj">
+      <Project>{AD5FABC5-054B-3C79-A5F7-C9064047F689}</Project>
+      <Name>TrExtBar</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Extensions\ExRender\TrXml\IO\TrXmlIO.vcxproj">
+      <Project>{4AB72AFC-3EB7-329A-8525-ADE8CFCC6104}</Project>
+      <Name>TrXmlIO</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

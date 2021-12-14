@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<!--
+Warning! Do not edit the contents of this file.
+If you attempt to edit this file using an XML editor, you could lose customization and migration functionality.
+If you need to change information in the customization file, use the Customize User Interface dialog box in the product.
+To access the Customize User Interface dialog box, click the Tools menu > Customize > Interface, or enter CUI on the command line. 
+-->
+<CustSection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FileVersion MajorVersion="0" MinorVersion="5" IncrementalVersion="1" UserVersion="1" />
+  <Header>
+    <CommonConfiguration>
+      <CommonItems>
+        <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+      </CommonItems>
+    </CommonConfiguration>
+    <WorkspaceRoot>
+      <WorkspaceConfigRoot />
+    </WorkspaceRoot>
+  </Header>
+  <MenuGroup Name="ODQ_TOOLBAR_TST_CMDS_TX" DisplayName="ODQ_TOOLBAR_TST_CMDS_TX">
+    <MacroGroup Name="User">
+      <MenuMacro UID="ID_RevCtrl">
+        <Macro type="RevisionCtrl">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_2058">Revision Control</Name>
+          <Command>$(if,$(and,$(&gt;,$(getvar,rvstate),0)),revisionsclose,revisions)</Command>
+          <HelpString xlate="true" UID="ACAD_1561">Revision Control for TIG files</HelpString>
+          <SmallImage Name="qrc:/images/rev/tool_rev.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_RevCtrl">PROPERTIES</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_RevCommit">
+        <Macro type="RevisionCommit">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_030">Commit...</Name>
+          <Command>^C ^C commit</Command>
+          <HelpString xlate="true" UID="ACAD_1561">Commit</HelpString>
+          <SmallImage Name="qrc:/images/rev/commit.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_RevCommit">COMMIT</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_RevCreateBranch">
+        <Macro type="RevisionCreateBranch">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_030">Create Branch...</Name>
+          <Command>^C ^C createbranch</Command>
+          <HelpString xlate="true" UID="ACAD_1561">CreateBranch</HelpString>
+          <SmallImage Name="qrc:/images/rev/create_branch.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_RevCreateBranch">CREATEBRANCH</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_RevMerge">
+        <Macro type="RevisionMerge">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_031">Merge...</Name>
+          <Command>^C ^C merge</Command>
+          <HelpString xlate="true" UID="ACAD_1561">Merge</HelpString>
+          <SmallImage Name="qrc:/images/rev/merge.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_RevMerge">MERGE</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_RevRefresh">
+        <Macro type="RevisionRefresh">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_031">Refresh Revision Control...</Name>
+          <Command>^C ^C revisionsrefresh</Command>
+          <HelpString xlate="true" UID="ACAD_1561">Refresh</HelpString>
+          <SmallImage Name="qrc:/images/rev/refresh.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_RevRefresh">REFRESHREVISIONS</CLICommand>
+        </Macro>
+      </MenuMacro>
+    </MacroGroup>
+    <MenuRoot>
+      <PopMenuRoot />
+      <ToolbarRoot>
+        <Toolbar ToolbarOrient="top" ToolbarVisible="show" xval="0" yval="0" rows="1" UID="ID_TbTestCmds">
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Alias>RevisionControl</Alias>
+          <Description xlate="true" UID="XLS_0002">Revisions</Description>
+          <Name xlate="true" UID="XLS_1011">Revisions</Name>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0001">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <Name xlate="true" UID="XLS_1012">$(if,$(eq,$(getvar,"iscmd(revisions)"),1),Revision control,)</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_RevCtrl" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0002">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <Name xlate="true" UID="XLS_1012">$(if,$(eq,$(getvar,"iscmd(commit)"),1),$(if,$(&gt;,$(strlen,$(getvar,tigname)),0),,~)Commit,)</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_RevCommit" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0003">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <Name xlate="true" UID="XLS_1013">$(if,$(eq,$(getvar,"iscmd(createbranch)"),1),$(if,$(&gt;,$(strlen,$(getvar,tigname)),0),,~)Create branch,)</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_RevCreateBranch" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0004">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <Name xlate="true" UID="XLS_1013">$(if,$(eq,$(getvar,"iscmd(merge)"),1),$(if,$(&gt;,$(strlen,$(getvar,tigname)),0),,~)Merge,)</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_RevMerge" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0005">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <Name xlate="true" UID="XLS_1013">$(if,$(eq,$(getvar,"iscmd(revisionsrefresh)"),1),$(if,$(&gt;,$(strlen,$(getvar,tigname)),0),,~)Refresh revision control,)</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_RevRefresh" />
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+      </ToolbarRoot>
+    </MenuRoot>
+  </MenuGroup>
+</CustSection>

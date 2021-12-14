@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\GsOpenGLVectorizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\ExOpenGLMetafileReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\ExOpenGLMetafileStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\ExOpenGLMetafileWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\GsOpenGLStreamVectorizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\CommonDeviceProps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\mono_dxt1_compressor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\TtfFontsCache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\GsOpenGLStreamVectorizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\GsOpenGLVectorizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\ExOpenGLMetafileReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\ExOpenGLMetafileStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\ExOpenGLMetafileWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\OpenGLMetafileStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\CommonOpenGLProps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\GsOpenGLDefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\GsOpenGLInclude.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\PseudoGLDefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\OpenGL_ES.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\OpenGLExtensions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\CommonDeviceProps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\ExFPPrecisionFix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\ExGsHelpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\MetafileTransformStack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\mono_dxt1_compressor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\TtfFontsCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1A32CBEC-C2A0-3095-993C-F243349A55EA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1639121A-EED5-3D66-A2CF-D99E22142183}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

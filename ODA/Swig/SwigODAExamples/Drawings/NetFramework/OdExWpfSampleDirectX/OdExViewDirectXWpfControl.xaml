@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="OdExWpfSampleDirectX.OdExViewDirectXWpfControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:OdExWpfSampleDirectX="clr-namespace:OdExWpfSampleDirectX"
+    Height="Auto" Width="Auto">
+    <Grid Name="Grid">
+    <Image x:Name="renderImage" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
+      <Image.Source>
+        Images/oda_logo.png
+      </Image.Source>
+    </Image>
+  </Grid>
+</UserControl>

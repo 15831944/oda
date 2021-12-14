@@ -1,0 +1,134 @@
+	// OdaMfc.idl : IDL source for OdaMfc.exe
+//
+// This file will be processed by the MIDL tool to
+// produce the type library (OdaMfc.tlb) and marshalling code.
+import "oaidl.idl";
+import "ocidl.idl";
+
+#include "TDVersion.h"
+import "odax.idl";
+
+//standard dispids
+#define DISPID_Name                     (-800)
+#define DISPID_Delete                   (-801)
+#define DISPID_Object                   (-802)
+#define DISPID_Parent                   (-803)
+#define DISPID_NewEnum					(-4)
+#define DISPID_Value					(0)
+
+
+	typedef [uuid(D758FCFB-E38B-4a87-A86F-55A4857AB2FF)]
+	enum MpSaveOptions
+	{
+		mpDoNotSaveChanges = 0,
+		mpPromptToSaveChanges = 1,
+		mpSaveChanges = 2
+	}MpSaveOptions;
+
+	interface IOdaMfcApp;
+	interface IOdaMfcDocs;
+	interface IOdaMfcDoc;
+
+	[
+		object,
+		uuid(B6734E0E-9139-4504-B2A9-E71EBB29A8D1),
+		dual,
+		helpstring("IOdaMfcApp Interface"),
+		pointer_default(unique)
+	]
+	interface IOdaMfcApp : IDispatch
+	{
+		[propget, id(1), helpstring("property Application")] HRESULT Application([out, retval] IOdaMfcApp* *pVal);
+		[propget, id(2), helpstring("property ActiveDocument")] HRESULT ActiveDocument([out, retval] IOdaMfcDoc* *pVal);
+		[propget, id(3), helpstring("property Documents")] HRESULT Documents([out, retval] IOdaMfcDocs* *pVal);
+		[propget, id(DISPID_Value), helpstring("property Name")] HRESULT Name([out, retval] BSTR *pVal);
+		[propget, id(DISPID_Parent), helpstring("property Parent")] HRESULT Parent([out, retval] IOdaMfcApp* *pVal);
+		[propget, id(6), helpstring("property VBE")] HRESULT VBE([out, retval] IDispatch* *pVal);
+		[id(7), helpstring("method Activate")] HRESULT Activate();
+		[id(8), helpstring("method Quit")] HRESULT Quit([in, optional, defaultvalue(mpSaveChanges)] MpSaveOptions Option);
+	};
+	
+	[
+		object,
+		uuid(609FE160-5336-4e3c-979F-E959D4F3A62A),
+		dual,
+		helpstring("IOdaMfcDocs Interface"),
+		pointer_default(unique)
+	]
+	interface IOdaMfcDocs : IDispatch
+	{
+		[propget, id(1), helpstring("property Application")] HRESULT Application([out, retval] IOdaMfcApp* *pVal);
+		[propget, id(DISPID_Parent), helpstring("property Parent")] HRESULT Parent([out, retval] IOdaMfcApp* *pVal);
+		[propget, id(3), helpstring("property Count")] HRESULT Count([out, retval] long *pVal);
+		[propget, id(DISPID_NewEnum), helpstring("property _NewEnum"), restricted] HRESULT _NewEnum([out, retval] IUnknown**pVal);
+		[id(DISPID_Value), helpstring("method Item")] HRESULT Item([in] VARIANT Index, [out, retval] IOdaMfcDoc** ppVal);
+		[id(6), helpstring("method Open")] HRESULT Open([in] BSTR FileName, [out, retval] IOdaMfcDoc** ppVal);
+		[id(7), helpstring("method Add")] HRESULT Add([out, retval]IOdaMfcDoc** ppVal);
+	};
+	
+	[
+		object,
+		uuid(0A548081-6DF5-491e-87D7-D2BB6261402C),
+		dual,
+		helpstring("IOdaMfcDoc Interface"),
+		pointer_default(unique)
+	]
+	interface IOdaMfcDoc : IDispatch
+	{
+		[propget, id(1), helpstring("property Application")] HRESULT Application([out, retval] IOdaMfcApp* *pVal);
+		[propget, id(DISPID_Name), helpstring("property Name")] HRESULT Name([out, retval] BSTR *pVal);
+		[propget, id(DISPID_Parent), helpstring("property Parent")] HRESULT Parent([out, retval] IOdaMfcApp* *pVal);
+		[propget, id(4), helpstring("property Collection")] HRESULT Collection([out, retval] IOdaMfcDocs* *pVal);
+		[propget, id(5), helpstring("property Saved")] HRESULT Saved([out, retval] VARIANT_BOOL *pVal);
+		[propput, id(5), helpstring("property Saved")] HRESULT Saved([in] VARIANT_BOOL newVal);
+		[id(6), helpstring("method Close")] HRESULT Close([in, optional, defaultvalue(mpSaveChanges)] MpSaveOptions Option);
+		[id(7), helpstring("method Activate")] HRESULT Activate();
+		[id(8), helpstring("method Save")] HRESULT Save();
+		[propget, id(9),helpstring("Returns the Database object of the drawing.")]HRESULT Database([out, retval] IAcadDatabase** pDatabase);
+	};
+	
+
+[	
+	uuid(55742B0A-1FA1-48a8-9170-AF09FB67A2CA),
+	helpstring("OdaMfc Type Library"),
+	version(1.0)
+]
+library OdaMfcAppLIB
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	
+	[
+		uuid(F9D0D193-7B14-4b48-95DA-066EA74EF53F),
+		helpstring("Application Class"),
+		appobject
+	]
+	coclass Application
+	{
+		[default] interface IOdaMfcApp;
+	};
+
+	[
+		uuid(A9C4D432-C760-4c74-8D88-E7BF10E27099),
+		helpstring("Document Class")
+	]
+	coclass Document
+	{
+		[default] interface IOdaMfcDoc;
+	};
+
+	[
+		uuid(94CBA044-20B2-49ab-9C32-271E31EC0B24),
+		helpstring("Documents Class")
+	]
+	coclass Documents
+	{
+		[default] interface IOdaMfcDocs;
+	};
+}
+	
+	
+	
+	
+	

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<Properties>
+  <Property Path="" Name="Options" Type="category" />
+    <Property Path="Options" Name="Files" Type="category" />
+      <Property Path="Options/Files" Name="TemplateSettings" VisibleName="Template Settings" Type="category" />
+        <Property Path="Options/Files/TemplateSettings" Name="FileLocation" VisibleName="Drawing Template File Location" Type="folder" Value="" />
+        <Property Path="Options/Files/TemplateSettings" Name="FileNameForQNew" VisibleName="Default Template File Name for QNEW" Type="string" Value="" />
+    <Property Path="Options" Name="Display" Type="category" />
+      <Property Path="Options/Display" Name="WindowElements" VisibleName="Window Elements" Type="category" />
+        <Property Path="Options/Display/WindowElements" Name="TollbarLargeButtons" VisibleName="Use large buttons for Toolbars" Type="bool" Value="false" />
+      <Property Path="Options/Display" Name="ModelBackground" VisibleName="Model Space Background Color" Type="colorref"  Value="0xFFFFFF" />
+      <Property Path="Options/Display" Name="PaperColor" VisibleName="Layout Paper Color" Type="colorref" Value="0xFFFFFF" />
+      <Property Path="Options/Display" Name="PaperBackground" VisibleName="Layout Background Color" Hidden="true" Type="colorref" Value="0xADADAD" />
+  <Property Path="" Name="Vars" Type="category" Hidden="true" />
+    <Property Path="Vars" Name="background" Type="ref" Value="Options/Display/ModelBackground" />
+    <Property Path="Vars" Name="papercolor" Type="ref" Value="Options/Display/PaperColor" />
+    <Property Path="Vars" Name="caustic" VisibleName="OpenRL enabled" Type="bool" Value="true" />
+    <Property Path="Vars" Name="showhiddenprops" Type="bool" Value="false" />
+    <Property Path="Vars" Name="dragmodel2d" VisibleName="Use 2D GS Model For Dragging" Type="bool" Value="false" />
+    <Property Path="Vars" Name="dwggscache" VisibleName="GS Cache for DWG files" Type="bool" Value="true" />
+    <Property Path="Vars" Name="dgngscache" VisibleName="GS Cache for DGN files" Type="bool" Value="true" />
+    <Property Path="Vars" Name="bimgscache" VisibleName="GS Cache for BIM files" Type="bool" Value="true" />
+    <Property Path="Vars" Name="prcgscache" VisibleName="GS Cache for PRC files" Type="bool" Value="true" />
+    <Property Path="Vars" Name="dwfgscache" VisibleName="GS Cache for DWF files" Type="bool" Value="true" />
+    <Property Path="Vars" Name="ddplotstylepaths" VisibleName="Plot style path" Type="folder" Value="" />
+    <Property Path="Vars" Name="proppatternpaths" VisibleName="Property palette XML-pattern files path" Type="folder" Value="" />
+    <Property Path="Vars" Name="pickadd" VisibleName="PICKADD" Type="bool" Value="true" />
+    <Property Path="Vars" Name="startup" VisibleName="STARTUP" Type="bool" Value="false" />
+    <Property Path="Vars" Name="tdtemplatepaths" Type="ref" Value="Options/Files/TemplateSettings/FileLocation" />
+    <Property Path="Vars" Name="qnewfilename" Type="ref" Value="Options/Files/TemplateSettings/FileNameForQNew" />
+    <Property Path="Vars" Name="measurement" VisibleName="MEASUREMENT" Type="bool" Value="false" />
+    <Property Path="Vars" Name="largetoolbars" Type="ref" Value="Options/Display/WindowElements/TollbarLargeButtons" />
+    <Property Path="Vars" Name="tdcuipaths" Type="folder" Value="" />
+    <Property Path="Vars" Name="discardbackfaces" VisibleName="DiscardBackFaces" Type="bool" Value="false" />
+    <Property Path="Vars" Name="usevs" VisibleName="UseVisualStyles" Type="bool" Value="true" />
+    <Property Path="Vars" Name="useoverlays" VisibleName="UseOverlays" Type="bool" Value="true" />
+  <Property Path="Vars" Name="propobjlimit" Type="int" Value="200" />
+</Properties>

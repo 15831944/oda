@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{12CE34F7-ACBF-3043-9D6F-4F4D347C4868}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>OdBagFilerExSwigMgd</RootNamespace>
+    <Platform>x64</Platform>
+    <ProjectName>OdBagFilerExSwigMgd</ProjectName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <OutputPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\</OutputPath>
+    <PlatformToolset>v142</PlatformToolset>
+    <AssemblyName>OdBagFilerExSwigMgd</AssemblyName>
+    <StartAction>Project</StartAction>
+    <StartProgram>..\..\..\..\..\..\..\exe\vc16_amd64dll\OdBagFilerExSwigMgd.exe</StartProgram>
+    <AdditionalOptions>/langversion:latest</AdditionalOptions>
+    <DebugType>none</DebugType>
+    <DefineConstants>WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;NET48</DefineConstants>
+    <ErrorReport>queue</ErrorReport>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdBagFilerExSwigMgd\Program.cs">
+      <Link>Program.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\ThirdParty\activation\OdActivationInfo.cs" />
+    <Compile Include="..\..\..\..\..\..\..\Swig\Common\GeneralAssemblyInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="OdCreationNetSwigExampleLib">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\OdCreationNetSwigExampleLib.dll</HintPath>
+    </Reference>
+    <Reference Include="TD_SwigCoreMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\TD_SwigCoreMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="TD_SwigDbMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\TD_SwigDbMgd.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\NetFramework\OdCreationNetSwigExampleLib\OdCreationNetSwigExampleLib.csproj">
+      <Project>{2A5DD431-6A92-3B45-9DA0-A4676F03E3FC}</Project>
+      <Name>OdCreationNetSwigExampleLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <PostBuildEvent>setlocal
+copy "$(TargetDir)\CRT.manifest" OdBagFilerExSwigMgd.exe.manifest
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+:VCEnd
+</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <BuildDependsOn>
+      $(BuildDependsOn)
+</BuildDependsOn>
+  </PropertyGroup>
+</Project>

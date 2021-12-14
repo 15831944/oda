@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>odalogo.png</file>
+        <file>odalogofull.png</file>
+        <file>about.html</file>
+        <file>ODA-Based.png</file>
+    </qresource>
+</RCC>

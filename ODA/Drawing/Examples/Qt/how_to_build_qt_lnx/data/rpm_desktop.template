@@ -1,0 +1,12 @@
+[Desktop Entry]
+X-SuSE-translate=true
+Type=Application
+Exec=%PRODUCT%
+#MimeType=application/%PRODUCT%;
+Icon=%PRODUCT%
+#X-DocPath=kdevelop/index.html
+Terminal=false
+Name=%PRODUCT%
+GenericName=%PRODUCT% v%VERSION% - Open Design Alliance Inc.
+Categories=Graphics;3DGraphics;VectorGraphics;RasterGraphics;Viewer;
+Comment=ODA SDK for .dwg files %VERSION%, Open Design Alliance Inc.

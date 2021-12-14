@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D6AC10B1-AB4E-36BF-B960-7668E3907361}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>OdaMfcApp</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\..\..\..\exe\vc16_amd64dll\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OdaMfcApp.dir\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OdaMfcApp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\..\KernelBase\Include;..\..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp;..\..\..\..\..\..\..\Drawing\Examples\Editor;..\..\..\..\..\..\..\Kernel\Extensions\win\Crypt;..\..\..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\..\..\Drawing\Extensions\ExServices;..\..\..\..\..\..\..\Drawing\Imports\DwfImport\Source;..\..\..\..\..\..\..\Drawing\Imports\DwfImport\Include;..\..\..\..\..\..\..\Kernel\Exports\ColladaExport\Include;..\..\..\..\..\..\..\Kernel\Exports\DwfExport\Include;..\..\..\..\..\..\..\Kernel\Exports\Dwf7Export\Include;..\..\..\..\..\..\..\Kernel\Exports\PdfExport\Include;..\..\..\..\..\..\..\Drawing\Extensions\AutoSurfServices;..\..\..\..\..\..\..\Kernel\Extensions\win\ExtDialog;..\..\..\..\..\..\..\Kernel\Extensions\win\OleItemHandler;..\..\..\..\..\..\..\Kernel\Extensions\OleSsItemHandler;..\..\..\..\..\Include;..\..\..\..\..\..\..\Drawing\Extensions\DbConstraints;..\..\..\..\..\..\..\Kernel\Extensions\BrepBuilderFiller\Include;..\..\..\..\..\..\..\Drawing\Tests\ModelerTest;..\..\..\..\..\..\..\Exchange;..\..\..\..\..\..\..\Drawing\Examples\Common;..\..\..\..\..\..\..\Drawing\Imports\PdfImport\Include;..\..\..\..\..\..\..\Drawing\Include;..\..\..\..\..\..\..\Kernel\Include;..\..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\..\KernelBase\Source;..\..\..\..\..\..\..\ThirdParty\openCOLLADA\COLLADAStreamWriter\include;..\..\..\..\..\..\..\ThirdParty\openCOLLADA\COLLADABaseUtils\include;..\..\..\..\..\..\..\ThirdParty\openCOLLADA\COLLADABaseUtils\include\Math;..\..\..\..\..\..\..\ThirdParty\openCOLLADA\common\libBuffer\include;..\..\..\..\..\..\..\ThirdParty\openCOLLADA\Externals\pcre\include;..\..\..\..\..\..\..\ThirdParty\UTF\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;ENABLE_DWF_EXPORT_SUPPORT;ENABLE_DWF_IMPORT_SUPPORT;ENABLE_3DDWF_EXPORT_SUPPORT;ODAMFC_EXPORT_SYMBOL;ODA_DISABLE_DDALLOC;ENABLE_COLLADA_EXPORT_SUPPORT;DGNIMPORT_ENABLE;USE_PDFIUM;_TOOLKIT_IN_DLL_;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;ENABLE_DWF_EXPORT_SUPPORT;ENABLE_DWF_IMPORT_SUPPORT;ENABLE_3DDWF_EXPORT_SUPPORT;ODAMFC_EXPORT_SYMBOL;ODA_DISABLE_DDALLOC;ENABLE_COLLADA_EXPORT_SUPPORT;DGNIMPORT_ENABLE;USE_PDFIUM;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\..\KernelBase\Include;..\..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp;..\..\..\..\..\..\..\Drawing\Examples\Editor;..\..\..\..\..\..\..\Kernel\Extensions\win\Crypt;..\..\..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\..\..\Drawing\Extensions\ExServices;..\..\..\..\..\..\..\Drawing\Imports\DwfImport\Source;..\..\..\..\..\..\..\Drawing\Imports\DwfImport\Include;..\..\..\..\..\..\..\Kernel\Exports\ColladaExport\Include;..\..\..\..\..\..\..\Kernel\Exports\DwfExport\Include;..\..\..\..\..\..\..\Kernel\Exports\Dwf7Export\Include;..\..\..\..\..\..\..\Kernel\Exports\PdfExport\Include;..\..\..\..\..\..\..\Drawing\Extensions\AutoSurfServices;..\..\..\..\..\..\..\Kernel\Extensions\win\ExtDialog;..\..\..\..\..\..\..\Kernel\Extensions\win\OleItemHandler;..\..\..\..\..\..\..\Kernel\Extensions\OleSsItemHandler;..\..\..\..\..\Include;..\..\..\..\..\..\..\Drawing\Extensions\DbConstraints;..\..\..\..\..\..\..\Kernel\Extensions\BrepBuilderFiller\Include;..\..\..\..\..\..\..\Drawing\Tests\ModelerTest;..\..\..\..\..\..\..\Exchange;..\..\..\..\..\..\..\Drawing\Examples\Common;..\..\..\..\..\..\..\Drawing\Imports\PdfImport\Include;..\..\..\..\..\..\..\Drawing\Include;..\..\..\..\..\..\..\Kernel\Include;..\..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\..\KernelBase\Source;..\..\..\..\..\..\..\ThirdParty\openCOLLADA\COLLADAStreamWriter\include;..\..\..\..\..\..\..\ThirdParty\openCOLLADA\COLLADABaseUtils\include;..\..\..\..\..\..\..\ThirdParty\openCOLLADA\COLLADABaseUtils\include\Math;..\..\..\..\..\..\..\ThirdParty\openCOLLADA\common\libBuffer\include;..\..\..\..\..\..\..\ThirdParty\openCOLLADA\Externals\pcre\include;..\..\..\..\..\..\..\ThirdParty\UTF\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\..\KernelBase\Include;..\..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp;..\..\..\..\..\..\..\Drawing\Examples\Editor;..\..\..\..\..\..\..\Kernel\Extensions\win\Crypt;..\..\..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\..\..\Drawing\Extensions\ExServices;..\..\..\..\..\..\..\Drawing\Imports\DwfImport\Source;..\..\..\..\..\..\..\Drawing\Imports\DwfImport\Include;..\..\..\..\..\..\..\Kernel\Exports\ColladaExport\Include;..\..\..\..\..\..\..\Kernel\Exports\DwfExport\Include;..\..\..\..\..\..\..\Kernel\Exports\Dwf7Export\Include;..\..\..\..\..\..\..\Kernel\Exports\PdfExport\Include;..\..\..\..\..\..\..\Drawing\Extensions\AutoSurfServices;..\..\..\..\..\..\..\Kernel\Extensions\win\ExtDialog;..\..\..\..\..\..\..\Kernel\Extensions\win\OleItemHandler;..\..\..\..\..\..\..\Kernel\Extensions\OleSsItemHandler;..\..\..\..\..\Include;..\..\..\..\..\..\..\Drawing\Extensions\DbConstraints;..\..\..\..\..\..\..\Kernel\Extensions\BrepBuilderFiller\Include;..\..\..\..\..\..\..\Drawing\Tests\ModelerTest;..\..\..\..\..\..\..\Exchange;..\..\..\..\..\..\..\Drawing\Examples\Common;..\..\..\..\..\..\..\Drawing\Imports\PdfImport\Include;..\..\..\..\..\..\..\Drawing\Include;..\..\..\..\..\..\..\Kernel\Include;..\..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\..\KernelBase\Source;..\..\..\..\..\..\..\ThirdParty\openCOLLADA\COLLADAStreamWriter\include;..\..\..\..\..\..\..\ThirdParty\openCOLLADA\COLLADABaseUtils\include;..\..\..\..\..\..\..\ThirdParty\openCOLLADA\COLLADABaseUtils\include\Math;..\..\..\..\..\..\..\ThirdParty\openCOLLADA\common\libBuffer\include;..\..\..\..\..\..\..\ThirdParty\openCOLLADA\Externals\pcre\include;..\..\..\..\..\..\..\ThirdParty\UTF\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>DbCommands.lib;TD_ColladaExport.lib;COLLADAStreamWriter.lib;COLLADABaseUtils.lib;libBuffer.lib;pcre.lib;UTF.lib;TrExtBar.lib;TD_ExamplesCommon.lib;..\..\..\..\..\..\..\lib\vc16_amd64dll\TD_DrawingsExamplesCommon.lib;TD_Ave.lib;TD_Key.lib;TD_Db.lib;TD_Gs.lib;TD_DbRoot.lib;TD_Gi.lib;..\..\..\..\..\..\..\lib\vc16_amd64dll\PlotSettingsValidator.lib;TD_Ge.lib;TD_Root.lib;TD_Alloc.lib;Shlwapi.lib;TD_Tf.lib;..\..\..\..\..\..\..\lib\vc16_amd64dll\DbConstraints.lib;ws2_32.lib;crypt32.lib;TD_BrepBuilder.lib;TD_Br.lib;TD_BrepBuilderFiller.lib;RText.lib;TD_DbEntities.lib;TD_DbIO.lib;TD_DbCore.lib;ATEXT.lib;ISM.lib;WipeOut.lib;AcMPolygonObj15.lib;ACCAMERA.lib;SCENEOE.lib;Secur32.lib;TD_DynBlocks.lib;TD_3DSolidHistory.lib;UTF.lib;TD_Db.lib;TD_DbRoot.lib;TD_Ge.lib;TD_Root.lib;TD_Alloc.lib;RText.lib;TD_DbEntities.lib;TD_DbIO.lib;TD_DbCore.lib;ATEXT.lib;ISM.lib;WipeOut.lib;AcMPolygonObj15.lib;ACCAMERA.lib;SCENEOE.lib;Secur32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\..\..\exe\vc16_amd64dll;..\..\..\..\..\..\..\lib\vc16_amd64dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /entry:wWinMainCRTStartup</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>OdaMfcApp.lib</ImportLibrary>
+      <ProgramDataBaseFile>..\..\..\..\..\..\..\exe\vc16_amd64dll\OdaMfcApp.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Manifest>
+      <AdditionalManifestFiles>$(TargetDir)/TDXdependency.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\OdaMfcAppSaveAsFiltersEnum.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\OdaMfcAppSaveAsFiltersDef.h" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\LoadLineTypes.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\FileDependencyDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\TreeFiller.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\AppAuditInfo.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\PageSetupDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\MainFrm.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\Gripper.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\LoadApps.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\FindObjectDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\StdAfx.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\NewViewDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\OLE.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\OdaLayerPropManagerDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\OdaMultiLineStyleDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\PsTbEditFormViewPg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\ObjPropDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\OdaMfcAppDoc.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\AcisSaveDialog.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\EditProperties.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\SummDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\ListFiller.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\UserIOConsole.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\ClassesDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\PsEditLineweightDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\XrefViewDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\PsTbEditDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\VarDialog.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\VectProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\DlgResizeHelper.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\MaterialsDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\MaterialsEditor.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\TaskBarWin7Ext.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\PointCloudTestObject.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\SetActiveLayoutDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\PublishFileDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\PsTbEditGeneralPg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\Export2PDFDialog.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\Export2PDFPreview.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\DwfUnderlayDialog.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\BitmapPickerCombo.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\StaticAppSelDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\ChildFrm.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\DwgViewer.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\CreateDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\CommandMenu.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\PasswordDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\LightsDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\OdaTrianParamsDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\LwSettingsDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\DwgView.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\OdaMfcApp.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\SnapSettings.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\SnapshotDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\AuditDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\NamedViewsDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\OdaMfcExport.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\RemoteGeomBlockPreviewDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\RemoteGeomPropsDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\RemoteGeomViewer.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\ColorPickerDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\BBValidationErrDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\Kernel\Extensions\win\OleItemHandler\ExEmbedRaster.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\OdaMfcAppDoc.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Kernel\Extensions\ExServices\ExSystemServices.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\DwgViewer.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Drawing\Imports\DwfImport\Source\ImageManager.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\NewViewDlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\LwSettingsDlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\PasswordDlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\OdaMfcApp.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Drawing\Imports\DwfImport\Source\LineManager.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\ClassesDlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\OdaTrianParamsDlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Kernel\Extensions\ExServices\ExUndoController.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Kernel\Extensions\ExServices\ExFileUndoController.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\CreateDlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\MaterialsDlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\MaterialsEditor.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\TaskBarWin7Ext.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\EditProperties.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\SetActiveLayoutDlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\LoadLineTypes.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\DwgView.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\PsTbEditDlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\VarDialog.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\VectProps.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\MainFrm.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Drawing\Extensions\ExServices\ExHostAppServices.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Kernel\Extensions\ExServices\ExKWIndex.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Kernel\Extensions\ExServices\ExTrackers.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Drawing\Extensions\ExServices\ExDbCommandContext.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\PsEditLineweightDlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\ListFiller.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\resource.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\PsTbEditGeneralPg.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Kernel\Extensions\ExServices\OdFileBuf.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Drawing\Extensions\ExServices\ExPageController.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\ObjPropDlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\LightsDlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\LoadApps.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\DlgResizeHelper.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\ChildFrm.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\CommandMenu.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\Gripper.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\NamedViewsDlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\AppAuditInfo.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\XrefViewDlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\PsTbEditFormViewPg.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\AuditDlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\SnapSettings.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\SnapshotDlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\TreeFiller.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Kernel\Extensions\ExServices\ExGiRasterImage.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Kernel\Extensions\ExServices\ExStringIO.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\DwfUnderlayDialog.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\FileDependencyDlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\PreviewDib.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\AcisSaveDialog.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\StdAfx.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\PublishFileDlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\SummDlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\FindObjectDlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\OdaLayerPropManagerDlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\Export2PDFDialog.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\Export2PDFPreview.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\OdaMfcExport.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\OdaMfcExportImpl.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\RemoteGeomBlockPreviewDlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\RemoteGeomPropsDlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\RemoteGeomViewer.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\ColorPickerDlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Kernel\Extensions\win\OleItemHandler\ExEmbedRaster.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Kernel\Extensions\OleSsItemHandler\CompDocData.h" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\CustomMediaDlg.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\CustomMediaDlg.h" />
+    <ResourceCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\OdaMfcApp.rc" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\CustomPDFPropertiesDialog.h" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\CustomPDFPropertiesDialog.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\RevisionDialog.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\RevisionDialog.h" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\CommitMessageDialog.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\CommitMessageDialog.h" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\BranchesDialog.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\BranchesDialog.h" />
+    <None Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\res\psbmpchk.bmp" />
+    <None Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\res\psbmpctb.bmp" />
+    <None Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\res\toolbar1.bmp" />
+    <None Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\res\Toolbar.bmp" />
+    <None Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\res\layer_fi1.bmp" />
+    <None Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\res\bitmap1.bmp" />
+    <None Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\res\psbmpwht.bmp" />
+    <None Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\res\OdaMfcApp.rc2" />
+    <None Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\res\xrefbar.bmp" />
+    <None Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\res\OdaMfcAppDoc.ico" />
+    <None Include="..\..\..\..\..\..\..\Kernel\Logo\Icon-ODA.ico" />
+    <None Include="..\..\..\..\..\..\..\Kernel\Logo\Logo-ODA.bmp" />
+    <None Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\res\psbmpstb.bmp" />
+    <None Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\res\states.bmp" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\PdfImportDialog.h" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\PdfImportDialog.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\MergeDialog.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\MergeDialog.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\BBValidationErrDlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\LayerStatesDialog.h" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\LayerStatesDialog.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\NewLayerStateDialog.h" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\NewLayerStateDialog.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\PdfImportTextOptDialog.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\..\CommonApplications\Drawing\Examples\win\OdaMfcApp\PdfImportTextOptDialog.h" />
+    <ClCompile Include="..\..\..\..\..\..\..\KernelBase\Extensions\alloc\OdAllocOp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbConstraints.vcxproj">
+      <Project>{B3B0E16F-A846-35D6-AF03-1F86002AF3C3}</Project>
+      <Name>DbConstraints</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Drawing\Extensions\PlotSettingsValidator\PlotSettingsValidator.vcxproj">
+      <Project>{A0602482-1048-3A29-8540-B031B1132E7B}</Project>
+      <Name>PlotSettingsValidator</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Drawing\Examples\Common\TD_DrawingsExamplesCommon.vcxproj">
+      <Project>{44A8804E-4E22-3F5E-B273-800F3EBE6C69}</Project>
+      <Name>TD_DrawingsExamplesCommon</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

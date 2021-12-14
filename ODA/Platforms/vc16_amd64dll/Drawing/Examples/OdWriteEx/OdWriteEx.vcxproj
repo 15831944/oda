@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8F75D2C2-87DA-3096-A8CB-4DA92D43A1B7}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>OdWriteEx</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\..\exe\vc16_amd64dll\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OdWriteEx.dir\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OdWriteEx</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\Drawing\Extensions\ExServices;..\..\..\..\..\Drawing\Include\DbPointCloudObj;..\..\..\..\..\Drawing\Examples\GeolocationObj;..\..\..\..\..\Drawing\Examples\OdWriteEx\..\Common;..\..\..\..\..\Drawing\Include;..\..\..\..\..\Kernel\Include;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;..\..\..\..\..\ThirdParty\ZLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;UNICODE;_UNICODE;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;Z_PREFIX;_TOOLKIT_IN_DLL_;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;UNICODE;_UNICODE;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;Z_PREFIX;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\Drawing\Extensions\ExServices;..\..\..\..\..\Drawing\Include\DbPointCloudObj;..\..\..\..\..\Drawing\Examples\GeolocationObj;..\..\..\..\..\Drawing\Examples\OdWriteEx\..\Common;..\..\..\..\..\Drawing\Include;..\..\..\..\..\Kernel\Include;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;..\..\..\..\..\ThirdParty\ZLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\Drawing\Extensions\ExServices;..\..\..\..\..\Drawing\Include\DbPointCloudObj;..\..\..\..\..\Drawing\Examples\GeolocationObj;..\..\..\..\..\Drawing\Examples\OdWriteEx\..\Common;..\..\..\..\..\Drawing\Include;..\..\..\..\..\Kernel\Include;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;..\..\..\..\..\ThirdParty\ZLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>TD_ExamplesCommon.lib;..\..\..\..\..\lib\vc16_amd64dll\TD_DrawingsExamplesCommon.lib;RxRasterServices.lib;TD_Key.lib;AcDbPointCloudObj.lib;TD_Db.lib;TD_Gs.lib;TD_Gi.lib;TD_Root.lib;TD_Ge.lib;TD_DbRoot.lib;..\..\..\..\..\lib\vc16_amd64dll\AcGeolocationObj.lib;TD_Zlib.lib;TD_BrepBuilder.lib;ws2_32.lib;crypt32.lib;TD_Alloc.lib;RText.lib;TD_DbEntities.lib;TD_DbIO.lib;TD_DbCore.lib;ATEXT.lib;ISM.lib;WipeOut.lib;AcMPolygonObj15.lib;ACCAMERA.lib;SCENEOE.lib;UTF.lib;Secur32.lib;TD_ExamplesCommon.lib;..\..\..\..\..\lib\vc16_amd64dll\TD_DrawingsExamplesCommon.lib;AcDbPointCloudObj.lib;TD_Db.lib;TD_Gi.lib;TD_Root.lib;TD_Ge.lib;TD_Alloc.lib;RText.lib;TD_DbEntities.lib;TD_DbIO.lib;TD_DbCore.lib;ATEXT.lib;ISM.lib;WipeOut.lib;AcMPolygonObj15.lib;ACCAMERA.lib;SCENEOE.lib;UTF.lib;Secur32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\exe\vc16_amd64dll;..\..\..\..\..\lib\vc16_amd64dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>OdWriteEx.lib</ImportLibrary>
+      <ProgramDataBaseFile>..\..\..\..\..\exe\vc16_amd64dll\OdWriteEx.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\OdWriteEx\OdWriteEx.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\OdWriteEx\DbFiller.cpp" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\OdWriteEx\DbFiller.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\OdWriteEx\EntityBoxes.h" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\OdWriteEx\DbSubDMeshData.cpp" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\OdWriteEx\ExCreateNurbSurfaceData.h" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\OdWriteEx\ExCreateNurbSurfaceData.cpp" />
+    <ResourceCompile Include="..\..\..\..\..\Drawing\Examples\OdWriteEx\OdWriteEx.rc" />
+    <ClCompile Include="..\..\..\..\..\KernelBase\Extensions\alloc\OdAllocOp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeolocationObj\AcGeolocationObj.vcxproj">
+      <Project>{5CC02EBC-A26A-3BDE-8F31-11A19D2B0DF3}</Project>
+      <Name>AcGeolocationObj</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\TD_DrawingsExamplesCommon.vcxproj">
+      <Project>{44A8804E-4E22-3F5E-B273-800F3EBE6C69}</Project>
+      <Name>TD_DrawingsExamplesCommon</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,84 @@
+/////////////////////////////////////////////////////////////////////////////// 
+// Copyright (C) 2002-2020, Open Design Alliance (the "Alliance"). 
+// All rights reserved. 
+// 
+// This software and its documentation and related materials are owned by 
+// the Alliance. The software may only be incorporated into application 
+// programs owned by members of the Alliance, subject to a signed 
+// Membership Agreement and Supplemental Software License Agreement with the
+// Alliance. The structure and organization of this software are the valuable  
+// trade secrets of the Alliance and its suppliers. The software is also 
+// protected by copyright law and international treaty provisions. Application  
+// programs incorporating this software must include the following statement 
+// with their copyright notices:
+//   
+//   This application incorporates Open Design Alliance software pursuant to a license 
+//   agreement with Open Design Alliance.
+//   Open Design Alliance Copyright (C) 2002-2020 by Open Design Alliance. 
+//   All rights reserved.
+//
+// By use of this software, its documentation or related materials, you 
+// acknowledge and accept the above terms.
+///////////////////////////////////////////////////////////////////////////////
+//
+// redirect file for temporal compatibility with v3.2
+
+
+#include "TDVersion.h"
+
+#if (TD_MAJOR_VERSION > 3 || TD_MINOR_VERSION > 2)
+
+#include "../../../VersionInfo.rc2"
+
+#else
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+#include "../../../Include/OdModuleNames.h"
+#ifndef OD_T
+#define OD_T(a) a
+#endif
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION TD_MAJOR_VERSION, TD_MINOR_VERSION, TD_MAJOR_BUILD, TD_MINOR_BUILD
+ PRODUCTVERSION TD_MAJOR_VERSION, TD_MINOR_VERSION, TD_MAJOR_BUILD, TD_MINOR_BUILD
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", TD_COMPANY_NAME_S
+            VALUE "FileDescription", FILE_DESCRIPTION
+            VALUE "FileVersion", TD_PRODUCT_VER_STR_S
+            VALUE "InternalName", INTERNAL_NAME
+            VALUE "LegalCopyright", TD_COPYRIGHT_S
+//            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", ORIGINAL_FILE_NAME
+//            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", TD_PRODUCT_NAME_S
+            VALUE "ProductVersion", TD_PRODUCT_VER_STR_S
+//            VALUE "SpecialBuild", "\0"
+            VALUE "Build Comments", TD_BUILD_COMMENTS_S
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif

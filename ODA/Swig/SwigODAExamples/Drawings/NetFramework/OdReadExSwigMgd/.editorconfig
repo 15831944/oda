@@ -1,0 +1,7 @@
+﻿[*.cs]
+
+# Default severity for analyzer diagnostics with category 'StyleCop.CSharp.DocumentationRules'
+dotnet_analyzer_diagnostic.category-StyleCop.CSharp.DocumentationRules.severity = none
+
+# CS1591: Commentaire XML manquant pour le type ou le membre visible publiquement
+dotnet_diagnostic.CS1591.severity = none

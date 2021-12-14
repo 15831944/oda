@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{77ECCA25-7096-3C61-AB53-07759524C5FE}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>TD_PdfExport</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\..\exe\vc16_amd64dll\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TD_PdfExport.dir\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TD_PdfExport_22.5_16</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.tx</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Kernel\Extensions\ExRender;..\..\..\..\..\Kernel\Source;..\..\..\..\..\Kernel\Exports\PdfExport\Include;..\..\..\..\..\Kernel\Exports\PdfExport\PDFToolkit;..\..\..\..\..\Kernel\Include;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;..\..\..\..\..\ThirdParty\qpdf\include;..\..\..\..\..\ThirdParty\openCOLLADA\Externals\pcre\include;..\..\..\..\..\ThirdParty\stsflib;..\..\..\..\..\ThirdParty\ZLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;DWFDB_ENABLED;PDFEXPORT_EXPORTS;ODA_LINT;Z_PREFIX;_TOOLKIT_IN_DLL_;CMAKE_INTDIR="Release";TD_PdfExport_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;DWFDB_ENABLED;PDFEXPORT_EXPORTS;ODA_LINT;Z_PREFIX;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Release\";TD_PdfExport_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Kernel\Extensions\ExRender;..\..\..\..\..\Kernel\Source;..\..\..\..\..\Kernel\Exports\PdfExport\Include;..\..\..\..\..\Kernel\Exports\PdfExport\PDFToolkit;..\..\..\..\..\Kernel\Include;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;..\..\..\..\..\ThirdParty\qpdf\include;..\..\..\..\..\ThirdParty\openCOLLADA\Externals\pcre\include;..\..\..\..\..\ThirdParty\stsflib;..\..\..\..\..\ThirdParty\ZLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Kernel\Extensions\ExRender;..\..\..\..\..\Kernel\Source;..\..\..\..\..\Kernel\Exports\PdfExport\Include;..\..\..\..\..\Kernel\Exports\PdfExport\PDFToolkit;..\..\..\..\..\Kernel\Include;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;..\..\..\..\..\ThirdParty\qpdf\include;..\..\..\..\..\ThirdParty\openCOLLADA\Externals\pcre\include;..\..\..\..\..\ThirdParty\stsflib;..\..\..\..\..\ThirdParty\ZLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>TD_PDFToolkit.lib;TD_DbRoot.lib;TD_Root.lib;TD_Gs.lib;TD_Br.lib;TD_Gi.lib;TD_Ge.lib;qpdf.lib;pcre.lib;TD_Alloc.lib;stsflib.lib;TD_Zlib.lib;Secur32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\exe\vc16_amd64dll;..\..\..\..\..\lib\vc16_amd64dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>..\..\..\..\..\lib\vc16_amd64dll\TD_PdfExport.lib</ImportLibrary>
+      <ProgramDataBaseFile>..\..\..\..\..\exe\vc16_amd64dll\TD_PdfExport_22.5_16.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Kernel\Extensions\ExRender\BmpTilesGen.cpp" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\PdfExport\Source\2dExportDeviceForPdfExport.cpp" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\PdfExport\Source\2dExportUtils.cpp" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\PdfExport\Source\PDFShxGeomStore.cpp" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\PdfExport\Source\PdfExportImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\PdfExport\Source\PDF2dExportDevice.cpp" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\PdfExport\Source\PDFType3Optimizer.cpp" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\PdfExport\Source\Pdf2Dc.cpp" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\PdfExport\Source\PdfAux.cpp" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\PdfExport\Source\PDF2dExportView.cpp" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\PdfExport\Source\PdfExport.cpp" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\PdfExport\Source\PdfExportPE.cpp" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\PdfExport\Source\PDFLinearizer.cpp" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\PdfExport\Source\PdfExportClipper.cpp" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\PdfExport\Source\PdfExportGiDrawablePE.cpp" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\PdfExport\Source\PdfExportService.cpp" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\PdfExport\Source\PrcContextForPdfExport.cpp" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\PdfExport\Source\PdfExportImplXObject.cpp" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\PdfExport\Source\PdfExportParamsHolder.cpp" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\PdfExport\Source\PdfExportImplBase.cpp" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\PdfExport\Source\Pdf2dExportGsCacheSupport.cpp" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\PdfExport\Include\PdfAux.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\PdfExport\Include\PdfExport.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\PdfExport\Include\PdfExportPE.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\PdfExport\Include\PdfExportImpl.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\PdfExport\Include\2dExportDeviceForPdfExport.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\PdfExport\Include\2dExportUtils.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\PdfExport\Include\Pdf2dExportDevice.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\PdfExport\Include\PdfShxGeomStore.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\PdfExport\Include\PdfType3Optimizer.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\PdfExport\Include\PdfExportVersion.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\PdfExport\Include\PdfExportParams.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\PdfExport\Include\Pdf2dExportView.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\PdfExport\Include\PdfExportCommon.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\PdfExport\Include\PdfExportDef.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\PdfExport\Include\Pdf2PrcExportParams.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\PdfExport\Include\PdfExportGiDrawablePE.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\PdfExport\Include\PdfExportService.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\PdfExport\Include\PdfLinearizer.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\PdfExport\Include\PdfExportClipper.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\PdfExport\Include\PdfExportImplXObject.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\PdfExport\Include\PdfExportParamsHolder.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\PdfExport\Include\PdfExportImplBase.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\PdfExport\Include\PdfExportParamsForXObject.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\PdfExport\Include\PrcContextForPdfExport.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\PdfExport\Include\Pdf2dExportGsCacheSupport.h" />
+    <ResourceCompile Include="..\..\..\..\..\Kernel\Exports\PdfExport\Source\PdfExport.rc" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

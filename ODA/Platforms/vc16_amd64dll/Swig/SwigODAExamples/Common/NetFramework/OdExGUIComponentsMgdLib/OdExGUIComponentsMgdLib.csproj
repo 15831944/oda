@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{528F2B09-4C6C-3105-89D8-A8E413B826A8}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>OdExGUIComponentsMgdLib</RootNamespace>
+    <Platform>x64</Platform>
+    <ProjectName>OdExGUIComponentsMgdLib</ProjectName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <OutputPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\</OutputPath>
+    <PlatformToolset>v142</PlatformToolset>
+    <AssemblyName>OdExGUIComponentsMgdLib</AssemblyName>
+    <AdditionalOptions>/langversion:latest</AdditionalOptions>
+    <DebugType>none</DebugType>
+    <DefineConstants>WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;NET48</DefineConstants>
+    <ErrorReport>queue</ErrorReport>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Common\NetFramework\OdExGUIComponentsMgdLib\BackCompatibleUIElements\OdExCompatibleSplitContainer.cs">
+      <Link>BackCompatibleUIElements\OdExCompatibleSplitContainer.cs</Link>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Common\NetFramework\OdExGUIComponentsMgdLib\OdExAboutBoxForm.cs">
+      <Link>OdExAboutBoxForm.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Common\NetFramework\OdExGUIComponentsMgdLib\OdExAboutBoxForm.Designer.cs">
+      <DependentUpon>OdExAboutBoxForm.cs</DependentUpon>
+      <Link>OdExAboutBoxForm.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Common\NetFramework\OdExGUIComponentsMgdLib\OdExNewFileDlg.cs">
+      <Link>OdExNewFileDlg.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Common\NetFramework\OdExGUIComponentsMgdLib\OdExNewFileDlg.Designer.cs">
+      <DependentUpon>OdExNewFileDlg.cs</DependentUpon>
+      <Link>OdExNewFileDlg.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\Common\GeneralAssemblyInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Core">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Common\NetFramework\OdExGUIComponentsMgdLib\OdExAboutBoxForm.resx">
+      <DependentUpon>OdExAboutBoxForm.cs</DependentUpon>
+      <Link>OdExAboutBoxForm.resx</Link>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>OdExAboutBoxForm.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Common\NetFramework\OdExGUIComponentsMgdLib\OdExNewFileDlg.resx">
+      <DependentUpon>OdExNewFileDlg.cs</DependentUpon>
+      <Link>OdExNewFileDlg.resx</Link>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>OdExNewFileDlg.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+  </PropertyGroup>
+  <PropertyGroup>
+    <BuildDependsOn>
+      $(BuildDependsOn)
+</BuildDependsOn>
+  </PropertyGroup>
+</Project>

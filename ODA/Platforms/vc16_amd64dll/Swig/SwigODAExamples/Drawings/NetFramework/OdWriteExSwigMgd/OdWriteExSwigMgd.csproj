@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{63A842B1-7219-3EB7-83DA-7C7E3632974C}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>OdWriteExSwigMgd</RootNamespace>
+    <Platform>x64</Platform>
+    <ProjectName>OdWriteExSwigMgd</ProjectName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <OutputPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\</OutputPath>
+    <PlatformToolset>v142</PlatformToolset>
+    <AssemblyName>OdWriteExSwigMgd</AssemblyName>
+    <StartAction>Project</StartAction>
+    <StartProgram>..\..\..\..\..\..\..\exe\vc16_amd64dll\OdWriteExSwigMgd.exe</StartProgram>
+    <AdditionalOptions>/langversion:latest</AdditionalOptions>
+    <DebugType>none</DebugType>
+    <DefineConstants>WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;NET48</DefineConstants>
+    <ErrorReport>queue</ErrorReport>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdWriteExSwigMgd\DbFiller.cs">
+      <Link>DbFiller.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdWriteExSwigMgd\DbSubDMeshData.cs">
+      <Link>DbSubDMeshData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdWriteExSwigMgd\EntityBoxes.cs">
+      <Link>EntityBoxes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdWriteExSwigMgd\OleWrappers.cs">
+      <Link>OleWrappers.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdWriteExSwigMgd\PageControllers.cs">
+      <Link>PageControllers.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdWriteExSwigMgd\Program.cs">
+      <Link>Program.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\..\..\ThirdParty\activation\OdActivationInfo.cs" />
+    <Compile Include="..\..\..\..\..\..\..\Swig\Common\GeneralAssemblyInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="OdCreationNetSwigExampleLib">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\OdCreationNetSwigExampleLib.dll</HintPath>
+    </Reference>
+    <Reference Include="TD_SwigCoreMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\TD_SwigCoreMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="TD_SwigDbMgd">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\..\..\..\exe\vc16_amd64dll\TD_SwigDbMgd.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\NetFramework\OdCreationNetSwigExampleLib\OdCreationNetSwigExampleLib.csproj">
+      <Project>{2A5DD431-6A92-3B45-9DA0-A4676F03E3FC}</Project>
+      <Name>OdCreationNetSwigExampleLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <PostBuildEvent>setlocal
+copy "$(TargetDir)\CRT.manifest" OdWriteExSwigMgd.exe.manifest
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+
+setlocal
+copy /b /y "$(TargetDir)..\..\\SwigODAExamples\\NetFramework\OdWriteExSwigMgd\extrudedsurf.sat" "$(TargetDir)extrudedsurf.sat"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+
+setlocal
+copy /b /y "$(TargetDir)..\..\\SwigODAExamples\\NetFramework\OdWriteExSwigMgd\loftedsurf.sat" "$(TargetDir)loftedsurf.sat"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+
+setlocal
+copy /b /y "$(TargetDir)..\..\\SwigODAExamples\\NetFramework\OdWriteExSwigMgd\OdWriteEx.sat" "$(TargetDir)OdWriteEx.sat"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+
+setlocal
+copy /b /y "$(TargetDir)..\..\\SwigODAExamples\\NetFramework\OdWriteExSwigMgd\revolvedsurf.sat" "$(TargetDir)revolvedsurf.sat"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+
+setlocal
+copy /b /y "$(TargetDir)..\..\\SwigODAExamples\\NetFramework\OdWriteExSwigMgd\sweptsurf.sat" "$(TargetDir)sweptsurf.sat"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+
+setlocal
+copy /b /y "$(TargetDir)..\..\\SwigODAExamples\\NetFramework\OdWriteExSwigMgd\OdWriteEx.xls.ole" "$(TargetDir)OdWriteEx.xls.ole"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+
+setlocal
+copy /b /y "$(TargetDir)..\..\\SwigODAExamples\\NetFramework\OdWriteExSwigMgd\OdWriteEx.txt" "$(TargetDir)OdWriteEx.txt"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+
+setlocal
+copy /b /y "$(TargetDir)..\..\\SwigODAExamples\\NetFramework\OdWriteExSwigMgd\odwriteex.dgn" "$(TargetDir)odwriteex.dgn"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+
+setlocal
+copy /b /y "$(TargetDir)..\..\\SwigODAExamples\\NetFramework\OdWriteExSwigMgd\OdWriteEx.dwf" "$(TargetDir)OdWriteEx.dwf"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+
+setlocal
+copy /b /y "$(TargetDir)..\..\\SwigODAExamples\\NetFramework\OdWriteExSwigMgd\OdWriteEx XRef.dwg" "$(TargetDir)OdWriteEx XRef.dwg"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+
+setlocal
+copy /b /y "$(TargetDir)..\..\\SwigODAExamples\\NetFramework\OdWriteExSwigMgd\OdWriteEx.jpg" "$(TargetDir)OdWriteEx.jpg"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+
+setlocal
+copy /b /y "$(TargetDir)..\..\\SwigODAExamples\\NetFramework\OdWriteExSwigMgd\odwriteex.pdf" "$(TargetDir)odwriteex.pdf"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+
+setlocal
+copy /b /y "$(TargetDir)..\..\\SwigODAExamples\\NetFramework\OdWriteExSwigMgd\OdWriteEx.xls" "$(TargetDir)OdWriteEx.xls"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+
+setlocal
+copy /b /y "$(TargetDir)..\..\\SwigODAExamples\\NetFramework\OdWriteExSwigMgd\bunny.pcg" "$(TargetDir)bunny.pcg"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+:VCEnd
+</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <BuildDependsOn>
+      $(BuildDependsOn)
+</BuildDependsOn>
+  </PropertyGroup>
+</Project>

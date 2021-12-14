@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55530080210A02DD009C40BC /* libModelerGeometry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5553007F210A02DD009C40BC /* libModelerGeometry.a */; };
+		55530082210A031A009C40BC /* libModelerCommands.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55530081210A031A009C40BC /* libModelerCommands.a */; };
+		55530084210A0324009C40BC /* libFreeType.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55530083210A0324009C40BC /* libFreeType.a */; };
+		55530086210A0330009C40BC /* libRasterProcessor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55530085210A0330009C40BC /* libRasterProcessor.a */; };
+		55530088210A0357009C40BC /* libRxRasterServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55530087210A0357009C40BC /* libRxRasterServices.a */; };
+		5553008A210A03A4009C40BC /* libTD_AcisBuilder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55530089210A03A4009C40BC /* libTD_AcisBuilder.a */; };
+		5553008C210A03B2009C40BC /* libTD_Alloc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5553008B210A03B2009C40BC /* libTD_Alloc.a */; };
+		5553008E210A03D5009C40BC /* libTD_Br.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5553008D210A03D5009C40BC /* libTD_Br.a */; };
+		55530090210A03DE009C40BC /* libTD_BrepRenderer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5553008F210A03DE009C40BC /* libTD_BrepRenderer.a */; };
+		55530092210A03EF009C40BC /* libTD_Db.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55530091210A03EF009C40BC /* libTD_Db.a */; };
+		55530094210A041D009C40BC /* libTD_DbRoot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55530093210A041D009C40BC /* libTD_DbRoot.a */; };
+		55530096210A0427009C40BC /* libTD_ExamplesCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55530095210A0427009C40BC /* libTD_ExamplesCommon.a */; };
+		55530098210A0434009C40BC /* libTD_Ge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55530097210A0434009C40BC /* libTD_Ge.a */; };
+		5553009A210A0437009C40BC /* libTD_Gi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55530099210A0437009C40BC /* libTD_Gi.a */; };
+		5553009C210A043D009C40BC /* libTD_Gs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5553009B210A043D009C40BC /* libTD_Gs.a */; };
+		5553009E210A044C009C40BC /* libTD_Key.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5553009D210A044B009C40BC /* libTD_Key.a */; };
+		555300A0210A0458009C40BC /* libTD_SpatialIndex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5553009F210A0458009C40BC /* libTD_SpatialIndex.a */; };
+		555300A2210A0471009C40BC /* libWinOpenGL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 555300A1210A0471009C40BC /* libWinOpenGL.a */; };
+		555300A4210A0498009C40BC /* libRecomputeDimBlock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 555300A3210A0498009C40BC /* libRecomputeDimBlock.a */; };
+		555300A8210A04B4009C40BC /* libTD_OpenGL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 555300A7210A04B4009C40BC /* libTD_OpenGL.a */; };
+		555300AA210A04D2009C40BC /* libFreeImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 555300A9210A04D2009C40BC /* libFreeImage.a */; };
+		555300AC210A0516009C40BC /* libTD_Zlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 555300AB210A0515009C40BC /* libTD_Zlib.a */; };
+		555300B0210A0976009C40BC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555300AF210A0976009C40BC /* Cocoa.framework */; };
+		555300B7210A0E9E009C40BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555300B6210A0E9D009C40BC /* Foundation.framework */; };
+		555300B8210A0ED2009C40BC /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555300B3210A0A72009C40BC /* AppKit.framework */; };
+		555300B9210A0FFF009C40BC /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CFCDC2E14751BED000F5510 /* OpenGL.framework */; };
+		555300BB210B0EE7009C40BC /* libOdBrepModeler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 555300BA210B0EE7009C40BC /* libOdBrepModeler.a */; };
+		8CBF8AE714765AC400A32B86 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8CBF8AE514765AC400A32B86 /* MainMenu.nib */; };
+		8CFCDC12147518ED000F5510 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CFCDC11147518ED000F5510 /* AppDelegate.m */; };
+		8CFCDC15147518FA000F5510 /* OpenGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8CFCDC14147518FA000F5510 /* OpenGLView.mm */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		5553007F210A02DD009C40BC /* libModelerGeometry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libModelerGeometry.a; path = ../../../../../lib/macOsX_x64_10.13pic/libModelerGeometry.a; sourceTree = "<group>"; };
+		55530081210A031A009C40BC /* libModelerCommands.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libModelerCommands.a; path = ../../../../../lib/macOsX_x64_10.13pic/libModelerCommands.a; sourceTree = "<group>"; };
+		55530083210A0324009C40BC /* libFreeType.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFreeType.a; path = ../../../../../lib/macOsX_x64_10.13pic/libFreeType.a; sourceTree = "<group>"; };
+		55530085210A0330009C40BC /* libRasterProcessor.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRasterProcessor.a; path = ../../../../../lib/macOsX_x64_10.13pic/libRasterProcessor.a; sourceTree = "<group>"; };
+		55530087210A0357009C40BC /* libRxRasterServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRxRasterServices.a; path = ../../../../../lib/macOsX_x64_10.13pic/libRxRasterServices.a; sourceTree = "<group>"; };
+		55530089210A03A4009C40BC /* libTD_AcisBuilder.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTD_AcisBuilder.a; path = ../../../../../lib/macOsX_x64_10.13pic/libTD_AcisBuilder.a; sourceTree = "<group>"; };
+		5553008B210A03B2009C40BC /* libTD_Alloc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTD_Alloc.a; path = ../../../../../lib/macOsX_x64_10.13pic/libTD_Alloc.a; sourceTree = "<group>"; };
+		5553008D210A03D5009C40BC /* libTD_Br.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTD_Br.a; path = ../../../../../lib/macOsX_x64_10.13pic/libTD_Br.a; sourceTree = "<group>"; };
+		5553008F210A03DE009C40BC /* libTD_BrepRenderer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTD_BrepRenderer.a; path = ../../../../../lib/macOsX_x64_10.13pic/libTD_BrepRenderer.a; sourceTree = "<group>"; };
+		55530091210A03EF009C40BC /* libTD_Db.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTD_Db.a; path = ../../../../../lib/macOsX_x64_10.13pic/libTD_Db.a; sourceTree = "<group>"; };
+		55530093210A041D009C40BC /* libTD_DbRoot.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTD_DbRoot.a; path = ../../../../../lib/macOsX_x64_10.13pic/libTD_DbRoot.a; sourceTree = "<group>"; };
+		55530095210A0427009C40BC /* libTD_ExamplesCommon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTD_ExamplesCommon.a; path = ../../../../../lib/macOsX_x64_10.13pic/libTD_ExamplesCommon.a; sourceTree = "<group>"; };
+		55530097210A0434009C40BC /* libTD_Ge.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTD_Ge.a; path = ../../../../../lib/macOsX_x64_10.13pic/libTD_Ge.a; sourceTree = "<group>"; };
+		55530099210A0437009C40BC /* libTD_Gi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTD_Gi.a; path = ../../../../../lib/macOsX_x64_10.13pic/libTD_Gi.a; sourceTree = "<group>"; };
+		5553009B210A043D009C40BC /* libTD_Gs.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTD_Gs.a; path = ../../../../../lib/macOsX_x64_10.13pic/libTD_Gs.a; sourceTree = "<group>"; };
+		5553009D210A044B009C40BC /* libTD_Key.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTD_Key.a; path = ../../../../../lib/macOsX_x64_10.13pic/libTD_Key.a; sourceTree = "<group>"; };
+		5553009F210A0458009C40BC /* libTD_SpatialIndex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTD_SpatialIndex.a; path = ../../../../../lib/macOsX_x64_10.13pic/libTD_SpatialIndex.a; sourceTree = "<group>"; };
+		555300A1210A0471009C40BC /* libWinOpenGL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWinOpenGL.a; path = ../../../../../lib/macOsX_x64_10.13pic/libWinOpenGL.a; sourceTree = "<group>"; };
+		555300A3210A0498009C40BC /* libRecomputeDimBlock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRecomputeDimBlock.a; path = ../../../../../lib/macOsX_x64_10.13pic/libRecomputeDimBlock.a; sourceTree = "<group>"; };
+		555300A7210A04B4009C40BC /* libTD_OpenGL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTD_OpenGL.a; path = ../../../../../lib/macOsX_x64_10.13pic/libTD_OpenGL.a; sourceTree = "<group>"; };
+		555300A9210A04D2009C40BC /* libFreeImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFreeImage.a; path = ../../../../../lib/macOsX_x64_10.13pic/libFreeImage.a; sourceTree = "<group>"; };
+		555300AB210A0515009C40BC /* libTD_Zlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTD_Zlib.a; path = ../../../../../lib/macOsX_x64_10.13pic/libTD_Zlib.a; sourceTree = "<group>"; };
+		555300AD210A0967009C40BC /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
+		555300AF210A0976009C40BC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		555300B3210A0A72009C40BC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
+		555300B6210A0E9D009C40BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		555300BA210B0EE7009C40BC /* libOdBrepModeler.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOdBrepModeler.a; path = ../../../../../lib/macOsX_x64_10.13pic/libOdBrepModeler.a; sourceTree = "<group>"; };
+		555300BC210B200D009C40BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8CBF8AE614765AC400A32B86 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		8CFCDC10147518ED000F5510 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8CFCDC11147518ED000F5510 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8CFCDC13147518FA000F5510 /* OpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView.h; sourceTree = "<group>"; };
+		8CFCDC14147518FA000F5510 /* OpenGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenGLView.mm; sourceTree = "<group>"; };
+		8CFCDC2E14751BED000F5510 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		8D1107310486CEB800E47090 /* OdCocoaViewer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OdCocoaViewer-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* OdCocoaViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OdCocoaViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				555300BB210B0EE7009C40BC /* libOdBrepModeler.a in Frameworks */,
+				555300B8210A0ED2009C40BC /* AppKit.framework in Frameworks */,
+				555300B9210A0FFF009C40BC /* OpenGL.framework in Frameworks */,
+				555300B7210A0E9E009C40BC /* Foundation.framework in Frameworks */,
+				555300B0210A0976009C40BC /* Cocoa.framework in Frameworks */,
+				55530080210A02DD009C40BC /* libModelerGeometry.a in Frameworks */,
+				55530084210A0324009C40BC /* libFreeType.a in Frameworks */,
+				555300A4210A0498009C40BC /* libRecomputeDimBlock.a in Frameworks */,
+				55530082210A031A009C40BC /* libModelerCommands.a in Frameworks */,
+				5553008A210A03A4009C40BC /* libTD_AcisBuilder.a in Frameworks */,
+				5553008C210A03B2009C40BC /* libTD_Alloc.a in Frameworks */,
+				555300AA210A04D2009C40BC /* libFreeImage.a in Frameworks */,
+				555300AC210A0516009C40BC /* libTD_Zlib.a in Frameworks */,
+				55530088210A0357009C40BC /* libRxRasterServices.a in Frameworks */,
+				5553009E210A044C009C40BC /* libTD_Key.a in Frameworks */,
+				55530098210A0434009C40BC /* libTD_Ge.a in Frameworks */,
+				555300A8210A04B4009C40BC /* libTD_OpenGL.a in Frameworks */,
+				555300A0210A0458009C40BC /* libTD_SpatialIndex.a in Frameworks */,
+				55530090210A03DE009C40BC /* libTD_BrepRenderer.a in Frameworks */,
+				5553009A210A0437009C40BC /* libTD_Gi.a in Frameworks */,
+				5553009C210A043D009C40BC /* libTD_Gs.a in Frameworks */,
+				555300A2210A0471009C40BC /* libWinOpenGL.a in Frameworks */,
+				55530086210A0330009C40BC /* libRasterProcessor.a in Frameworks */,
+				55530096210A0427009C40BC /* libTD_ExamplesCommon.a in Frameworks */,
+				5553008E210A03D5009C40BC /* libTD_Br.a in Frameworks */,
+				55530092210A03EF009C40BC /* libTD_Db.a in Frameworks */,
+				55530094210A041D009C40BC /* libTD_DbRoot.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8CFCDC13147518FA000F5510 /* OpenGLView.h */,
+				8CFCDC14147518FA000F5510 /* OpenGLView.mm */,
+				8CFCDC10147518ED000F5510 /* AppDelegate.h */,
+				8CFCDC11147518ED000F5510 /* AppDelegate.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CFCDC2E14751BED000F5510 /* OpenGL.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* OdCocoaViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* OdCocoaViewer */ = {
+			isa = PBXGroup;
+			children = (
+				555300BC210B200D009C40BC /* AppDelegate.m */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = OdCocoaViewer;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8CBF8AE514765AC400A32B86 /* MainMenu.nib */,
+				8D1107310486CEB800E47090 /* OdCocoaViewer-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				555300BA210B0EE7009C40BC /* libOdBrepModeler.a */,
+				555300B6210A0E9D009C40BC /* Foundation.framework */,
+				555300B3210A0A72009C40BC /* AppKit.framework */,
+				555300AF210A0976009C40BC /* Cocoa.framework */,
+				555300AD210A0967009C40BC /* OpenGL.framework */,
+				555300AB210A0515009C40BC /* libTD_Zlib.a */,
+				555300A9210A04D2009C40BC /* libFreeImage.a */,
+				555300A7210A04B4009C40BC /* libTD_OpenGL.a */,
+				555300A3210A0498009C40BC /* libRecomputeDimBlock.a */,
+				555300A1210A0471009C40BC /* libWinOpenGL.a */,
+				5553009F210A0458009C40BC /* libTD_SpatialIndex.a */,
+				5553009D210A044B009C40BC /* libTD_Key.a */,
+				5553009B210A043D009C40BC /* libTD_Gs.a */,
+				55530099210A0437009C40BC /* libTD_Gi.a */,
+				55530097210A0434009C40BC /* libTD_Ge.a */,
+				55530095210A0427009C40BC /* libTD_ExamplesCommon.a */,
+				55530093210A041D009C40BC /* libTD_DbRoot.a */,
+				55530091210A03EF009C40BC /* libTD_Db.a */,
+				5553008F210A03DE009C40BC /* libTD_BrepRenderer.a */,
+				5553008D210A03D5009C40BC /* libTD_Br.a */,
+				5553008B210A03B2009C40BC /* libTD_Alloc.a */,
+				55530089210A03A4009C40BC /* libTD_AcisBuilder.a */,
+				55530087210A0357009C40BC /* libRxRasterServices.a */,
+				55530085210A0330009C40BC /* libRasterProcessor.a */,
+				55530083210A0324009C40BC /* libFreeType.a */,
+				55530081210A031A009C40BC /* libModelerCommands.a */,
+				5553007F210A02DD009C40BC /* libModelerGeometry.a */,
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* OdCocoaViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "OdCocoaViewer" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OdCocoaViewer;
+			productInstallPath = "$(HOME)/Applications";
+			productName = OdCocoaViewer;
+			productReference = 8D1107320486CEB800E47090 /* OdCocoaViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "OdCocoaViewer" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* OdCocoaViewer */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* OdCocoaViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				8CBF8AE714765AC400A32B86 /* MainMenu.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CFCDC12147518ED000F5510 /* AppDelegate.m in Sources */,
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				8CFCDC15147518FA000F5510 /* OpenGLView.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8CBF8AE514765AC400A32B86 /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CBF8AE614765AC400A32B86 /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				HEADER_SEARCH_PATHS = (
+					../../../../Include,
+					../../../../Extensions/ExServices/,
+					../../../../../Kernel/Include,
+					../../../../../Kernel/Extensions/ExServices,
+					../../../../../ThirdParty/activation,
+				);
+				INFOPLIST_FILE = "OdCocoaViewer-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = ../../../../../lib/macOsX_x64_10.13picdbg;
+				OTHER_LDFLAGS = (
+					"-lTD_Zlib",
+					"-lFreeType",
+					"-lFreeImage",
+					"-lTD_Alloc",
+					"-lTD_Root",
+					"-lTD_DbRoot",
+					"-lATEXT",
+					"-lTD_DbCore",
+					"-lRText",
+					"-lTD_Db",
+					"-lTD_Ge",
+					"-lTD_Gs",
+					"-lTD_Gi",
+					"-lTD_SpatialIndex",
+					"-lTD_ExamplesCommon",
+					"-lRecomputeDimBlock",
+					"-lRasterProcessor",
+					"-lWinGLES2",
+					"-lModelerGeometry",
+					"-lModelerCommands",
+					"-lRxRasterServices",
+					"-lFreeImage",
+					"-lTD_Br",
+					"-lTD_BrepRenderer",
+					"-lTD_AcisBuilder",
+					"-lTD_DrawingsExamplesCommon",
+					"-lTrVec",
+					"-lTrBase",
+					"-lTD_BrepBuilder",
+					"-lOdBrepModeler",
+					"-lTD_BrepBuilderFiller",
+					"-llibcrypto",
+					"-lTrGL2",
+					"-lTD_DbEntities",
+					"-lTD_DbIO",
+					"-lISM",
+					"-lWipeOut",
+					"-lAcMPolygonObj15",
+					"-lACCAMERA",
+					"-lSCENEOE",
+					"-lUTF",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = OdCocoaViewer;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				HEADER_SEARCH_PATHS = (
+					../../../../Include,
+					../../../../Extensions/ExServices/,
+					../../../../../Kernel/Include,
+					../../../../../Kernel/Extensions/ExServices,
+					../../../../../ThirdParty/activation,
+				);
+				INFOPLIST_FILE = "OdCocoaViewer-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = ../../../../../lib/macOsX_x64_10.13picdbg;
+				OTHER_LDFLAGS = (
+					"-lTD_Zlib",
+					"-lFreeType",
+					"-lFreeImage",
+					"-lTD_Alloc",
+					"-lTD_Root",
+					"-lTD_DbRoot",
+					"-lATEXT",
+					"-lTD_DbCore",
+					"-lRText",
+					"-lTD_Db",
+					"-lTD_Ge",
+					"-lTD_Gs",
+					"-lTD_Gi",
+					"-lTD_SpatialIndex",
+					"-lTD_ExamplesCommon",
+					"-lRecomputeDimBlock",
+					"-lRasterProcessor",
+					"-lWinGLES2",
+					"-lModelerGeometry",
+					"-lModelerCommands",
+					"-lRxRasterServices",
+					"-lFreeImage",
+					"-lTD_Br",
+					"-lTD_BrepRenderer",
+					"-lTD_AcisBuilder",
+					"-lTD_DrawingsExamplesCommon",
+					"-lTrVec",
+					"-lTrBase",
+					"-lTD_BrepBuilder",
+					"-lOdBrepModeler",
+					"-lTD_BrepBuilderFiller",
+					"-llibcrypto",
+					"-lTrGL2",
+					"-lTD_DbEntities",
+					"-lTD_DbIO",
+					"-lISM",
+					"-lWipeOut",
+					"-lAcMPolygonObj15",
+					"-lACCAMERA",
+					"-lSCENEOE",
+					"-lUTF",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = OdCocoaViewer;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../../../../Extensions/ExServices ../../../../Include";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../../../../Extensions/ExServices ../../../../Include";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "OdCocoaViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "OdCocoaViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

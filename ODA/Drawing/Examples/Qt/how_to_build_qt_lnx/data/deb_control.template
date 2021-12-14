@@ -1,0 +1,17 @@
+Package: %PRODUCT_LC%
+Version: %VERSION%
+Section: non-free/graphics
+Priority: optional
+Architecture: %ARCH%
+Pre-Depends: qt5-default (>= 5.3.0),libqt5opengl5,libqt5opengl5-dev
+%DEPENDS%Installed-Size: %SIZE%
+Maintainer: ODA <oda@opendesign.com>
+Homepage: http://www.opendesign.com/guestfiles
+Description: %PRODUCT% v%VERSION% package created by ODA.
+ %DESCRIPTION%
+ This software was created with using ODA SDK for .dwg, .dwf files and Qt.
+ ODADrawingsExplorer requires qt5-default version 5.3.0 and greater.
+ .
+ * Free to download.
+Changes:
+ .

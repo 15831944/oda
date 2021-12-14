@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\SHelperPage2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\CameraView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\ViewFlagsDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\CompressDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\CellLibraryPreview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\SetRegVars.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\StaticAppSelDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\SHelperPage1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\FindObjectDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\SHelperPage4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\OdaDgnApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\OdaDgnAppDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\StlExportDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\SHelperPage3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\LoadApps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\BgColorTool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\ColorListCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\LineStyleScaleDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\ColorPickerDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\MaterialsEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\LinkArrtDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\Export2PDFDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\CPdfRasterAttachmentDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\CPdfExportSelectViewsDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\ChildFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\ModelerOptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\SummDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\CSHelperSheet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\OdaDgnAppVectorizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\DgnTreeFiller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\OdaDgnTreeView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\CSwitchModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\UserIOConsole.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\DgExGripManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\DgOSnapManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\DgEditorObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\PageSetupDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\FieldViewDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\LevelPropManagerDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\ItemTypeLibsDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\ItemTypeAttachDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\XRefMergeDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\CustomPDFPropertiesDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Kernel\Extensions\ExServices\ExUndoController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Kernel\Extensions\ExServices\ExFileUndoController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\KernelBase\Extensions\alloc\OdAllocOp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\UserIOConsole.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\ModelerOptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\CameraView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\ViewFlagsDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\CompressDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\CellLibraryPreview.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\SHelperPage2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\SHelperPage1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Dgn\Extensions\ExServices\ExDgnHostAppServices.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\CSwitchModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\StlExportDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\OdaDgnAppDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\LoadApps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\BgColorTool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\ColorListCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\LineStyleScaleDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\ColorPickerDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\MaterialsEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\LinkArrtDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\ChildFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\OdaDgnAppVectorizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\FieldViewDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\LevelPropManagerDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\FindObjectDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\Export2PDFDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\CPdfRasterAttachmentDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\CPdfExportSelectViewsDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Dgn\Extensions\ExServices\ExDgnServices.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\SummDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\SHelperPage4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\SHelperPage3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\CSHelperSheet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\SetRegVars.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\PreviewDib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\RegKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\XRefMergeDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\OdaDgnApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\DgEditorObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\DgExGripManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\DgOSnapManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\PageSetupDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\ItemTypeLibsDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\ItemTypeAttachDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\CustomPDFPropertiesDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\res\OdaDgnAppDoc.ico" />
+    <None Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\res\mainfram.bmp" />
+    <None Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\res\mainfram0.bmp" />
+    <None Include="..\..\..\..\..\..\Kernel\Logo\Icon-ODA.ico" />
+    <None Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\res\Toolbar.bmp" />
+    <None Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\res\OdaDgnApp.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OdaDgnApp\OdaDgnApp.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6E80807A-5314-3798-B94C-14F74EB6D754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FF1B111D-1056-33F6-8908-C799A3AAA2A0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

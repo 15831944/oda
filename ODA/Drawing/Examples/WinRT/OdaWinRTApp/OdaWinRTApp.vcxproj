@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{287331bd-a28c-4f78-a72e-fb7b92950532}</ProjectGuid>
+    <RootNamespace>OdaWinRTApp</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <PackageCertificateKeyFile>OdaWinRTApp_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateThumbprint>DF581183171C509CC14C0D1B0AFF34ADBFAE4958</PackageCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>..\..\..\..\ThirdParty\activation;..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\Kernel\Include;..\..\..\Examples\Common;..\..\..\Examples\OdReadEx;..\..\..\Extensions\ExServices;..\..\..\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;_ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE;WINAPI_FAMILY=2;UNICODE;_UNICODE;_VC11;_WINRT;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\..\..\..\lib\vc11_winrtmddbg;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>RxRasterServices.lib;AutoSurfServices.lib;ModelerGeometry.lib;RasterProcessor.lib;TD_BrepRenderer.lib;WinBitmap.lib;TD_ExamplesCommon.lib;TD_DrawingsExamplesCommon.lib;ExFieldEvaluator.lib;RecomputeDimBlock.lib;TD_Br.lib;TD_AcisBuilder.lib;TD_Db.lib;TD_DbRoot.lib;TD_Gs.lib;TD_Gi.lib;TD_Ge.lib;TD_SpatialIndex.lib;TD_Root.lib;TD_Alloc.lib;FreeImage.lib;FreeType.lib;TD_Zlib.lib;kernel32.lib;libcrypto.lib;TD_BrepBuilder.lib;RText.lib;TD_DbEntities.lib;TD_DbIO.lib;TD_DbCore.lib;ATEXT.lib;ISM.lib;WipeOut.lib;AcMPolygonObj15.lib;ACCAMERA.lib;SCENEOE.lib;UTF.lib;TD_BrepBuilderFiller.lib;OdBrepModeler.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>..\..\..\..\ThirdParty\activation;..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\Kernel\Include;..\..\..\Examples\Common;..\..\..\Examples\OdReadEx;..\..\..\Extensions\ExServices;..\..\..\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;_ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE;WINAPI_FAMILY=2;UNICODE;_UNICODE;_VC11;_WINRT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\..\..\..\lib\vc11_winrtmd;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>RxRasterServices.lib;AutoSurfServices.lib;ModelerGeometry.lib;RasterProcessor.lib;TD_BrepRenderer.lib;WinBitmap.lib;TD_ExamplesCommon.lib;TD_DrawingsExamplesCommon.lib;ExFieldEvaluator.lib;RecomputeDimBlock.lib;TD_Br.lib;TD_AcisBuilder.lib;TD_Db.lib;TD_DbRoot.lib;TD_Gs.lib;TD_Gi.lib;TD_Ge.lib;TD_SpatialIndex.lib;TD_Root.lib;TD_Alloc.lib;FreeImage.lib;FreeType.lib;TD_Zlib.lib;kernel32.lib;libcrypto.lib;TD_BrepBuilder.lib;RText.lib;TD_DbEntities.lib;TD_DbIO.lib;TD_DbCore.lib;ATEXT.lib;ISM.lib;WipeOut.lib;AcMPolygonObj15.lib;ACCAMERA.lib;SCENEOE.lib;UTF.lib;TD_BrepBuilderFiller.lib;OdBrepModeler.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="App.xaml.h">
+      <DependentUpon>App.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="MainPage.xaml.h">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="WinRTAppService.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Common\StandardStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Logo.png" />
+    <Image Include="Assets\SmallLogo.png" />
+    <Image Include="Assets\StoreLogo.png" />
+    <Image Include="Assets\SplashScreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.xaml.cpp">
+      <DependentUpon>App.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="MainPage.xaml.cpp">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OdaWinRTApp_TemporaryKey.pfx" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

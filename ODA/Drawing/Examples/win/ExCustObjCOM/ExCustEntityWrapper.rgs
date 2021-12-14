@@ -1,0 +1,27 @@
+HKCR
+{
+	ExCustObjCOM.ExCustEntityWrapper.1 = s 'ExCustEntityWrapper Class'
+	{
+		CLSID = s '{8D0E4AE8-D8B1-4C26-92E9-264D1C9D5C79}'
+	}
+	ExCustObjCOM.ExCustEntityWrapper = s 'ExCustEntityWrapper Class'
+	{
+		CLSID = s '{8D0E4AE8-D8B1-4C26-92E9-264D1C9D5C79}'
+		CurVer = s 'ExCustObjCOM.ExCustEntityWrapper.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {8D0E4AE8-D8B1-4C26-92E9-264D1C9D5C79} = s 'ExCustEntityWrapper Class'
+		{
+			ProgID = s 'ExCustObjCOM.ExCustEntityWrapper.1'
+			VersionIndependentProgID = s 'ExCustObjCOM.ExCustEntityWrapper'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{6F10A128-FA75-4A88-823A-37FB0F16A41D}'
+		}
+	}
+}

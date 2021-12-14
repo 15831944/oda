@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<Properties>
+  <Property Path="" Name="Options" Type="category" />
+    <Property Path="Options" Name="Files" Type="category" />
+      <Property Path="Options/Files" Name="TemplateSettings" VisibleName="Template Settings" Type="category" />
+        <Property Path="Options/Files/TemplateSettings" Name="FileLocation" VisibleName="Drawing Template File Location" Type="folder" Value="" />
+        <Property Path="Options/Files/TemplateSettings" Name="FileNameForQNew" VisibleName="Default Template File Name for QNEW" Type="string" Value="" />
+    <Property Path="Options" Name="Display" Type="category" />
+      <Property Path="Options/Display" Name="WindowElements" VisibleName="Window Elements" Type="category" />
+        <Property Path="Options/Display/WindowElements" Name="TollbarLargeButtons" VisibleName="Use large buttons for Toolbars" Type="bool" Value="false" />
+      <Property Path="Options/Display" Name="ModelBackground" VisibleName="Model Space Background Color" Type="colorref"  Value="0xFFFFFF" />
+      <Property Path="Options/Display" Name="PaperColor" VisibleName="Layout Paper Color" Type="colorref" Value="0xFFFFFF" />
+      <Property Path="Options/Display" Name="PaperBackground" VisibleName="Layout Background Color" Hidden="true" Type="colorref" Value="0xADADAD" />
+      <Property Path="Options/Display" Name="SnapColor" VisibleName="Snap Marker Color" Hidden="true" Type="colorref" Value="0x019801" />
+  <Property Path="" Name="Vars" Type="category" Hidden="true" />
+    <Property Path="Vars" Name="background" Type="ref" Value="Options/Display/ModelBackground" />
+    <Property Path="Vars" Name="papercolor" Type="ref" Value="Options/Display/PaperColor" />
+    <Property Path="Vars" Name="paperbackground" Type="ref" Value="Options/Display/PaperBackground" />
+    <Property Path="Vars" Name="snapcolor" Type="ref" Value="Options/Display/SnapColor" />
+    <Property Path="Vars" Name="meter" VisibleName="Progress Meter Support (0-off,1-on,2-dump)" Type="int" Value="1" />
+    <Property Path="Vars" Name="device" VisibleName="TXV device or empty" Type="string" Value="" />
+    <!--Property Path="Vars" Name="caustic" VisibleName="OpenRL enabled" Type="bool" Value="false"-->
+    <Property Path="Vars" Name="gles" VisibleName="OpenRL GLES2 enabled - unused if device is not empty" Type="bool" Value="true" />
+    <Property Path="Vars" Name="snap" VisibleName="Snapping enabled" Type="bool" Value="true" />
+    <Property Path="Vars" Name="osmode" VisibleName="Object Snap Modes" Hidden="true" Type="int" Value="4133" />
+    <!--Property Path="Vars" Name="autosnap" VisibleName="AutoSnap modes" Hidden="true" Type="int" Value="0" -->
+    <Property Path="Vars" Name="showhiddenprops" Type="bool" Value="false" />
+    <Property Path="Vars" Name="dragmodel2d" VisibleName="Use 2D GS Model For Dragging" Type="bool" Value="false" />
+    <Property Path="Vars" Name="dwggscache" VisibleName="GS Cache for DWG files" Type="bool" Value="true" />
+    <Property Path="Vars" Name="dgngscache" VisibleName="GS Cache for DGN files" Type="bool" Value="true" />
+    <Property Path="Vars" Name="bimgscache" VisibleName="GS Cache for BIM files" Type="bool" Value="true" />
+    <Property Path="Vars" Name="prcgscache" VisibleName="GS Cache for PRC files" Type="bool" Value="true" />
+    <Property Path="Vars" Name="ifcgscache" VisibleName="GS Cache for IFC files" Type="bool" Value="true" />
+    <Property Path="Vars" Name="dwfgscache" VisibleName="GS Cache for DWF files" Type="bool" Value="true" />
+    <Property Path="Vars" Name="ddplotstylepaths" VisibleName="Plot style path" Type="folder" Value="" />
+    <Property Path="Vars" Name="pickadd" VisibleName="PICKADD" Type="bool" Value="true" />
+    <Property Path="Vars" Name="startup" VisibleName="STARTUP" Type="bool" Value="true" />
+    <Property Path="Vars" Name="pickfirst" VisibleName="PICKFIRST for IFC and othres" Type="bool" Value="true" />
+    <Property Path="Vars" Name="tdtemplatepaths" Type="ref" Value="Options/Files/TemplateSettings/FileLocation" />
+    <Property Path="Vars" Name="qnewfilename" Type="ref" Value="Options/Files/TemplateSettings/FileNameForQNew" />
+    <Property Path="Vars" Name="measurement" VisibleName="MEASUREMENT" Type="bool" Value="false" />
+    <Property Path="Vars" Name="largetoolbars" Type="ref" Value="Options/Display/WindowElements/TollbarLargeButtons" />
+    <Property Path="Vars" Name="tdcuipaths" Type="folder" Value="" />
+    <Property Path="Vars" Name="discardbackfaces" VisibleName="DiscardBackFaces" Type="bool" Value="false" />
+    <Property Path="Vars" Name="usevs" VisibleName="UseVisualStyles" Type="bool" Value="true" />
+    <Property Path="Vars" Name="useoverlays" VisibleName="UseOverlays" Type="bool" Value="true" />
+    <Property Path="Vars" Name="proppatternpaths" VisibleName="Property palette XML-pattern files path" Type="folder" Value="" />
+    <Property Path="Vars" Name="propobjlimit" Type="int" Value="200" />
+    <Property Path="Vars" Name="propsrc" VisibleName="Property Palette Sources Flags (16 - Show CDA Weight /8 - Skip None Cat /4 - CDA /2 - RegistredXmlSrc /1 - XmlPattern)" Type="int" Value="15" />
+    <Property Path="Vars" Name="dlgpropsrc" VisibleName="Property Dialog Sources Flags (16 - Show CDA Weight /8 - Skip None Cat /4 - CDA /2 - RegistredXmlSrc /1 - XmlPattern)" Type="int" Value="12" />
+    <Property Path="Vars" Name="optpropsrc" VisibleName="Options Sources Flags (16 - Show CDA Weight /8 - Skip None Cat /4 - CDA)" Type="int" Value="4" />
+    <Property Path="Vars" Name="persistentundo" VisibleName="Persistent Undo Mode" Hidden="true" Type="bool" Value="false" />
+    <Property Path="Vars" Name="persistentundodlg" VisibleName="Persistent Undo Dialog" Hidden="true" Type="bool" Value="true" />
+    <Property Path="Vars" Name="renddump" VisibleName="Render Debug Dumping" Hidden="true" Type="bool" Value="false" />
+    <!-- Property Path="Vars" Name="dgnshowrev" VisibleName="Window Reverse Show Order If Maximazed" Hidden="true" Type="int" Value="-1" /-->
+    <Property Path="Vars" Name="dwfimportall" VisibleName="Import All Layouts" Type="bool" Value="true" />
+    <Property Path="Vars" Name="dwfmodeltolayout" VisibleName="Change Layout Named Model To Paper Layout With DWF Import" Type="bool" Value="false" />
+    <Property Path="Vars" Name="dwfmarkup" VisibleName="Enable Markup Layer" Type="bool" Value="false" />
+    <Property Path="Vars" Name="dwfinkedarea" VisibleName="Force Inked Area for 2D DWF Export" Type="bool" Value="false" />
+    <Property Path="Vars" Name="dwfrasterres" VisibleName="Change DWF Export Max Raster Resolution" Type="int" Value="0" />
+    <Property Path="Vars" Name="dwfmodelext" VisibleName="DWF Export Model Mode To Extents" Type="bool" Value="false" />
+    <Property Path="Vars" Name="dwf3dorthoonly" VisibleName="Show DWF 3D in Ortho Mode Only" Type="bool" Value="false" />
+    <Property Path="Vars" Name="ifcview" VisibleName="IFC Initial View Orientation" Type="string" Value="NEI" />
+    <Property Path="Vars" Name="tigdeb" VisibleName="Show Revision Control Graph Info" Hidden="true" Type="int" Value="0" />
+    <Property Path="Vars" Name="tiggraph" VisibleName="Revision Control Graph Version" Hidden="true" Type="int" Value="-1" />
+    <!-- Property Path="Vars" Name="tigprefix" VisibleName="Use Sspecial Prefixes for Revisil Control" Hidden="true" Type="bool" Value="false" /-->
+    <Property Path="Vars" Name="olemaxlim" VisibleName="Max Raster Resolution to Open Images via OLE" Type="int" Value="2048" />
+</Properties>

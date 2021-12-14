@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Kernel\Extensions\BrepBuilderFiller\Source\BrepBuilderFillerModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Kernel\Extensions\BrepBuilderFiller\Source\BaseMaterialAndColorHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Kernel\Extensions\BrepBuilderFiller\Source\BrepBuilderInitialParams.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\KernelBase\Extensions\alloc\OdAllocOp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Kernel\Extensions\BrepBuilderFiller\Include\BrepBuilderFillerModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Kernel\Extensions\BrepBuilderFiller\Include\BrepBuilderFillerDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Kernel\Extensions\BrepBuilderFiller\Include\BrepBuilderInitialData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Kernel\Extensions\BrepBuilderFiller\Include\IMaterialAndColorHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Kernel\Extensions\BrepBuilderFiller\Include\BaseMaterialAndColorHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Kernel\Extensions\BrepBuilderFiller\Include\BrepBuilderInitialParams.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\..\..\Kernel\Extensions\BrepBuilderFiller\Source\BrepBuilderFiller.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1A32CBEC-C2A0-3095-993C-F243349A55EA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1639121A-EED5-3D66-A2CF-D99E22142183}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

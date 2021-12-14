@@ -1,0 +1,39 @@
+****************************************************************************************
+***                                                                                  ***
+***  required :                                                                      ***
+***      Qt SDK v4.5.3 or later                                                      ***
+***      dynamic configurations TD and TG   : lnxX86_4.4dll (recommended)            ***
+***                                                                                  ***
+***        if DWGGSCACHE=0 and DGNGSCACHE=0 : for lnxX86_4.1dll and lnxX86_4.2dll    ***  
+***        (you should execute OdaQtApp                                              ***
+***         and enter "DWGGSCACHE false"                                             ***
+***         in console to get it)                                                    ***
+***                                                                                  ***
+****************************************************************************************
+
+Copy united content of TD and TG packages into subfolder (named 'trunk' for example) of /_Oda
+
+Set environment vatiables ODADIR (is used as $ODADIR/Core ...)
+  ODADIR=/_Oda/trunk – by default
+
+***    skip the next if you use package from download area        ***
+***                                                               ***
+*** build TD and TG from source for lnxX86_4.4dll configuration : ***
+>cd /_Oda
+>perl ODAProjectFileGenerator.pl   
+>cd /_Oda/CMakePlatforms/lnxX86_4.4dll
+>make
+
+
+*** generate projects and build them for Qt Samples : ***
+>cd /_Oda/Drawing/Examples/Qt/how_to_build_qt_lnx
+  Execute make_td_qt.sh to create makefiles of samples in next directories  
+    /_Oda/bin/<present_configuration>/Examples/Qt
+      >sh make_td_qt.sh 
+  Execute build_td_qt.sh to build via makefile
+    (see log-files in folders /_Oda/bin/lnxX86_4.4dll/Examples/Qt)
+      >sh build_td_qt.sh
+  Execute one of samples
+     > sh run_OdaQtApp.sh 
+     > sh run_OdaFileConverter.sh 
+

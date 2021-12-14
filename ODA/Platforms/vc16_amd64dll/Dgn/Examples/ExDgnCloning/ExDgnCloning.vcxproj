@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4A9339D2-C994-3B41-9CA8-C705A7DECE5C}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ExDgnCloning</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\..\exe\vc16_amd64dll\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ExDgnCloning.dir\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ExDgnCloning_22.5_16</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.tx</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Kernel\Include;..\..\..\..\..\Drawing\Include;..\..\..\..\..\Dgn\include;..\..\..\..\..\Dgn\include\DgModelerGeometry;..\..\..\..\..\Dgn\include\PSToolkit;..\..\..\..\..\Dgn\Examples\ExDgnCloning\..\..\source\Common;..\..\..\..\..\Dgn\Examples\ExDgnCloning\..\..\source\FileIO;..\..\..\..\..\Dgn\Examples\ExDgnCloning\..\..\source\Design;..\..\..\..\..\Dgn\Examples\ExDgnCloning\..\..\source\Elements;..\..\..\..\..\Dgn\Extensions\ExServices;..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;..\..\..\..\..\ThirdParty\tinyxml;..\..\..\..\..\ThirdParty\ZLib;..\..\..\..\..\ThirdParty\oless\ssrw_c\inc;..\..\..\..\..\ThirdParty\oless\ssrw_c;..\..\..\..\..\ThirdParty\FreeImage;..\..\..\..\..\ThirdParty\FreeImage\Source;..\..\..\..\..\ThirdParty\FreeImage\Wrapper\FreeImagePlus;..\..\..\..\..\ThirdParty\FreeImage\Source\LibJPEG;..\..\..\..\..\ThirdParty\FreeImage\Source\LibTIFF4;..\..\..\..\..\ThirdParty\FreeImage\Source\LibPNG;..\..\..\..\..\ThirdParty\freetype\freetype-2.10.4\include;..\..\..\..\..\ThirdParty\freetype\freetype-2.10.4\include\freetype;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;EXDGNCLONING_DLL_EXPORTS;ODA_LINT;Z_PREFIX;RASTER_FREE_IMAGE;FREEIMAGE_LIB;FREETYPE_VER_2_10_4;_TOOLKIT_IN_DLL_;CMAKE_INTDIR="Release";ExDgnCloning_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;EXDGNCLONING_DLL_EXPORTS;ODA_LINT;Z_PREFIX;RASTER_FREE_IMAGE;FREEIMAGE_LIB;FREETYPE_VER_2_10_4;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Release\";ExDgnCloning_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Kernel\Include;..\..\..\..\..\Drawing\Include;..\..\..\..\..\Dgn\include;..\..\..\..\..\Dgn\include\DgModelerGeometry;..\..\..\..\..\Dgn\include\PSToolkit;..\..\..\..\..\Dgn\Examples\ExDgnCloning\..\..\source\Common;..\..\..\..\..\Dgn\Examples\ExDgnCloning\..\..\source\FileIO;..\..\..\..\..\Dgn\Examples\ExDgnCloning\..\..\source\Design;..\..\..\..\..\Dgn\Examples\ExDgnCloning\..\..\source\Elements;..\..\..\..\..\Dgn\Extensions\ExServices;..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;..\..\..\..\..\ThirdParty\tinyxml;..\..\..\..\..\ThirdParty\ZLib;..\..\..\..\..\ThirdParty\oless\ssrw_c\inc;..\..\..\..\..\ThirdParty\oless\ssrw_c;..\..\..\..\..\ThirdParty\FreeImage;..\..\..\..\..\ThirdParty\FreeImage\Source;..\..\..\..\..\ThirdParty\FreeImage\Wrapper\FreeImagePlus;..\..\..\..\..\ThirdParty\FreeImage\Source\LibJPEG;..\..\..\..\..\ThirdParty\FreeImage\Source\LibTIFF4;..\..\..\..\..\ThirdParty\FreeImage\Source\LibPNG;..\..\..\..\..\ThirdParty\freetype\freetype-2.10.4\include;..\..\..\..\..\ThirdParty\freetype\freetype-2.10.4\include\freetype;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Kernel\Include;..\..\..\..\..\Drawing\Include;..\..\..\..\..\Dgn\include;..\..\..\..\..\Dgn\include\DgModelerGeometry;..\..\..\..\..\Dgn\include\PSToolkit;..\..\..\..\..\Dgn\Examples\ExDgnCloning\..\..\source\Common;..\..\..\..\..\Dgn\Examples\ExDgnCloning\..\..\source\FileIO;..\..\..\..\..\Dgn\Examples\ExDgnCloning\..\..\source\Design;..\..\..\..\..\Dgn\Examples\ExDgnCloning\..\..\source\Elements;..\..\..\..\..\Dgn\Extensions\ExServices;..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;..\..\..\..\..\ThirdParty\tinyxml;..\..\..\..\..\ThirdParty\ZLib;..\..\..\..\..\ThirdParty\oless\ssrw_c\inc;..\..\..\..\..\ThirdParty\oless\ssrw_c;..\..\..\..\..\ThirdParty\FreeImage;..\..\..\..\..\ThirdParty\FreeImage\Source;..\..\..\..\..\ThirdParty\FreeImage\Wrapper\FreeImagePlus;..\..\..\..\..\ThirdParty\FreeImage\Source\LibJPEG;..\..\..\..\..\ThirdParty\FreeImage\Source\LibTIFF4;..\..\..\..\..\ThirdParty\FreeImage\Source\LibPNG;..\..\..\..\..\ThirdParty\freetype\freetype-2.10.4\include;..\..\..\..\..\ThirdParty\freetype\freetype-2.10.4\include\freetype;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\..\lib\vc16_amd64dll\TG_ExamplesCommon.lib;TD_ExamplesCommon.lib;TG_Dgn7IO.lib;PSToolkit.lib;TG_ModelerGeometry.lib;TG_Db.lib;tinyxml.lib;TD_Zlib.lib;oless.lib;WinBitmap.lib;TD_Gs.lib;TD_Gi.lib;TD_DbRoot.lib;TD_Ge.lib;TD_SpatialIndex.lib;TD_Root.lib;TD_Alloc.lib;FreeImage.lib;TD_tiff.lib;TD_jpeg.lib;TD_png.lib;FreeType.lib;Secur32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\exe\vc16_amd64dll;..\..\..\..\..\lib\vc16_amd64dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>..\..\..\..\..\lib\vc16_amd64dll\ExDgnCloning.lib</ImportLibrary>
+      <ProgramDataBaseFile>..\..\..\..\..\exe\vc16_amd64dll\ExDgnCloning_22.5_16.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnCloning\ExDgnCloningModule.cpp" />
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnCloning\ExDgnCreateCommands.cpp" />
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnCloning\ExDgnCloneCommands.cpp" />
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnCloning\ExDgnExplodeCommands.cpp" />
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnCloning\ExDgnObject.cpp" />
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnCloning\ExDgnEntity.cpp" />
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnCloning\ExDgnCloningExport.h" />
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnCloning\ExDgnObject.h" />
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnCloning\ExDgnCmdDefs.h" />
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnCloning\ExDgnEntity.h" />
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnCloning\ExDgnCloningModule.h" />
+    <ResourceCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnCloning\ExDgnCloning.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\TG_ExamplesCommon.vcxproj">
+      <Project>{F59DBC45-87FC-3AFA-BE3B-B269141DE129}</Project>
+      <Name>TG_ExamplesCommon</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

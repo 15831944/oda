@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\Reactors\DbgDatabaseReactor.cpp">
+      <Filter>Source Files\Reactors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\Reactors\cmd_setreactor.cpp">
+      <Filter>Source Files\Reactors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\Reactors\DbgTransactionReactor.cpp">
+      <Filter>Source Files\Reactors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\Reactors\DbgObjectReactor.cpp">
+      <Filter>Source Files\Reactors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\Reactors\DbgEventReactor.cpp">
+      <Filter>Source Files\Reactors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\ExCustObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\ExSphere.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\ExEmbeddedSolid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\ExCustEntity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\ExCustObjsModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\DrxDebugCmds.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\CommonTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\ExCreateBreps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\ExModelerCmds.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\Common\ExSelectionUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\ClassFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\Reactors\DbgObjectReactor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\Reactors\DbgDatabaseReactor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\DbCmdMsgDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\ExCustObjExport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\ExCustEntity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\ExCustObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\DbCmdDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\Reactors\DbgEventReactor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\ExSphere.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\ExEmbeddedSolid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\Reactors\DbgTransactionReactor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\ExCustObjsModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\Reactors\DbgReactorOut.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\CommonTests.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\ExCreateBreps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\Common\ExSelectionUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\..\..\Drawing\Examples\ExCustObjs\ExCustObjs.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6E80807A-5314-3798-B94C-14F74EB6D754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FF1B111D-1056-33F6-8908-C799A3AAA2A0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Reactors">
+      <UniqueIdentifier>{EF50A4BA-82BE-3559-95EA-D416F0D6C8FA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

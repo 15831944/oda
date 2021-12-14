@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{350970C8-DECC-3EBD-902B-1CAC74B039D6}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>TD_DgnImport</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\..\exe\vc16_amd64dll\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TD_DgnImport.dir\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TD_DgnImport_22.5_16</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.tx</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\Drawing\Extensions\ExServices;..\..\..\..\..\Dgn\include;..\..\..\..\..\Dgn\Extensions\ExServices;..\..\..\..\..\Kernel\Extensions\BrepBuilderFiller\Include;..\..\..\..\..\Drawing\Include;..\..\..\..\..\Kernel\Include;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;_TOOLKIT_IN_DLL_;CMAKE_INTDIR="Release";TD_DgnImport_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Release\";TD_DgnImport_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\Drawing\Extensions\ExServices;..\..\..\..\..\Dgn\include;..\..\..\..\..\Dgn\Extensions\ExServices;..\..\..\..\..\Kernel\Extensions\BrepBuilderFiller\Include;..\..\..\..\..\Drawing\Include;..\..\..\..\..\Kernel\Include;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\Drawing\Extensions\ExServices;..\..\..\..\..\Dgn\include;..\..\..\..\..\Dgn\Extensions\ExServices;..\..\..\..\..\Kernel\Extensions\BrepBuilderFiller\Include;..\..\..\..\..\Drawing\Include;..\..\..\..\..\Kernel\Include;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>TG_Db.lib;TD_Gs.lib;AcDgnLS.lib;TD_Db.lib;TD_DbRoot.lib;TD_Gi.lib;TD_BrepBuilderFiller.lib;TD_BrepBuilder.lib;TD_Br.lib;TD_Ge.lib;TD_Root.lib;TD_Alloc.lib;RText.lib;TD_DbEntities.lib;TD_DbIO.lib;TD_DbCore.lib;ATEXT.lib;ISM.lib;WipeOut.lib;AcMPolygonObj15.lib;ACCAMERA.lib;SCENEOE.lib;UTF.lib;Secur32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\exe\vc16_amd64dll;..\..\..\..\..\lib\vc16_amd64dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>..\..\..\..\..\lib\vc16_amd64dll\TD_DgnImport.lib</ImportLibrary>
+      <ProgramDataBaseFile>..\..\..\..\..\exe\vc16_amd64dll\TD_DgnImport_22.5_16.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportTables.cpp" />
+    <ClCompile Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportGeneric.cpp" />
+    <ClCompile Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportLS.cpp" />
+    <ClCompile Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportDimensions.cpp" />
+    <ClCompile Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportPatterns.cpp" />
+    <ClCompile Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportContext.cpp" />
+    <ClCompile Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportCommon.cpp" />
+    <ClCompile Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportLine.cpp" />
+    <ClCompile Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportLight.cpp" />
+    <ClCompile Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportArc.cpp" />
+    <ClCompile Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportText.cpp" />
+    <ClCompile Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportLineString.cpp" />
+    <ClCompile Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportSharedCell.cpp" />
+    <ClCompile Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportRasterAttach.cpp" />
+    <ClCompile Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportEllipse.cpp" />
+    <ClCompile Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportMesh.cpp" />
+    <ClCompile Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportXRef.cpp" />
+    <ClCompile Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportComplexShape.cpp" />
+    <ClCompile Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportComplexString.cpp" />
+    <ClCompile Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImport3dObject.cpp" />
+    <ClCompile Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportMultiline.cpp" />
+    <ClCompile Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportDimAssoc.cpp" />
+    <ClCompile Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportTableElement.cpp" />
+    <ClCompile Include="..\..\..\..\..\Dgn\Extensions\ExServices\ExDgnHostAppServices.cpp" />
+    <ResourceCompile Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImport.rc" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImport.h" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportImpl.h" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportCommon.h" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportContext.h" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportPatterns.h" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportDimensions.h" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportLS.h" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportPE.h" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportLine.h" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportLight.h" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportArc.h" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportText.h" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportLineString.h" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportSharedCell.h" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportRasterAttach.h" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportEllipse.h" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportMesh.h" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportBSplineCurve.h" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportOle.h" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportCellHeader.h" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportXRef.h" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportTextNode.h" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportComplexShape.h" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportComplexString.h" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportShape.h" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImport3dObject.h" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportMultiline.h" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportDimAssoc.h" />
+    <ClInclude Include="..\..\..\..\..\Exchange\Imports\DgnImport\DgnImportTableElement.h" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

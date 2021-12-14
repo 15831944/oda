@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<!--
+Warning! Do not edit the contents of this file.
+If you attempt to edit this file using an XML editor, you could lose customization and migration functionality.
+If you need to change information in the customization file, use the Customize User Interface dialog box in the product.
+To access the Customize User Interface dialog box, click the Tools menu > Customize > Interface, or enter CUI on the command line. 
+-->
+<CustSection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FileVersion MajorVersion="0" MinorVersion="5" IncrementalVersion="1" UserVersion="1" />
+  <Header>
+    <CommonConfiguration>
+      <CommonItems>
+        <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+      </CommonItems>
+    </CommonConfiguration>
+    <WorkspaceRoot>
+      <WorkspaceConfigRoot />
+    </WorkspaceRoot>
+  </Header>
+  <MenuGroup Name="ODQ_TOOLBAR_TST_CMDS_TX" DisplayName="ODQ_TOOLBAR_TST_CMDS_TX">
+    <MacroGroup Name="User">
+      <MenuMacro UID="ID_TestUndo">
+        <Macro type="TestPersistentUndo">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_030">Undo...</Name>
+          <Command>^C ^C undo</Command>
+          <HelpString xlate="true" UID="ACAD_1561">Undo</HelpString>
+          <SmallImage Name="qrc:/images/test/tst_undo.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_TestCmdsUndo">UNDO</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_TestRedo">
+        <Macro type="TestPersistentRedo">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_031">Redo...</Name>
+          <Command>^C ^C redo</Command>
+          <HelpString xlate="true" UID="ACAD_1561">Redo</HelpString>
+          <SmallImage Name="qrc:/images/test/tst_redo.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_TestCmdsRedo">REDO</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_TestCommit">
+        <Macro type="TestPersistentCommit">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_032">Commit...</Name>
+          <Command>^C ^C commit</Command>
+          <HelpString xlate="true" UID="ACAD_1561">Commit</HelpString>
+          <SmallImage Name="qrc:/images/test/tst_commit.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_TestCmdsCommit">COMMIT</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_TestUpdate">
+        <Macro type="TestPersistentUpdate">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_033">Update...</Name>
+          <Command>^C ^C update</Command>
+          <HelpString xlate="true" UID="ACAD_1561">Update</HelpString>
+          <SmallImage Name="qrc:/images/test/tst_update.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_TestCmdsUpdate">UNDO</CLICommand>
+        </Macro>
+      </MenuMacro>
+    </MacroGroup>
+    <MenuRoot>
+      <PopMenuRoot />
+      <ToolbarRoot>
+        <Toolbar ToolbarOrient="top" ToolbarVisible="show" xval="0" yval="0" rows="1" UID="ID_TbTestCmds">
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Alias>TB_TESTCMDS</Alias>
+          <Alias>PersistentTransactions</Alias>
+          <Description xlate="true" UID="XLS_0002">Persistent Transactions</Description>
+          <Name xlate="true" UID="XLS_1011">Persistent Transactions</Name>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0001">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <Name xlate="true" UID="XLS_1012">$(if,$(eq,$(getvar,"iscmd(undo)"),1),$(if,$(&gt;,$(strlen,$(getvar,dwgname)),0),,~)Undo,)</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TestUndo" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0002">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <Name xlate="true" UID="XLS_1013">$(if,$(eq,$(getvar,"iscmd(redo)"),1),$(if,$(&gt;,$(strlen,$(getvar,dwgname)),0),,~)Redo,)</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TestRedo" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0003">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <Name xlate="true" UID="XLS_1014">$(if,$(eq,$(getvar,"iscmd(commit)"),1),$(if,$(&gt;,$(strlen,$(getvar,dwgname)),0),,~)Commit,)</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TestCommit" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0004">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <Name xlate="true" UID="XLS_1015">$(if,$(eq,$(getvar,"iscmd(update)"),1),$(if,$(&gt;,$(strlen,$(getvar,dwgname)),0),,~)Update,)</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_TestUpdate" />
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+      </ToolbarRoot>
+    </MenuRoot>
+  </MenuGroup>
+</CustSection>

@@ -1,0 +1,9 @@
+#!/bin/sh
+set -e
+
+for USER in /home/* ; do
+  if test ! -d "$USER/Desktop" ; then continue ; fi
+  cp -f /usr/share/applications/%PRODUCT%_%VERSION%.desktop "$USER/Desktop"
+  chmod 755 "$USER/Desktop/%PRODUCT%_%VERSION%.desktop"
+done
+exit 0

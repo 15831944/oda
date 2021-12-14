@@ -1,0 +1,552 @@
+/////////////////////////////////////////////////////////////////////////////// 
+// Copyright (C) 2002-2021, Open Design Alliance (the "Alliance"). 
+// All rights reserved. 
+// 
+// This software and its documentation and related materials are owned by 
+// the Alliance. The software may only be incorporated into application 
+// programs owned by members of the Alliance, subject to a signed 
+// Membership Agreement and Supplemental Software License Agreement with the
+// Alliance. The structure and organization of this software are the valuable  
+// trade secrets of the Alliance and its suppliers. The software is also 
+// protected by copyright law and international treaty provisions. Application  
+// programs incorporating this software must include the following statement 
+// with their copyright notices:
+//   
+//   This application incorporates Open Design Alliance software pursuant to a license 
+//   agreement with Open Design Alliance.
+//   Open Design Alliance Copyright (C) 2002-2021 by Open Design Alliance. 
+//   All rights reserved.
+//
+// By use of this software, its documentation or related materials, you 
+// acknowledge and accept the above terms.
+///////////////////////////////////////////////////////////////////////////////
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SETLAYOUT_DLG DIALOGEX 0, 0, 128, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Set active layout"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,9,71,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,67,71,50,14
+    LISTBOX         IDC_LAYOUT_LIST,6,5,115,60,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_FIND_DIALOG DIALOGEX 0, 0, 186, 67
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "OdaHoopsDemo"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "Can't find file ""%s"".\nPlease, browse it's location.",IDC_FNAME_STATIC,0,13,185,29
+    PUSHBUTTON      "Browse...",IDC_BROWSE_BTN,7,44,50,14
+    PUSHBUTTON      "Skip",IDC_SKIP_BTN,68,44,50,14
+    PUSHBUTTON      "Skip All",IDC_SKIPALL_BTN,129,44,50,14
+END
+
+IDD_DIRS_DIALOG DIALOGEX 0, 0, 327, 166
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "File Directories"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_DIRS_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,6,6,261,154
+    PUSHBUTTON      "Add",IDC_ADD_BUTTON,271,5,50,14
+    PUSHBUTTON      "Delete",IDC_DEL_BUTTON,271,24,50,14
+    PUSHBUTTON      "Close",IDC_CLOSE_BUTTON,271,44,50,14
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 299, 98
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About OdaHoopsDemo"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "(c) 2018 Open Design Alliance. All rights reserved.",IDC_STATIC,33,53,165,10,SS_NOPREFIX
+    LTEXT           "  OdaHoopsDemo is intended for use by ODA members  ",IDC_STATIC,41,7,165,10
+    LTEXT           "      to evaluate the HOOPS integration with       ",IDC_STATIC,37,18,165,10
+    LTEXT           "           Drawing and DGN SDKs                    ",IDC_STATIC,41,30,165,10
+    DEFPUSHBUTTON   "OK",IDOK,178,65,50,14,WS_GROUP
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""OdaHoopsDemo""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "../../../../Kernel/Logo/Icon-ODA.ico"
+IDR_SIMPLETYPE          ICON                    "Res/OdaHoopsDemoDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "Res/Toolbar.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_ZOOM_TO_EXTENTS
+    BUTTON      ID_ZOOM_TO_WINDOW
+    SEPARATOR
+    BUTTON      ID_ZOOM
+    BUTTON      ID_PAN
+    BUTTON      ID_ORBIT
+    SEPARATOR
+    BUTTON      ID_AXIS_ONOFF
+    SEPARATOR
+    BUTTON      ID_XY_PLANE
+    BUTTON      ID_BOTTOM
+    BUTTON      ID_YZ_PLANE
+    BUTTON      ID_RIGHT
+    BUTTON      ID_XZ_PLANE
+    BUTTON      ID_BACK
+    BUTTON      ID_SW_ISOMETRIC
+    BUTTON      ID_SE_ISOMETRIC
+    BUTTON      ID_NE_ISOMETRIC
+    BUTTON      ID_NW_ISOMETRIC
+    SEPARATOR
+    BUTTON      ID_VIEW_SHADED
+    BUTTON      ID_VIEW_HIDDENLINE
+    BUTTON      ID_VIEW_WIREFRAME
+    SEPARATOR
+    BUTTON      ID_SHOW_LINES
+    BUTTON      ID_SHOW_TEXT
+    SEPARATOR
+    BUTTON      ID_SETBGCOLOR
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "Tools"
+    BEGIN
+        MENUITEM "Load only active layout",     ID_TOOLS_IMPORT_CUR
+        MENUITEM SEPARATOR
+        MENUITEM "Background color...",         ID_SETBGCOLOR
+        MENUITEM "File directories...",         ID_DIRECTORIES
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About OdaHoopsDemo...",        ID_APP_ABOUT
+    END
+END
+
+IDR_SIMPLETYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "Save",                        ID_FILE_SAVE
+        MENUITEM "Save As...",                  ID_FILE_SAVE_AS
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Axis Icon",                   ID_AXIS_ONOFF
+    END
+    POPUP "&Manipulate"
+    BEGIN
+        MENUITEM "&Orbit Camera",               32783
+        MENUITEM "&Zoom Camera",                32784
+        MENUITEM "&Pan Camera",                 32785
+        MENUITEM SEPARATOR
+        MENUITEM "Zoom To &Window",             32786
+        MENUITEM "Zoom To &Extents",            32787
+    END
+    POPUP "Standard Camera"
+    BEGIN
+        MENUITEM "Top View",                    ID_XY_PLANE
+        MENUITEM "Bottom View",                 ID_BOTTOM
+        MENUITEM "Left View",                   ID_YZ_PLANE
+        MENUITEM "Right View",                  ID_RIGHT
+        MENUITEM "Front View",                  32797
+        MENUITEM "Back View",                   ID_BACK
+        MENUITEM SEPARATOR
+        MENUITEM "SW Isometric View",           ID_SW_ISOMETRIC
+        MENUITEM "SE Isometric View",           ID_SE_ISOMETRIC
+        MENUITEM "NE Isometric View",           ID_NE_ISOMETRIC
+        MENUITEM "NW Isometric View",           ID_NW_ISOMETRIC
+    END
+    POPUP "Tools"
+    BEGIN
+        MENUITEM "Load only active layout",     ID_TOOLS_IMPORT_CUR
+        MENUITEM SEPARATOR
+        MENUITEM "Background color...",         ID_SETBGCOLOR
+        MENUITEM "File directories...",         ID_DIRECTORIES
+        MENUITEM "Set visible layout...",       ID_TOOLS_SETLAYOUT
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About OdaHoopsDemo...",        ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+#ifdef _DEBUG
+#define FILE_DESCRIPTION TD_PRODUCT_NAME_S " example: OdaHoopsDemo (Debug)\0"
+#else
+#define FILE_DESCRIPTION TD_PRODUCT_NAME_S " example: OdaHoopsDemo\0"
+#endif
+
+
+#define INTERNAL_NAME "OdaHoopsDemo\0"
+#define ORIGINAL_FILE_NAME    "OdaHoopsDemo.EXE\0"
+#define PRODUCT_NAME_ADDITION TD_PRODUCT_NAME_ADDITION_S
+#define COPYRIGHT_START_YEAR  TD_COPYRIGHT_START_YEAR_S
+
+#include "VersionInfo.rc2"
+
+
+/////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "OdaHoopsDemo"
+    IDR_SIMPLETYPE          "OdaHoopsDemo \nOdaHoopsDemoPart\nOdaHoopsDemoPart\nAll Supported Files (*.dwg,*.dxf,*.dgn,*.hmf,*.hsf)\n.dwg;.dxf;.dgn;.hmf;.hsf\n;\nOdaHoopsDemo.Document.1\nOdaHoopsDemo Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "OdaHoopsDemo"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_WIREFRAME       "Set wireframe mode\nWireframe"
+    ID_VIEW_HIDDENLINE      "Set hidden line mode\nHidden line"
+    ID_VIEW_SHADED          "Set shaded mode\nShaded"
+    ID_RUN_MY_CODE          "Executes your HOOPS code. Add your code in CDWGViewerView::OnRunMyCode function..."
+    ID_ORBIT                "Enable orbit mode\nOrbit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ZOOM                 "Enable zoom mode\nZoom"
+    ID_PAN                  "Enable pan mode\nPan"
+    ID_ZOOM_TO_WINDOW       "Zoom to window\nZoom to window"
+    ID_ZOOM_TO_EXTENTS      "Zoom to drawing extents\nZoom to extents"
+    ID_XY_PLANE             "Set top view\nTop View"
+    ID_YZ_PLANE             "Set left view\nLeft View"
+    ID_XZ_PLANE             "Set front view\nFront View"
+    ID_ISOMETRIC            "Set isometric view\nIsometric"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SETBGCOLOR           "Set background color\nBackground color"
+    ID_DIRECTORIES          "Set directories to find files\nDirectories"
+    ID_NE_ISOMETRIC         "Set northeast isometric view\nNE Isometric"
+    ID_SW_ISOMETRIC         "Set southwest isometric view\nSW Isometric"
+    ID_NW_ISOMETRIC         "Set northwest isometric view\nNW Isometric"
+    ID_SE_ISOMETRIC         "Set southeast isometric view\nSE Isometric"
+    ID_BOTTOM               "Set bottom view\nBottom View"
+    ID_RIGHT                "Set right view\nRight View"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_BACK                 "Set back view\nBack View"
+    ID_AXIS_ONOFF           "Show or hide axis icon\nAxis Icon"
+    ID_TOOLS_IMPORT_CUR     "Laod only active layout or load all layouts\nLoad only active layout"
+    ID_TOOLS_SETLAYOUT      "Select visible layout\nSet visible layout"
+    ID_SHOW_LINES           "Show/Hide curves\nShow/Hide curves"
+    ID_SHOW_TEXT            "Show/Hide texts\nShow/Hide texts"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

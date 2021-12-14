@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Main!</string>
+    <string name="settings">Settings</string>
+    <string name="app_name">OdaAndroidApp</string>
+
+    <string name="folderDepthTitle">Read folders recursefly</string>
+    <string name="folderDepthSummary">If enabled, all files found in subfolders will be shown</string>
+    
+    <string name="category">File Extensions</string>
+    <string name="categoryTitle">Files with selected extensions will be available for opening</string>
+
+   <string name="file_extension_title">File Extensions</string>
+   <string name="file_extension_summary">Files with selected extensions will be available for opening</string>
+   <string-array name="file_extension_entries">
+        <item>.dwg</item>
+        <item>.dxf</item>
+        <item>.dwf</item>
+        <item>.dae</item>
+        <item>.bmp</item>
+        <item>.jpg</item>
+        <item>.png</item>
+        <item>.tiff</item>
+    </string-array>
+
+    <string-array name="file_extension_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="file_extension_default">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="file_extension_entriesA">
+        <item>.dwg</item>
+        <item>.dxf</item>
+        <item>.bmp</item>
+        <item>.jpg</item>
+        <item>.png</item>
+        <item>.tiff</item>
+    </string-array>
+
+    <string-array name="file_extension_valuesA">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="file_extension_defaultA">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+</resources>

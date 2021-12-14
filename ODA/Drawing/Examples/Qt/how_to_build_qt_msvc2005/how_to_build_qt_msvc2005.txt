@@ -1,0 +1,81 @@
+******************************************************************
+***                                                            ***
+***  required :                                                ***
+***      Qt SDK v4.5.3 or later                                ***
+***      dynamic configurations TD and TG : vc8dll or vc10dll  ***
+***                                                            ***
+******************************************************************
+
+You should install Qt-sdk 
+  from Nokia site http://qt.nokia.com/downloads/downloads#lgpl
+  in folder on TD level 
+  (I do it on VM and copy result to me)
+  In my case it is C:\Qt\2010.05\qt
+          ==> qmake.exe and dlls will be patched to C:\Qt\2010.05\qt 
+              – it’s important to project generation
+   (TODO execute installer form hard D with path \_Oda\Qt on VM)
+
+Set environment vatiables ODADIR
+   (right mouse clock on My Computer -> properties -> advanced 
+    -> environment variable -> System variables -> New)
+   (default value (if undefined) is \_Oda\trunk)
+
+Execute on place configure_msvc2005.bat
+    (TODO: fix err with qmake attuning)
+      { see also help of configure.exe :
+         option 
+            -static... Create and use static Qt libraries.
+            -no-plugin-manifests Do not embed manifests in plugins.
+            ...
+         - D:\_Oda\Qt\qt\src\corelib\global\qglobal.h 
+                      -  (generated file) with part of configuration information
+         - D:\_Oda\Qt\qt\src\corelib\global\qglobal.cpp 
+                      - (generated file) contains path to Qt foldares
+         - should be undef QT_NO_STYLE_WINDOWS QT_NO_STYLE_WINDOWSXP - check it: 
+           // see qt/tools/configure/configureapp.cpp ("-qt-style-windows" ...)
+      }
+
+Execute 
+   D:\_Oda\Qt_Distr\make_qt_msvc2005.bat
+      To create vcproj files
+           \_Oda\Qt\qt\src\
+              corelib\corelib.vcproj
+              gui\gui.vcproj
+              opengl\opengl.vcproj
+              script\script.vcproj 
+              xml\xml.vcproj
+              // TODO network\network.vcproj
+              winmain\winmain.vcproj 
+
+Create common solution :
+  open proj-file \_Oda\Qt\qt\src\corelib\corelib.vcproj
+  add other proj-files to solution
+
+Set dependences :
+ QtGuid4 to QtCored4
+ QtOpenGLd4 to QtCored4 and QtGuid4
+ QtScriptd4 to QtCored4
+ QtXmld4 to QtCored4
+ winmain - none
+
+Build via solution for debug and release (rebuild all) 
+	        ATTENTION: REBUILD !!!!
+   full result will be placed in D:\_Oda\Qt\qt\lib 
+
+Execute  
+  copy_qt_to_vc8dlldbg.bat
+  copy_qt_to_vc8dll.bat 
+     to place qt libraries to DD structure
+        \_Oda\trunk\exe\vc8dlldbg
+        \_Oda\trunk\lib\vc8dlldbg
+        \_Oda\trunk\exe\vc8dll
+        \_Oda\trunk\lib\vc8dll
+
+Execute
+  make_td_qt_msvc2005.bat
+  make_tg_qt_msvc2005.bat (advanced for DGN)
+     to create vcprojs of samples in next directories 
+        \_Oda\trunk\Drawing\Platforms\vc8dlldbg\ProjectFiles\Examples\Qt\
+        \_Oda\trunk\Drawing\Platforms\vc8dll\ProjectFiles\Examples\Qt\
+
+

@@ -1,0 +1,645 @@
+/////////////////////////////////////////////////////////////////////////////// 
+// Copyright (C) 2002-2021, Open Design Alliance (the "Alliance"). 
+// All rights reserved. 
+// 
+// This software and its documentation and related materials are owned by 
+// the Alliance. The software may only be incorporated into application 
+// programs owned by members of the Alliance, subject to a signed 
+// Membership Agreement and Supplemental Software License Agreement with the
+// Alliance. The structure and organization of this software are the valuable  
+// trade secrets of the Alliance and its suppliers. The software is also 
+// protected by copyright law and international treaty provisions. Application  
+// programs incorporating this software must include the following statement 
+// with their copyright notices:
+//   
+//   This application incorporates Open Design Alliance software pursuant to a license 
+//   agreement with Open Design Alliance.
+//   Open Design Alliance Copyright (C) 2002-2021 by Open Design Alliance. 
+//   All rights reserved.
+//
+// By use of this software, its documentation or related materials, you 
+// acknowledge and accept the above terms.
+///////////////////////////////////////////////////////////////////////////////
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)\r\n"
+    "LANGUAGE 25, 1\r\n"
+    "#pragma code_page(1251)\r\n"
+    "#include ""res/OpenDGN_Viewer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IOD_TRIANG_DIALOG DIALOGEX 0, 0, 207, 82
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Modeler Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,50,61,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,105,61,50,14
+    EDITTEXT        IDC_EDIT_DEGREE,117,19,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_KNOTS,117,36,40,14,ES_AUTOHSCROLL
+    LTEXT           "Normal tolerance, degree",IDC_STATIC,29,23,82,8
+    LTEXT           "Points between knots, num",IDC_STATIC,23,39,88,8
+END
+
+IDD_ODADGNTREEVIEW DIALOGEX 0, 0, 432, 247
+STYLE DS_SETFONT | WS_CHILD | WS_THICKFRAME
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_DGNTREEVIEW,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,7,141,233
+    CONTROL         "",IDC_ELEMENTDUMPLIST,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,307,7,118,233
+END
+
+IDD_CHOSE_MODEL DIALOGEX 0, 0, 253, 204
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Switch View Groups"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,6,6,240,174
+    PUSHBUTTON      "Accept",IDOK,72,186,48,12
+    PUSHBUTTON      "Cancel",IDCANCEL,138,186,48,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ODADGNTREEVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 425
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+
+    IDD_CHOSE_MODEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 246
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SYMBRSRC DIALOGEX 0, 0, 443, 56
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Specify symbology resource file"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,156,30,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,240,30,50,14
+    EDITTEXT        IDC_PATH,12,12,390,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_GET_PATH,414,12,20,14
+END
+
+IDD_RSRC DIALOGEX 0, 0, 443, 56
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Specify the main default resource file"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,156,30,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,240,30,50,14
+    EDITTEXT        IDC_PATH,12,12,390,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_GET_PATH,414,12,20,14
+END
+
+IDD_FIND_DLG DIALOG 0, 0, 186, 61
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Find object"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Enter handle of object to find:",IDC_STATIC,7,7,125,8
+    EDITTEXT        IDC_EDIT1,7,19,172,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,7,40,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,40,50,14
+END
+
+IDD_LOAD_APPS DIALOGEX 0, 0, 320, 110
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Load/Unload Applications"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Load",IDC_LOAD_APP,7,88,50,14
+    PUSHBUTTON      "Unload",IDC_UNLOAD_APP,68,88,50,14
+    DEFPUSHBUTTON   "OK",IDOK,263,88,50,14
+    LISTBOX         IDC_APPS_LIST,7,7,306,74,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+END
+
+IDD_STATIC_APPS DIALOGEX 0, 0, 239, 161
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Statically Linked Application"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Select",IDOK,119,143,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,185,143,50,14
+    CONTROL         "List1",IDC_APPLIST,"SysListView32",LVS_LIST | LVS_SORTASCENDING | WS_BORDER | WS_TABSTOP,4,4,231,133,WS_EX_CLIENTEDGE
+END
+
+IDD_FASTFONT DIALOGEX 0, 0, 227, 56
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Specify the name of the default RSC font"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,54,30,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,120,30,50,14
+    EDITTEXT        IDC_PATH,12,12,204,14,ES_AUTOHSCROLL
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 288, 99
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About OpenDGN_Viewer"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "OpenDGN_Viewer sample application", IDC_STATIC, 47, 31, 150, 8, SS_NOPREFIX
+    ICON            IDB_TEIGHA_BASE_BMP,IDC_STATIC,47, 10, 88, 14, SS_REALSIZEIMAGE,WS_EX_TRANSPARENT
+    LTEXT           "Copyright (C):", IDC_INF_COPYRIGHT, 47, 44, 165, 8
+    LTEXT           "Based on:", IDC_STATIC, 47, 57, 104, 8
+    LTEXT           "lib", IDC_INF_LIBRARY, 81, 58, 165, 8
+    DEFPUSHBUTTON   "OK", IDOK, 106, 77, 70, 14, WS_GROUP
+END
+
+IDD_SUMMINFO DIALOG 0, 0, 256, 250
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Summary Info"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,84,227,86,16
+    CONTROL         "List2",IDC_SUMMINFO_LIST,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,3,7,246,214
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        RIGHTMARGIN, 273
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_SUMMINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "../../../../Kernel/Logo/Icon-ODA.ico"
+IDR_OPENDGN_VIEWER_TYPE ICON                    "res/OpenDGN_ViewerDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res/Toolbar.bmp"
+IDR_VECTORIZER          BITMAP                  "res/mainfram.bmp"
+IDB_TEIGHA_BASE_BMP     ICON                    "../../../../Kernel/Logo/Logo-ODA-01.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    SEPARATOR
+    BUTTON      ID_SWITCH_MODEL
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_VECTORIZER TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_VIEW_ZOOM_WINDOW
+    BUTTON      ID_VIEW_ZOOMIN
+    BUTTON      ID_VIEW_ZOOMOUT
+    BUTTON      ID_VIEW_ZOOMEXTENTS
+    BUTTON      ID_VIEW_PAN
+    BUTTON      ID_VIEW_3DORBIT
+    BUTTON      ID_2DWIREFRAME
+    BUTTON      ID_3DWIREFRAME
+    BUTTON      ID_HIDDEN
+    BUTTON      ID_FLAT_SHADED
+    BUTTON      ID_GOURAUD_SHADED
+    BUTTON      ID_FLAT_SHADED_WITH_EDGES
+    BUTTON      ID_GOURAUD_SHADED_EDGES_ON
+    BUTTON      ID_VIEW1
+    BUTTON      ID_VIEW2
+    BUTTON      ID_VIEW3
+    BUTTON      ID_VIEW4
+    BUTTON      ID_VIEW5
+    BUTTON      ID_VIEW6
+    BUTTON      ID_VIEW7
+    BUTTON      ID_VIEW8
+    SEPARATOR
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "Vectori&ze"
+    BEGIN
+        MENUITEM "Win&DirectX.txv",             ID_VECTORIZE_WINDIRECTX
+        MENUITEM "Win&GDI.txv",                 ID_VECTORIZE_WINGDI
+        MENUITEM "Win&OpenGL.txv",              ID_VECTORIZE_WINOPENGL
+    END
+    POPUP "&Tools"
+    BEGIN
+        POPUP "Set RegVars"
+        BEGIN
+            MENUITEM "MS_SYMBRSRC...",              ID_SETREGVARS_MS_SYMBRSRC
+            MENUITEM "MS_RSRC...",                  ID_SETREGVARS_MS_RSRC
+            MENUITEM "FAST_FONT...",                ID_SETREGVARS_FAST_FONT
+        END
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About OpenDGNViewer...",     ID_APP_ABOUT
+    END
+END
+
+IDR_OPENDGN_VIEWER_TYPE MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "Recent &File",                ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Summary Info",                ID_VIEW_SUMMINFO
+        MENUITEM "Set Active &View Group ...",  ID_SWITCH_MODEL
+    END
+    POPUP "Vectori&ze"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "Win&DirectX.txv",             ID_VECTORIZE_WINDIRECTX
+        MENUITEM "Win&GDI.txv",                 ID_VECTORIZE_WINGDI
+        MENUITEM "Win&OpenGL.txv",              ID_VECTORIZE_WINOPENGL
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About OpenDGN_Viewer...",    ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    ID_VIEW1                "View 1\nView 1"
+    ID_VIEW2                "View 2\nView 2"
+    ID_VIEW3                "View 3\nView 3"
+    ID_VIEW4                "View 4\nView 4"
+    ID_VIEW5                "View 5\nView 5"
+    ID_VIEW6                "View 6\nView 6"
+    ID_VIEW7                "View 7\nView 7"
+    ID_VIEW8                "View 8\nView 8"
+    ID_VIEWS                "Reset toolbar"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "OpenDGNViewer"
+    IDR_OPENDGN_VIEWER_TYPE "\nOpenDGNViewer\nOpenDGNViewer\n\n\nOpenDGNViewerdll.Document\nOpenDGNViewer.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "OpenDGN_Viewer"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VECTORIZE            "Vectorize active model (via current device)\nVectorize"
+    ID_VIEW_ZOOM_WINDOW     "Zoom window\nZoom window"
+    ID_VIEW_ZOOMIN          "Zoom in\nZoom in"
+    ID_VIEW_ZOOMOUT         "Zoom out\nZoom out"
+    ID_VIEW_ZOOMEXTENTS     "Zoom to extents\nZoom to extents"
+    ID_VIEW_PAN             "Pan view\nPan view"
+    ID_VIEW_3DORBIT         "3d Orbit\n3d Orbit"
+    ID_VIEWER_REGEN         "Regenerates all the geometry\nRegen all"
+    ID_2DWIREFRAME          "2D Wireframe\n2D Wireframe"
+    ID_3DWIREFRAME          "3D wireframe\n3D wireframe"
+    ID_HIDDEN               "Hidden\nHidden"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FLAT_SHADED          "Flat shaded\nFlat shaded"
+    ID_GOURAUD_SHADED       "Gouraud shaded\nGouraud shaded"
+    ID_FLAT_SHADED_WITH_EDGES "Flat shaded with edges\nFlat shaded with edges"
+    ID_GOURAUD_SHADED_EDGES_ON 
+                            "Gouraud shaded, edges on\nGouraud shaded, edges on"
+    ID_SETREGVARS_MS_SYMBRSRC "Specifies a symbology resource file"
+    ID_SETREGVARS_MS_RSRC   "Specifies main default resource file"
+END
+
+STRINGTABLE
+BEGIN
+    ID_SETREGVARS_FAST_FONT "Specifies the name of the default RSC font"
+    ID_VECTORIZE_ADDVECTORIZERDLL "Add Vectorizer\nAdd Vectorizer"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_EXPORT_SVG      "Export the active document to SVG\nExport To Svg"
+    ID_FILE_EXPORT_HOOPS    "Export to HOOPS\nExport To HOOPS"
+    ID_FILE_EXPORT_PDF      "Export to PDF\nExport To PDF"
+    ID_SWITCH_MODEL         "Set active view group\nSet active view group"
+    ID_FILE_STL             "Export single element to STL\nExport To Stl"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+#ifdef _DEBUG
+#define FILE_DESCRIPTION TG_PRODUCT_NAME_S " example: OpenDGN_Viewer Application (Debug)"
+#else
+#define FILE_DESCRIPTION TG_PRODUCT_NAME_S " example: OpenDGN_Viewer Application"
+#endif
+
+#define INTERNAL_NAME "OpenDGN_Viewer\0"
+#define ORIGINAL_FILE_NAME    "OpenDGN_Viewer.exe\0"
+
+#include "DgVersionInfo.rc2"
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE 25, 1
+#pragma code_page(1251)
+#include "res\OpenDGN_Viewer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

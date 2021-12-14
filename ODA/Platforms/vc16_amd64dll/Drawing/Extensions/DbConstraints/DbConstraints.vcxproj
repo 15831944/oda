@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B3B0E16F-A846-35D6-AF03-1F86002AF3C3}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>DbConstraints</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\..\exe\vc16_amd64dll\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">DbConstraints.dir\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">DbConstraints_22.5_16</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.tx</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Kernel\Include;..\..\..\..\..\Kernel\DevInclude;..\..\..\..\..\Kernel\DevInclude\root;..\..\..\..\..\Kernel\DevInclude\DbRoot;..\..\..\..\..\Drawing\Include;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;TD_DBCONSTRAINTS_DLL_EXPORTS;_TOOLKIT_IN_DLL_;CMAKE_INTDIR="Release";DbConstraints_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;TD_DBCONSTRAINTS_DLL_EXPORTS;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Release\";DbConstraints_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Kernel\Include;..\..\..\..\..\Kernel\DevInclude;..\..\..\..\..\Kernel\DevInclude\root;..\..\..\..\..\Kernel\DevInclude\DbRoot;..\..\..\..\..\Drawing\Include;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Kernel\Include;..\..\..\..\..\Kernel\DevInclude;..\..\..\..\..\Kernel\DevInclude\root;..\..\..\..\..\Kernel\DevInclude\DbRoot;..\..\..\..\..\Drawing\Include;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>TD_DynBlocks.lib;TD_Db.lib;TD_DbRoot.lib;TD_Ge.lib;TD_Root.lib;TD_Alloc.lib;TD_3DSolidHistory.lib;RText.lib;TD_DbEntities.lib;TD_DbIO.lib;TD_DbCore.lib;ATEXT.lib;ISM.lib;WipeOut.lib;AcMPolygonObj15.lib;ACCAMERA.lib;SCENEOE.lib;UTF.lib;Secur32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\exe\vc16_amd64dll;..\..\..\..\..\lib\vc16_amd64dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>..\..\..\..\..\lib\vc16_amd64dll\DbConstraints.lib</ImportLibrary>
+      <ProgramDataBaseFile>..\..\..\..\..\exe\vc16_amd64dll\DbConstraints_22.5_16.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocEdgePersSubentId.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbConstraints.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\ModuleReactor.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssoc2dConstraintGroup.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocValueProviderPE.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocDimDependencyBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocVariable.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedGeometry.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocManager.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocNetwork.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocAction.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocActionParam.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayModifyActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayCommonParameters.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayPathParameters.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayPolarParameters.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayRectangularParameters.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayItem.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayParameters.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocParamBasedActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocDimDependencyBodyBase.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocMLeaderActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocRotatedDimActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocAlignedDimActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssoc3PointAngularDimActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocOrdinateDimActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbBlockParameterDependencyBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocGeomDependency.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocDependency.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdExplicitConstr.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocValueDependency.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocDependencyBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdImplicitConstr.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstraintGroupNode.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocPersSubentId.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdGeomConstraint.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocLinePersSubentIdPE.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocCurvePersSubentIdPE.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocDependencyPE.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocEllArcPersSubentIdPE.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocXLinePersSubentIdPE.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocPointPersSubentIdPE.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocRayPersSubentIdPE.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocPersSubentIdPE.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocCirclePersSubentIdPE.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocArcPersSubentIdPE.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocSplinePersSubentIdPE.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocPolylinePersSubentIdPE.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocBlockReferncePersSubentIdPE.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocNetCloneCtx.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocNetworkDeepCloneReactor.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocNetworkLongTransactionReactor.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbSmartCenterActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbSmartCenterActionBodyBase.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbSmartCenterObjectsParameters.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocViewPortPersSubentIdPE.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbCenterLineActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbCenterMarkActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocSurfaceActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocLoftedSurfaceActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocBlendSurfaceActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocEdgeChamferActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocEdgeFilletActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocExtendSurfaceActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocExtrudedSurfaceActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocNetworkSurfaceActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocPatchSurfaceActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocPlaneSurfaceActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocRevolvedSurfaceActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocSweptSurfaceActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocTrimSurfaceActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocRestoreEntityStateActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocSurfacesParameters.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocFilletSurfaceActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocOffsetSurfaceActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssoc3dSolidPersSubentIdPE.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocSurfacePersSubentIdPE.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocTextPersSubentIdPE.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdCompositeConstraintImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdAngleConstraintImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocVariable.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdHelpParameterImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedEllipseImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedBoundedEllipseImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\AssocActionPE.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdGeomConstraintImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdParallelConstraintImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedPointImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedLineImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedRigidSetImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedGeometryImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedCircleImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdRadiusDiameterConstraintImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdExplicitConstraintImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedSplineImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedCurveImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedBoundedLineImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssoc2dConstraintGroup.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocNetwork.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\Od3PointAngleConstraintImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedArcImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstraintGroupNodeImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedImplicitPointImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocAction.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocActionParam.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocArrayParameters.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedConstructionLineImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDistanceConstraintImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocDependency.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocGeomDependency.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocValueDependency.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpCenterMarkActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpCenterLineActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpSmartCenterActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpSmartCenterObjectsParameters.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocMLeaderActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocRotatedDimActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocAlignedDimActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssoc3PointAngularDimActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocOrdinateDimActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocExtrudedSurfaceActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocRestoreEntityStateActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocSurfacesParameters.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocBlendSurfaceActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocFilletSurfaceActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocSweptSurfaceActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocRevolvedSurfaceActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocOffsetSurfaceActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocExtendSurfaceActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocPatchSurfaceActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocPathBasedSurfaceActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocLoftedSurfaceActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocNetworkSurfaceActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocPlaneSurfaceActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocTrimSurfaceActionBody.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbEvalVariant.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdExpression.cpp" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocEdgePersSubentId.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocManager.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocNetwork.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocPersSubentId.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocValueProviderPE.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdGeomConstraint.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocDependencyBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdImplicitConstr.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocValueDependency.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssoc2dConstraintGroup.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocGeomDependency.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbConstraintsExports.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstraintGroupNode.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocVariable.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdExplicitConstr.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocDimDependencyBodyBase.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbBlockParameterDependencyBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocGlobal.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocAction.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocActionParam.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayModifyActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayCommonParameters.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayPathParameters.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayPolarParameters.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayRectangularParameters.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayItem.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocArrayParameters.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocParamBasedActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedGeometry.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocDimDependencyBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocDependency.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocMLeaderActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocRotatedDimActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocAlignedDimActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssoc3PointAngularDimActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocOrdinateDimActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocLinePersSubentIdPE.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocPointPersSubentIdPE.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocEllArcPersSubentIdPE.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocCurvePersSubentIdPE.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocRayPersSubentIdPE.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocXLinePersSubentIdPE.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocDependencyPE.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocPersSubentIdPE.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocCirclePersSubentIdPE.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocSplinePersSubentIdPE.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocArcPersSubentIdPE.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocSurfaceActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocLoftedSurfaceActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocBlendSurfaceActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocEdgeChamferActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocEdgeFilletActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocExtendSurfaceActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocExtrudedSurfaceActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocNetworkSurfaceActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocPatchSurfaceActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocPlaneSurfaceActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocRevolvedSurfaceActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocSweptSurfaceActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocTrimSurfaceActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbSmartCenterActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbSmartCenterActionBodyBase.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbSmartCenterObjectsParameters.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocBlockReferncePersSubentIdPE.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocViewPortPersSubentIdPE.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbCenterLineActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbCenterMarkActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocRestoreEntityStateActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocSurfacesParameters.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocFilletSurfaceActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbAssocOffsetSurfaceActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssoc3dSolidPersSubentIdPE.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocSurfacePersSubentIdPE.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDbAssocTextPersSubentIdPE.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdHelpParameterImpl.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedBoundedEllipseImpl.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdAngleConstraintImpl.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdCompositeConstraintImpl.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedArcImpl.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedLineImpl.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedEllipseImpl.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedCurveImpl.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\AssocActionPE.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocNetwork.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedImplicitPointImpl.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocVariable.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedBoundedLineImpl.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedSplineImpl.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedCircleImpl.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdGeomConstraintImpl.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstraintGroupNodeImpl.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocAction.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocActionParam.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocArrayParameters.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedGeometryImpl.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdRadiusDiameterConstraintImpl.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdDistanceConstraintImpl.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssoc2dConstraintGroup.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdParallelConstraintImpl.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\Od3PointAngleConstraintImpl.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedPointImpl.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdExplicitConstraintImpl.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedConstructionLineImpl.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\OdConstrainedRigidSetImpl.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocValueDependency.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocGeomDependency.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocDependency.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpCenterMarkActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpCenterLineActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpSmartCenterActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpSmartCenterObjectsParameters.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocMLeaderActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocRotatedDimActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocAlignedDimActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssoc3PointAngularDimActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocOrdinateDimActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocExtrudedSurfaceActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocRestoreEntityStateActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocSurfacesParameters.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocBlendSurfaceActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocFilletSurfaceActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocSweptSurfaceActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocRevolvedSurfaceActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocOffsetSurfaceActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocExtendSurfaceActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocPatchSurfaceActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocPathBasedSurfaceActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocLoftedSurfaceActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocNetworkSurfaceActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocPlaneSurfaceActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbImpAssocTrimSurfaceActionBody.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\DevInclude\DbRoot\OdDbStub.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbEvalVariant.h" />
+    <ResourceCompile Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbConstraints.rc" />
+    <None Include="..\..\..\..\..\Drawing\Extensions\DbConstraints\DbConstraints.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

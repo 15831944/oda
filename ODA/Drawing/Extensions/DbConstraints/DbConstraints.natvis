@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+  <Type Name="OdDbAssocAction">
+    <DisplayString>{{ AssocAction, {((OdDbObjectId*)(((char*)m_pImpl)+32))->m_Id->m_handle} }</DisplayString>
+    <Expand>
+      <ExpandedItem>m_pImpObj</ExpandedItem>
+    </Expand>
+  </Type>
+  <Type Name="OdDbAssocNetwork">
+    <DisplayString>{{ AssocNetwork, {((OdDbObjectId*)(((char*)m_pImpl)+32))->m_Id->m_handle} }</DisplayString>
+    <Expand>
+      <ExpandedItem>m_pImpObj</ExpandedItem>
+    </Expand>
+  </Type>
+  <Type Name="OdDbAssocActionBody">
+    <DisplayString>{{ AssocActionBody, {((OdDbObjectId*)(((char*)m_pImpl)+32))->m_Id->m_handle} }</DisplayString>
+    <Expand>
+      <ExpandedItem>m_pImpObj</ExpandedItem>
+    </Expand>
+  </Type>
+  <Type Name="OdDbAssocDependency">
+    <DisplayString>{{ AssocDependency, {((OdDbObjectId*)(((char*)m_pImpl)+32))->m_Id->m_handle}}</DisplayString>
+    <Expand>
+      <ExpandedItem>m_pImpObj</ExpandedItem>
+    </Expand>
+  </Type>
+  <Type Name="OdDbAssocDependencyBody">
+    <DisplayString>{{ AssocDependencyBody, {((OdDbObjectId*)(((char*)m_pImpl)+32))->m_Id->m_handle} }</DisplayString>
+    <Expand>
+      <ExpandedItem>m_pImpObj</ExpandedItem>
+    </Expand>
+  </Type>
+</AutoVisualizer>

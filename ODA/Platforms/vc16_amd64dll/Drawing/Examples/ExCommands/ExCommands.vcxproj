@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EE36475D-F4F8-37EB-9903-E0E0E42F2446}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ExCommands</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\..\exe\vc16_amd64dll\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ExCommands.dir\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ExCommands_22.5_16</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.tx</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Drawing\Extensions\DbConstraints;..\..\..\..\..\Kernel\Exports\RasterExport\Source;..\..\..\..\..\Drawing\Examples\Common;..\..\..\..\..\Drawing\Include;..\..\..\..\..\Kernel\Include;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;EXCOMMANDS_DLL_EXPORTS;ODA_LINT;_TOOLKIT_IN_DLL_;CMAKE_INTDIR="Release";ExCommands_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;EXCOMMANDS_DLL_EXPORTS;ODA_LINT;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Release\";ExCommands_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Drawing\Extensions\DbConstraints;..\..\..\..\..\Kernel\Exports\RasterExport\Source;..\..\..\..\..\Drawing\Examples\Common;..\..\..\..\..\Drawing\Include;..\..\..\..\..\Kernel\Include;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Drawing\Extensions\DbConstraints;..\..\..\..\..\Kernel\Exports\RasterExport\Source;..\..\..\..\..\Drawing\Examples\Common;..\..\..\..\..\Drawing\Include;..\..\..\..\..\Kernel\Include;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\..\lib\vc16_amd64dll\DbConstraints.lib;TD_DbRoot.lib;TD_Db.lib;TD_Gi.lib;TD_Ge.lib;TD_Root.lib;TD_Alloc.lib;..\..\..\..\..\lib\vc16_amd64dll\AcIdViewObj.lib;ws2_32.lib;crypt32.lib;TD_DynBlocks.lib;TD_3DSolidHistory.lib;RText.lib;TD_DbEntities.lib;TD_DbIO.lib;TD_DbCore.lib;ATEXT.lib;ISM.lib;WipeOut.lib;AcMPolygonObj15.lib;ACCAMERA.lib;SCENEOE.lib;UTF.lib;Secur32.lib;TD_Db.lib;TD_Gi.lib;TD_Ge.lib;TD_Root.lib;TD_Alloc.lib;RText.lib;TD_DbEntities.lib;TD_DbIO.lib;TD_DbCore.lib;ATEXT.lib;ISM.lib;WipeOut.lib;AcMPolygonObj15.lib;ACCAMERA.lib;SCENEOE.lib;UTF.lib;Secur32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\exe\vc16_amd64dll;..\..\..\..\..\lib\vc16_amd64dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>..\..\..\..\..\lib\vc16_amd64dll\ExCommands.lib</ImportLibrary>
+      <ProgramDataBaseFile>..\..\..\..\..\exe\vc16_amd64dll\ExCommands_22.5_16.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExCommandsModule.h" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExCommandsModule.cpp" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExCommandsUtils.h" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExCommandsUtils.cpp" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\ExCommands\DbCmdDef.h" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExLine.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExCircle.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExText.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExInserRaster.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExSphere.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExBox.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExTransform.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExTxtExp.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExArray.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExCenterObjects.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExArrayEdit.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExIsolate.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExFileCommands.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\cmd_purge.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExExportLayout.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExBlockIcon.cpp" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\RasterExport\Source\GetRasterFilePath.h" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\GeoMarkPosition.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExMLeader.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExAlignedDimension.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExRadialDimension.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExArcDimension.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\Ex2LineAngularDimension.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExDiametricDimension.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\Ex3PointAngularDimensionPtr.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExDigitalSignatureCommands.cpp" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExClipUnderlayCommand.h" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExClipUnderlayCommand.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExtrudeCommand.cpp" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\Common\ExSelectionUtils.h" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\Common\ExSelectionUtils.cpp" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExCreateSurfaceCommand.h" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExCreateSurfaceCommand.cpp" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExToPolylineCommand.h" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExToPolylineCommand.cpp" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExConvToMeshCommand.h" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExConvToMeshCommand.cpp" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExExtrudeConnectedFacesSubDMesh.h" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExExtrudeConnectedFacesSubDMesh.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\StdAfx.cpp" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\ExCommands\StdAfx.h" />
+    <ResourceCompile Include="..\..\..\..\..\Drawing\Examples\ExCommands\ExCommands.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Extensions\IdViewObjectEnablers\AcIdViewObj.vcxproj">
+      <Project>{E8A57042-98CE-3740-9F98-B42D1C940CF8}</Project>
+      <Name>AcIdViewObj</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Extensions\DbConstraints\DbConstraints.vcxproj">
+      <Project>{B3B0E16F-A846-35D6-AF03-1F86002AF3C3}</Project>
+      <Name>DbConstraints</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

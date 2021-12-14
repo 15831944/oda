@@ -1,0 +1,296 @@
+<?xml version="1.0"?>
+<!--
+Warning! Do not edit the contents of this file.
+If you attempt to edit this file using an XML editor, you could lose customization and migration functionality.
+If you need to change information in the customization file, use the Customize User Interface dialog box in the product.
+To access the Customize User Interface dialog box, click the Tools menu > Customize > Interface, or enter CUI on the command line. 
+-->
+<CustSection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FileVersion MajorVersion="0" MinorVersion="3" IncrementalVersion="2" UserVersion="1" />
+  <Header>
+    <CommonConfiguration>
+      <CommonItems>
+        <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+      </CommonItems>
+    </CommonConfiguration>
+    <WorkspaceRoot>
+      <WorkspaceConfigRoot />
+    </WorkspaceRoot>
+  </Header>
+  <MenuGroup Name="ACAD_ODQ_TOOLBAR_TSTCMDS_TX">
+    <MacroGroup Name="NEWGROUP" />
+    <MenuRoot>
+      <AcceleratorRoot />
+      <OverrideRoot />
+      <MouseButtonRoot>
+        <ButtonGroup UID="BGU_0001">
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Alias>ALTERNATE AUX1</Alias>
+          <ButtonItem BlankLine="true" UID="BIU_0001">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0002">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0003">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0004">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0005">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0006">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0007">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+        </ButtonGroup>
+        <ButtonGroup UID="BGU_0002">
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Alias>ALTERNATE AUX2</Alias>
+          <ButtonItem BlankLine="true" UID="BIU_0008">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0009">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0010">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0011">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0012">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0013">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0014">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+        </ButtonGroup>
+        <ButtonGroup UID="BGU_0003">
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Alias>ALTERNATE AUX3</Alias>
+          <ButtonItem BlankLine="true" UID="BIU_0015">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0016">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0017">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0018">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0019">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0020">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0021">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+        </ButtonGroup>
+        <ButtonGroup UID="BGU_0004">
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Alias>ALTERNATE AUX4</Alias>
+          <ButtonItem BlankLine="true" UID="BIU_0022">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0023">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0024">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0025">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0026">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0027">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+          <ButtonItem BlankLine="true" UID="BIU_0028">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+        </ButtonGroup>
+      </MouseButtonRoot>
+      <DigitizerButtonRoot>
+        <ButtonGroup UID="BGU_0005">
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Alias>ALTERNATE BUTTONS1</Alias>
+          <ButtonItem BlankLine="true" UID="BIU_0029">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+        </ButtonGroup>
+        <ButtonGroup UID="BGU_0006">
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Alias>ALTERNATE BUTTONS2</Alias>
+          <ButtonItem BlankLine="true" UID="BIU_0030">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+        </ButtonGroup>
+        <ButtonGroup UID="BGU_0007">
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Alias>ALTERNATE BUTTONS3</Alias>
+          <ButtonItem BlankLine="true" UID="BIU_0031">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+        </ButtonGroup>
+        <ButtonGroup UID="BGU_0008">
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Alias>ALTERNATE BUTTONS4</Alias>
+          <ButtonItem BlankLine="true" UID="BIU_0032">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </ButtonItem>
+        </ButtonGroup>
+      </DigitizerButtonRoot>
+      <PopMenuRoot />
+      <ToolbarRoot>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="show" xval="200" yval="200" rows="1" UID="TBU_0001">
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Alias>Toolbar1</Alias>
+          <Name xlate="true" UID="XLS_0001">Test Persistent UNDO</Name>
+        </Toolbar>
+      </ToolbarRoot>
+      <ScreenMenuRoot />
+      <ImageMenuRoot />
+      <TabletMenuRoot>
+        <TabletMenu TabletArea="9" Rows="3" Columns="3" UID="TMU_0001">
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Alias>Alternate Tablet Menu 1</Alias>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0001">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0002">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0003">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0004">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0005">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0006">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0007">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0008">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0009">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+        </TabletMenu>
+        <TabletMenu TabletArea="9" Rows="3" Columns="3" UID="TMU_0002">
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Alias>Alternate Tablet Menu 2</Alias>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0010">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0011">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0012">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0013">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0014">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0015">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0016">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0017">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0018">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+        </TabletMenu>
+        <TabletMenu TabletArea="9" Rows="3" Columns="3" UID="TMU_0003">
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Alias>Alternate Tablet Menu 3</Alias>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0019">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0020">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0021">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0022">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0023">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0024">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0025">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0026">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0027">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+        </TabletMenu>
+        <TabletMenu TabletArea="9" Rows="3" Columns="3" UID="TMU_0004">
+          <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          <Alias>Alternate Tablet Menu 4</Alias>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0028">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0029">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0030">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0031">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0032">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0033">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0034">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0035">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+          <TabletMenuItem BlankLine="true" UID="TMIU_0036">
+            <ModifiedRev MajorVersion="17" MinorVersion="0" UserVersion="1" />
+          </TabletMenuItem>
+        </TabletMenu>
+      </TabletMenuRoot>
+      <DoubleClickRoot />
+    </MenuRoot>
+  </MenuGroup>
+</CustSection>

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2E69CC54-D02A-35A4-A5E3-3E8E7C866015}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>TD_OpenGL</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\..\..\lib\vc16_amd64dll\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TD_OpenGL.dir\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TD_OpenGL</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\KernelBase\Include;..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\..\win;..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\..;..\..\..\..\..\..\Kernel\Include;..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;DWFDB_ENABLED;_TOOLKIT_IN_DLL_;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ProgramDataBaseFileName>..\..\..\..\..\..\lib\vc16_amd64dll\TD_OpenGL.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;DWFDB_ENABLED;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\KernelBase\Include;..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\..\win;..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\..;..\..\..\..\..\..\Kernel\Include;..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\KernelBase\Include;..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\..\win;..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\..;..\..\..\..\..\..\Kernel\Include;..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\GsOpenGLVectorizer.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\ExOpenGLMetafileReader.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\ExOpenGLMetafileStream.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\ExOpenGLMetafileWriter.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\GsOpenGLStreamVectorizer.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\CommonDeviceProps.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\mono_dxt1_compressor.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\TtfFontsCache.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\GsOpenGLStreamVectorizer.h" />
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\GsOpenGLVectorizer.h" />
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\ExOpenGLMetafileReader.h" />
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\ExOpenGLMetafileStream.h" />
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\ExOpenGLMetafileWriter.h" />
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\OpenGLMetafileStream.h" />
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\CommonOpenGLProps.h" />
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\GsOpenGLDefs.h" />
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\GsOpenGLInclude.h" />
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\PseudoGLDefs.h" />
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\OpenGL_ES.h" />
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\OpenGL\OpenGLExtensions.h" />
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\CommonDeviceProps.h" />
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\ExFPPrecisionFix.h" />
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\ExGsHelpers.h" />
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\MetafileTransformStack.h" />
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\mono_dxt1_compressor.h" />
+    <ClInclude Include="..\..\..\..\..\..\Kernel\Extensions\ExRender\TtfFontsCache.h" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

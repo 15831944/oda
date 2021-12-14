@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9F24AAE4-2733-36B1-9114-B959DE774E59}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ExDgnVectorize</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\..\exe\vc16_amd64dll\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ExDgnVectorize.dir\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ExDgnVectorize</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Kernel\Include;..\..\..\..\..\Drawing\Include;..\..\..\..\..\Dgn\include;..\..\..\..\..\Dgn\include\DgModelerGeometry;..\..\..\..\..\Dgn\include\PSToolkit;..\..\..\..\..\Dgn\Examples\ExDgnVectorize\..\..\source\Common;..\..\..\..\..\Dgn\Examples\ExDgnVectorize\..\..\source\FileIO;..\..\..\..\..\Dgn\Examples\ExDgnVectorize\..\..\source\Design;..\..\..\..\..\Dgn\Examples\ExDgnVectorize\..\..\source\Elements;..\..\..\..\..\Dgn\Examples\ExDgnVectorize;..\..\..\..\..\Dgn\Examples\Common;..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\Dgn\Extensions\ExServices;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;_TOOLKIT_IN_DLL_;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Kernel\Include;..\..\..\..\..\Drawing\Include;..\..\..\..\..\Dgn\include;..\..\..\..\..\Dgn\include\DgModelerGeometry;..\..\..\..\..\Dgn\include\PSToolkit;..\..\..\..\..\Dgn\Examples\ExDgnVectorize\..\..\source\Common;..\..\..\..\..\Dgn\Examples\ExDgnVectorize\..\..\source\FileIO;..\..\..\..\..\Dgn\Examples\ExDgnVectorize\..\..\source\Design;..\..\..\..\..\Dgn\Examples\ExDgnVectorize\..\..\source\Elements;..\..\..\..\..\Dgn\Examples\ExDgnVectorize;..\..\..\..\..\Dgn\Examples\Common;..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\Dgn\Extensions\ExServices;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Kernel\Include;..\..\..\..\..\Drawing\Include;..\..\..\..\..\Dgn\include;..\..\..\..\..\Dgn\include\DgModelerGeometry;..\..\..\..\..\Dgn\include\PSToolkit;..\..\..\..\..\Dgn\Examples\ExDgnVectorize\..\..\source\Common;..\..\..\..\..\Dgn\Examples\ExDgnVectorize\..\..\source\FileIO;..\..\..\..\..\Dgn\Examples\ExDgnVectorize\..\..\source\Design;..\..\..\..\..\Dgn\Examples\ExDgnVectorize\..\..\source\Elements;..\..\..\..\..\Dgn\Examples\ExDgnVectorize;..\..\..\..\..\Dgn\Examples\Common;..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\Dgn\Extensions\ExServices;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>TD_ExamplesCommon.lib;..\..\..\..\..\lib\vc16_amd64dll\TG_ExamplesCommon.lib;TG_Db.lib;TD_DbRoot.lib;TD_Gs.lib;TD_Gi.lib;TD_Ge.lib;TD_Root.lib;TD_Alloc.lib;Secur32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\exe\vc16_amd64dll;..\..\..\..\..\lib\vc16_amd64dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>ExDgnVectorize.lib</ImportLibrary>
+      <ProgramDataBaseFile>..\..\..\..\..\exe\vc16_amd64dll\ExDgnVectorize.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnVectorize\ExGsSimpleDevice.cpp" />
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnVectorize\GiDumperImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnVectorize\GiConveyorGeometryDumper.cpp" />
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnVectorize\ExDgnVectorize.cpp" />
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnVectorize\ExGsSimpleDevice.h" />
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnVectorize\GiDumperImpl.h" />
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnVectorize\GiDumper.h" />
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnVectorize\GiConveyorGeometryDumper.h" />
+    <ResourceCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnVectorize\ExDgnVectorize.rc" />
+    <ClCompile Include="..\..\..\..\..\KernelBase\Extensions\alloc\OdAllocOp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\TG_ExamplesCommon.vcxproj">
+      <Project>{F59DBC45-87FC-3AFA-BE3B-B269141DE129}</Project>
+      <Name>TG_ExamplesCommon</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Properties>
+  <Property Name="General" Path="" />
+    <Property GrCode="39" Name="thickness" Path="General" Type="double" Value="$(LINEAR,%1)" />
+  <Property Name="Geometry" Path="" />
+    <Property Name="StartX" Path="Geometry" VisibleName="Start X" Type="distance" Value="$(START,x)" />
+    <Property Name="StartY" Path="Geometry" VisibleName="Start Y" Type="distance" Value="$(START,y)" />
+    <Property Name="StartZ" Path="Geometry" VisibleName="Start Z" Type="distance" Value="$(START,z)" />
+    <Property GrCode="Circle:10" Name="CenterX" Path="Geometry" VisibleName="Center X" Type="distance" Value="$(X,0,%1)" />
+    <Property GrCode="Circle:10" Name="CenterY" Path="Geometry" VisibleName="Center Y" Type="distance" Value="$(Y,0,%1)" />
+    <Property GrCode="Circle:10" Name="CenterZ" Path="Geometry" VisibleName="Center Z" Type="distance" Value="$(Z,0,%1)" />
+    <Property Name="EndX" Path="Geometry" VisibleName="End X" Type="distance" Value="$(END,x)" />
+    <Property Name="EndY" Path="Geometry" VisibleName="End Y" Type="distance" Value="$(END,y)" />
+    <Property Name="EndZ" Path="Geometry" VisibleName="End Z" Type="distance" Value="$(END,z)" />
+    <Property GrCode="Circle:40" Name="Radius" Path="Geometry" Type="distance" Value="$(LINEAR,%1)" Min="0.0" />
+    <!-- Property GrCode="50" Name="StartAngle" Path="Geometry" VisibleName="Start angle" Type="distance" Value="$(ANGULAR,%1)" Editable="false" / -->
+    <!-- Property GrCode="51" Name="EndAngle" Path="Geometry" VisibleName="End angle" Type="distance" Value="$(ANGULAR,%1)" Editable="false" / -->
+    <Property Name="StartAngle" Path="Geometry" VisibleName="Start angle" Type="double" Value="$(START,angle)" />
+    <Property Name="EndAngle" Path="Geometry" VisibleName="End angle" Type="double" Value="$(END,angle)" />
+    <Property Name="TotalAngle" Path="Geometry" VisibleName="Total angle" Type="double" Value="$(DELTA,angle)" />
+    <Property Name="ArcLength" Path="Geometry" VisibleName="Arc Length" Type="distance" Value="$(LENGTH)" />
+    <Property Name="Area" Path="Geometry" Type="double" Value="$(AREA)" />
+    <Property GrCode="Circle:210" Name="NormalX" Path="Geometry" VisibleName="Normal X" Type="distance" Value="$(X,0,%1)" Enabled="false" />
+    <Property GrCode="Circle:210" Name="NormalY" Path="Geometry" VisibleName="Normal Y" Type="distance" Value="$(Y,0,%1)" Enabled="false" />
+    <Property GrCode="Circle:210" Name="NormalZ" Path="Geometry" VisibleName="Normal Z" Type="distance" Value="$(Z,1,%1)" Enabled="false" />
+</Properties>

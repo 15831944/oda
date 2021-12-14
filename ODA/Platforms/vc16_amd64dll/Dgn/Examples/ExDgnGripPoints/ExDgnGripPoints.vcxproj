@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{19CA9201-DC7F-3A6E-8E25-6031D497E4F5}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ExDgnGripPoints</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\..\exe\vc16_amd64dll\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ExDgnGripPoints.dir\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ExDgnGripPoints_22.5_16</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.tx</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Kernel\Include;..\..\..\..\..\Drawing\Include;..\..\..\..\..\Dgn\include;..\..\..\..\..\Dgn\include\DgModelerGeometry;..\..\..\..\..\Dgn\include\PSToolkit;..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\..\..\source\Common;..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\..\..\source\FileIO;..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\..\..\source\Design;..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\..\..\source\Elements;..\..\..\..\..\Dgn\Examples\ExDgnGripPoints;..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\Dgn\Extensions\ExServices;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;ODA_LINT;_TOOLKIT_IN_DLL_;CMAKE_INTDIR="Release";ExDgnGripPoints_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;ODA_LINT;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Release\";ExDgnGripPoints_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Kernel\Include;..\..\..\..\..\Drawing\Include;..\..\..\..\..\Dgn\include;..\..\..\..\..\Dgn\include\DgModelerGeometry;..\..\..\..\..\Dgn\include\PSToolkit;..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\..\..\source\Common;..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\..\..\source\FileIO;..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\..\..\source\Design;..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\..\..\source\Elements;..\..\..\..\..\Dgn\Examples\ExDgnGripPoints;..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\Dgn\Extensions\ExServices;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Kernel\Include;..\..\..\..\..\Drawing\Include;..\..\..\..\..\Dgn\include;..\..\..\..\..\Dgn\include\DgModelerGeometry;..\..\..\..\..\Dgn\include\PSToolkit;..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\..\..\source\Common;..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\..\..\source\FileIO;..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\..\..\source\Design;..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\..\..\source\Elements;..\..\..\..\..\Dgn\Examples\ExDgnGripPoints;..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\Dgn\Extensions\ExServices;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>TG_Db.lib;TD_Ge.lib;TD_Root.lib;TD_Alloc.lib;Secur32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\exe\vc16_amd64dll;..\..\..\..\..\lib\vc16_amd64dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>..\..\..\..\..\lib\vc16_amd64dll\ExDgnGripPoints.lib</ImportLibrary>
+      <ProgramDataBaseFile>..\..\..\..\..\exe\vc16_amd64dll\ExDgnGripPoints_22.5_16.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\StdAfx.cpp" />
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\OdDgGripPointsModule.cpp" />
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgElementGripPoints.cpp" />
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgLineGripPoints.cpp" />
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgDetailingSymbolGripPoints.cpp" />
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgArcGripPoints.cpp" />
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgEllipseGripPoints.cpp" />
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgLineStringGripPoints.cpp" />
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgMultilineGripPoints.cpp" />
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgBSplineCurveGripPoints.cpp" />
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgConeGripPoints.cpp" />
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgCurveGripPoints.cpp" />
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgDimensionGripPoints.cpp" />
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgShapeGripPoints.cpp" />
+    <ClCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgTextGripPoints.cpp" />
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\StdAfx.h" />
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\OdDgGripPointsModule.h" />
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgElementGripPoints.h" />
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgLineGripPoints.h" />
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgDetailingSymbolGripPoints.h" />
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgArcGripPoints.h" />
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgEllipseGripPoints.h" />
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgLineStringGripPoints.h" />
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgMultilineGripPoints.h" />
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgBSplineCurveGripPoints.h" />
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgConeGripPoints.h" />
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgCurveGripPoints.h" />
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgDimensionGripPoints.h" />
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgShapeGripPoints.h" />
+    <ClInclude Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgTextGripPoints.h" />
+    <ResourceCompile Include="..\..\..\..\..\Dgn\Examples\ExDgnGripPoints\DgGripPoints.rc" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

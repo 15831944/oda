@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5886C6AD-8EDC-398D-A222-CA98489C6E64}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>TD_ThreejsJSONExport</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\..\exe\vc16_amd64dll\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TD_ThreejsJSONExport.dir\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TD_ThreejsJSONExport_22.5_16</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.tx</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Kernel\Include;..\..\..\..\..\Kernel\Include\Tr;..\..\..\..\..\Kernel\Include\Tr\vec;..\..\..\..\..\Kernel\Extensions\ExRender;..\..\..\..\..\Kernel\Extensions\ExRender\TrXml;..\..\..\..\..\Kernel\Extensions\ExRender\TrXml\IO;..\..\..\..\..\Kernel\Extensions\ExRender\TrXml\vec;..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Include;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;..\..\..\..\..\ThirdParty\freetype\freetype-2.10.4\include;..\..\..\..\..\ThirdParty\freetype\freetype-2.10.4\include\freetype;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;DWFDB_ENABLED;THREEJSJSONEXPORT_EXPORTS;ODA_LINT;FREETYPE_VER_2_10_4;_TOOLKIT_IN_DLL_;CMAKE_INTDIR="Release";TD_ThreejsJSONExport_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;DWFDB_ENABLED;THREEJSJSONEXPORT_EXPORTS;ODA_LINT;FREETYPE_VER_2_10_4;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Release\";TD_ThreejsJSONExport_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Kernel\Include;..\..\..\..\..\Kernel\Include\Tr;..\..\..\..\..\Kernel\Include\Tr\vec;..\..\..\..\..\Kernel\Extensions\ExRender;..\..\..\..\..\Kernel\Extensions\ExRender\TrXml;..\..\..\..\..\Kernel\Extensions\ExRender\TrXml\IO;..\..\..\..\..\Kernel\Extensions\ExRender\TrXml\vec;..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Include;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;..\..\..\..\..\ThirdParty\freetype\freetype-2.10.4\include;..\..\..\..\..\ThirdParty\freetype\freetype-2.10.4\include\freetype;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Kernel\Include;..\..\..\..\..\Kernel\Include\Tr;..\..\..\..\..\Kernel\Include\Tr\vec;..\..\..\..\..\Kernel\Extensions\ExRender;..\..\..\..\..\Kernel\Extensions\ExRender\TrXml;..\..\..\..\..\Kernel\Extensions\ExRender\TrXml\IO;..\..\..\..\..\Kernel\Extensions\ExRender\TrXml\vec;..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Include;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;..\..\..\..\..\ThirdParty\freetype\freetype-2.10.4\include;..\..\..\..\..\ThirdParty\freetype\freetype-2.10.4\include\freetype;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>TrVec.lib;TrBase.lib;TD_DbRoot.lib;TD_Gs.lib;TD_Gi.lib;TD_Ge.lib;TD_Root.lib;FreeType.lib;TD_Alloc.lib;Secur32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\exe\vc16_amd64dll;..\..\..\..\..\lib\vc16_amd64dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>..\..\..\..\..\lib\vc16_amd64dll\TD_ThreejsJSONExport.lib</ImportLibrary>
+      <ProgramDataBaseFile>..\..\..\..\..\exe\vc16_amd64dll\TD_ThreejsJSONExport_22.5_16.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Source\ThreejsJSONExport.cpp" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Source\ThreejsJSONModule.cpp" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Source\ExGsGLES2JsonRendition.cpp" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Source\ExGsGLES2JsonSharingProvider.cpp" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Source\GlesJsonServerBaseImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Source\GlesJsonServerImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Source\JsonMetafileConverter.cpp" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Source\JsonObjectFormat.cpp" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Include\ThreejsJSONExport.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Include\ThreejsJSONExportDef.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Include\ThreejsJSONModule.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Include\ExGsGLES2JsonRendition.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Include\JsonServer.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Include\JsonObjectFormat.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Include\ExGsGLES2JsonSharingProvider.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Include\JsonMetafileConverter.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Include\GlesJsonServerBaseImpl.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Include\GlesJsonServerImpl.h" />
+    <ClInclude Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Include\JsonServerBaseImpl.h" />
+    <ClCompile Include="..\..\..\..\..\Kernel\Extensions\ExRender\TrXml\TrXmlIdRegistratorImpl.cpp" />
+    <ResourceCompile Include="..\..\..\..\..\Kernel\Exports\ThreejsJSONExport\Source\ThreejsJSONExport.rc" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

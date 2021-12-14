@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\..\Drawing\Examples\win\OpenCAD\OpenCAD\MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Drawing\Examples\win\OpenCAD\OpenCAD\OpenCADDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Drawing\Examples\win\OpenCAD\OpenCAD\ChildFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Drawing\Examples\win\OpenCAD\OpenCAD\OpenCAD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Drawing\Examples\win\OpenCAD\OpenCAD\CommandPrompt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Drawing\Examples\win\OpenCAD\OpenCAD\stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Drawing\Examples\win\OpenCAD\OpenCAD\OpenCADView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Kernel\Extensions\ExServices\RxSystemServicesImpl.cpp">
+      <Filter>Source Files\ExServices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Kernel\Extensions\ExServices\ExUndoController.cpp">
+      <Filter>Source Files\ExServices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Drawing\Extensions\ExServices\ExHostAppServices.cpp">
+      <Filter>Source Files\ExServices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Kernel\Extensions\ExServices\OdFileBuf.cpp">
+      <Filter>Source Files\ExServices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Kernel\Extensions\ExServices\ExKWIndex.cpp">
+      <Filter>Source Files\ExServices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\Drawing\Extensions\ExServices\ExDbCommandContext.cpp">
+      <Filter>Source Files\ExServices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\KernelBase\Extensions\alloc\OdAllocOp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\..\Drawing\Examples\win\OpenCAD\OpenCAD\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Drawing\Examples\win\OpenCAD\OpenCAD\OpenCADDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Drawing\Examples\win\OpenCAD\OpenCAD\CommandPrompt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Drawing\Examples\win\OpenCAD\OpenCAD\OpenCADView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Drawing\Examples\win\OpenCAD\OpenCAD\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Drawing\Examples\win\OpenCAD\OpenCAD\ChildFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Drawing\Examples\win\OpenCAD\OpenCAD\OpenCAD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\Drawing\Examples\win\OpenCAD\OpenCAD\MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\..\Drawing\Examples\win\OpenCAD\OpenCAD\res\OpenCADDoc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\Drawing\Examples\win\OpenCAD\OpenCAD\res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\Kernel\Logo\Icon-ODA.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\..\..\..\..\Drawing\Examples\win\OpenCAD\OpenCAD\res\OpenCAD.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\..\..\..\..\Drawing\Examples\win\OpenCAD\OpenCAD\OpenCAD.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6E80807A-5314-3798-B94C-14F74EB6D754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{CB0B682D-A73F-3CF0-B10E-80E8374BC72B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FF1B111D-1056-33F6-8908-C799A3AAA2A0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ExServices">
+      <UniqueIdentifier>{9E398677-AA53-3E97-BECF-F216E0D5CC0E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,138 @@
+<DIV align="center">
+<!-- A href="http://www.opendesign.com/"><IMG width="300" height="50" src=":/odalogofull.png" /></A -->
+<A href="http://www.opendesign.com/"><IMG width="300" height="50" src=":/odalogofull.png" /></A>
+</DIV>
+<!-- h2><a href="help.html" title="Help">Home</a> &raquo; <strong>$(TD_APP_NAME) Command Reference</strong></h2 --> 
+<h2><a href="help.html" title="Help">Home</a> &raquo; <strong>$(TD_APP_NAME) Command Reference</strong></h2> 
+
+<h1>Command Reference</h1>
+<p>This Command Reference includes information about each command that is available 
+  in $(TD_APP_NAME) from the menus or from the command line (command line text 
+  is in italics). </p>
+<h4><strong>File Commands</strong></h4>
+<p><strong>New</strong> (<em>new</em>): Creates a new file (supported for .dwg files only). Use <em><a href="cmd://startup">startup</a></em> <!-- and <em><a href="cmd://tdtemplatepaths">tdtemplatepaths</a></em> --> to change behaviour of it.</p>
+<p><strong>Open</strong> (<em>open</em>): Opens a .dwg, .dgn, or .dwf file. </p>
+<p><strong>Close</strong> (<em>close</em>): Closes the current file. </p>
+<p><strong>Recover</strong> (<em><a href="cmd://recover">recover</a></em>): Opens and attempts to repair a 
+  .dwg file. (Command line only.) </p>
+<p><strong>Audit</strong> (<em><a href="cmd://audit">audit</a></em>): Checks the open .dwg file for errors 
+  and reports results with an option to repair any errors that are found. (Command 
+  line only.) </p>
+<p><strong>Save</strong> (<em>qsave</em>): Saves the open .dwg or .dgn file in 
+  its same file format. </p>
+<p><strong>Save As</strong> (<em>saveas</em>): Saves the open .dwg or .dgn file 
+  with a new name, in a new location, or in a new file format. </p>
+<p><strong>Import DGN/DWF</strong> (<em><a href="cmd://import">import</a></em>): 
+  Imports the file contents into the currently opened .dwg file. (Command 
+  line only.) </p>
+<p><strong>Insert Raster Image</strong> (<em><a href="cmd://insertraster">insertraster</a></em>): 
+  Inserts a raster image to a .dwg file. (Command line only.) </p>
+<p><strong>Plot</strong> (<em>plot</em>): Prints the open .dwg file according 
+  to the options you select (supported for .dwg files only). </p>
+<p><strong>Exit </strong>(<em>quit</em>): Closes $(TD_APP_NAME). </p>
+<h4><strong>Edit Commands (command line only)</strong></h4>
+<p> <strong>Undo </strong>(<em><a href="cmd://undo">undo</a></em>): Reverses the last operation performed in a .dwg file (supported for .dwg files only). You can also press CTRL + Z.</p>
+<p> <strong>Redo </strong>(<em><a href="cmd://redo">redo</a></em>): Reverses the undo command (supported for .dwg files only). You can also press CTRL + Y.</p>
+<p><strong>Select </strong>(<em><a href="cmd://select">select</a></em>): Selects one or more items in a .dwg or .dgn file. You can click an item or its corner to select it.</p>
+<p> <strong>Deselect </strong>(<em><a href="cmd://ai_deselect">ai_deselect</a></em>): Removes selection from all items in a .dwg or .dgn file. You can also press ESC to remove selection.</p>
+<p> <strong>Erase </strong>(<em><a href="cmd://_erase">erase</a></em>): Removes an item you select from a .dwg or .dgn file.</p>
+<p> <strong>Isolate Objects </strong>(<em><a href="cmd://isolateobjects">isolateobjects</a></em>): 
+  Displays the selected objects and hides other objects.</p>
+<p><strong>Array Editing </strong>(<em><a href="cmd://arrayedit">arrayedit</a></em>): 
+  Edits array of objects and their source objects. Number and types of operations 
+  depend on array type (for example, number of rows, columns, levels, distance 
+  between them, tangent changes, etc.).</p>
+<p> <strong>Text Converting </strong>(<em><a href="cmd://txtexp">txtexp</a></em>): 
+  Converts text to lines or triangles using vectorization.</p>
+<h4><strong>View Commands</strong></h4>
+<p> <strong>Model or Layout </strong>(<em>qvlayout</em>): Displays the designated 
+  tab when you click it. (Command line and mouse only.) </p>
+<p><strong>Regen</strong> (<em>regenall</em>): Regenerates the current view of 
+  the drawing. </p>
+<p><strong>Zoom Window </strong>(<em>zoom or zoom w</em>): Displays a window view 
+  of the drawing by specifying two opposite corners. </p>
+<p><strong>Zoom In </strong>(<em>zoom </em>or <em>zoom 2x</em>): Enlarges the 
+  view of the drawing. You can also roll the mouse wheel button to zoom in and 
+  out of the drawing. </p>
+<p><strong>Zoom Out </strong>(<em>zoom </em>or <em>zoom .5x</em>): Reduces the 
+  view of the drawing. You can also roll the mouse wheel button to zoom in and 
+  out of the drawing. </p>
+<p><strong>Zoom Extents </strong>(<em>zoom </em>or <em>zoom e</em>): Displays 
+  the drawing at its extents. You can also double-click the mouse wheel button 
+  to zoom to the drawing extents. </p>
+<p><strong>Pan</strong> (<em>pan</em>): Moves the view around the drawing by clicking 
+  and dragging the mouse. You can also click the mouse wheel button to pan the 
+  drawing without choosing the command. </p>
+<p><strong>Constrained Orbit</strong> (<em>3dorbit</em>): Rotates the view around 
+  a three dimensional axis. Click and hold the mouse button to rotate the view. 
+  You can also press SHIFT + the mouse wheel button to start 3d orbit. (Available 
+  only in model space.) </p>
+<p><strong>Free Orbit </strong>(<em>3dforbit</em>): Rotates the view in three 
+  dimensions without axis restriction. You can also press CTRL + SHIFT + the mouse 
+  wheel button to start 3dforbit. (Available only in model space.) </p>
+<p><strong>Continuous Orbit </strong>(<em>3dcorbit</em>): Rotates the three dimensional 
+  view continuously. Click and hold the mouse button to rotate the view, then 
+  release the mouse button to continue the rotation. To stop the rotation, click 
+  in the drawing or press Esc or Enter. (Available only in model space.) </p>
+<p><strong>3D Views </strong>(<em>view</em>): Displays the drawing from the named 
+  view. You can also delete and change the properties of saved views. </p>
+<p><strong>Visual Styles </strong>(<em>vscurrent</em>): Changes the visual style 
+  of current view. </p>
+<p><strong>3D Background Color </strong>(<em>background</em>): Modifies the color 
+  of the background that displays in model space. </p>
+<h4><strong>Format Commands</strong></h4>
+<p><strong>Properties </strong>(<em><a href="cmd://properties">properties</a></em>): Displays the Properties palette where you can modify general properties of selected entities. All properties of line and arcs can be modified, but only general properties and material properties can be modified for other entities. Enter <em><a href="cmd://propertiesclose">propertiesclose</a></em> to close the Properties palette. (Command 
+  line only.)  </p>
+<p><strong>Layer </strong>(<em>layer</em>): Displays and modifies the layer properties 
+  of the drawing. </p>
+<h4><strong>Tools Commands</strong></h4>
+<p> <strong>Command Line </strong>(<em>commandline</em> or <em>commandlinehide</em>): 
+  Displays the command line window if it has been closed. You can also press CTRL 
+  + 9 to show or hide the command line window. </p>
+<p> <strong>Set System Variable</strong> (<em><a href="cmd://setvar">setvar</a></em>): Allows you to view 
+  or set the value for any system variable defined for the current .dwg or .dgn 
+  file. (Command line only.) </p>
+<p> <strong>Reset System Registry Variables </strong>(<em><a href="cmd:/resetvars&nbsp;all">resetvars</a></em>): Resets 
+  system variables to their default values. (Command line only.) </p>
+<p> <strong>Registry Variable Discard Back Faces </strong>(<em><a href="cmd://discardbackfaces">discardbackfaces</a></em>): When turned on (set to 1), surface geometry is visible from one side only. This is turned off (set to 0) by default. (Command line only.) </p>
+<p> <strong>Registry Variable Custom Toolbar Path </strong>(<em><a href="cmd://ddcuipaths">ddcuipaths</a></em>): Specifies a folder from which to load toolbars defined in custom.cui files. For example, the toolbar defined in OdaQtObjects.cui is loaded automatically from resources, but the .cui file can be copied, customized, and its location specified using DDCUIPATHS. (Command line only.) </p>
+<p><strong>Load Menu </strong>(<em>menu</em> or <em>cuiload </em>or <em>cuiunload</em>): 
+  Menu is loaded from .cui file, which can be customized. (Command line only.) 
+</p>
+<p><strong>Load Application </strong>(<em>appload</em>): Loads a TX application 
+  (.tx file) and runs it within $(TD_APP_NAME). You can also create a Startup Suite, 
+  which allows you to define what applications load automatically when starting 
+  $(TD_APP_NAME). Windows users and ODA members can load custom .NET TX plug-ins. </p>
+<p>
+<strong>Registered Commands</strong>: Runs the command selected from a list of currently loaded commands. 
+</p>
+<p><strong>Run Script </strong>(<em>script</em>): Runs a selected script (.scr 
+  file). </p>
+<h4><strong>Draw Commands</strong></h4>
+<p><strong>Modeling  Box</strong> (<em>box</em>): Draws a box.</p>
+<p><strong>Modeling  Sphere</strong> (<em>sphere</em>): Draws a sphere. </p>
+<p><strong>Line </strong>(<em>line</em>): Draws a line. </p>
+<p><strong>Circle </strong>(<em>circle</em>): Draws a circle using the specified 
+  center and radius or diameter. (Command line only.) </p>
+<p><strong>Array </strong>(<em>array</em>): Creates an array of copies of selected 
+  objects. (Command line only.) </p>
+<p>Available options:</p>
+<ul>
+  <li>Rectangular &#8212; Creates rows and columns from copies of selected objects.</li>
+  <li>Path &#8212; Places the copies of selected objects along a specified path.</li>
+  <li>Polar &#8212; Places the copies of selected objects around a specified point.</li>
+</ul>
+<p><strong>Text </strong>(<em>text</em>): Draws a single-line text object and 
+  specifies its start point, height and angle. (Command line only.) </p>
+<h4><strong>Window Commands</strong></h4>
+<p><strong>Close</strong> (<em>close</em>): Closes the current window. </p>
+<p><strong>Close All </strong>(<em>closeall</em>): Closes all open windows. </p>
+<p><strong>Cascade </strong>(<em>syswindows cascade</em></em>): Arranges all open windows so they overlap. </p>
+<p><strong>Tile Horizontally </strong>(<em>syswindows hor</em>): Arranges all open windows horizontally. </p>
+<p><strong>Tile Vertically </strong>(<em>syswindows vert</em>): Arranges all open windows vertically. </p>
+<p><strong>Arrange Windows </strong>(<em>syswindows arrange</em>): Arranges all open windows so they are all visible. </p>
+<h4><strong>Help Commands</strong></h4>
+<p> <strong>Help</strong> (<em>help</em>): Displays documentation for $(TD_APP_NAME). 
+</p>
+<p><strong>About</strong> (<em>about</em>): Displays information about $(TD_APP_NAME). <br>
+</p>

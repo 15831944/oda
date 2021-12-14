@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Properties>
+<!-- 
+      Value="$(CONVERTORNAME,%1)" or Value="$(CONVERTORNAME,%2,%1)"
+      where 
+            %1 - value from ResBuf as string (for points x,y,z)
+	    %2 - group code - is usable for alternative (PlotStyle here)
+-->
+  <Property Name="General" Path="" />
+    <Property GrCode="62" Name="Color" Path="General" Type="odcolor" Value="256" />
+    <Property GrCode="8" Name="Layer" Path="General" Type="combo"  Value="$(LAYER,%1)" />
+    <Property GrCode="6" Name="Linetype" Path="General" Type="combo" Value="$(LINETYPE,%1)" />
+    <Property GrCode="48" Name="LinetypeScale" VisibleName="Linetype scale" Path="General" Type="double" Value="1.0000" Step="0.1000" Min="0.0" />
+    <Property GrCode="[380 390]" Name="PlotStyle" VisibleName="Plot style" Path="General" Type="combo" Value="$(PLOTSTYLE,%2,%1)" />
+    <Property GrCode="370" Name="Lineweight" Path="General" Type="combo" Value="$(LINEWEIGHT,%1)" />
+    <Property GrCode="440" Name="Transparency" Path="General" Type="combo" Value="$(TRANSPARENCY,%1)" />
+    <Property Name="Hyperlink" Path="General" Type="string" Value="$(HYPERLINK)" />
+  <Property Name="3D Visualization" Path="" />
+    <Property GrCode="347" Name="Material" Path="3D Visualization" Type="combo" Value="$(MATERIAL,%1)" />
+</Properties>

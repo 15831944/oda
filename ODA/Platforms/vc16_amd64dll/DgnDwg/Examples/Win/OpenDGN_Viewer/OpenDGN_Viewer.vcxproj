@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E4124533-9361-34FC-9C1C-7606693C653A}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>OpenDGN_Viewer</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\..\..\exe\vc16_amd64dll\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OpenDGN_Viewer.dir\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OpenDGN_Viewer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\KernelBase\Include;..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\..\Kernel\Include;..\..\..\..\..\..\Drawing\Include;..\..\..\..\..\..\Dgn\include;..\..\..\..\..\..\Dgn\include\DgModelerGeometry;..\..\..\..\..\..\Dgn\include\PSToolkit;..\..\..\..\..\..\Dgn;..\..\..\..\..\..\Dgn\source\Common;..\..\..\..\..\..\Dgn\source\FileIO;..\..\..\..\..\..\Dgn\source\Design;..\..\..\..\..\..\Dgn\source\Elements;..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer;..\..\..\..\..\..\Kernel\Exports\STLExport\Include;..\..\..\..\..\..\Kernel\Exports\PDFExport\Include;..\..\..\..\..\..\Kernel\Exports\SvgExport\Include;..\..\..\..\..\..\Kernel\Exports\2dExport\Include;..\..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\..\Drawing\Extensions\ExServices;..\..\..\..\..\..\Dgn\Extensions\ExServices;..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;TDRAWING_ENABLED;DGNIMPORT_ENABLE;_TOOLKIT_IN_DLL_;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;TDRAWING_ENABLED;DGNIMPORT_ENABLE;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\KernelBase\Include;..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\..\Kernel\Include;..\..\..\..\..\..\Drawing\Include;..\..\..\..\..\..\Dgn\include;..\..\..\..\..\..\Dgn\include\DgModelerGeometry;..\..\..\..\..\..\Dgn\include\PSToolkit;..\..\..\..\..\..\Dgn;..\..\..\..\..\..\Dgn\source\Common;..\..\..\..\..\..\Dgn\source\FileIO;..\..\..\..\..\..\Dgn\source\Design;..\..\..\..\..\..\Dgn\source\Elements;..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer;..\..\..\..\..\..\Kernel\Exports\STLExport\Include;..\..\..\..\..\..\Kernel\Exports\PDFExport\Include;..\..\..\..\..\..\Kernel\Exports\SvgExport\Include;..\..\..\..\..\..\Kernel\Exports\2dExport\Include;..\..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\..\Drawing\Extensions\ExServices;..\..\..\..\..\..\Dgn\Extensions\ExServices;..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\..\KernelBase\Include;..\..\..\..\..\..\ThirdParty;..\..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\..\Kernel\Include;..\..\..\..\..\..\Drawing\Include;..\..\..\..\..\..\Dgn\include;..\..\..\..\..\..\Dgn\include\DgModelerGeometry;..\..\..\..\..\..\Dgn\include\PSToolkit;..\..\..\..\..\..\Dgn;..\..\..\..\..\..\Dgn\source\Common;..\..\..\..\..\..\Dgn\source\FileIO;..\..\..\..\..\..\Dgn\source\Design;..\..\..\..\..\..\Dgn\source\Elements;..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer;..\..\..\..\..\..\Kernel\Exports\STLExport\Include;..\..\..\..\..\..\Kernel\Exports\PDFExport\Include;..\..\..\..\..\..\Kernel\Exports\SvgExport\Include;..\..\..\..\..\..\Kernel\Exports\2dExport\Include;..\..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\..\Drawing\Extensions\ExServices;..\..\..\..\..\..\Dgn\Extensions\ExServices;..\..\..\..\..\..\KernelBase;..\..\..\..\..\..\KernelBase\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\..\..\lib\vc16_amd64dll\TG_ExamplesCommon.lib;TD_ExamplesCommon.lib;TG_Db.lib;TD_DbRoot.lib;TD_Ge.lib;TD_Root.lib;TD_Alloc.lib;TD_Db.lib;TG_DwgDb.lib;AcDgnLS.lib;ModelerGeometry.lib;..\..\..\..\..\..\lib\vc16_amd64dll\TD_DrawingsExamplesCommon.lib;TD_Key.lib;Secur32.lib;RText.lib;TD_DbEntities.lib;TD_DbIO.lib;TD_DbCore.lib;ATEXT.lib;ISM.lib;WipeOut.lib;AcMPolygonObj15.lib;ACCAMERA.lib;SCENEOE.lib;UTF.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\..\exe\vc16_amd64dll;..\..\..\..\..\..\lib\vc16_amd64dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /entry:wWinMainCRTStartup</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>OpenDGN_Viewer.lib</ImportLibrary>
+      <ProgramDataBaseFile>..\..\..\..\..\..\exe\vc16_amd64dll\OpenDGN_Viewer.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\CSwitchModel.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\stdafx.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\MainFrm.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\SummDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\OpenDGN_ViewerVectorizer.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\OpenDGN_ViewerDoc.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\OpenDGN_Viewer.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\ChildFrm.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\StaticAppSelDlg.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\SetRegVars.cpp" />
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\stdafx.h" />
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\ChildFrm.h" />
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\OpenDGN_ViewerDoc.h" />
+    <ClInclude Include="..\..\..\..\..\..\Dgn\Extensions\ExServices\ExDgnHostAppServices.h" />
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\OpenDGN_Viewer.h" />
+    <ClInclude Include="..\..\..\..\..\..\Dgn\Extensions\ExServices\ExDgnServices.h" />
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\resource.h" />
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\SetRegVars.h" />
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\MainFrm.h" />
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\RegKey.h" />
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\SummDlg.h" />
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\CSwitchModel.h" />
+    <ClInclude Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\OpenDGN_ViewerVectorizer.h" />
+    <None Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\res\OpenDGN_ViewerDoc.ico" />
+    <None Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\res\OpenDGN_Viewer.rc2" />
+    <None Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\res\Toolbar.bmp" />
+    <None Include="..\..\..\..\..\..\Kernel\Logo\Icon-ODA.ico" />
+    <ResourceCompile Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\OpenDGN_Viewer.rc" />
+    <None Include="..\..\..\..\..\..\DgnDwg\Examples\Win\OpenDGN_Viewer\res\mainfram.bmp" />
+    <ClCompile Include="..\..\..\..\..\..\KernelBase\Extensions\alloc\OdAllocOp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Drawing\Examples\Common\TD_DrawingsExamplesCommon.vcxproj">
+      <Project>{44A8804E-4E22-3F5E-B273-800F3EBE6C69}</Project>
+      <Name>TD_DrawingsExamplesCommon</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Dgn\Examples\Common\TG_ExamplesCommon.vcxproj">
+      <Project>{F59DBC45-87FC-3AFA-BE3B-B269141DE129}</Project>
+      <Name>TG_ExamplesCommon</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

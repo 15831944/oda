@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\ExServices\ExHostAppServices.cpp">
+      <Filter>Source Files\ExServices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Kernel\Extensions\ExServices\ExUndoController.cpp">
+      <Filter>Source Files\ExServices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Kernel\Extensions\ExServices\ExFileUndoController.cpp">
+      <Filter>Source Files\ExServices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\ExServices\ExPageController.cpp">
+      <Filter>Source Files\ExServices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Extensions\ExServices\ExDbCommandContext.cpp">
+      <Filter>Source Files\ExServices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\OdReadEx\DbDumper.cpp">
+      <Filter>Source Files\OdReadEx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\OdReadEx\GiWorldDrawDumper.cpp">
+      <Filter>Source Files\OdReadEx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\OdReadEx\ExProtocolExtension.cpp">
+      <Filter>Source Files\OdReadEx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\Editor\EditorObject.cpp">
+      <Filter>Source Files\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\Editor\ExGripManager.cpp">
+      <Filter>Source Files\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\Editor\OSnapManager.cpp">
+      <Filter>Source Files\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\Common\toString.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Drawing\Examples\Common\ExSelectionUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\Common\toString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Drawing\Examples\Common\ExSelectionUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6E80807A-5314-3798-B94C-14F74EB6D754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FF1B111D-1056-33F6-8908-C799A3AAA2A0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Editor">
+      <UniqueIdentifier>{C121A4E6-6C5B-36E2-9F1F-9701EE24F699}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ExServices">
+      <UniqueIdentifier>{9E398677-AA53-3E97-BECF-F216E0D5CC0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\OdReadEx">
+      <UniqueIdentifier>{7C49BDF3-42CC-3388-9C7C-BD8F0F3BA531}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

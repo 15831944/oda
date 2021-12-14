@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<plist version="0.9">
+<dict>
+  <key>CFBundleIconFile</key>
+  <string>odalogo.icns</string>  
+  <key>CFBundlePackageType</key> 
+  <string>APPL</string>
+  <key>CFBundleShortVersionString</key>
+  <string>3.8.2</string>
+  <key>CFBundleVersion</key>
+  <string>3.8.2</string>
+  <key>CFBundleGetInfoString</key>
+	<string>ODA SDK for .dwg files 3.8.2, Open Design Alliance Inc.</string>
+  <key>CFBundleSignature</key>
+  <string>????</string>
+  <key>CFBundleExecutable</key>
+  <string>OdaFileConverter</string>
+  <key>CFBundleIdentifier</key>
+  <string>com.opendesign.ODAFileConverter</string>
+  <key>NOTE</key>
+  <string>using ODA SDK for .dwg files and Nokia Qt</string>
+</dict>
+</plist>

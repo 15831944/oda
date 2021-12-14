@@ -1,0 +1,1252 @@
+<?xml version="1.0"?>
+<!--
+Warning! Do not edit the contents of this file.
+If you attempt to edit this file using an XML editor, you could lose customization and migration functionality.
+If you need to change information in the customization file, use the Customize User Interface dialog box in the product.
+To access the Customize User Interface dialog box, click the Tools menu > Customize > Interface, or enter CUI on the command line. 
+-->
+<CustSection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FileVersion MajorVersion="0" MinorVersion="5" IncrementalVersion="1" UserVersion="1" />
+  <Header>
+    <CommonConfiguration>
+      <CommonItems>
+        <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+      </CommonItems>
+    </CommonConfiguration>
+    <WorkspaceRoot>
+      <WorkspaceConfigRoot />
+    </WorkspaceRoot>
+  </Header>
+  <MenuGroup Name="ODAQTOBJECTS" DisplayName="OdaQtObjects">
+    <MacroGroup Name="User">
+      <MenuMacro UID="ID_Polysolid">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_6010">Modeling, Polysolid</Name>
+          <Command>polysolid</Command>
+          <HelpString xlate="true" UID="XLS_6011">Creates a 3D wall-like polysolid </HelpString>
+          <SmallImage Name="qrc:/images/draw/polysolid.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Polysolid">POLYSOLID</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Box">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_297">Modeling, Box</Name>
+          <Command>box</Command>
+          <HelpString xlate="true" UID="ACAD_1412">Creates a 3D solid box</HelpString>
+          <SmallImage Name="qrc:/images/draw/box.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Box">BOX</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Wedge">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_301">Modeling, Wedge</Name>
+          <Command>wedge</Command>
+          <HelpString xlate="true" UID="ACAD_1725">Creates a 3D solid wedge</HelpString>
+          <SmallImage Name="qrc:/images/draw/wedge.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Wedge">WEDGE</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Cone">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_300">Modeling, Cone</Name>
+          <Command>cone</Command>
+          <HelpString xlate="true" UID="ACAD_1423">Creates a 3D solid cone</HelpString>
+          <SmallImage Name="qrc:/images/draw/cone.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Cone">CONE</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Sphere">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_298">Modeling, Sphere</Name>
+          <Command>sphere</Command>
+          <HelpString xlate="true" UID="ACAD_1643">Creates a 3D solid sphere</HelpString>
+          <SmallImage Name="qrc:/images/draw/sphere.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Sphere">SPHERE</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Cylinder">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_299">Modeling, Cylinder</Name>
+          <Command>cylinder</Command>
+          <HelpString xlate="true" UID="ACAD_1432">Creates a 3D solid cylinder</HelpString>
+          <SmallImage Name="qrc:/images/draw/cylinder.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Cylinder">CYLINDER</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Torus">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_302">Modeling, Torus</Name>
+          <Command>torus</Command>
+          <HelpString xlate="true" UID="ACAD_1676">Creates a donut-shaped 3D solid</HelpString>
+          <SmallImage Name="qrc:/images/draw/torus.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Torus">TORUS</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Pyramid">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_1719">Modeling, Pyramid</Name>
+          <Command>pyramid</Command>
+          <HelpString xlate="true" UID="XLS_1720">Creates a 3D solid pyramid</HelpString>
+          <SmallImage Name="qrc:/images/draw/pyramid.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Pyramid">PYRAMID</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Extrude">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_303">Modeling, Extrude</Name>
+          <Command>extrude</Command>
+          <HelpString xlate="true" UID="ACAD_1492">Creates a 3D solid or surface by extruding a 2D object</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Extrude">EXTRUDE</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Revolve">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_304">Modeling, Revolve</Name>
+          <Command>revolve</Command>
+          <HelpString xlate="true" UID="ACAD_1617">Creates a 3D solid or surface by sweeping a 2D object around an axis</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Revolve">REVOLVE</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Sweep">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_1723">Modeling, Sweep</Name>
+          <Command>sweep</Command>
+          <HelpString xlate="true" UID="XLS_1724">Creates a 3D solid or surface by sweeping a 2D object along a path</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Sweep">SWEEP</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Loft">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_1721">Modeling, Loft</Name>
+          <Command>loft</Command>
+          <HelpString xlate="true" UID="XLS_1722">Creates a 3D solid or surface in the space between several cross sections</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Loft">LOFT</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Line">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_238">Line</Name>
+          <Command>line</Command>
+          <HelpString xlate="true" UID="ACAD_1523">Creates straight line segments</HelpString>
+          <SmallImage Name="qrc:/images/draw/line.png" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Line">LINE</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Ray">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_239">Ray</Name>
+          <Command>ray</Command>
+          <HelpString xlate="true" UID="ACAD_1607">Creates a line that starts at a point and continues to infinity</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Ray">RAY</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Xline">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_240">Construction Line</Name>
+          <Command>xline</Command>
+          <HelpString xlate="true" UID="ACAD_1730">Creates a line of infinite length</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Xline">XLINE</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Mline">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_241">Multiline</Name>
+          <Command>mline</Command>
+          <HelpString xlate="true" UID="ACAD_1536">Creates multiple parallel lines</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Mline">MLINE</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Pline">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_242">Polyline</Name>
+          <Command>pline</Command>
+          <HelpString xlate="true" UID="ACAD_1587">Creates a 2D polyline</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Pline">PLINE</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_3dpoly">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_243">3D Polyline</Name>
+          <Command>3dpoly</Command>
+          <HelpString xlate="true" UID="ACAD_1364">Creates a 3D polyline</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_3dpoly">3DPOLY</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Polygon">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_244">Polygon</Name>
+          <Command>polygon</Command>
+          <HelpString xlate="true" UID="ACAD_1592">Creates an equilateral closed polyline</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Polygon">POLYGON</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Rectang">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_245">Rectangle</Name>
+          <Command>rectang</Command>
+          <HelpString xlate="true" UID="ACAD_1609">Creates a rectangular polyline</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Rectang">RECTANG</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Helix">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_6008">Helix</Name>
+          <Command>helix</Command>
+          <HelpString xlate="true" UID="XLS_6013">Creates a 2D spiral or 3D spring</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Helix">HELIX</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Arc3point">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_247">Arc, 3 Points</Name>
+          <Command>arc</Command>
+          <HelpString xlate="true" UID="ACAD_1384">Creates an arc using three points</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Arc3point">ARC</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_ArcStCeEn">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_248">Arc, Start, Center, End</Name>
+          <Command>arc \c</Command>
+          <HelpString xlate="true" UID="ACAD_1390">Creates an arc using the start point, center, and endpoint</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_ArcStCeEn">ARC</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_ArcStCeAn">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_249">Arc, Start, Center, Angle</Name>
+          <Command>arc \c \a</Command>
+          <HelpString xlate="true" UID="ACAD_1389">Creates an arc using the start point, center, and included angle</HelpString>
+          <SmallImage Name="RCDATA_16_ARCSCA" />
+          <LargeImage Name="RCDATA_32_ARCSCA" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_ArcStCeAn">ARC</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_ArcStCeLe">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_250">Arc, Start, Center, Length</Name>
+          <Command>arc \c \l</Command>
+          <HelpString xlate="true" UID="ACAD_1391">Creates an arc using the start point, center, and length of chord</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_ArcStCeLe">ARC</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_ArcStEnAg">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_251">Arc, Start, End, Angle</Name>
+          <Command>arc \e \a</Command>
+          <HelpString xlate="true" UID="ACAD_1392">Creates an arc using the start point, endpoint, and included angle</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_ArcStEnAg">ARC</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_ArcStEnDi">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_252">Arc, Start, End, Direction</Name>
+          <Command>arc \e \d</Command>
+          <HelpString xlate="true" UID="ACAD_1393">Creates an arc using the start point, endpoint, and starting direction</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_ArcStEnDi">ARC</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_ArcStEnRa">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_253">Arc, Start, End, Radius</Name>
+          <Command>arc \e \r</Command>
+          <HelpString xlate="true" UID="ACAD_1394">Creates an arc using the start point, endpoint, and radius</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_ArcStEnRa">ARC</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_ArcCeStEn">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_254">Arc, Center, Start, End</Name>
+          <Command>arc c</Command>
+          <HelpString xlate="true" UID="ACAD_1386">Creates an arc using the center, start point, and endpoint</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_ArcCeStEn">ARC</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_ArcCeStAn">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_255">Arc, Center, Start, Angle</Name>
+          <Command>arc c \\a</Command>
+          <HelpString xlate="true" UID="ACAD_1385">Creates an arc using the center, start point, and included angle</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_ArcCeStAn">ARC</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_ArcCeStLe">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_256">Arc, Center, Start, Length</Name>
+          <Command>arc c \\l</Command>
+          <HelpString xlate="true" UID="ACAD_1387">Creates an arc using the center, start point, and length of chord</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_ArcCeStLe">ARC</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_ArcContin">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_257">Arc, Continue</Name>
+          <Command>arc</Command>
+          <HelpString xlate="true" UID="ACAD_1388">Creates an arc tangent to the last line or arc drawn</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_ArcContin">ARC</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_CircleRad">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_259">Circle, Center, Radius</Name>
+          <Command>circle</Command>
+          <HelpString xlate="true" UID="ACAD_1420">Creates a circle using a specified radius</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_CircleRad">CIRCLE</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_CircleDia">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_260">Circle, Center, Diameter</Name>
+          <Command>circle \d</Command>
+          <HelpString xlate="true" UID="ACAD_1419">Creates a circle using a specified diameter</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_CircleDia">CIRCLE</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Circle2pt">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_261">Circle, 2 Points</Name>
+          <Command>circle 2p</Command>
+          <HelpString xlate="true" UID="ACAD_1417">Creates a circle using two endpoints of the diameter</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Circle2pt">CIRCLE</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Circle3pt">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_262">Circle, 3 Points</Name>
+          <Command>circle 3p</Command>
+          <HelpString xlate="true" UID="ACAD_1418">Creates a circle using three points on the circumference</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Circle3pt">CIRCLE</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_CircleTTR">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_263">Circle, Tan, Tan, Radius</Name>
+          <Command>circle ttr</Command>
+          <HelpString xlate="true" UID="ACAD_1421">Creates a circle tangent to two objects with a specified radius</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_CircleTTR">CIRCLE</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_CircleTTT">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_264">Circle, Tan, Tan, Tan</Name>
+          <Command>circle 3p tan \tan \tan \</Command>
+          <HelpString xlate="true" UID="ACAD_1422">Creates a circle tangent to three objects</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_CircleTTT">CIRCLE</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Donut">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_265">Donut</Name>
+          <Command>donut</Command>
+          <HelpString xlate="true" UID="ACAD_1471">Creates filled circles and rings</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Donut">DONUT</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Spline">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_266">Spline</Name>
+          <Command>spline</Command>
+          <HelpString xlate="true" UID="ACAD_1644">Creates a smooth curve that passes through or near specified points</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Spline">SPLINE</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_EllipseCe">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_268">Ellipse, Center</Name>
+          <Command>ellipse c</Command>
+          <HelpString xlate="true" UID="ACAD_1486">Creates an ellipse using a specified center point</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_EllipseCe">ELLIPSE</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_EllipseAx">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_269">Ellipse, Axis, End</Name>
+          <Command>ellipse</Command>
+          <HelpString xlate="true" UID="ACAD_1485">Creates an ellipse or an elliptical arc</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_EllipseAx">ELLIPSE </CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_EllipseAr">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_270">Ellipse, Arc</Name>
+          <Command>ellipse a</Command>
+          <HelpString xlate="true" UID="ACAD_1487">Creates an elliptical arc </HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_EllipseAr">ELLIPSE</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Bmake">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_272">Block, Make...</Name>
+          <Command>block</Command>
+          <HelpString xlate="true" UID="ACAD_1410">Creates a block definition from selected objects</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Bmake">BLOCK</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Base">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_273">Block, Base</Name>
+          <Command>base</Command>
+          <HelpString xlate="true" UID="ACAD_1408">Sets the insertion base point for the current drawing</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Base">BASE</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Attdef">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_274">Block, Define Attributes...</Name>
+          <Command>attdef</Command>
+          <HelpString xlate="true" UID="ACAD_1433">Creates an attribute definition for storing data in a block</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Attdef">ATTDEF</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Table">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_2558">Table...</Name>
+          <Command>table</Command>
+          <HelpString xlate="true" UID="ACAD_2568">Creates an empty table object</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Table">TABLE</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_PointSing">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_276">Point, Single Point</Name>
+          <Command>point</Command>
+          <HelpString xlate="true" UID="ACAD_1591">Creates a point object</HelpString>
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_PointSing">POINT</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_PointMult">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_277">Point, Multiple Point</Name>
+          <Command>point</Command>
+          <HelpString xlate="true" UID="ACAD_1590">Creates multiple point objects</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_PointMult">POINT</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Divide">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_278">Divide</Name>
+          <Command>divide</Command>
+          <HelpString xlate="true" UID="ACAD_1470">Places evenly spaced point objects or blocks along the length or perimeter of an object</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Divide">DIVIDE</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Measure">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_279">Measure</Name>
+          <Command>measure</Command>
+          <HelpString xlate="true" UID="ACAD_1531">Places point objects or blocks at measured intervals on an object</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Measure">MEASURE</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Bhatch">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_280">Hatch...</Name>
+          <Command>bhatch</Command>
+          <HelpString xlate="true" UID="ACAD_1409">Fills an enclosed area or selected objects with a hatch pattern or fill</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Bhatch">HATCH</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Gradient">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_2634">Gradient...</Name>
+          <Command>gradient</Command>
+          <HelpString xlate="true" UID="ACAD_2636">Fills an enclosed area or selected objects with a gradient fill</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Gradient">GRADIENT</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Boundary">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_281">Boundary...</Name>
+          <Command>boundary</Command>
+          <HelpString xlate="true" UID="ACAD_1411">Creates a region or a polyline from an enclosed area</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Boundary">BOUNDARY</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Region">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_282">Region</Name>
+          <Command>region</Command>
+          <HelpString xlate="true" UID="ACAD_1614">Converts an object that encloses an area into a region object</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Region">REGION</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Wipeout">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_2469">Wipeout</Name>
+          <Command>wipeout</Command>
+          <HelpString xlate="true" UID="ACAD_2470">Creates wipeout objects</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Wipeout">WIPEOUT</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Revcloud">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_2471">Revision Cloud</Name>
+          <Command>revcloud</Command>
+          <HelpString xlate="true" UID="ACAD_2473">Creates a revision cloud using a polyline</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Revcloud">REVCLOUD</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Mtext">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_284">Multiline Text...</Name>
+          <Command>mtext</Command>
+          <HelpString xlate="true" UID="ACAD_1550">Creates a multiline text object</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Mtext">MTEXT</CLICommand>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Dtext">
+        <Macro type="Draw">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="0" />
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="ACAD_285">Single Line Text</Name>
+          <Command>text</Command>
+          <HelpString xlate="true" UID="ACAD_1478">Displays text on screen as it is entered</HelpString>
+          <SmallImage Name="" />
+          <LargeImage Name="" />
+          <CLICommand xlate="true" UID="XLS_CLICMD_ID_Dtext">TEXT</CLICommand>
+        </Macro>
+      </MenuMacro>
+    </MacroGroup>
+    <MenuRoot>
+      <AcceleratorRoot />
+      <OverrideRoot />
+      <MouseButtonRoot />
+      <DigitizerButtonRoot />
+      <PopMenuRoot>
+        <PopMenu hasDiesel="false" UID="ID_MnDraw">
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Alias>POP7</Alias>
+          <Alias>DRAW</Alias>
+          <Name xlate="true" UID="XLS_0001">$(if,$(and,$(eq,$(getvar,"iscmd(line)"),1),$(&gt;,$(strlen,$(getvar,dwgname)),0)),&amp;Draw,)</Name>
+          <PopMenuRef pUID="ID_MnSolids" UID="PMRU_0003">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuRef>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0033">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0034">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0030" xlate="true">$(if,$(eq,$(getvar,"iscmd(line)"),1),&amp;Line,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Line" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0035">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0031" xlate="true">$(if,$(eq,$(getvar,"iscmd(ray)"),1),&amp;Ray,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Ray" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0036">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0032" xlate="true">$(if,$(eq,$(getvar,"iscmd(xline)"),1),Cons&amp;truction Line,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Xline" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0037">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0033" xlate="true">$(if,$(eq,$(getvar,"iscmd(mline)"),1),M&amp;ultiline,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Mline" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0039">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0034" xlate="true">$(if,$(eq,$(getvar,"iscmd(pline)"),1),&amp;Polyline,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Pline" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0040">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0035" xlate="true">$(if,$(eq,$(getvar,"iscmd(3dpoly)"),1),&amp;3D Polyline,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_3dpoly" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0041">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0036" xlate="true">$(if,$(eq,$(getvar,"iscmd(polygon)"),1),Pol&amp;ygon,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Polygon" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0042">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0037" xlate="true">$(if,$(eq,$(getvar,"iscmd(rectang)"),1),Rectan&amp;gle,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Rectang" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0043">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0038" xlate="true">$(if,$(eq,$(getvar,"iscmd(helix)"),1),Hel&amp;ix,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Helix" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuRef pUID="ID_MnArc" UID="PMRU_0004">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuRef>
+          <PopMenuRef pUID="ID_MnCircle" UID="PMRU_0005">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuRef>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0068">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0058" xlate="true">$(if,$(eq,$(getvar,"iscmd(donut)"),1),&amp;Donut,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Donut" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0069">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0059" xlate="true">$(if,$(eq,$(getvar,"iscmd(spline)"),1),&amp;Spline,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Spline" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuRef pUID="ID_MnEllipse" UID="PMRU_0006">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuRef>
+          <PopMenuRef pUID="ID_MnBlock" UID="PMRU_0007">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuRef>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0079">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0068" xlate="true">$(if,$(eq,$(getvar,"iscmd(table)"),1),Table...,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Table" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuRef pUID="ID_MnPoint" UID="PMRU_0008">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuRef>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0085">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0074" xlate="true">$(if,$(eq,$(getvar,"iscmd(bhatch)"),1),&amp;Hatch...,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Bhatch" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0087">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0075" xlate="true">$(if,$(eq,$(getvar,"iscmd(gradient)"),1),Gradient...,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Gradient" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0088">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0076" xlate="true">$(if,$(eq,$(getvar,"iscmd(boundary)"),1),&amp;Boundary...,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Boundary" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0089">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0077" xlate="true">$(if,$(eq,$(getvar,"iscmd(region)"),1),Regio&amp;n,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Region" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0090">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0078" xlate="true">$(if,$(eq,$(getvar,"iscmd(wipeout)"),1),&amp;Wipeout,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Wipeout" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0091">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0079" xlate="true">$(if,$(eq,$(getvar,"iscmd(revcloud)"),1),Re&amp;vision Cloud,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Revcloud" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuRef pUID="ID_MnText" UID="PMRU_0009">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuRef>
+        </PopMenu>
+        <PopMenu hasDiesel="true" UID="ID_MnSolids">
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0002">$(if,$(eq,$(getvar,"iscmd(box)"),1),&amp;Modeling,)</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0001">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0003" xlate="true">$(if,$(eq,$(getvar,"iscmd(polysolid)"),1),&amp;Polysolid,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Polysolid" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0002">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0004" xlate="true">&amp;Box</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Box" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0003">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0005" xlate="true">$(if,$(eq,$(getvar,"iscmd(wedge)"),1),&amp;Wedge,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Wedge" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0004">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0006" xlate="true">$(if,$(eq,$(getvar,"iscmd(cone)"),1),C&amp;one,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Cone" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0005">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0007" xlate="true">$(if,$(eq,$(getvar,"iscmd(sphere)"),1),&amp;Sphere,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Sphere" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0006">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0008" xlate="true">$(if,$(eq,$(getvar,"iscmd(cylinder)"),1),&amp;Cylinder,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Cylinder" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0007">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0009" xlate="true">$(if,$(eq,$(getvar,"iscmd(torus)"),1),&amp;Torus,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Torus" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0008">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0010" xlate="true">$(if,$(eq,$(getvar,"iscmd(pyramid)"),1),P&amp;yramid,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Pyramid" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0011">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0012">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0012" xlate="true">$(if,$(eq,$(getvar,"iscmd(extrude)"),1),E&amp;xtrude,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Extrude" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0013">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0013" xlate="true">$(if,$(eq,$(getvar,"iscmd(revolve)"),1),&amp;Revolve,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Revolve" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0014">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0014" xlate="true">$(if,$(eq,$(getvar,"iscmd(sweep)"),1),Swee&amp;p,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Sweep" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0015">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0015" xlate="true">$(if,$(eq,$(getvar,"iscmd(loft)"),1),&amp;Loft,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Loft" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu hasDiesel="false" UID="ID_MnArc">
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0039">$(if,$(eq,$(getvar,"iscmd(arc)"),1),&amp;Arc,)</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0045">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0040" xlate="true">3 &amp;Points</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Arc3point" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0046">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0047">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0041" xlate="true">&amp;Start, Center, End</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_ArcStCeEn" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0048">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0042" xlate="true">S&amp;tart, Center, Angle</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_ArcStCeAn" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0049">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0043" xlate="true">St&amp;art, Center, Length</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_ArcStCeLe" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0050">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0051">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0044" xlate="true">Start, E&amp;nd, Angle</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_ArcStEnAg" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0052">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0045" xlate="true">Start, End, &amp;Direction</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_ArcStEnDi" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0053">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0046" xlate="true">Start, End, &amp;Radius</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_ArcStEnRa" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0054">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0055">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0047" xlate="true">&amp;Center, Start, End</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_ArcCeStEn" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0056">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0048" xlate="true">C&amp;enter, Start, Angle</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_ArcCeStAn" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0057">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0049" xlate="true">Center, Start, &amp;Length</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_ArcCeStLe" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0058">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0059">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0050" xlate="true">C&amp;ontinue</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_ArcContin" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu hasDiesel="false" UID="ID_MnCircle">
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0051">$(if,$(eq,$(getvar,"iscmd(circle)"),1),&amp;Circle,)</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0060">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0052" xlate="true">Center, &amp;Radius</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_CircleRad" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0061">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0053" xlate="true">Center, &amp;Diameter</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_CircleDia" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0062">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0063">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0054" xlate="true">&amp;2 Points</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Circle2pt" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0064">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0055" xlate="true">&amp;3 Points</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Circle3pt" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0065">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+<!--
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0066">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0056" xlate="true">&amp;Tan, Tan, Radius</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_CircleTTR" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0067">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0057" xlate="true">T&amp;an, Tan, Tan</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_CircleTTT" />
+            </MenuItem>
+          </PopMenuItem>
+-->
+        </PopMenu>
+        <PopMenu hasDiesel="false" UID="ID_MnEllipse">
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0060">$(if,$(eq,$(getvar,"iscmd(ellipse)"),1),&amp;Ellipse,)</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0070">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0061" xlate="true">&amp;Center</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_EllipseCe" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0071">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0062" xlate="true">Axis, &amp;End</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_EllipseAx" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0072">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0073">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0063" xlate="true">&amp;Arc</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_EllipseAr" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu hasDiesel="false" UID="ID_MnBlock">
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0064">$(if,$(eq,$(getvar,"iscmd(block)"),1),Bloc&amp;k,)</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0074">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0065" xlate="true">$(if,$(eq,$(getvar,"iscmd(block)"),1),&amp;Make...,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Bmake" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0075">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0076">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0066" xlate="true">$(if,$(eq,$(getvar,"iscmd(base)"),1),&amp;Base,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Base" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0077">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0067" xlate="true">$(if,$(eq,$(getvar,"iscmd(attdef)"),1),&amp;Define Attributes...,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Attdef" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu hasDiesel="false" UID="ID_MnPoint">
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0069">$(if,$(eq,$(getvar,"iscmd(point)"),1),P&amp;oint,)</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0080">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0070" xlate="true">&amp;Single Point</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PointSing" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0081">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0071" xlate="true">Multiple &amp;Point</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PointMult" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0082">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0083">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0072" xlate="true">$(if,$(eq,$(getvar,"iscmd(divide)"),1),&amp;Divide,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Divide" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0084">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0073" xlate="true">$(if,$(eq,$(getvar,"iscmd(measure)"),1),&amp;Measure,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Measure" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu hasDiesel="false" UID="ID_MnText">
+          <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0080">$(if,$(or,$(eq,$(getvar,"iscmd(mtext)"),1),$(eq,$(getvar,"iscmd(text)"),1)),Te&amp;xt,)</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0093">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0081" xlate="true">$(if,$(eq,$(getvar,"iscmd(mtext)"),1),&amp;Multiline Text...,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Mtext" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0094">
+            <ModifiedRev MajorVersion="17" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0082" xlate="true">$(if,$(eq,$(getvar,"iscmd(text)"),1),&amp;Single Line Text,)</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Dtext" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+      </PopMenuRoot>
+      <ToolbarRoot />
+      <ScreenMenuRoot />
+      <ImageMenuRoot />
+      <TabletMenuRoot />
+      <DoubleClickRoot />
+      <ToolPanelRoot />
+      <PanelSetRoot>
+        <PanelSet UID="PSTU_0001" />
+      </PanelSetRoot>
+      <QuickPropertiesRoot />
+      <RolloverTooltipRoot />
+    </MenuRoot>
+  </MenuGroup>
+</CustSection>

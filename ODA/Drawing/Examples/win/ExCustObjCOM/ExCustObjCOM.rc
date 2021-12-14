@@ -1,0 +1,127 @@
+/////////////////////////////////////////////////////////////////////////////// 
+// Copyright (C) 2002-2021, Open Design Alliance (the "Alliance"). 
+// All rights reserved. 
+// 
+// This software and its documentation and related materials are owned by 
+// the Alliance. The software may only be incorporated into application 
+// programs owned by members of the Alliance, subject to a signed 
+// Membership Agreement and Supplemental Software License Agreement with the
+// Alliance. The structure and organization of this software are the valuable  
+// trade secrets of the Alliance and its suppliers. The software is also 
+// protected by copyright law and international treaty provisions. Application  
+// programs incorporating this software must include the following statement 
+// with their copyright notices:
+//   
+//   This application incorporates Open Design Alliance software pursuant to a license 
+//   agreement with Open Design Alliance.
+//   Open Design Alliance Copyright (C) 2002-2021 by Open Design Alliance. 
+//   All rights reserved.
+//
+// By use of this software, its documentation or related materials, you 
+// acknowledge and accept the above terms.
+///////////////////////////////////////////////////////////////////////////////
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "1 TYPELIB ""ExCustObjCOM.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+#ifdef _DEBUG
+#define FILE_DESCRIPTION TD_PRODUCT_NAME_S " example: ExtCustObj COM Support (Debug)\0"
+#else
+#define FILE_DESCRIPTION TD_PRODUCT_NAME_S " example: ExtCustObj COM Support\0"
+#endif
+
+
+#define INTERNAL_NAME "ExtCustObjCOM\0"
+#define ORIGINAL_FILE_NAME    "ExtCustObjCOM.dll\0"
+#define PRODUCT_NAME_ADDITION TD_PRODUCT_NAME_ADDITION_S
+#define COPYRIGHT_START_YEAR  TD_COPYRIGHT_START_YEAR_S
+
+#include "../../../VersionInfo.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_EXCUSTOBJCOM        REGISTRY                "ExCustObjCOM.rgs"
+IDR_EXCUSTENTITYWRAPPER REGISTRY                "ExCustEntityWrapper.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_PROJNAME            "ExCustObjCOM"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "ExCustObjCOM.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

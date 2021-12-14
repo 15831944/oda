@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* Sources/Classes/iOdaAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* Sources/Classes/iOdaAppAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* Sources/main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* Sources/main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* Sources/iOdaAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* Sources/iOdaAppViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* Sources/MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* Sources/MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* Sources/Classes/iOdaAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* Sources/Classes/iOdaAppViewController.m */; };
+		6285D626135C046000513D21 /* Sources/Classes/ViewExViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6285D624135C046000513D21 /* Sources/Classes/ViewExViewController.mm */; };
+		6285D627135C046000513D21 /* ViewExViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6285D625135C046000513D21 /* ViewExViewController.xib */; };
+		6285D662135C10BE00513D21 /* Sources/Classes/ODBaseView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6285D661135C10BE00513D21 /* Sources/Classes/ODBaseView.mm */; };
+		6285D6CF135C929D00513D21 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6285D6CE135C929D00513D21 /* OpenGLES.framework */; };
+		6285D6E1135C92C000513D21 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6285D6E0135C92C000513D21 /* QuartzCore.framework */; };
+		62E5D52D134892C9007BB9A2 /* Sources/Classes/FileListTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E5D52C134892C9007BB9A2 /* Sources/Classes/FileListTableViewDataSource.m */; };
+		62E5D53A1348933C007BB9A2 /* iOdaApplication.mm in Sources */ = {isa = PBXBuildFile; fileRef = 62E5D5351348933C007BB9A2 /* iOdaApplication.mm */; };
+		62E5D53B1348933C007BB9A2 /* iOdaAppServices.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 62E5D5361348933C007BB9A2 /* iOdaAppServices.cpp */; };
+		62E5D53C1348933C007BB9A2 /* iUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E5D5391348933C007BB9A2 /* iUtils.m */; };
+		62E5D6121348C549007BB9A2 /* ReadExViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 62E5D6101348C549007BB9A2 /* ReadExViewController.mm */; };
+		62E5D6131348C549007BB9A2 /* Sources/ReadExViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62E5D6111348C549007BB9A2 /* Sources/ReadExViewController.xib */; };
+		8C7F169A1498AE100002AFA8 /* adinit.dat in Resources */ = {isa = PBXBuildFile; fileRef = 8C7F16991498AE100002AFA8 /* adinit.dat */; };
+		8C7F16E21498C18B0002AFA8 /* iStrConv.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8C7F16E11498C18B0002AFA8 /* iStrConv.mm */; };
+		8C8EE82613DD691900FC8B73 /* DbFiller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C8EE82213DD691900FC8B73 /* DbFiller.cpp */; };
+		8C8EE82713DD691900FC8B73 /* DbSubDMeshData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C8EE82413DD691900FC8B73 /* DbSubDMeshData.cpp */; };
+		FC406DA517DBA71B00F2BC89 /* ViewBmpController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC406DA317DBA71B00F2BC89 /* ViewBmpController.xib */; };
+		FC406DA917DBC5D200F2BC89 /* ViewBmpController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FC406DA817DBC5D200F2BC89 /* ViewBmpController.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* Sources/Classes/iOdaAppAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sources/Classes/iOdaAppAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* Sources/Classes/iOdaAppAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sources/Classes/iOdaAppAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* iOdaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOdaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* Sources/iOdaAppViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Sources/iOdaAppViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* Sources/MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Sources/MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* Sources/Classes/iOdaAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sources/Classes/iOdaAppViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* Sources/Classes/iOdaAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sources/Classes/iOdaAppViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* Sources/main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sources/main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Sources/iOdaApp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sources/iOdaApp_Prefix.pch; sourceTree = "<group>"; };
+		6285D623135C046000513D21 /* Sources/Classes/ViewExViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sources/Classes/ViewExViewController.h; sourceTree = "<group>"; };
+		6285D624135C046000513D21 /* Sources/Classes/ViewExViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Sources/Classes/ViewExViewController.mm; sourceTree = "<group>"; };
+		6285D625135C046000513D21 /* ViewExViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ViewExViewController.xib; path = Sources/Classes/ViewExViewController.xib; sourceTree = "<group>"; };
+		6285D660135C10BE00513D21 /* Sources/Classes/ODBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sources/Classes/ODBaseView.h; sourceTree = "<group>"; };
+		6285D661135C10BE00513D21 /* Sources/Classes/ODBaseView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Sources/Classes/ODBaseView.mm; sourceTree = "<group>"; };
+		6285D6CE135C929D00513D21 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		6285D6E0135C92C000513D21 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		628AE22313530C43008B950C /* ExHostAppServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExHostAppServices.h; path = ../iCommon/ExHostAppServices.h; sourceTree = SOURCE_ROOT; };
+		62E5D52B134892C9007BB9A2 /* Sources/Classes/FileListTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sources/Classes/FileListTableViewDataSource.h; sourceTree = "<group>"; };
+		62E5D52C134892C9007BB9A2 /* Sources/Classes/FileListTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sources/Classes/FileListTableViewDataSource.m; sourceTree = "<group>"; };
+		62E5D5341348933C007BB9A2 /* iOdaApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iOdaApplication.h; path = ../iCommon/iOdaApplication.h; sourceTree = SOURCE_ROOT; };
+		62E5D5351348933C007BB9A2 /* iOdaApplication.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = iOdaApplication.mm; path = ../iCommon/iOdaApplication.mm; sourceTree = SOURCE_ROOT; };
+		62E5D5361348933C007BB9A2 /* iOdaAppServices.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = iOdaAppServices.cpp; path = ../iCommon/iOdaAppServices.cpp; sourceTree = SOURCE_ROOT; };
+		62E5D5371348933C007BB9A2 /* iOdaAppServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iOdaAppServices.h; path = ../iCommon/iOdaAppServices.h; sourceTree = SOURCE_ROOT; };
+		62E5D5381348933C007BB9A2 /* iUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iUtils.h; path = ../iCommon/iUtils.h; sourceTree = SOURCE_ROOT; };
+		62E5D5391348933C007BB9A2 /* iUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iUtils.m; path = ../iCommon/iUtils.m; sourceTree = SOURCE_ROOT; };
+		62E5D60F1348C549007BB9A2 /* ReadExViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReadExViewController.h; path = Sources/ReadExViewController.h; sourceTree = "<group>"; };
+		62E5D6101348C549007BB9A2 /* ReadExViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ReadExViewController.mm; path = Sources/ReadExViewController.mm; sourceTree = "<group>"; };
+		62E5D6111348C549007BB9A2 /* Sources/ReadExViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Sources/ReadExViewController.xib; sourceTree = "<group>"; };
+		8C7F16991498AE100002AFA8 /* adinit.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = adinit.dat; path = ../../../adinit.dat; sourceTree = SOURCE_ROOT; };
+		8C7F16E01498C18B0002AFA8 /* iStrConv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iStrConv.h; path = ../iCommon/iStrConv.h; sourceTree = SOURCE_ROOT; };
+		8C7F16E11498C18B0002AFA8 /* iStrConv.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = iStrConv.mm; path = ../iCommon/iStrConv.mm; sourceTree = SOURCE_ROOT; };
+		8C8EE82213DD691900FC8B73 /* DbFiller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DbFiller.cpp; path = ../../OdWriteEx/DbFiller.cpp; sourceTree = SOURCE_ROOT; };
+		8C8EE82313DD691900FC8B73 /* DbFiller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DbFiller.h; path = ../../OdWriteEx/DbFiller.h; sourceTree = SOURCE_ROOT; };
+		8C8EE82413DD691900FC8B73 /* DbSubDMeshData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DbSubDMeshData.cpp; path = ../../OdWriteEx/DbSubDMeshData.cpp; sourceTree = SOURCE_ROOT; };
+		8C8EE82513DD691900FC8B73 /* DbSubDMeshData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DbSubDMeshData.h; path = ../../OdWriteEx/DbSubDMeshData.h; sourceTree = SOURCE_ROOT; };
+		8D1107310486CEB800E47090 /* Sources/iOdaApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Sources/iOdaApp-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		FC406DA117DBA71A00F2BC89 /* ViewBmpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewBmpController.h; path = Sources/Classes/ViewBmpController.h; sourceTree = "<group>"; };
+		FC406DA317DBA71B00F2BC89 /* ViewBmpController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ViewBmpController.xib; path = Sources/Classes/ViewBmpController.xib; sourceTree = "<group>"; };
+		FC406DA817DBC5D200F2BC89 /* ViewBmpController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ViewBmpController.mm; path = Sources/Classes/ViewBmpController.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				6285D6CF135C929D00513D21 /* OpenGLES.framework in Frameworks */,
+				6285D6E1135C92C000513D21 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				62E5D60F1348C549007BB9A2 /* ReadExViewController.h */,
+				62E5D6101348C549007BB9A2 /* ReadExViewController.mm */,
+				62E5D52B134892C9007BB9A2 /* Sources/Classes/FileListTableViewDataSource.h */,
+				62E5D52C134892C9007BB9A2 /* Sources/Classes/FileListTableViewDataSource.m */,
+				1D3623240D0F684500981E51 /* Sources/Classes/iOdaAppAppDelegate.h */,
+				1D3623250D0F684500981E51 /* Sources/Classes/iOdaAppAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* Sources/Classes/iOdaAppViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* Sources/Classes/iOdaAppViewController.m */,
+				6285D623135C046000513D21 /* Sources/Classes/ViewExViewController.h */,
+				6285D624135C046000513D21 /* Sources/Classes/ViewExViewController.mm */,
+				6285D660135C10BE00513D21 /* Sources/Classes/ODBaseView.h */,
+				6285D661135C10BE00513D21 /* Sources/Classes/ODBaseView.mm */,
+				FC406DA117DBA71A00F2BC89 /* ViewBmpController.h */,
+				FC406DA817DBC5D200F2BC89 /* ViewBmpController.mm */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* iOdaApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				8C8EE82113DD68D700FC8B73 /* WriteEx */,
+				62E5D5331348932C007BB9A2 /* Common */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Sources/iOdaApp_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* Sources/main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FC406DA317DBA71B00F2BC89 /* ViewBmpController.xib */,
+				8C7F16991498AE100002AFA8 /* adinit.dat */,
+				6285D625135C046000513D21 /* ViewExViewController.xib */,
+				62E5D6111348C549007BB9A2 /* Sources/ReadExViewController.xib */,
+				2899E5210DE3E06400AC0155 /* Sources/iOdaAppViewController.xib */,
+				28AD733E0D9D9553002E5188 /* Sources/MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Sources/iOdaApp-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6285D6CE135C929D00513D21 /* OpenGLES.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				6285D6E0135C92C000513D21 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62E5D5331348932C007BB9A2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8C7F16E01498C18B0002AFA8 /* iStrConv.h */,
+				8C7F16E11498C18B0002AFA8 /* iStrConv.mm */,
+				628AE22313530C43008B950C /* ExHostAppServices.h */,
+				62E5D5341348933C007BB9A2 /* iOdaApplication.h */,
+				62E5D5351348933C007BB9A2 /* iOdaApplication.mm */,
+				62E5D5361348933C007BB9A2 /* iOdaAppServices.cpp */,
+				62E5D5371348933C007BB9A2 /* iOdaAppServices.h */,
+				62E5D5381348933C007BB9A2 /* iUtils.h */,
+				62E5D5391348933C007BB9A2 /* iUtils.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		8C8EE82113DD68D700FC8B73 /* WriteEx */ = {
+			isa = PBXGroup;
+			children = (
+				8C8EE82213DD691900FC8B73 /* DbFiller.cpp */,
+				8C8EE82313DD691900FC8B73 /* DbFiller.h */,
+				8C8EE82413DD691900FC8B73 /* DbSubDMeshData.cpp */,
+				8C8EE82513DD691900FC8B73 /* DbSubDMeshData.h */,
+			);
+			name = WriteEx;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* iOdaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "iOdaApp" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOdaApp;
+			productName = iOdaApp;
+			productReference = 1D6058910D05DD3D006BFB54 /* iOdaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iOdaApp" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* iOdaApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* Sources/MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* Sources/iOdaAppViewController.xib in Resources */,
+				62E5D6131348C549007BB9A2 /* Sources/ReadExViewController.xib in Resources */,
+				6285D627135C046000513D21 /* ViewExViewController.xib in Resources */,
+				8C7F169A1498AE100002AFA8 /* adinit.dat in Resources */,
+				FC406DA517DBA71B00F2BC89 /* ViewBmpController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* Sources/main.m in Sources */,
+				1D3623260D0F684500981E51 /* Sources/Classes/iOdaAppAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* Sources/Classes/iOdaAppViewController.m in Sources */,
+				62E5D52D134892C9007BB9A2 /* Sources/Classes/FileListTableViewDataSource.m in Sources */,
+				62E5D53A1348933C007BB9A2 /* iOdaApplication.mm in Sources */,
+				62E5D53B1348933C007BB9A2 /* iOdaAppServices.cpp in Sources */,
+				62E5D53C1348933C007BB9A2 /* iUtils.m in Sources */,
+				62E5D6121348C549007BB9A2 /* ReadExViewController.mm in Sources */,
+				6285D626135C046000513D21 /* Sources/Classes/ViewExViewController.mm in Sources */,
+				6285D662135C10BE00513D21 /* Sources/Classes/ODBaseView.mm in Sources */,
+				8C8EE82613DD691900FC8B73 /* DbFiller.cpp in Sources */,
+				8C8EE82713DD691900FC8B73 /* DbSubDMeshData.cpp in Sources */,
+				8C7F16E21498C18B0002AFA8 /* iStrConv.mm in Sources */,
+				FC406DA917DBC5D200F2BC89 /* ViewBmpController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Sources/iOdaApp_Prefix.pch;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					../../../include,
+					../../../Extensions/ExServices,
+					../../../Extensions/ExRender,
+					../../../Examples/OdWriteEx,
+					../../../Examples/Common,
+					../../../Examples/OdReadEx,
+					../../../Examples/OdOpenGL,
+					../../../Include/DbPointCloudObj,
+				);
+				INFOPLIST_FILE = "Sources/iOdaApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = ../../../../lib/iphone_7.1simdbg;
+				OTHER_LDFLAGS = (
+					"-lRecomputeDimBlock",
+					"-lFreeImage",
+					"-lTD_SpatialIndex",
+					"-lTD_Alloc",
+					"-lTD_Root",
+					"-lTD_Gi",
+					"-lTD_Gs",
+					"-lTD_Db",
+					"-lTD_Ge",
+					"-lFreeType",
+					"-lTD_ExamplesCommon",
+					"-lTD_DbRoot",
+					"-lModelerGeometry",
+					"-lAutoSurfServices",
+					"-lTD_Br",
+					"-lTD_AcisBuilder",
+					"-lTD_BrepRenderer",
+					"-lRxRasterServices",
+					"-lRasterProcessor",
+					"-lWinOpenGL",
+					"-lTD_OpenGL",
+					"-lAcDbPointCloudObj",
+					"-lzlib",
+					"-lWinBitmap",
+				);
+				PRODUCT_NAME = iOdaApp;
+				VALID_ARCHS = "x86_64 i386 armv6 armv7 armv64 armv7s";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Sources/iOdaApp_Prefix.pch;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					../../../include,
+					../../../Extensions/ExServices,
+					../../../Extensions/ExRender,
+					../../../Examples/OdWriteEx,
+					../../../Examples/Common,
+					../../../Examples/OdReadEx,
+					../../../Examples/OdOpenGL,
+					../../../Include/DbPointCloudObj,
+				);
+				INFOPLIST_FILE = "Sources/iOdaApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = ../../../../lib/iphone_7.1simdbg;
+				OTHER_LDFLAGS = (
+					"-lRecomputeDimBlock",
+					"-lFreeImage",
+					"-lTD_SpatialIndex",
+					"-lTD_Alloc",
+					"-lTD_Root",
+					"-lTD_Gi",
+					"-lTD_Gs",
+					"-lTD_Db",
+					"-lTD_Ge",
+					"-lFreeType",
+					"-lTD_ExamplesCommon",
+					"-lTD_DbRoot",
+					"-lModelerGeometry",
+					"-lAutoSurfServices",
+					"-lTD_Br",
+					"-lTD_AcisBuilder",
+					"-lTD_BrepRenderer",
+					"-lWinOpenGL",
+					"-lTD_OpenGL",
+					"-lAcDbPointCloudObj",
+					"-lzlib",
+					"-lRxRasterServices",
+					"-lRasterProcessor",
+					"-lWinBitmap",
+				);
+				PRODUCT_NAME = iOdaApp;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "x86_64 i386 armv6 armv7 armv64 armv7s";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					../../../include,
+					../../../Extensions/ExServices,
+					../../../Extensions/ExRender,
+					../../../Examples/OdWriteEx,
+					../../../Examples/Common,
+					../../../Examples/OdReadEx,
+					../../../Examples/OdOpenGL,
+				);
+				LIBRARY_SEARCH_PATHS = ../../../../lib/iphone_5.1simdbg;
+				OTHER_LDFLAGS = (
+					"-lRecomputeDimBlock",
+					"-lJpeg",
+					"-lTD_SpatialIndex",
+					"-lTD_Alloc",
+					"-lTD_Root",
+					"-lTD_Gi",
+					"-lTD_Gs",
+					"-lTD_Db",
+					"-lTD_Ge",
+					"-lFreeType",
+					"-lTD_ExamplesCommon",
+					"-lTD_DbRoot",
+					"-lModelerGeometry",
+					"-lAutoSurfServices",
+					"-lTD_Br",
+					"-lTD_AcisBuilder",
+					"-lTD_BrepRenderer",
+					"-lRxRasterServices",
+					"-lRasterProcessor",
+					"-lWinOpenGL",
+					"-lTD_OpenGL",
+				);
+				PREBINDING = NO;
+				PRELINK_LIBS = "";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv6 armv7 i386";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					../../../include,
+					../../../Extensions/ExServices,
+					../../../Extensions/ExRender,
+					../../../Examples/OdWriteEx,
+					../../../Examples/Common,
+					../../../Examples/OdReadEx,
+					../../../Examples/OdOpenGL,
+				);
+				LIBRARY_SEARCH_PATHS = ../../../../lib/iphone_5.1sim;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-lRecomputeDimBlock",
+					"-lJpeg",
+					"-lTD_SpatialIndex",
+					"-lTD_Alloc",
+					"-lTD_Root",
+					"-lTD_Gi",
+					"-lTD_Gs",
+					"-lTD_Db",
+					"-lTD_Ge",
+					"-lFreeType",
+					"-lTD_ExamplesCommon",
+					"-lTD_DbRoot",
+					"-lModelerGeometry",
+					"-lAutoSurfServices",
+					"-lTD_Br",
+					"-lTD_AcisBuilder",
+					"-lTD_BrepRenderer",
+					"-lRasterProcessor",
+					"-lRxRasterServices",
+				);
+				PREBINDING = NO;
+				PRELINK_LIBS = "";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv6 armv7 i386";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "iOdaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iOdaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

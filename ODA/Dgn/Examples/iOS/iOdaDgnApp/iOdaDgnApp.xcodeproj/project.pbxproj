@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC36E2DE1BE69A07000EAA36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC36E2DD1BE69A07000EAA36 /* main.m */; };
+		FC36E2E11BE69A07000EAA36 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC36E2E01BE69A07000EAA36 /* AppDelegate.m */; };
+		FC36E2E41BE69A07000EAA36 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FC36E2E31BE69A07000EAA36 /* ViewController.mm */; };
+		FC36E2E71BE69A07000EAA36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC36E2E51BE69A07000EAA36 /* Main.storyboard */; };
+		FC36E2E91BE69A07000EAA36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC36E2E81BE69A07000EAA36 /* Assets.xcassets */; };
+		FC36E2EC1BE69A07000EAA36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC36E2EA1BE69A07000EAA36 /* LaunchScreen.storyboard */; };
+		FC4367531BE75BC40045E9FC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4367521BE75BC40045E9FC /* OpenGLES.framework */; };
+		FC5F8BB61D999DB4003B009C /* iOdaAppServices.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC5F8BB41D999DB4003B009C /* iOdaAppServices.cpp */; };
+		FC5F8BB91D999DF5003B009C /* iOdaApplication.mm in Sources */ = {isa = PBXBuildFile; fileRef = FC5F8BB71D999DF5003B009C /* iOdaApplication.mm */; };
+		FC6B88D11F027241001ABAE8 /* iStrConv.mm in Sources */ = {isa = PBXBuildFile; fileRef = FC6B88CF1F027241001ABAE8 /* iStrConv.mm */; };
+		FC6B88D31F0272DD001ABAE8 /* adinit.dat in Resources */ = {isa = PBXBuildFile; fileRef = FC6B88D21F0272DD001ABAE8 /* adinit.dat */; };
+		FC85F3571D999B700057FBB2 /* DgnViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FC85F3551D999B700057FBB2 /* DgnViewController.mm */; };
+		FC9AA4111F2200C300A46434 /* ExSystemServices.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC9AA4101F2200C300A46434 /* ExSystemServices.cpp */; };
+		FCB523D31BE9055800746588 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB523D21BE9055800746588 /* GLKit.framework */; };
+		FCFA75001BEFBA2300D6D57F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA74FF1BEFBA2300D6D57F /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FC36E2D91BE69A07000EAA36 /* iOdaDgnApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOdaDgnApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC36E2DD1BE69A07000EAA36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC36E2DF1BE69A07000EAA36 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC36E2E01BE69A07000EAA36 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC36E2E21BE69A07000EAA36 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FC36E2E31BE69A07000EAA36 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		FC36E2E61BE69A07000EAA36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC36E2E81BE69A07000EAA36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC36E2EB1BE69A07000EAA36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC36E2ED1BE69A07000EAA36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC4367521BE75BC40045E9FC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		FC5F8BB41D999DB4003B009C /* iOdaAppServices.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iOdaAppServices.cpp; sourceTree = "<group>"; };
+		FC5F8BB51D999DB4003B009C /* iOdaAppServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOdaAppServices.h; sourceTree = "<group>"; };
+		FC5F8BB71D999DF5003B009C /* iOdaApplication.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = iOdaApplication.mm; sourceTree = "<group>"; };
+		FC5F8BB81D999DF5003B009C /* iOdaApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOdaApplication.h; sourceTree = "<group>"; };
+		FC6B88CF1F027241001ABAE8 /* iStrConv.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = iStrConv.mm; path = ../../../../../Drawing/Examples/iOS/iCommon/iStrConv.mm; sourceTree = "<group>"; };
+		FC6B88D01F027241001ABAE8 /* iStrConv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iStrConv.h; path = ../../../../../Drawing/Examples/iOS/iCommon/iStrConv.h; sourceTree = "<group>"; };
+		FC6B88D21F0272DD001ABAE8 /* adinit.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = adinit.dat; path = ../../../../../Kernel/adinit.dat; sourceTree = "<group>"; };
+		FC85F3551D999B700057FBB2 /* DgnViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DgnViewController.mm; sourceTree = "<group>"; };
+		FC85F3561D999B700057FBB2 /* DgnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DgnViewController.h; sourceTree = "<group>"; };
+		FC9AA4101F2200C300A46434 /* ExSystemServices.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; sourceTree = "<group>"; };
+		FCB523D21BE9055800746588 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		FCFA74FF1BEFBA2300D6D57F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC36E2D61BE69A07000EAA36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCFA75001BEFBA2300D6D57F /* Foundation.framework in Frameworks */,
+				FCB523D31BE9055800746588 /* GLKit.framework in Frameworks */,
+				FC4367531BE75BC40045E9FC /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC36E2D01BE69A07000EAA36 = {
+			isa = PBXGroup;
+			children = (
+				FCFA74FF1BEFBA2300D6D57F /* Foundation.framework */,
+				FCB523D21BE9055800746588 /* GLKit.framework */,
+				FC4367521BE75BC40045E9FC /* OpenGLES.framework */,
+				FC36E2DB1BE69A07000EAA36 /* iOdaDgnApp */,
+				FC36E2DA1BE69A07000EAA36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC36E2DA1BE69A07000EAA36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC36E2D91BE69A07000EAA36 /* iOdaDgnApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC36E2DB1BE69A07000EAA36 /* iOdaDgnApp */ = {
+			isa = PBXGroup;
+			children = (
+				FC9AA4101F2200C300A46434 /* ExSystemServices.cpp */,
+				FC6B88CF1F027241001ABAE8 /* iStrConv.mm */,
+				FC6B88D01F027241001ABAE8 /* iStrConv.h */,
+				FC5F8BB71D999DF5003B009C /* iOdaApplication.mm */,
+				FC5F8BB81D999DF5003B009C /* iOdaApplication.h */,
+				FC5F8BB41D999DB4003B009C /* iOdaAppServices.cpp */,
+				FC5F8BB51D999DB4003B009C /* iOdaAppServices.h */,
+				FC85F3551D999B700057FBB2 /* DgnViewController.mm */,
+				FC85F3561D999B700057FBB2 /* DgnViewController.h */,
+				FC36E2DF1BE69A07000EAA36 /* AppDelegate.h */,
+				FC36E2E01BE69A07000EAA36 /* AppDelegate.m */,
+				FC36E2E21BE69A07000EAA36 /* ViewController.h */,
+				FC36E2E31BE69A07000EAA36 /* ViewController.mm */,
+				FC36E2E51BE69A07000EAA36 /* Main.storyboard */,
+				FC36E2E81BE69A07000EAA36 /* Assets.xcassets */,
+				FC36E2EA1BE69A07000EAA36 /* LaunchScreen.storyboard */,
+				FC36E2ED1BE69A07000EAA36 /* Info.plist */,
+				FC36E2DC1BE69A07000EAA36 /* Supporting Files */,
+			);
+			path = iOdaDgnApp;
+			sourceTree = "<group>";
+		};
+		FC36E2DC1BE69A07000EAA36 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC6B88D21F0272DD001ABAE8 /* adinit.dat */,
+				FC36E2DD1BE69A07000EAA36 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC36E2D81BE69A07000EAA36 /* iOdaDgnApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC36E2F01BE69A07000EAA36 /* Build configuration list for PBXNativeTarget "iOdaDgnApp" */;
+			buildPhases = (
+				FC36E2D51BE69A07000EAA36 /* Sources */,
+				FC36E2D61BE69A07000EAA36 /* Frameworks */,
+				FC36E2D71BE69A07000EAA36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOdaDgnApp;
+			productName = iOdaDgnApp;
+			productReference = FC36E2D91BE69A07000EAA36 /* iOdaDgnApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC36E2D11BE69A07000EAA36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = ODA;
+				TargetAttributes = {
+					FC36E2D81BE69A07000EAA36 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 4SVB9F72E4;
+					};
+				};
+			};
+			buildConfigurationList = FC36E2D41BE69A07000EAA36 /* Build configuration list for PBXProject "iOdaDgnApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC36E2D01BE69A07000EAA36;
+			productRefGroup = FC36E2DA1BE69A07000EAA36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC36E2D81BE69A07000EAA36 /* iOdaDgnApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC36E2D71BE69A07000EAA36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC36E2EC1BE69A07000EAA36 /* LaunchScreen.storyboard in Resources */,
+				FC36E2E91BE69A07000EAA36 /* Assets.xcassets in Resources */,
+				FC6B88D31F0272DD001ABAE8 /* adinit.dat in Resources */,
+				FC36E2E71BE69A07000EAA36 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC36E2D51BE69A07000EAA36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC36E2E41BE69A07000EAA36 /* ViewController.mm in Sources */,
+				FC36E2E11BE69A07000EAA36 /* AppDelegate.m in Sources */,
+				FC5F8BB61D999DB4003B009C /* iOdaAppServices.cpp in Sources */,
+				FC9AA4111F2200C300A46434 /* ExSystemServices.cpp in Sources */,
+				FC85F3571D999B700057FBB2 /* DgnViewController.mm in Sources */,
+				FC6B88D11F027241001ABAE8 /* iStrConv.mm in Sources */,
+				FC36E2DE1BE69A07000EAA36 /* main.m in Sources */,
+				FC5F8BB91D999DF5003B009C /* iOdaApplication.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FC36E2E51BE69A07000EAA36 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC36E2E61BE69A07000EAA36 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC36E2EA1BE69A07000EAA36 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC36E2EB1BE69A07000EAA36 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC36E2EE1BE69A07000EAA36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../../Kernel/Include,
+					../../../../Drawing/Include/,
+					../../../include,
+					../../../Extensions/ExServices/,
+					../../../../Kernel/Extensions/ExServices,
+					../../../../ThirdParty/activation,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = ../../../../lib/iphone_11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC36E2EF1BE69A07000EAA36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../../Kernel/Include,
+					../../../../Drawing/Include/,
+					../../../include,
+					../../../Extensions/ExServices/,
+					../../../../Kernel/Extensions/ExServices,
+					../../../../ThirdParty/activation,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = ../../../../lib/iphone_11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC36E2F11BE69A07000EAA36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4SVB9F72E4;
+				INFOPLIST_FILE = iOdaDgnApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-lTD_Zlib",
+					"-lFreeType",
+					"-lTD_Alloc",
+					"-lTD_Root",
+					"-lTD_DbRoot",
+					"-lTD_Db",
+					"-lTD_Ge",
+					"-lTD_Gs",
+					"-lTD_Gi",
+					"-lTD_SpatialIndex",
+					"-lTD_ExamplesCommon",
+					"-lRecomputeDimBlock",
+					"-lRasterProcessor",
+					"-lWinGLES2",
+					"-lModelerGeometry",
+					"-lModelerCommands",
+					"-lRxRasterServices",
+					"-lFreeImage",
+					"-lTD_Br",
+					"-lTD_BrepRenderer",
+					"-lTD_AcisBuilder",
+					"-ltinyxml",
+					"-lTG_Dgn7IO",
+					"-lTG_Db",
+					"-loless",
+					"-lTG_ModelerGeometry",
+					"-lPSToolkit",
+					"-lTG_ExamplesCommon",
+					"-lTD_DrawingsExamplesCommon",
+					"-lTrVec",
+					"-lTrBase",
+					"-lTrGL2",
+					"-lTrRenderBase",
+					"-llibcrypto",
+					"-lTD_BrepBuilder",
+					"-lATEXT",
+					"-lTD_DbCore",
+					"-lRText",
+					"-lTD_DbEntities",
+					"-lTD_DbIO",
+					"-lISM",
+					"-lWipeOut",
+					"-lAcMPolygonObj15",
+					"-lACCAMERA",
+					"-lSCENEOE",
+					"-lUTF",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.opendesign.iOdaDgnApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		FC36E2F21BE69A07000EAA36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4SVB9F72E4;
+				INFOPLIST_FILE = iOdaDgnApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-lTD_Zlib",
+					"-lFreeType",
+					"-lTD_Alloc",
+					"-lTD_Root",
+					"-lTD_DbRoot",
+					"-lTD_Db",
+					"-lTD_Ge",
+					"-lTD_Gs",
+					"-lTD_Gi",
+					"-lTD_SpatialIndex",
+					"-lTD_ExamplesCommon",
+					"-lRecomputeDimBlock",
+					"-lRasterProcessor",
+					"-lWinGLES2",
+					"-lModelerGeometry",
+					"-lModelerCommands",
+					"-lRxRasterServices",
+					"-lFreeImage",
+					"-lTD_Br",
+					"-lTD_BrepRenderer",
+					"-lTD_AcisBuilder",
+					"-ltinyxml",
+					"-lTG_Dgn7IO",
+					"-lTG_Db",
+					"-loless",
+					"-lTG_ModelerGeometry",
+					"-lPSToolkit",
+					"-lTG_ExamplesCommon",
+					"-lTD_DrawingsExamplesCommon",
+					"-lTrVec",
+					"-lTrBase",
+					"-lTrGL2",
+					"-lTrRenderBase",
+					"-llibcrypto",
+					"-lTD_BrepBuilder",
+					"-lATEXT",
+					"-lTD_DbCore",
+					"-lRText",
+					"-lTD_DbEntities",
+					"-lTD_DbIO",
+					"-lISM",
+					"-lWipeOut",
+					"-lAcMPolygonObj15",
+					"-lACCAMERA",
+					"-lSCENEOE",
+					"-lUTF",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.opendesign.iOdaDgnApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC36E2D41BE69A07000EAA36 /* Build configuration list for PBXProject "iOdaDgnApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC36E2EE1BE69A07000EAA36 /* Debug */,
+				FC36E2EF1BE69A07000EAA36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC36E2F01BE69A07000EAA36 /* Build configuration list for PBXNativeTarget "iOdaDgnApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC36E2F11BE69A07000EAA36 /* Debug */,
+				FC36E2F21BE69A07000EAA36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC36E2D11BE69A07000EAA36 /* Project object */;
+}

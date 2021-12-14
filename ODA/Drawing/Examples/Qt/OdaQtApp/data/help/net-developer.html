@@ -1,0 +1,55 @@
+<DIV align="center">
+<!-- A href="http://www.opendesign.com/"><IMG width="300" height="50" src=":/odalogofull.png" /></A -->
+<A href="http://www.opendesign.com/"><IMG width="300" height="50" src=":/odalogofull.png" /></A>
+</DIV>
+<h2><a href="help.html" title="Help">Home</a> &raquo; <strong>$(TD_APP_NAME) Reference for .NET TX Developers</strong></h2>
+<p>This  document includes information for .NET TX developers about how to customize $(TD_APP_NAME).</p> 
+
+<h1>Customizing $(TD_APP_NAME) for Drawings.NET Classic</h1>
+<h2>Preparing Drawings.NET Classic files for $(TD_APP_NAME)</h2>
+
+<ol>
+  <li> Download and unzip the ODA SDK Xtension (TX) SDK from <a href="http://www.opendesign.com/guestfiles/tx_sdk">www.opendesign.com</a>. 
+  </li>
+  <li> In the unzipped &quot;exe&quot; folder, navigate to your configuration 
+    folder, and copy TD_Mgd_<em>version</em>.dll and TD_MgdBrep_<em>version</em>.dll 
+    to the folder where $(TD_APP_NAME) is installed.</li>
+  <li> In the unzipped "Platforms.NET_Classic" folder, navigate to your configuration 
+    folder, and run the .sln file.</li>
+  <li> Build the solution. You can build all of the solutions or only the examples 
+    you need. However, you must build the NETLOADCommand example, which is required 
+    for loading any Drawings.NET Classic module.<br>
+    <strong>Note: </strong>ODA SDK TX provides two Drawings.NET Classic examples: 
+    Create3dSolids and ManagedTestCommand.</li>
+  <li> Copy the built .dll and .tx modules, including NETLOADCommand.tx, to the 
+    folder where $(TD_APP_NAME) is installed. </li>
+</ol>
+<h2>Loading Drawings.NET Classic modules in $(TD_APP_NAME)</h2>
+<ol>
+  <li>Start $(TD_APP_NAME).</li>
+  <li>Do one of the following: 
+    <ul>
+      <li>Choose Tools &gt; Load Application. </li>
+      <li>Type APPLOAD in the command line.</li>
+    </ul>
+  </li>
+  <li>Navigate to the NETLOADCommand.tx file and click Load, then repeat for all 
+    Drawings.NET Classic modules (built .dll and .tx files).<br>
+    <strong>Note: </strong>You can also click Startup Suite to load the modules 
+    each time $(TD_APP_NAME) starts.<br>
+    <br>
+    Modules that are loaded successfully display in the Loaded Applications list.</li>
+  <li>Click Close.</li>
+  <li>Type NETLOAD in the command line.</li>
+  <li>In the Assembly Path dialog box that displays, choose your managed .tx or 
+    .dll file and click Open to load it.</li>
+</ol>
+<p>Now you can run commands from the loaded modules. For example:</p>
+<ul>
+  <li> Create3dSolids, which is implemented in the Create3dSolids module.</li>
+  <li> AddSomeText, which is implemented in the ManagedTestCommand module. </li>
+</ul>
+<p> You can create your own modules or modify an existing module for your purposes. 
+  To start with an existing module, use the solution for your configuration, for 
+  example, "Platforms.NET_Classic\vc10dll\ODA_vc10dll.sln". Open the solution 
+  with Microsoft Visual Studio. See also the example projects in "NET\ManagedCommands.&quot;</p>

@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="OdExWpfSampleWinFormsHost.OdExViewWpfControlWinFormsHost"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:OdExWpfSampleWinFormsHost="clr-namespace:OdExWpfSampleWinFormsHost"
+    Height="Auto" Width="Auto">
+
+    <Grid
+            x:Name="RenderArea"
+            Grid.Row="2"
+            Grid.Column="2"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            Background="#dedeed">
+    </Grid>
+    
+</UserControl>

@@ -1,0 +1,26 @@
+
+{
+    "Information" : [
+        "This file provides default values for the deployment wizard inside Visual Studio and the AWS Lambda commands added to the .NET Core CLI.",
+        "To learn more about the Lambda commands with the .NET Core CLI execute the following command at the command line in the project root directory.",
+        "dotnet lambda help",
+        "All the command line options for the Lambda command can be specified in this file."
+    ],
+    "profile"     : "default",
+    "region"      : "eu-west-1",
+    "configuration" : "Release",
+    "framework"     : "netcoreapp3.1",
+    "function-runtime" : "dotnetcore3.1",
+    "function-memory-size" : 1024,
+    "function-timeout"     : 180,
+    "function-handler"     : "rayon-import-rhino::Rayon.Rhino.Function::FunctionHandler",
+    "function-name"        : "rayon-dev-rhinoImport",
+    "function-description" : "convert rhino 3dm files",
+    "package-type"         : "Zip",
+    "function-role"        : "arn:aws:iam::173394431179:role/rayon-dev-lambda-data-api",
+    "function-subnets"     : "subnet-0f50d6dfc8e60473c,subnet-0b03d7244872fe0e5",
+    "function-security-groups" : "sg-0aacff1a88facbd65",
+    "tracing-mode"             : "Active",
+    "environment-variables"    : "\"RAYON_DB_PASSWORD\"=\"N=W2cSd)4~8vb*{Q\";\"RAYON_DB_USERNAME\"=\"appadmin\";\"RAYON_USER_FILE_BUCKET\"=\"rayon-dev-user-files\";\"RAYON_DB_NAME\"=\"appdb\";\"RAYON_DB_HOST\"=\"rayon-dev-rds-proxy.proxy-clf1j2qpbktc.eu-west-1.rds.amazonaws.com\";\"RAYON_REGION\"=\"eu-west-1\"",
+    "image-tag"                : ""
+}

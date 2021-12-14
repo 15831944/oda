@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A024440A-DAE7-35CA-A7FC-F922D4071E34}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>TD_Dwf7Import</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\..\exe\vc16_amd64dll\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TD_Dwf7Import.dir\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TD_Dwf7Import_22.5_16</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.tx</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Drawing\Imports\DwfImport\Include;..\..\..\..\..\Kernel\Imports\DwfImport\Include;..\..\..\..\..\Kernel\Imports\DwfImport\Source;..\..\..\..\..\Kernel\Exports\DwfExport\Include;..\..\..\..\..\Kernel\Include;..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\Drawing\Include;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;..\..\..\..\..\ThirdParty\DWFToolkit-7.7\develop\global\src;..\..\..\..\..\ThirdParty\DWFToolkit-7.7\develop\global\src\dwf;..\..\..\..\..\ThirdParty\ZLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4131;4244;4127</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;DWFIMPORT_EXPORTS;ODA_LINT;Z_PREFIX;_TOOLKIT_IN_DLL_;CMAKE_INTDIR="Release";TD_Dwf7Import_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;WIN64;_WIN64;_WINDOWS;_CRT_NOFORCE_MANIFEST;_STL_NOFORCE_MANIFEST; NDEBUG;PDFIUM_MODULE_ENABLED;WINDIRECTX_DISABLED;_CRTDBG_MAP_ALLOC;DWFIMPORT_EXPORTS;ODA_LINT;Z_PREFIX;_TOOLKIT_IN_DLL_;CMAKE_INTDIR=\"Release\";TD_Dwf7Import_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Drawing\Imports\DwfImport\Include;..\..\..\..\..\Kernel\Imports\DwfImport\Include;..\..\..\..\..\Kernel\Imports\DwfImport\Source;..\..\..\..\..\Kernel\Exports\DwfExport\Include;..\..\..\..\..\Kernel\Include;..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\Drawing\Include;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;..\..\..\..\..\ThirdParty\DWFToolkit-7.7\develop\global\src;..\..\..\..\..\ThirdParty\DWFToolkit-7.7\develop\global\src\dwf;..\..\..\..\..\ThirdParty\ZLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\KernelBase\Include;..\..\..\..\..\ThirdParty;..\..\..\..\..\ThirdParty\activation;..\..\..\..\..\Drawing\Imports\DwfImport\Include;..\..\..\..\..\Kernel\Imports\DwfImport\Include;..\..\..\..\..\Kernel\Imports\DwfImport\Source;..\..\..\..\..\Kernel\Exports\DwfExport\Include;..\..\..\..\..\Kernel\Include;..\..\..\..\..\Kernel\Extensions\ExServices;..\..\..\..\..\Drawing\Include;..\..\..\..\..\KernelBase;..\..\..\..\..\KernelBase\Source;..\..\..\..\..\ThirdParty\DWFToolkit-7.7\develop\global\src;..\..\..\..\..\ThirdParty\DWFToolkit-7.7\develop\global\src\dwf;..\..\..\..\..\ThirdParty\ZLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>TD_Gs.lib;TD_Db.lib;TD_DbRoot.lib;TD_Gi.lib;TD_Ge.lib;TD_Root.lib;DwfToolkit.lib;W3dTk.lib;WhipTk.lib;DwfCore.lib;TD_Alloc.lib;TD_Zlib.lib;RText.lib;TD_DbEntities.lib;TD_DbIO.lib;TD_DbCore.lib;ATEXT.lib;ISM.lib;WipeOut.lib;AcMPolygonObj15.lib;ACCAMERA.lib;SCENEOE.lib;UTF.lib;Secur32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\exe\vc16_amd64dll;..\..\..\..\..\lib\vc16_amd64dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>..\..\..\..\..\lib\vc16_amd64dll\TD_Dwf7Import.lib</ImportLibrary>
+      <ProgramDataBaseFile>..\..\..\..\..\exe\vc16_amd64dll\TD_Dwf7Import_22.5_16.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Drawing\Imports\DwfImport\Source\W2DImport.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Imports\DwfImport\Source\EmbeddedImageDef.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Imports\DwfImport\Source\DwfEventReactor.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Imports\DwfImport\Source\W2dSumminfo.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Imports\DwfImport\Source\DwfImportImpl.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Imports\DwfImport\Source\ImportCallbacks.cpp" />
+    <ClCompile Include="..\..\..\..\..\Drawing\Imports\DwfImport\Source\3dDWFimport.cpp" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Imports\DwfImport\Source\FontManager.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Imports\DwfImport\Source\ImageManager.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Imports\DwfImport\Source\ExtentManager.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Imports\DwfImport\Source\DwfCallbacks.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Imports\DwfImport\Source\LineManager.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Imports\DwfImport\Source\DwfEventReactor.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Imports\DwfImport\Include\DwfImport.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Imports\DwfImport\Source\EmbeddedImageDef.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Imports\DwfImport\Source\BlockManager.h" />
+    <ClInclude Include="..\..\..\..\..\Drawing\Imports\DwfImport\Source\DwfImportImpl.h" />
+    <ResourceCompile Include="..\..\..\..\..\Drawing\Imports\DwfImport\Source\DWF7import.rc" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

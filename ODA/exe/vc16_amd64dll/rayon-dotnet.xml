@@ -1,0 +1,590 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>rayon-dotnet</name>
+    </assembly>
+    <members>
+        <member name="M:Rayon.Lib.Commit.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Commit"/> class.
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Commit.#ctor(System.String,Rayon.Lib.User,Rayon.Lib.Model)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Commit"/> class.
+            </summary>
+            <param name="description"></param>
+            <param name="author"></param>
+            <param name="model"></param>
+        </member>
+        <member name="T:Rayon.Lib.Components.ActiveComp">
+            <summary>
+            A component used to indicate if an Element is active.
+            eg. The active layer will have an active component.
+            This Component should not be persisted to the db
+            </summary>
+        </member>
+        <member name="T:Rayon.Lib.Components.BboxComp">
+             <summary>
+            
+             "value": "{\"min\":[-266.6369,-171.95538],\"max\":[183.3631,328.04465]}",
+             </summary>
+        </member>
+        <member name="M:Rayon.Lib.Components.BboxComp.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.BboxComp"/> class.
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Components.BboxComp.#ctor(Rayon.Lib.Geometry.RPoint2d,Rayon.Lib.Geometry.RPoint2d,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.BboxComp"/> class.
+            </summary>
+            <param name="min"></param>
+            <param name="max"></param>
+            <param name="rigid"></param>
+        </member>
+        <member name="P:Rayon.Lib.Components.BboxComp.Rigid">
+            <summary>
+            Whether the Element can be scaled non uniformaly in the x and y direction.
+            If set to true, the Element can only be scaled uniformaly.
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Components.BuiltinComp.#ctor">
+            <summary>
+            Indicates that the Element is a builtin.
+            Note : This component should never be persisted to the db as
+            Builtin element, per definition, are created in the client.
+            </summary>
+        </member>
+        <member name="T:Rayon.Lib.Components.CategoryComp">
+             <summary>
+            
+            
+             </summary>
+        </member>
+        <member name="M:Rayon.Lib.Components.CategoryComp.#ctor(Rayon.Lib.Components.CategoryComp.CategoryEnum)">
+             <summary>
+            
+             Serialization (for the path category): "{\"category\": 2}"
+             </summary>
+             <param name="category"></param>
+        </member>
+        <member name="M:Rayon.Lib.Components.Component.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.Component"/> class.
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Components.Component.#ctor(Rayon.Lib.Element,Rayon.Lib.Components.Component.ComponentTypeEnum,Rayon.Lib.Components.ComponentValue)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.Component"/> class.
+            </summary>
+            <param name="element"></param>
+            <param name="componentType"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Rayon.Lib.Components.Component.#ctor(System.String,Rayon.Lib.Components.Component.ComponentTypeEnum,Rayon.Lib.Components.ComponentValue)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.Component"/> class.
+            </summary>
+            <param name="handle"></param>
+            <param name="componentType"></param>
+            <param name="value"></param>
+        </member>
+        <member name="T:Rayon.Lib.Components.ComponentValue">
+            <summary>
+            Abstract class containing the value of a component
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Components.ComponentValue.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.ComponentValue"/> class.
+            </summary>
+        </member>
+        <member name="T:Rayon.Lib.Components.ComponentValue.ComponentValueConverter">
+            <summary>
+            Custom serialization to handle rust enums
+            </summary>
+        </member>
+        <member name="T:Rayon.Lib.Components.GridComp">
+            <summary>
+            TODO : skip this for the time being
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Components.GroupComp.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.GroupComp"/> class.
+            A Group component is an empty Component flagging an Element
+            as a group. It is used to filter efficiently group elements.
+            A group Element is referenced by its element members via
+            a <see cref="T:Rayon.Lib.Components.GroupIdComp"/>
+            </summary>
+        </member>
+        <member name="T:Rayon.Lib.Components.GroupIdComp">
+            <summary>
+            A component used to indicate that an Element is a member of a group,
+            by referencing the Handle of the corresponding group Element.
+            The group Element is expected to have a <see cref="T:Rayon.Lib.Components.GroupComp"/> component.
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Components.GroupIdComp.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.GroupIdComp"/> class.
+            </summary>
+            <param name="groupId"></param>
+        </member>
+        <member name="M:Rayon.Lib.Components.GroupIdComp.#ctor(Rayon.Lib.Element)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.GroupIdComp"/> class.
+            </summary>
+            <param name="group"></param>
+        </member>
+        <member name="P:Rayon.Lib.Components.GroupIdComp.GroupId">
+            <summary>
+            The handle of the Group Element reference via this component
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Components.HiddenComp.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.HiddenComp"/> class.
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Components.LayerComp.#ctor(System.Boolean,Rayon.Lib.Components.Types.RColor)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.LayerComp"/> class.
+            </summary>
+            <param name="isInternal"></param>
+            <param name="color"></param>
+        </member>
+        <member name="M:Rayon.Lib.Components.LayerIdComp.#ctor(Rayon.Lib.Element)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.LayerIdComp"/> class.
+            </summary>
+            <param name="layer"></param>
+        </member>
+        <member name="M:Rayon.Lib.Components.LayerIdComp.#ctor(System.String,System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.LayerIdComp"/> class.
+            </summary>
+            <param name="layerId"></param>
+            <param name="zIndex"></param>
+        </member>
+        <member name="T:Rayon.Lib.Components.LockedComp">
+            <summary>
+            A empty component used to flag an entity as locked.
+            Layers, Groups or geometry elements can be locked for example.
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Components.LockedComp.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.LockedComp"/> class.
+            </summary>
+        </member>
+        <member name="T:Rayon.Lib.Components.ModelSettingsComp">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Components.ModelSettingsComp.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.ModelSettingsComp"/> class.
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Components.ModelSettingsComp.#ctor(Rayon.Lib.Components.ModelSettingsComp.UnitSystemEnum)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.ModelSettingsComp"/> class.
+            </summary>
+            <param name="unit"></param>
+        </member>
+        <member name="M:Rayon.Lib.Components.NameComp.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.NameComp"/> class.
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:Rayon.Lib.Components.ArcComp.#ctor(Rayon.Lib.Geometry.RPoint2d,Rayon.Lib.Geometry.RVector)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.ArcComp"/> class.
+            </summary>
+            <param name="center"></param>
+            <param name="radii"></param>
+        </member>
+        <member name="T:Rayon.Lib.Components.PathComp">
+            <summary>
+            Expected serialization
+            {
+            "p": [
+               [-189.18933, 355.0],
+               [-189.18933, 433.34363],
+               [-253.65639, 497.81067],
+               [-319.0, 436.81067],
+            ],
+            "v": ["Begin", "CubicTo"],
+            "t": { 1: 0, 2: 0}
+            "v": true
+            }
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Components.PathComp.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.PathComp"/> class.
+            </summary>
+        </member>
+        <member name="P:Rayon.Lib.Components.PathComp.ControlPointsConstraints">
+            <summary>
+            A map indicating for each control points, identified via their index in the Points List,
+            what kind of constraint should be applied between their "twin" control points.
+            eg. a control point that is aligned, should always form a straight line with
+               its corresponding end point and its sibling control point.
+            Per default, the map is null for a new path. Meaning that there are no constraint
+            on its control points.
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Components.PathComp.GetBoundingBox">
+            <summary>
+            Returns an approximation of the bounding box of the path using the control points coordinates
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Rayon.Lib.Components.Path.RectangleComp">
+            <summary>
+            A component describing the geometry of a simple rectangle.
+            The origin is the left bottom corner of the rectangle.
+            The size corresponds to its width and height.
+            </summary>
+        </member>
+        <member name="P:Rayon.Lib.Components.Path.RectangleComp.Origin">
+            <summary>
+            The bottom left corner of the rectangle.
+            </summary>
+        </member>
+        <member name="T:Rayon.Lib.Components.Path.RegularPolygonComp">
+            <summary>
+            A component representing the geometry of a regular polygon inscribed inside
+            a circle of a given radius and a given center and with the given number of sides.
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Components.PointComp.#ctor(Rayon.Lib.Geometry.RPoint2d)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.PointComp"/> class.
+            </summary>
+            <param name="position"></param>
+        </member>
+        <member name="T:Rayon.Lib.Components.RenderBufferComp">
+            <summary>
+            A render buffer component is used in the client to store the vertices
+            data needed to render the Element on the gpu.
+            Its data is not persisted to the db, only the fact that an Element should
+            have a render buffer component meaning that it will be rendered on screen.
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Components.RenderBufferComp.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.RenderBufferComp"/> class.
+            </summary>
+        </member>
+        <member name="T:Rayon.Lib.Components.Styles.FillStyleComp">
+            <summary>
+            A class depicting the properties of a Fill style for a Style Entity.
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Components.Styles.FillStyleComp.#ctor(Rayon.Lib.Components.Types.RColor,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.Styles.FillStyleComp"/> class.
+            </summary>
+            <param name="color">The color of the fill</param>
+            <param name="texture">
+            A nullable parameter indicating the id of an image texture.
+            If provided the shape will be filled with the texture instead of the fill color.
+            </param>
+        </member>
+        <member name="T:Rayon.Lib.Components.Styles.GridStyleComp">
+            <summary>
+            A class depicting the properties of a Grid style for a Style Entity.
+            This style is ony used internally currently.
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Components.Styles.GridStyleComp.#ctor(Rayon.Lib.Components.Types.RColor,Rayon.Lib.Components.Types.RColor,System.Double,System.Double,System.Int32,Rayon.Lib.Components.Styles.GridStyleComp.GridShapeEnum)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.Styles.GridStyleComp"/> class.
+            </summary>
+            <param name="color">The primary color of the point</param>
+            <param name="secondaryColor">The color of the secondary axis of the grid</param>
+            <param name="size">The thickness of the axis or the dots</param>
+            <param name="unit">The length between two axis</param>
+            <param name="subdivision">The number of secondary axis</param>
+            <param name="shape">The shape of the grid: lines or dots</param>
+        </member>
+        <member name="P:Rayon.Lib.Components.Styles.GridStyleComp.Size">
+            <summary>
+             The thickness of the grid in px
+            </summary>
+        </member>
+        <member name="P:Rayon.Lib.Components.Styles.GridStyleComp.Unit">
+            <summary>
+             The length of a grid unit in world units
+            </summary>
+        </member>
+        <member name="P:Rayon.Lib.Components.Styles.GridStyleComp.Subdivision">
+            <summary>
+             The number of subdivision of the grid (eg. : 5)
+            </summary>
+        </member>
+        <member name="T:Rayon.Lib.Components.Styles.PointStyleComp">
+            <summary>
+            A class depicting the properties of a Point style for a Style Entity.
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Components.Styles.PointStyleComp.#ctor(Rayon.Lib.Components.Types.RColor,Rayon.Lib.Components.Types.RColor,Rayon.Lib.Components.Types.RLength,Rayon.Lib.Components.Styles.PointStyleComp.PointShapeEnum)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.Styles.PointStyleComp"/> class.
+            </summary>
+            <param name="color">The primary color of the point</param>
+            <param name="backgroundColor">The background color of the point</param>
+            <param name="size">The size of the point</param>
+            <param name="shape">The shape of the point</param>
+        </member>
+        <member name="T:Rayon.Lib.Components.Styles.TextStyleComp">
+            <summary>
+            A class depicting the properties of a Text style for a Style Entity.
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Components.Styles.TextStyleComp.#ctor(Rayon.Lib.Components.Types.RColor,Rayon.Lib.Components.Types.RLength,Rayon.Lib.Components.Styles.TextStyleComp.FontEnum,Rayon.Lib.Components.Styles.TextStyleComp.FontWeightEnum,Rayon.Lib.Components.Types.RColor)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.Styles.TextStyleComp"/> class.
+            </summary>
+            <param name="color">The color of the text</param>
+            <param name="size">The font size of the text</param>
+            <param name="font">The font identifier</param>
+            <param name="weight">The weight of the font (not implemented)</param>
+            <param name="stroke">The optional color of a stroke around the font (wip)</param>
+        </member>
+        <member name="T:Rayon.Lib.Components.StrokeStyleComp">
+            <summary>
+            A class describing a Stroke Style component of a Style Entity
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Components.StrokeStyleComp.#ctor(Rayon.Lib.Components.Types.RColor,Rayon.Lib.Components.Types.RLength,Rayon.Lib.Components.StrokeStyleComp.StrokePatternEnum)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.StrokeStyleComp"/> class.
+            </summary>
+            <param name="color">The color of the stroke</param>
+            <param name="size">The size or thickness of the stroke</param>
+            <param name="pattern">The dash pattern of the stroke</param>
+        </member>
+        <member name="M:Rayon.Lib.Components.StyleIdComp.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.StyleIdComp"/> class.
+            </summary>
+            <param name="styleId"></param>
+        </member>
+        <member name="M:Rayon.Lib.Components.StyleIdComp.#ctor(Rayon.Lib.Element)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.StyleIdComp"/> class.
+            </summary>
+            <param name="style"></param>
+        </member>
+        <member name="P:Rayon.Lib.Components.StyleIdComp.StyleId">
+            <summary>
+            The handle of the Style Element
+            </summary>
+        </member>
+        <member name="T:Rayon.Lib.Components.TagComp">
+            <summary>
+            A component describing a Tag Element.
+            A tag element contains a Content (eg. "Surface {area}") and an Handle
+            pointing to its link parent (eg. the handle of a Path Element).
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Components.TagComp.#ctor(System.String,Rayon.Lib.Element)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.TagComp"/> class.
+            </summary>
+        </member>
+        <member name="T:Rayon.Lib.Components.TextComp">
+            <summary>
+            A component describing a Text Element.
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Components.TextComp.#ctor(System.String,System.Double,System.Double,Rayon.Lib.Geometry.RPoint2d,Rayon.Lib.Components.TextComp.AnchorEnum)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.TextComp"/> class.
+            </summary>
+        </member>
+        <member name="T:Rayon.Lib.Components.TransformComp">
+            <summary>
+            A component describing a transform in the 2d plane applied to the Element.
+            When translating, rotating, scaling an Element, its internal geometry is never
+            modified, only its transform. This enables to chain transforms of linked entities
+            (eg. group transforms are inherited by their children) and to apply the
+            transform computation directly in the gpu shader for maximum performance.
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Components.TransformComp.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.TransformComp"/> class.
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Components.TransformComp.#ctor(System.Collections.Generic.IList{System.Double})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.TransformComp"/> class.
+            </summary>
+            <param name="matrix"></param>
+        </member>
+        <member name="P:Rayon.Lib.Components.TransformComp.Matrix">
+            <summary>
+            A 3x3 matrix representing a transformation in the 2d plane
+            </summary>
+        </member>
+        <member name="T:Rayon.Lib.Components.TransformComp.TransformCompConverter">
+            <summary>
+            Custom JSON Serializater for <see cref="T:Rayon.Lib.Components.TransformComp"/>
+            Expected serialization: [0,0,1,0.0,0.2,1.0,2.0,3.0,1.0]
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Components.Types.RColor.#ctor(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.Types.RColor"/> class.
+            </summary>
+            <param name="r"></param>
+            <param name="g"></param>
+            <param name="b"></param>
+            <param name="a"></param>
+        </member>
+        <member name="M:Rayon.Lib.Components.Types.RLength.#ctor(System.Double,Rayon.Lib.Components.Types.RLength.LengthTypeEnum)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Components.Types.RLength"/> class.
+            </summary>
+            <param name="value"></param>
+            <param name="type"></param>
+        </member>
+        <member name="T:Rayon.Lib.Components.Types.LengthConverter">
+            <summary>
+            Expected serialization: {\"pixels\":3.0}"
+            </summary>
+        </member>
+        <member name="F:Rayon.Lib.Constant.UNITFACTOR">
+            <summary>
+            Internally we store units with a 1000.0 factor
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Element.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Element"/> class.
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Element.#ctor(Rayon.Lib.Model)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Element"/> class.
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:Rayon.Lib.Element.#ctor(Rayon.Lib.Model,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Element"/> class.
+            </summary>
+            <param name="model"></param>
+            <param name="handle"></param>
+        </member>
+        <member name="M:Rayon.Lib.Element.CreateLine(Rayon.Lib.Model,System.String,Rayon.Lib.Element,Rayon.Lib.Element,System.String,Rayon.Lib.Geometry.RPoint2d,Rayon.Lib.Geometry.RPoint2d)">
+            <summary>
+            Creates a Path Entity representing a line
+            </summary>
+            <param name="model"></param>
+            <param name="handle"></param>
+            <param name="layer"></param>
+            <param name="style"></param>
+            <param name="name"></param>
+            <param name="at"></param>
+            <param name="to"></param>
+            <returns>An Entity.</returns>
+        </member>
+        <member name="M:Rayon.Lib.Element.CreateStrokeStyle(Rayon.Lib.Model,System.String,Rayon.Lib.Components.Types.RColor,System.Double,Rayon.Lib.Components.StrokeStyleComp.StrokePatternEnum)">
+            <summary>
+            Creates an Entity representing a Path Style
+            </summary>
+            <param name="model"></param>
+            <param name="name"></param>
+            <param name="color"></param>
+            <param name="thicknessInPixel"></param>
+            <param name="pattern"></param>
+            <returns>An Entity.</returns>
+        </member>
+        <member name="M:Rayon.Lib.Model.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Model"/> class.
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Model.#ctor(System.String,Rayon.Lib.User,System.Nullable{System.Guid})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Model"/> class.
+            </summary>
+            <param name="name"></param>
+            <param name="owner"></param>
+            <param name="folderId"></param>
+        </member>
+        <member name="P:Rayon.Lib.Model.Components">
+            <summary>
+            Used for flattening structure in bulk copy insert
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Model.MockGetElements(System.String,System.Boolean)">
+            <summary>
+            Returns a string mocking the result of the graphql api GetElements
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rayon.Lib.Geometry.RAngle.#ctor(System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Geometry.RAngle"/> class.
+            </summary>
+            <param name="angle"></param>
+        </member>
+        <member name="M:Rayon.Lib.Geometry.RPoint2d.#ctor(System.Double,System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Geometry.RPoint2d"/> class.
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+        </member>
+        <member name="T:Rayon.Lib.Geometry.RPoint2d.PointConverter">
+            <summary>
+            Expected serialization: [12.2,14.5]
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Geometry.RSize.#ctor(System.Double,System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Geometry.RSize"/> class.
+            </summary>
+            <param name="width">The width of the size</param>
+            <param name="height">The height of the size</param>
+        </member>
+        <member name="T:Rayon.Lib.Geometry.RSize.SizeConverter">
+            <summary>
+            Expected serialization: [12.2,14.5]
+            Width first, height second.
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.Geometry.RVector.#ctor(System.Double,System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.Geometry.RVector"/> class.
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+        </member>
+        <member name="T:Rayon.Lib.Geometry.RVector.VectorConverter">
+            <summary>
+            Expected serialization: [12.2,14.5]
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.User.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.User"/> class.
+            </summary>
+        </member>
+        <member name="M:Rayon.Lib.User.#ctor(System.Guid)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Rayon.Lib.User"/> class.
+            </summary>
+            <param name="id"></param>
+        </member>
+    </members>
+</doc>

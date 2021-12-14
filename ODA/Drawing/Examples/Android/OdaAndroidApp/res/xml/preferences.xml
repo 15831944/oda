@@ -1,0 +1,14 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:key="folderDepth"
+        android:title="@string/folderDepthTitle"
+        android:summary="@string/folderDepthSummary"
+        android:defaultValue="false" />
+    <MultiSelectListPreference
+        android:key="selectedExtensions"
+        android:title="@string/file_extension_title"
+        android:summary="@string/file_extension_summary"
+        android:entries="@array/file_extension_entries"
+        android:entryValues="@array/file_extension_values"
+        android:defaultValue="@array/file_extension_default" />
+</PreferenceScreen>

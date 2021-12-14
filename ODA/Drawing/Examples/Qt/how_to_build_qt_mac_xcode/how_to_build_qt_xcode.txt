@@ -1,0 +1,85 @@
+****************************************************************************************
+***                                                                                  ***
+***  required :                                                                      ***
+***      Qt SDK v4.5.3 or later                                                      ***
+***      dynamic configurations TD and TG : macOsX_x86_10.5dll or macOsX_x86_10.6dll ***
+***                                                                                  ***
+****************************************************************************************
+
+Install Qt-sdk
+  from Nokia site http://qt.nokia.com/downloads/downloads#lgpl
+  (there is no possibility to change destination folder
+   - it will be installed as framework
+     (/Developer/Examples/Qt - native Qt exaples)]
+
+Set environment vatiables ODADIR ($ODADIR/Core ...)
+  ODADIR=/_Oda/trunk   – by default
+
+*** build TD and TG from source (skip it if you use package from download area) : ***
+
+>cd /_Oda
+>perl ODAProjectFileGenerator.pl           - XML::DOM should be installed              
+>cd /_Oda/CMakePlatforms/macOsX_x86_10.6dll
+>make
+
+*** generate projects and build them for Qt Samples : ***
+
+>cd /_Oda/Drawing/Examples/Qt/how_to_build_qt_mac_xcode
+
+  //Execute relink_td_qt_xcode.sh -r to attune internal paths of all set as absolute for debugging and executing
+  //   > sh relink_td_qt_xcode.sh -r
+  // (TODO: now OdaQtApp cannot downloads the OdaQtConsole if you skip this step)
+
+  Execute make_td_qt_xcode.sh to create xcode projects of samples in next directories  
+    /_Oda/bin/<present_configuration>/Examples/Qt
+      >sh make_td_qt_xcode.sh 
+  Execute build_td_qt_xcode.sh to build via xcode
+    (see log-files in folders /_Oda/bin/macOsX_x86_10.6dlldbg/Examples/Qt)
+      >sh build_td_qt_xcode.sh
+
+  Execute relink_td_qt_xcode.sh -r to attune internal paths of Qt applications
+     > sh relink_td_qt_xcode.sh -r
+
+
+************************************** IOS Build ***************************************
+
+** iOS Build **
+1. Get Qt 5
+> git clone git://gitorious.org/qt/qt5.git qt5
+
+> cd qt5
+
+> git reset --hard v5.2.1 (or above version. If this step is omitted lates tagged version will be selected)
+
+> perl init-repository
+
+
+2. Before running configure script set up needed architecture in conf files:
+QMAKE_IOS_DEVICE_ARCHS = armv7s  # Or any other desired platform.
+
+macx-ios-clang/qmake.conf
+
+3. Run configure script
+> ./configure -developer-build -opensource -confirm-license  -nomake tests -nomake examples -xplatform macx-ios-clang -sdk iphoneos7.1 -opengl es2 -skip qtwebkit -skip qtserialport -skip qtwebkit-examples -c++11
+
+4. Make sure C++11 option is enabled.
+
+5. Run make to build libraries
+> make
+
+** How to use pro files to build iOS examples: **
+
+Development and deployment is done using Xcode. The supported workflow is to maintain a .pro file based project, export it to Xcode (and re-export when the project setup changes), and then build and deploy using Xcode.
+
+*** Building Applications From the Command Line ***
+
+As mentioned previously, the development workflow on iOS consists of maintaining a normal .pro file project and export it to Xcode.
+Here is how to build a project:
+- Define environment variable to Qt: export QTDIR="path_to_qt_libraries"
+- Define environment variable TD_CONF_NAME, for example: export TD_CONF_NAME=iphone_7.1 
+- Run qmake : ${QTDIR}/bin/qmake -o FileProjectName.xcodeproj FileProjectName.pro
+
+open the resulting .xcodeproject file in Xcode
+Replace created Info.plist with Drawing/Examles/Qt/how_to_build_ios_xcode/OdaFileConverter.plist
+Build applicaion as usual.
+Run application as usual.

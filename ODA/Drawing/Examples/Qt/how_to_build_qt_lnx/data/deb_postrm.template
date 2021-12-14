@@ -1,0 +1,8 @@
+#!/bin/sh
+set -e
+
+for USER in /home/* ; do
+  if test ! -f "$USER/Desktop/%PRODUCT%_%VERSION%.desktop" ; then continue ; fi
+  rm -f "$USER/Desktop/%PRODUCT%_%VERSION%.desktop"
+done
+exit 0
