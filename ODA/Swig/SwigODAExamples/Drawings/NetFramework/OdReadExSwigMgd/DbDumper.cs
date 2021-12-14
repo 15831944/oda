@@ -44,659 +44,6 @@ namespace OdReadExSwigMgd
     {
 
         /************************************************************************/
-        /****      RAYON UTILS                                              *****/
-        /************************************************************************/
-
-
-        static OdGePoint3d getArcMiddlePt(OdDbPolyline pPoly, uint i)
-        {
-
-            OdGePoint3d pt = new OdGePoint3d();
-            pPoly.getPointAt(i, pt);
-            Console.WriteLine(pt);
-            OdGePoint3d nextPt = new OdGePoint3d();
-            pPoly.getPointAt(i + 1, nextPt);
-            Console.WriteLine(nextPt);
-
-            double paramPt;
-            pPoly.getParamAtPoint(pt, out paramPt);
-            double paramNextPt;
-            pPoly.getParamAtPoint(nextPt, out paramNextPt);
-            double paramArcMiddlePoint = (paramPt + paramNextPt) / 2;
-
-            OdGePoint3d arcMiddlePoint = new OdGePoint3d();
-            pPoly.getPointAtParam(paramArcMiddlePoint, arcMiddlePoint);
-
-            return arcMiddlePoint;
-        }
-
-        static void print2dVertex(OdDb2dVertex pVertex, int i)
-        {
-            Console.WriteLine("  Point #" + i);
-            Console.WriteLine("    ID = {0}", pVertex.getDbHandle());
-            Console.WriteLine("    Vertex Type = {0}", pVertex.vertexType());
-            Console.WriteLine("    Position = {0}", pVertex.position());
-            Console.WriteLine("  ");
-        }
-
-        static void printCurveData(OdDbEntity pEnt)
-        {
-            OdDbCurve pEntity = (OdDbCurve)pEnt;
-
-            Console.WriteLine("  Layer = {0}", pEntity.layer());
-            Console.WriteLine("  Layer ID = {0}", pEntity.layer());
-            Console.WriteLine("  Lineweight = {0}", pEntity.lineWeight());
-            Console.WriteLine("  Linetype = {0}", pEntity.linetype());
-            Console.WriteLine("  Color = {0}", pEntity.color().ToString());
-
-            OdGePoint3d startPoint = new OdGePoint3d();
-            if (OdResult.eOk == pEntity.getStartPoint(startPoint))
-            {
-                Console.WriteLine("  Start Point = {0}", startPoint.ToString());
-            }
-
-            OdGePoint3d endPoint = new OdGePoint3d();
-            if (OdResult.eOk == pEntity.getEndPoint(endPoint))
-            {
-                Console.WriteLine("  End Point  = {0}", endPoint.ToString());
-            }
-            Console.WriteLine("  Closed = {0}", pEntity.isClosed());
-        }
-
-        static Rayon.Core.Types.RPoint2d OdGePoint2dToRPoint2d(OdGePoint2d point)
-        {
-            return new Rayon.Core.Types.RPoint2d(point.x, point.y);
-        }
-        static Rayon.Core.Types.RPoint2d scalePoint(Rayon.Core.Types.RPoint2d point, double factor)
-        {
-            return new Rayon.Core.Types.RPoint2d(point.X * factor, point.Y * factor);
-        }
-        static Rayon.Core.Types.RPoint2d translatePoint(Rayon.Core.Types.RPoint2d point, double xDisplacement, double yDisplacement)
-        {
-            return new Rayon.Core.Types.RPoint2d(point.X - xDisplacement, point.Y - yDisplacement);
-        }
-        static Rayon.Core.Types.RPoint2d rotatePoint(Rayon.Core.Types.RPoint2d point, double angle)
-        {
-            return new Rayon.Core.Types.RPoint2d(point.X * Math.Cos(angle) - point.Y * Math.Sin(angle), point.X * Math.Sin(angle) + point.Y * Math.Cos(angle));
-        }
-
-        static Rayon.Core.Types.RPoint2d toUnitCircle(Rayon.Core.Types.RPoint2d point, double scaleFactor, Rayon.Core.Types.RPoint2d centerPoint, double rotationAngle)
-        {
-            // translate
-            Rayon.Core.Types.RPoint2d translated = translatePoint(point, centerPoint.X, centerPoint.Y);
-            // scale
-            Rayon.Core.Types.RPoint2d scaled = scalePoint(translated, scaleFactor);
-            // rotate
-            Rayon.Core.Types.RPoint2d rotated = rotatePoint(scaled, rotationAngle);
-            return rotated;
-        }
-
-        static Rayon.Core.Types.RPoint2d fromUnitCircle(Rayon.Core.Types.RPoint2d point, double scaleFactor, Rayon.Core.Types.RPoint2d centerPoint, double rotationAngle)
-        {
-            // rotate
-            Rayon.Core.Types.RPoint2d rotated = rotatePoint(point, rotationAngle);
-            // scale
-            Rayon.Core.Types.RPoint2d scaled = scalePoint(rotated, scaleFactor);
-            // translate
-            Rayon.Core.Types.RPoint2d translated = translatePoint(scaled, -centerPoint.X, -centerPoint.Y);
-            return translated;
-        }
-
-        static List<Rayon.Core.Types.RPoint2d> ArcToCubicBezier(OdGeCircArc2d arc)
-        {
-
-            double endParam = arc.endAng();
-            double startParam = arc.startAng();
-            double lengthParam = (endParam - startParam);
-            bool isClockWise = arc.isClockWise();
-            int numberOfSegments = (int)Math.Ceiling(lengthParam / (Math.PI / 2));
-            double radius = arc.radius();
-
-            List<Rayon.Core.Types.RPoint2d> outPoints = new List<Rayon.Core.Types.RPoint2d>();
-
-            for (var i = 0; i < numberOfSegments; i++)
-            {
-
-                OdGePoint2d startPointOdGe = arc.evalPoint((lengthParam / numberOfSegments) * i);
-                OdGePoint2d endPointOdGe = arc.evalPoint((lengthParam / numberOfSegments) * (i + 1));
-                Rayon.Core.Types.RPoint2d startPt = OdGePoint2dToRPoint2d(startPointOdGe);
-                Rayon.Core.Types.RPoint2d endPt = OdGePoint2dToRPoint2d(endPointOdGe);
-                Rayon.Core.Types.RPoint2d centerPt = new Rayon.Core.Types.RPoint2d(arc.center().x, arc.center().y);
-                double scaleFactor = 1 / arc.radius();
-
-                double angleWithXAxis = isClockWise ?
-                    arc.startAngFromXAxis() - lengthParam / numberOfSegments * i :
-                    arc.startAngFromXAxis() + lengthParam / numberOfSegments * i;
-
-                double angle = isClockWise ?
-                    -lengthParam / numberOfSegments :
-                    lengthParam / numberOfSegments;
-
-                Rayon.Core.Types.RPoint2d startPtTransformed = toUnitCircle(startPt, scaleFactor, centerPt, -angleWithXAxis);
-                Rayon.Core.Types.RPoint2d endPtTransformed = toUnitCircle(endPt, scaleFactor, centerPt, -angleWithXAxis);
-
-                double k = 4 / 3 * Math.Tan(angle / 3);
-
-                // P2
-                Rayon.Core.Types.RPoint2d ctrlPt1 = new Rayon.Core.Types.RPoint2d(
-                    1,
-                    k
-                );
-
-                // P3
-                Rayon.Core.Types.RPoint2d ctrlPt2 = new Rayon.Core.Types.RPoint2d(
-                    Math.Cos(angle) + k * Math.Sin(angle),
-                    Math.Sin(angle) - k * Math.Cos(angle)
-                );
-
-                outPoints.Add(fromUnitCircle(startPtTransformed, 1 / scaleFactor, centerPt, angleWithXAxis));
-                outPoints.Add(fromUnitCircle(ctrlPt1, 1 / scaleFactor, centerPt, angleWithXAxis));
-                outPoints.Add(fromUnitCircle(ctrlPt2, 1 / scaleFactor, centerPt, angleWithXAxis));
-
-            }
-
-            return outPoints;
-        }
-
-        static double[,] getDwgColors()
-        {
-            double[,] Colors = new double[257, 4] {
-                {0, 0, 0,0},
-                {255, 0, 0,0},
-                {255, 255, 0,0},
-                {0, 255, 0,0},
-                {0, 255, 255,0},
-                {0, 0, 255,0},
-                {255, 0, 255,0},
-                {0, 0, 0, 0},
-                {65, 65, 65,0},
-                {128, 128, 128,0},
-                {255, 0, 0,0},
-                {255, 170, 170,0},
-                {189, 0, 0,0},
-                {189, 126, 126,0},
-                {129, 0, 0,0},
-                {129, 86, 86,0},
-                {104, 0, 0,0},
-                {104, 69, 69,0},
-                {79, 0, 0,0},
-                {79, 53, 53,0},
-                {255, 63, 0,0},
-                {255, 191, 170,0},
-                {189, 46, 0,0},
-                {189, 141, 126,0},
-                {129, 31, 0,0},
-                {129, 96, 86,0},
-                {104, 25, 0,0},
-                {104, 78, 69,0},
-                {79, 19, 0,0},
-                {79, 59, 53,0},
-                {255, 127, 0,0},
-                {255, 212, 170,0},
-                {189, 94, 0,0},
-                {189, 157, 126,0},
-                {129, 64, 0,0},
-                {129, 107, 86,0},
-                {104, 52, 0,0},
-                {104, 86, 69,0},
-                {79, 39, 0,0},
-                {79, 66, 53,0},
-                {255, 191, 0,0},
-                {255, 234, 170,0},
-                {189, 141, 0,0},
-                {189, 173, 126,0},
-                {129, 96, 0,0},
-                {129, 118, 86,0},
-                {104, 78, 0,0},
-                {104, 95, 69,0},
-                {79, 59, 0,0},
-                {79, 73, 53,0},
-                {255, 255, 0,0},
-                {255, 255, 170,0},
-                {189, 189, 0,0},
-                {189, 189, 126,0},
-                {129, 129, 0,0},
-                {129, 129, 86,0},
-                {104, 104, 0,0},
-                {104, 104, 69,0},
-                {79, 79, 0,0},
-                {79, 79, 53,0},
-                {191, 255, 0,0},
-                {234, 255, 170,0},
-                {141, 189, 0,0},
-                {173, 189, 126,0},
-                {96, 129, 0,0},
-                {118, 129, 86,0},
-                {78, 104, 0,0},
-                {95, 104, 69,0},
-                {59, 79, 0,0},
-                {73, 79, 53,0},
-                {127, 255, 0,0},
-                {212, 255, 170,0},
-                {94, 189, 0,0},
-                {157, 189, 126,0},
-                {64, 129, 0,0},
-                {107, 129, 86,0},
-                {52, 104, 0,0},
-                {86, 104, 69,0},
-                {39, 79, 0,0},
-                {66, 79, 53,0},
-                {63, 255, 0,0},
-                {191, 255, 170,0},
-                {46, 189, 0,0},
-                {141, 189, 126,0},
-                {31, 129, 0,0},
-                {96, 129, 86,0},
-                {25, 104, 0,0},
-                {78, 104, 69,0},
-                {19, 79, 0,0},
-                {59, 79, 53,0},
-                {0, 255, 0,0},
-                {170, 255, 170,0},
-                {0, 189, 0,0},
-                {126, 189, 126,0},
-                {0, 129, 0,0},
-                {86, 129, 86,0},
-                {0, 104, 0,0},
-                {69, 104, 69,0},
-                {0, 79, 0,0},
-                {53, 79, 53,0},
-                {0, 255, 63,0},
-                {170, 255, 191,0},
-                {0, 189, 46,0},
-                {126, 189, 141,0},
-                {0, 129, 31,0},
-                {86, 129, 96,0},
-                {0, 104, 25,0},
-                {69, 104, 78,0},
-                {0, 79, 19,0},
-                {53, 79, 59,0},
-                {0, 255, 127,0},
-                {170, 255, 212,0},
-                {0, 189, 94,0},
-                {126, 189, 157,0},
-                {0, 129, 64,0},
-                {86, 129, 107,0},
-                {0, 104, 52,0},
-                {69, 104, 86,0},
-                {0, 79, 39,0},
-                {53, 79, 66,0},
-                {0, 255, 191,0},
-                {170, 255, 234,0},
-                {0, 189, 141,0},
-                {126, 189, 173,0},
-                {0, 129, 96,0},
-                {86, 129, 118,0},
-                {0, 104, 78,0},
-                {69, 104, 95,0},
-                {0, 79, 59,0},
-                {53, 79, 73,0},
-                {0, 255, 255,0},
-                {170, 255, 255,0},
-                {0, 189, 189,0},
-                {126, 189, 189,0},
-                {0, 129, 129,0},
-                {86, 129, 129,0},
-                {0, 104, 104,0},
-                {69, 104, 104,0},
-                {0, 79, 79,0},
-                {53, 79, 79,0},
-                {0, 191, 255,0},
-                {170, 234, 255,0},
-                {0, 141, 189,0},
-                {126, 173, 189,0},
-                {0, 96, 129,0},
-                {86, 118, 129,0},
-                {0, 78, 104,0},
-                {69, 95, 104,0},
-                {0, 59, 79,0},
-                {53, 73, 79,0},
-                {0, 127, 255,0},
-                {170, 212, 255,0},
-                {0, 94, 189,0},
-                {126, 157, 189,0},
-                {0, 64, 129,0},
-                {86, 107, 129,0},
-                {0, 52, 104,0},
-                {69, 86, 104,0},
-                {0, 39, 79,0},
-                {53, 66, 79,0},
-                {0, 63, 255,0},
-                {170, 191, 255,0},
-                {0, 46, 189,0},
-                {126, 141, 189,0},
-                {0, 31, 129,0},
-                {86, 96, 129,0},
-                {0, 25, 104,0},
-                {69, 78, 104,0},
-                {0, 19, 79,0},
-                {53, 59, 79,0},
-                {0, 0, 255,0},
-                {170, 170, 255,0},
-                {0, 0, 189,0},
-                {126, 126, 189,0},
-                {0, 0, 129,0},
-                {86, 86, 129,0},
-                {0, 0, 104,0},
-                {69, 69, 104,0},
-                {0, 0, 79,0},
-                {53, 53, 79,0},
-                {63, 0, 255,0},
-                {191, 170, 255,0},
-                {46, 0, 189,0},
-                {141, 126, 189,0},
-                {31, 0, 129,0},
-                {96, 86, 129,0},
-                {25, 0, 104,0},
-                {78, 69, 104,0},
-                {19, 0, 79,0},
-                {59, 53, 79,0},
-                {127, 0, 255,0},
-                {212, 170, 255,0},
-                {94, 0, 189,0},
-                {157, 126, 189,0},
-                {64, 0, 129,0},
-                {107, 86, 129,0},
-                {52, 0, 104,0},
-                {86, 69, 104,0},
-                {39, 0, 79,0},
-                {66, 53, 79,0},
-                {191, 0, 255,0},
-                {234, 170, 255,0},
-                {141, 0, 189,0},
-                {173, 126, 189,0},
-                {96, 0, 129,0},
-                {118, 86, 129,0},
-                {78, 0, 104,0},
-                {95, 69, 104,0},
-                {59, 0, 79,0},
-                {73, 53, 79,0},
-                {255, 0, 255,0},
-                {255, 170, 255,0},
-                {189, 0, 189,0},
-                {189, 126, 189,0},
-                {129, 0, 129,0},
-                {129, 86, 129,0},
-                {104, 0, 104,0},
-                {104, 69, 104,0},
-                {79, 0, 79,0},
-                {79, 53, 79,0},
-                {255, 0, 191,0},
-                {255, 170, 234,0},
-                {189, 0, 141,0},
-                {189, 126, 173,0},
-                {129, 0, 96,0},
-                {129, 86, 118,0},
-                {104, 0, 78,0},
-                {104, 69, 95,0},
-                {79, 0, 59,0},
-                {79, 53, 73,0},
-                {255, 0, 127,0},
-                {255, 170, 212,0},
-                {189, 0, 94,0},
-                {189, 126, 157,0},
-                {129, 0, 64,0},
-                {129, 86, 107,0},
-                {104, 0, 52,0},
-                {104, 69, 86,0},
-                {79, 0, 39,0},
-                {79, 53, 66,0},
-                {255, 0, 63,0},
-                {255, 170, 191,0},
-                {189, 0, 46,0},
-                {189, 126, 141,0},
-                {129, 0, 31,0},
-                {129, 86, 96,0},
-                {104, 0, 25,0},
-                {104, 69, 78,0},
-                {79, 0, 19,0},
-                {79, 53, 59,0},
-                {51, 51, 51,0},
-                {80, 80, 80,0},
-                {105, 105, 105,0},
-                {130, 130, 130,0},
-                {190, 190, 190,0},
-                {255, 255, 255,0},
-                {0, 0, 0,0}
-                };
-
-            return Colors;
-        }
-
-        static Rayon.Core.Components.Styles.TextStyleComp.FontEnum getFont(string fontName)
-        {
-            switch (fontName)
-            {
-                case string font when font.ToUpper().Contains("ARIAL"):
-                    return Rayon.Core.Components.Styles.TextStyleComp.FontEnum.LatoRegular;
-                case string font when font.ToUpper().Contains("ABEL"):
-                    return Rayon.Core.Components.Styles.TextStyleComp.FontEnum.AbelRegular;
-                case string font when font.ToUpper().Contains("ANONYMOUS"):
-                    return Rayon.Core.Components.Styles.TextStyleComp.FontEnum.AnonymousProRegular;
-                case string font when font.ToUpper().Contains("ARCHITECTS DAUGHTER"):
-                    return Rayon.Core.Components.Styles.TextStyleComp.FontEnum.ArchitectsDaughterRegular;
-                case string font when font.ToUpper().Contains("COMFORTAA"):
-                    return Rayon.Core.Components.Styles.TextStyleComp.FontEnum.ComfortaaRegular;
-                case string font when font.ToUpper().Contains("COURIER"):
-                    return Rayon.Core.Components.Styles.TextStyleComp.FontEnum.CourierPrimeRegular;
-                case string font when font.ToUpper().Contains("DOSIS"):
-                    return Rayon.Core.Components.Styles.TextStyleComp.FontEnum.DosisRegular;
-                case string font when font.ToUpper().Contains("LATO"):
-                    return Rayon.Core.Components.Styles.TextStyleComp.FontEnum.LatoRegular;
-                case string font when font.ToUpper().Contains("LORA"):
-                    return Rayon.Core.Components.Styles.TextStyleComp.FontEnum.LoraRegular;
-                case string font when font.ToUpper().Contains("MONTSERRAT"):
-                    return Rayon.Core.Components.Styles.TextStyleComp.FontEnum.MontserratBold;
-                case string font when font.ToUpper().Contains("OPEN"):
-                    return Rayon.Core.Components.Styles.TextStyleComp.FontEnum.OpenSansRegular;
-                case string font when font.ToUpper().Contains("OSWALD"):
-                    return Rayon.Core.Components.Styles.TextStyleComp.FontEnum.OswaldRegular;
-                case string font when font.ToUpper().Contains("PLAYFAIR"):
-                    return Rayon.Core.Components.Styles.TextStyleComp.FontEnum.PlayfairDisplayRegular;
-                case string font when font.ToUpper().Contains("POPPINS"):
-                    return Rayon.Core.Components.Styles.TextStyleComp.FontEnum.PoppinsMedium;
-                case string font when font.ToUpper().Contains("QUICKSAND"):
-                    return Rayon.Core.Components.Styles.TextStyleComp.FontEnum.QuicksandRegular;
-                case string font when font.ToUpper().Contains("RALEWAY"):
-                    return Rayon.Core.Components.Styles.TextStyleComp.FontEnum.RalewayMedium;
-                case string font when font.ToUpper().Contains("ROBOTO"):
-                    return Rayon.Core.Components.Styles.TextStyleComp.FontEnum.RobotoMonoRegular;
-                case string font when font.ToUpper().Contains("ROBOTO"):
-                    return Rayon.Core.Components.Styles.TextStyleComp.FontEnum.RobotoMonoRegular;
-                case string font when font.ToUpper().Contains("TINOS"):
-                    return Rayon.Core.Components.Styles.TextStyleComp.FontEnum.TinosRegular;
-                case string font when font.ToUpper().Contains("TRAIN ONE"):
-                    return Rayon.Core.Components.Styles.TextStyleComp.FontEnum.TrainOneRegular;
-                case string font when font.ToUpper().Contains("UBUNTU"):
-                    return Rayon.Core.Components.Styles.TextStyleComp.FontEnum.UbuntuMedium;
-
-                default:
-                    return Rayon.Core.Components.Styles.TextStyleComp.FontEnum.PoppinsMedium;
-
-            }
-        }
-
-        static StrokeStyleComp.StrokePatternEnum strokeStyleConversion(string lineType)
-        {
-            if (lineType == "Continuous")
-            {
-                return StrokeStyleComp.StrokePatternEnum.Solid;
-            }
-            else
-            {
-                return StrokeStyleComp.StrokePatternEnum.Solid;
-            }
-        }
-
-        static StrokeStyleComp.StrokePatternEnum getStrokeStyleEntity(OdDbEntity pEnt)
-        {
-            string lineType = pEnt.linetype();
-            return strokeStyleConversion(lineType);
-        }
-
-        static StrokeStyleComp.StrokePatternEnum getStrokeStyleRecord(OdDbLayerTableRecord pRecord)
-        {
-            string lineType = OdExStringHelpers.toString(pRecord.linetypeObjectId());
-            return strokeStyleConversion(lineType);
-        }
-
-        public static Rayon.Core.Types.RColor getColor(OdDbLayerTableRecord pRecord)
-        {
-            double[,] Colors = getDwgColors();
-            int colorIndex = pRecord.colorIndex();
-            Rayon.Core.Types.RColor color = new Rayon.Core.Types.RColor(Colors[colorIndex, 0] / 255, Colors[colorIndex, 1] / 255, Colors[colorIndex, 2] / 255, 1);
-            return color;
-        }
-
-        static Rayon.Core.Types.RVector getArcRadii(double radius)
-        {
-            Rayon.Core.Types.RVector radii = new Rayon.Core.Types.RVector(radius, radius);
-            return radii;
-        }
-        static Rayon.Core.Types.RVector getEllipseRadii(double radiusSmall, double radiusLarge)
-        {
-            Rayon.Core.Types.RVector radius = new Rayon.Core.Types.RVector(radiusSmall, radiusLarge);
-            return radius;
-        }
-
-        static Rayon.Core.Types.RPoint2d OdGePoint3dToRPoint2d(OdGePoint3d pt)
-        {
-            Rayon.Core.Types.RPoint2d newRpoint = new Rayon.Core.Types.RPoint2d(pt.x, pt.y);
-            return newRpoint;
-        }
-
-        static Rayon.Core.Types.RPoint2d OdDb2dVertexToRPoint2d(OdDb2dVertex vert)
-        {
-            Rayon.Core.Types.RPoint2d newRpoint = new Rayon.Core.Types.RPoint2d(vert.position().x, vert.position().y);
-            return newRpoint;
-        }
-
-        static Rayon.Core.Element getEntityLayer(OdDbEntity pEnt, Rayon.Core.Model newModel)
-        {
-            Rayon.Core.Element entityLayer = newModel.Elements.Find(
-                x =>
-                    x.Handle == pEnt.layerId().getHandle().ToString()
-                );
-            return entityLayer;
-        }
-
-        static Rayon.Core.Element getEntityStyle(OdDbEntity pEnt, Rayon.Core.Model newModel)
-        {
-            Rayon.Core.Element layerOfEnt = new Rayon.Core.Element();
-            Rayon.Core.Components.Component layerStyle = new Rayon.Core.Components.Component();
-            Rayon.Core.Element entStyle = new Rayon.Core.Element();
-            string styleId = "";
-
-            // inherit style from layer
-            if (pEnt.linetype() == "ByLayer" && pEnt.color().ToString() == "ByLayer")
-            {
-                Console.WriteLine("  STYLE: Inherited from Layer");
-
-                string handle = pEnt.layerId().getHandle().ToString();
-
-                // get layer of entities
-                layerOfEnt = newModel.Elements.Find(
-                    x =>
-                        x.Handle == handle
-                    );
-
-                // get its style id
-                layerStyle = layerOfEnt.Components.Find(
-                    x =>
-                        x.ComponentType == Component.ComponentTypeEnum.StyleId
-                    );
-
-                styleId = layerStyle.LinkedElement;
-
-                // get style entity in Model
-                entStyle = newModel.Elements.Find(
-                    x =>
-                        x.Handle == styleId
-                    );
-            }
-
-            // else if either one or the other is herited from parent block > create a new matching style
-            else
-            {
-                Console.WriteLine("  STYLE: Created New Style");
-
-                double newLineWidth = (double)pEnt.lineWeight() < 0 ? 1 : (double)pEnt.lineWeight() / 100;
-                string styleName = "Default_Style";
-                StrokeStyleComp.StrokePatternEnum newLineStyle = getStrokeStyleEntity(pEnt);
-                //pEnt.color
-                Rayon.Core.Types.RColor defaultBlack = new Rayon.Core.Types.RColor(0, 0, 0, 1);
-
-                entStyle = Rayon.Core.Element.CreateStrokeStyle(
-                    newModel,
-                    styleName,
-                    defaultBlack,
-                    newLineWidth,
-                    newLineStyle
-                    );
-
-                newModel.Elements.Add(entStyle);
-            }
-
-            // else if both properties are custom, create a custom style
-
-            return entStyle;
-        }
-
-        static Rayon.Core.Components.ModelSettingsComp.UnitSystemEnum getUnitSystem(string unitValue)
-        {
-            switch (unitValue)
-            {
-                case "kUnitsUndefined":
-                    return Rayon.Core.Components.ModelSettingsComp.UnitSystemEnum.Millimeters;
-                case "kUnitsInches":
-                    return Rayon.Core.Components.ModelSettingsComp.UnitSystemEnum.Inches;
-                case "kUnitsFeet":
-                    return Rayon.Core.Components.ModelSettingsComp.UnitSystemEnum.Feet;
-                case "kUnitsMiles":
-                    return Rayon.Core.Components.ModelSettingsComp.UnitSystemEnum.Miles;
-                case "kUnitsMillimeters":
-                    return Rayon.Core.Components.ModelSettingsComp.UnitSystemEnum.Millimeters;
-                case "kUnitsCentimeters":
-                    return Rayon.Core.Components.ModelSettingsComp.UnitSystemEnum.Centimeters;
-                case "kUnitsMeters":
-                    return Rayon.Core.Components.ModelSettingsComp.UnitSystemEnum.Meters;
-                case "kUnitsKilometers":
-                    return Rayon.Core.Components.ModelSettingsComp.UnitSystemEnum.Kilometers;
-                case "kUnitsMicroinches":
-                    return Rayon.Core.Components.ModelSettingsComp.UnitSystemEnum.Microinches;
-                case "kUnitsMils":
-                    return Rayon.Core.Components.ModelSettingsComp.UnitSystemEnum.Mils;
-                case "kUnitsYards":
-                    return Rayon.Core.Components.ModelSettingsComp.UnitSystemEnum.Yards;
-                case "kUnitsAngstroms":
-                    return Rayon.Core.Components.ModelSettingsComp.UnitSystemEnum.Angstroms;
-                case "kUnitsNanometers":
-                    return Rayon.Core.Components.ModelSettingsComp.UnitSystemEnum.Nanometers;
-                case "kUnitsMicrons":
-                    return Rayon.Core.Components.ModelSettingsComp.UnitSystemEnum.Microns;
-                case "kUnitsDecimeters":
-                    return Rayon.Core.Components.ModelSettingsComp.UnitSystemEnum.Decimeters;
-                case "kUnitsDekameters":
-                    return Rayon.Core.Components.ModelSettingsComp.UnitSystemEnum.Dekameters;
-                case "kUnitsHectometers":
-                    return Rayon.Core.Components.ModelSettingsComp.UnitSystemEnum.Hectometers;
-                case "kUnitsGigameters":
-                    return Rayon.Core.Components.ModelSettingsComp.UnitSystemEnum.Gigameters;
-                case "kUnitsAstronomical":
-                    return Rayon.Core.Components.ModelSettingsComp.UnitSystemEnum.AstronomicalUnits;
-                case "kUnitsLightYears":
-                    return Rayon.Core.Components.ModelSettingsComp.UnitSystemEnum.LightYears;
-                case "kUnitsParsecs":
-                    return Rayon.Core.Components.ModelSettingsComp.UnitSystemEnum.Parsecs;
-            }
-            return Rayon.Core.Components.ModelSettingsComp.UnitSystemEnum.Millimeters;
-        }
-
-
-
-
-
-        /************************************************************************/
         /****      RAYON PRINTS & DUMPS                                     *****/
         /************************************************************************/
 
@@ -760,14 +107,14 @@ namespace OdReadExSwigMgd
             Console.WriteLine("2DPOLYLINE");
 
             printBlockData(pEnt, parentID);
-            printCurveData(pPolyline);
+            Utils.printCurveData(pPolyline);
             OdDbObjectIterator pIter = pPolyline.vertexIterator();
             for (int i = 0; !pIter.done(); i++, pIter.step())
             {
                 OdDb2dVertex pVertex = pIter.entity() as OdDb2dVertex;
                 if (pVertex != null)
                 {
-                    print2dVertex(pVertex, i);
+                    Utils.print2dVertex(pVertex, i);
                 }
             }
         }
@@ -780,7 +127,7 @@ namespace OdReadExSwigMgd
             Console.WriteLine("POLYLINE");
 
             printBlockData(pEnt, parentID);
-            printCurveData(pPoly);
+            Utils.printCurveData(pPoly);
 
             // verbs + points
             for (uint i = 0; i < (int)pPoly.numVerts(); i++)
@@ -813,7 +160,8 @@ namespace OdReadExSwigMgd
                     Console.WriteLine("  ***");
                     Console.WriteLine("  Point Type = {0}", "ArcTo");
                     Console.WriteLine(pPoly.numVerts());
-                    OdGePoint3d arcMiddlePoint = getArcMiddlePt(pPoly, i);
+
+                    OdGePoint3d arcMiddlePoint = Utils.getArcMiddlePt(pPoly, i);
                     Console.WriteLine("  Arc Mid. Point Position = {0} ", arcMiddlePoint);
                     Console.WriteLine("  ***");
                 }
@@ -835,9 +183,9 @@ namespace OdReadExSwigMgd
 
             //PROPERTIES
             // path layer
-            Rayon.Core.Element thisElementLayer = getEntityLayer(pEnt, newModel);
+            Rayon.Core.Element thisElementLayer = Utils.getEntityLayer(pEnt, newModel);
             // style
-            Rayon.Core.Element newStyle = getEntityStyle(pEnt, newModel);
+            Rayon.Core.Element newStyle = Utils.getEntityStyle(pEnt, newModel);
             // ID
             string pathId = pEnt.handle().ToString();
 
@@ -898,7 +246,7 @@ namespace OdReadExSwigMgd
                     //endPoint = OdGePoint3dToRPoint2d(pt);
 
                     // Add to Points
-                    Rayon.Core.Types.RPoint2d newPoint = OdGePoint3dToRPoint2d(pt);
+                    Rayon.Core.Types.RPoint2d newPoint = Utils.OdGePoint3dToRPoint2d(pt);
                     newPathComp.Points.Add(newPoint);
                 }
                 else
@@ -913,7 +261,7 @@ namespace OdReadExSwigMgd
                         newPathComp.Verbs.Add(Rayon.Core.Components.PathComp.PathVerbEnum.LineTo);
 
                         // Add to Points
-                        Rayon.Core.Types.RPoint2d newPoint = OdGePoint3dToRPoint2d(pt);
+                        Rayon.Core.Types.RPoint2d newPoint = Utils.OdGePoint3dToRPoint2d(pt);
                         newPathComp.Points.Add(newPoint);
                     }
 
@@ -925,7 +273,7 @@ namespace OdReadExSwigMgd
 
                         pPoly.getArcSegAt(i - 1, pArc);
                         // get all sub arcs and their resp. control points
-                        List<Rayon.Core.Types.RPoint2d> points = ArcToCubicBezier(pArc);
+                        List<Rayon.Core.Types.RPoint2d> points = Utils.ArcToCubicBezier(pArc);
 
                         // Add Points and Verbs
                         for (var j = 0; j < points.Count; j++)
@@ -986,10 +334,10 @@ namespace OdReadExSwigMgd
             string pathName = "Path";
 
             // path layer
-            Rayon.Core.Element thisElementLayer = getEntityLayer(pEnt, newModel);
+            Rayon.Core.Element thisElementLayer = Utils.getEntityLayer(pEnt, newModel);
 
             // path style
-            Rayon.Core.Element newStyle = getEntityStyle(pEnt, newModel);
+            Rayon.Core.Element newStyle = Utils.getEntityStyle(pEnt, newModel);
 
             Rayon.Core.Components.PathComp newPathComp = new Rayon.Core.Components.PathComp();
 
@@ -1002,7 +350,7 @@ namespace OdReadExSwigMgd
                 if (pVertex != null)
                 {
                     // add point
-                    Rayon.Core.Types.RPoint2d newPoint = OdDb2dVertexToRPoint2d(pVertex);
+                    Rayon.Core.Types.RPoint2d newPoint = Utils.OdDb2dVertexToRPoint2d(pVertex);
                     newPathComp.Points.Add(newPoint);
 
                     // add verb
@@ -1011,7 +359,7 @@ namespace OdReadExSwigMgd
                     {
                         // begin
                         newPathComp.Verbs.Add(Rayon.Core.Components.PathComp.PathVerbEnum.Begin);
-                        endPoint = OdDb2dVertexToRPoint2d(pVertex);
+                        endPoint = Utils.OdDb2dVertexToRPoint2d(pVertex);
                     }
                     else
                     {
@@ -1116,7 +464,7 @@ namespace OdReadExSwigMgd
             OdDbCircle pCircle = (OdDbCircle)pEnt;
 
             printBlockData(pEnt, parentID);
-            printCurveData(pCircle);
+            Utils.printCurveData(pCircle);
 
             Console.WriteLine("  Center = {0}", pCircle.center().ToString());
             Console.WriteLine("  Radius = {0}", pCircle.radius());
@@ -1129,7 +477,7 @@ namespace OdReadExSwigMgd
             OdDbLine pLine = (OdDbLine)pEnt;
 
             printBlockData(pEnt, parentId);
-            printCurveData(pLine);
+            Utils.printCurveData(pLine);
 
         }
 
@@ -1142,11 +490,11 @@ namespace OdReadExSwigMgd
             string pathId = pEnt.handle().ToString();
 
             // path layer
-            Rayon.Core.Element thisElementLayer = getEntityLayer(pEnt, newModel);
+            Rayon.Core.Element thisElementLayer = Utils.getEntityLayer(pEnt, newModel);
 
             // path style
             // BUG HERE
-            Rayon.Core.Element newStyle = getEntityStyle(pEnt, newModel);
+            Rayon.Core.Element newStyle = Utils.getEntityStyle(pEnt, newModel);
 
             Rayon.Core.Components.PathComp newPathComp = new Rayon.Core.Components.PathComp();
 
@@ -1154,12 +502,12 @@ namespace OdReadExSwigMgd
             newPathComp.Verbs.Add(Rayon.Core.Components.PathComp.PathVerbEnum.Begin);
 
             //add start Point
-            Rayon.Core.Types.RPoint2d startPoint = OdGePoint3dToRPoint2d(pLine.startPoint());
+            Rayon.Core.Types.RPoint2d startPoint = Utils.OdGePoint3dToRPoint2d(pLine.startPoint());
             newPathComp.Points.Add(startPoint);
             newPathComp.Verbs.Add(Rayon.Core.Components.PathComp.PathVerbEnum.LineTo);
 
             //add end Point
-            Rayon.Core.Types.RPoint2d endPoint = OdGePoint3dToRPoint2d(pLine.endPoint());
+            Rayon.Core.Types.RPoint2d endPoint = Utils.OdGePoint3dToRPoint2d(pLine.endPoint());
             newPathComp.Points.Add(endPoint);
 
             // to rayon
@@ -1187,7 +535,7 @@ namespace OdReadExSwigMgd
         {
             Console.WriteLine("ARC");
             OdDbArc pArc = (OdDbArc)pEnt;
-            printCurveData(pArc);
+            Utils.printCurveData(pArc);
             printBlockData(pEnt, parentId);
             Console.WriteLine("  Center = {0}", pArc.center().ToString());
             Console.WriteLine("  Radius = {0}", pArc.radius().ToString());
@@ -1203,10 +551,10 @@ namespace OdReadExSwigMgd
             string circleId = pEnt.handle().ToString();
 
             // path layer
-            Rayon.Core.Element thisElementLayer = getEntityLayer(pEnt, newModel);
+            Rayon.Core.Element thisElementLayer = Utils.getEntityLayer(pEnt, newModel);
 
             // path style
-            Rayon.Core.Element newStyle = getEntityStyle(pEnt, newModel);
+            Rayon.Core.Element newStyle = Utils.getEntityStyle(pEnt, newModel);
 
             // center point + radius
             Rayon.Core.Types.RPoint2d centerPoint = new Rayon.Core.Types.RPoint2d(0, 0);
@@ -1222,8 +570,8 @@ namespace OdReadExSwigMgd
                 double minorAxis = pEllipse.majorAxis().length() < pEllipse.minorAxis().length() ? pEllipse.majorAxis().length() : pEllipse.minorAxis().length();
                 Console.WriteLine("Major Axis {0}:", pEllipse.majorAxis().length());
                 Console.WriteLine("Minor Axis {0}:", pEllipse.minorAxis().length());
-                radius = getEllipseRadii(majorAxis, minorAxis);
-                centerPoint = OdGePoint3dToRPoint2d(pEllipse.center());
+                radius = Utils.getEllipseRadii(majorAxis, minorAxis);
+                centerPoint = Utils.OdGePoint3dToRPoint2d(pEllipse.center());
                 arcName = "Ellipse";
                 isClosed = true;
             }
@@ -1231,8 +579,8 @@ namespace OdReadExSwigMgd
             if (pEnt.GetType().ToString() == "Teigha.TD.OdDbCircle")
             {
                 OdDbCircle pCircle = (OdDbCircle)pEnt;
-                radius = getArcRadii(pCircle.radius());
-                centerPoint = OdGePoint3dToRPoint2d(pCircle.center());
+                radius = Utils.getArcRadii(pCircle.radius());
+                centerPoint = Utils.OdGePoint3dToRPoint2d(pCircle.center());
                 arcName = "Circle";
                 isClosed = true;
             }
@@ -1240,8 +588,8 @@ namespace OdReadExSwigMgd
             if (pEnt.GetType().ToString() == "Teigha.TD.OdDbArc")
             {
                 OdDbArc pArc = (OdDbArc)pEnt;
-                radius = getArcRadii(pArc.radius());
-                centerPoint = OdGePoint3dToRPoint2d(pArc.center());
+                radius = Utils.getArcRadii(pArc.radius());
+                centerPoint = Utils.OdGePoint3dToRPoint2d(pArc.center());
                 arcName = "Arc";
             }
 
@@ -1291,7 +639,7 @@ namespace OdReadExSwigMgd
         {
             Console.WriteLine("SPLINE");
             OdDbSpline pSpline = (OdDbSpline)pEnt;
-            printCurveData(pSpline);
+            Utils.printCurveData(pSpline);
         }
 
         static void dumpSpline(OdDbEntity pEnt, Rayon.Core.Model newModel, OdDbHandle parentId)
@@ -1309,9 +657,9 @@ namespace OdReadExSwigMgd
             newPathComp.Closed = pPoly.isClosed();
 
             // path layer
-            Rayon.Core.Element thisElementLayer = getEntityLayer(pEnt, newModel);
+            Rayon.Core.Element thisElementLayer = Utils.getEntityLayer(pEnt, newModel);
             // Style
-            Rayon.Core.Element newStyle = getEntityStyle(pEnt, newModel);
+            Rayon.Core.Element newStyle = Utils.getEntityStyle(pEnt, newModel);
             // ID
             string pathId = pEnt.handle().ToString();
 
@@ -1323,7 +671,7 @@ namespace OdReadExSwigMgd
                 if (i == 0)
                 {
                     newPathComp.Verbs.Add(Rayon.Core.Components.PathComp.PathVerbEnum.Begin);
-                    closePoint = OdGePoint3dToRPoint2d(pt);
+                    closePoint = Utils.OdGePoint3dToRPoint2d(pt);
                 }
 
                 if (pPoly.vb_segType((uint)i).ToString() == "kArc")
@@ -1333,7 +681,7 @@ namespace OdReadExSwigMgd
                     pPoly.getArcSegAt((uint)i, pArc);
 
                     // get all sub arcs and their resp. control points
-                    List<Rayon.Core.Types.RPoint2d> points = ArcToCubicBezier(pArc);
+                    List<Rayon.Core.Types.RPoint2d> points = Utils.ArcToCubicBezier(pArc);
 
                     // Add Points and Verbs
                     for (var j = 0; j < points.Count; j++)
@@ -1352,7 +700,7 @@ namespace OdReadExSwigMgd
                 if (pPoly.vb_segType((uint)i).ToString() == "kPoint")
                 {
                     //Add to Points
-                    Rayon.Core.Types.RPoint2d newPoint = OdGePoint3dToRPoint2d(pt);
+                    Rayon.Core.Types.RPoint2d newPoint = Utils.OdGePoint3dToRPoint2d(pt);
                     newPathComp.Points.Add(newPoint);
                 }
             }
@@ -1360,7 +708,7 @@ namespace OdReadExSwigMgd
             // append endpoint
             OdGePoint3d ptFinal = new OdGePoint3d();
             pPoly.getPointAt((uint)pPoly.numVerts() - 1, ptFinal);
-            Rayon.Core.Types.RPoint2d finalPoint = OdGePoint3dToRPoint2d(ptFinal);
+            Rayon.Core.Types.RPoint2d finalPoint = Utils.OdGePoint3dToRPoint2d(ptFinal);
             newPathComp.Points.Add(finalPoint);
 
             if (pSpline.isClosed())
@@ -1392,7 +740,7 @@ namespace OdReadExSwigMgd
         {
             Console.WriteLine("ELLIPSE");
             OdDbEllipse pEllipse = (OdDbEllipse)pEnt;
-            printCurveData(pEllipse);
+            Utils.printCurveData(pEllipse);
             printBlockData(pEnt, parentId);
 
             Console.WriteLine("  Center = {0}", pEllipse.center().ToString());
@@ -1455,7 +803,7 @@ namespace OdReadExSwigMgd
                 newPathComp.Points.Add(endPoint);
 
                 // Hatch layer
-                Rayon.Core.Element thisElementLayer = getEntityLayer(pEnt, newModel);
+                Rayon.Core.Element thisElementLayer = Utils.getEntityLayer(pEnt, newModel);
 
                 // Hatch style name
                 string styleName = "Hatch_Style";
@@ -1486,7 +834,7 @@ namespace OdReadExSwigMgd
 
                     if (hatchColor == null)
                     {
-                        double[,] Colors = getDwgColors();
+                        double[,] Colors = Utils.getDwgColors();
                         int colorIndex = pHatch.colorIndex();
                         hatchColor = new Rayon.Core.Types.RColor(Colors[colorIndex, 0] / 255, Colors[colorIndex, 1] / 255, Colors[colorIndex, 2] / 255, 1);
                     }
@@ -1494,7 +842,7 @@ namespace OdReadExSwigMgd
                 // else create new style based on custom color
                 else
                 {
-                    double[,] Colors = getDwgColors();
+                    double[,] Colors = Utils.getDwgColors();
                     int colorIndex = pHatch.colorIndex();
                     hatchColor = new Rayon.Core.Types.RColor(Colors[colorIndex, 0] / 255, Colors[colorIndex, 1] / 255, Colors[colorIndex, 2] / 255, 1);
                 }
@@ -1567,7 +915,7 @@ namespace OdReadExSwigMgd
             OdDbBlockTableRecord pRecord = pBlkRef.blockTableRecord().openObject() as OdDbBlockTableRecord;
 
             // get block layer
-            Rayon.Core.Element entLayer = getEntityLayer(pEnt, newModel);
+            Rayon.Core.Element entLayer = Utils.getEntityLayer(pEnt, newModel);
 
             // get transform matrix
             System.Drawing.Drawing2D.Matrix newMat = new System.Drawing.Drawing2D.Matrix();
@@ -1649,7 +997,7 @@ namespace OdReadExSwigMgd
             double height = (double)pText.height();
             double width = (double)pText.height();
             Rayon.Core.Types.RPoint2d position = new Rayon.Core.Types.RPoint2d((double)pText.position().x, (double)pText.position().y);
-            Rayon.Core.Element thisElementLayer = getEntityLayer(pEnt, newModel);
+            Rayon.Core.Element thisElementLayer = Utils.getEntityLayer(pEnt, newModel);
 
             // Text Element
             Rayon.Core.Components.TextComp textComp = new Rayon.Core.Components.TextComp(
@@ -1754,7 +1102,7 @@ namespace OdReadExSwigMgd
             double width = (double)pText.height();
 
             Rayon.Core.Types.RPoint2d position = new Rayon.Core.Types.RPoint2d((double)ptsArray[0].x, (double)ptsArray[0].y);
-            Rayon.Core.Element thisElementLayer = getEntityLayer(pEnt, newModel);
+            Rayon.Core.Element thisElementLayer = Utils.getEntityLayer(pEnt, newModel);
 
             // Text Element
             Rayon.Core.Components.TextComp textComp = new Rayon.Core.Components.TextComp(
@@ -1814,14 +1162,14 @@ namespace OdReadExSwigMgd
             Console.WriteLine("  File DWG Version: = {0}", (pDb.originalFileVersion()));
             Console.WriteLine("  Cretion Date: {0}", creationDate);
             Console.WriteLine("  Update Date: {0}", updateDate);
-            Console.WriteLine("  Model Unit System: {0}", getUnitSystem(pDb.getINSUNITS().ToString()).ToString());
+            Console.WriteLine("  Model Unit System: {0}", Utils.getUnitSystem(pDb.getINSUNITS().ToString()).ToString());
             Console.WriteLine(" ");
 
             // add metadata to Model
             newModel.Name = pDb.getFilename();
             newModel.CreatedAt = creationDate;
             newModel.UpdatedAt = updateDate;
-            newModel.SetSettings(getUnitSystem(pDb.getINSUNITS().ToString()));
+            newModel.SetSettings(Utils.getUnitSystem(pDb.getINSUNITS().ToString()));
         }
 
         void dumpRayonLayersAndStyles(OdDbDatabase pDb, Rayon.Core.Model newModel)
@@ -1848,7 +1196,7 @@ namespace OdReadExSwigMgd
                     double newLineWidth = (double)pRecord.lineWeight() < 0 ? defaultLineWidth : (double)pRecord.lineWeight() / 100;
 
                     string styleName = "Style " + pRecord.getName();
-                    StrokeStyleComp.StrokePatternEnum newLineStyle = getStrokeStyleRecord(pRecord);
+                    StrokeStyleComp.StrokePatternEnum newLineStyle = Utils.getStrokeStyleRecord(pRecord);
 
                     Rayon.Core.Element newStyle = Rayon.Core.Element.CreateStrokeStyle(
                         newModel,
@@ -1875,7 +1223,7 @@ namespace OdReadExSwigMgd
                     //value between 0 and 1
                     double layerZIndex = zIndex;
                     string layerId = pRecord.handle().ToString();
-                    Rayon.Core.Types.RColor newLayerDisplayColor = getColor(pRecord);
+                    Rayon.Core.Types.RColor newLayerDisplayColor = Utils.getColor(pRecord);
 
                     var newLayer = new Rayon.Core.Element(newModel, layerId)
                         .With(new LayerComp(false, newLayerDisplayColor))
@@ -2167,7 +1515,6 @@ namespace OdReadExSwigMgd
             Console.WriteLine("  ");
 
             // 5. JSON
-
             // checks if JSON is valid
             checkJSON(newModel);
             // saves JSON to file

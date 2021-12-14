@@ -21,14 +21,22 @@
 // acknowledge and accept the above terms.
 ///////////////////////////////////////////////////////////////////////////////
 
-using System.Reflection;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
+using System;
+using System.Collections.Generic;
+using System.Text;
+using Teigha.Core;
+using Teigha.TD;
+using System.IO;
+using Microsoft.Win32;
 
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-[assembly: AssemblyTitle("OdReadExSwigMgd")]
+namespace OdReadExSwigMgd
+{
+  class OdExSystemServices : RxSystemServicesImpl
+  {
+    public OdExSystemServices()
+    {
+      Teigha.Core.Globals.odActivate(ActivationData.userInfo, ActivationData.userSignature);
+    }
+  }
 
-// The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("f57d8640-ed61-4180-863a-650281d99435")]
+}

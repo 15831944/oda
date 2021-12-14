@@ -75,7 +75,6 @@ namespace OdReadExSwigMgd
                 try
                 {
                     OdDbObjectOverrule.setIsOverruling(true);
-                    //LoadOverrules();
 
                     OdExDbAuditInfo aiAppAudit = new OdExDbAuditInfo(System.IO.Path.GetDirectoryName(args[0]) + "AuditReport.txt");
                     aiAppAudit.setFixErrors(true);

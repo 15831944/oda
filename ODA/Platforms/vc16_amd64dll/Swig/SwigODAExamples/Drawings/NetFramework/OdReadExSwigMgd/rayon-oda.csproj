@@ -49,23 +49,14 @@
     <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdReadExSwigMgd\Program.cs">
       <Link>Program.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdReadExSwigMgd\OdDbCircleGripPointsPE.cs">
-      <Link>OdDbCircleGripPointsPE.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdReadExSwigMgd\OdExDbAuditInfo.cs">
-      <Link>OdExDbAuditInfo.cs</Link>
-    </Compile>
     <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdReadExSwigMgd\OdExHostAppServices.cs">
       <Link>OdExHostAppServices.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdReadExSwigMgd\OdExStringHelpers.cs">
-      <Link>OdExStringHelpers.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\..\..\..\..\Swig\SwigODAExamples\Drawings\NetFramework\OdReadExSwigMgd\OdExSystemServices.cs">
-      <Link>OdExSystemServices.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\..\..\..\..\ThirdParty\activation\OdActivationInfo.cs" />
-    <Compile Include="..\..\..\..\..\..\..\Swig\Common\GeneralAssemblyInfo.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="OdActivationInfo.cs" />
+    <Compile Include="OdExDbAuditInfo.cs" />
+    <Compile Include="OdExStringHelpers.cs" />
+    <Compile Include="OdExSystemServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
