@@ -13,6 +13,8 @@ namespace OdReadExSwigMgd
 {
     public class Utils {
 
+        public static string blockStyleId;
+
         public static OdGePoint3d getArcMiddlePt(OdDbPolyline pPoly, uint i)
         {
 
@@ -548,9 +550,10 @@ namespace OdReadExSwigMgd
             string styleId = "";
 
             // inherit style from layer
-            if (pEnt.linetype() == "ByLayer" && pEnt.color().ToString() == "ByLayer")
+            if (pEnt.linetype() == "ByLayer" || pEnt.color().ToString() == "ByLayer")
             {
                 Console.WriteLine("  STYLE: Inherited from Layer");
+                //throw new InvalidOperationException("  ByLayer Style");
 
                 string handle = pEnt.layerId().getHandle().ToString();
 
@@ -572,6 +575,18 @@ namespace OdReadExSwigMgd
                 entStyle = newModel.Elements.Find(
                     x =>
                         x.Handle == styleId
+                    );
+            }
+
+            else if(pEnt.linetype() == "ByBlock" || pEnt.color().ToString() == "ByBlock")
+            {
+                Console.WriteLine("  STYLE: ByBLock Mutualized Style");
+                //throw new InvalidOperationException(blockStyleId);
+
+                // get generic block style entity in Model
+                entStyle = newModel.Elements.Find(
+                    x =>
+                        x.Handle == blockStyleId
                     );
             }
 

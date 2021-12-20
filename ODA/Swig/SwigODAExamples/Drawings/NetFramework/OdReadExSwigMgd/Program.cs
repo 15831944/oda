@@ -22,12 +22,9 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 using System;
-using System.Collections.Generic;
-using System.Text;
 using Teigha.Core;
 using Teigha.TD;
 using System.IO;
-using Microsoft.Win32;
 
 namespace OdReadExSwigMgd
 {

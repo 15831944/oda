@@ -315,8 +315,12 @@ namespace OdReadExSwigMgd
                 newPath.With(newBlockIdComp);
             }
 
+            // test path Verb/point sequence
+            testPath(newPathComp, pPoly.isClosed());
+
             // add path to model
             newModel.Elements.Add(newPath);
+
         }
 
 
@@ -378,8 +382,8 @@ namespace OdReadExSwigMgd
                 newPathComp.Verbs.Add(Rayon.Core.Components.PathComp.PathVerbEnum.LineTo);
             }
 
-            // test path
-            //testPath(newPathComp, pPolyline.isClosed());
+            // test path Verb/point sequence
+            testPath(newPathComp, pPolyline.isClosed());
 
             //// to rayon
             Rayon.Core.Element newPath = Rayon.Core.Element.CreatePath(
@@ -608,11 +612,61 @@ namespace OdReadExSwigMgd
 
             if (!isClosed)
             {
-                double angleValue = ((OdDbArc)pEnt).endAngle() - ((OdDbArc)pEnt).startAngle();
-                double correctedAngleValue = angleValue > 0 ? angleValue : 2 * Math.PI + angleValue;
-                Rayon.Core.Types.RAngle sweepAngle = new Rayon.Core.Types.RAngle(correctedAngleValue);
-                newArcComp.SweepAngle = sweepAngle;
-                newArcComp.StartAngle = new Rayon.Core.Types.RAngle(((OdDbArc)pEnt).startAngle());
+
+                OdDbArc pArc = (OdDbArc)pEnt;
+
+                // if Arc is clockwise
+                if (pArc.normal().z == -1)
+                {
+                    Console.WriteLine("COUNTER-clockwise");
+                    Console.WriteLine("NORMAL: {0}", pArc.normal().z);
+                    Console.WriteLine("END ANG: {0}", ((OdDbArc)pEnt).endAngle());
+                    Console.WriteLine("START ANG: {0}", ((OdDbArc)pEnt).startAngle());
+
+                    double startAngle = pArc.endAngle() < Math.PI ? Math.PI - pArc.endAngle() : 2 * Math.PI + Math.PI - pArc.endAngle();
+                    //newArcComp.StartAngle = new Rayon.Core.Types.RAngle(startAngle);
+                    //double sweepDistance = ((OdDbArc)pEnt).startAngle() - ((OdDbArc)pEnt).endAngle();
+                    //newArcComp.SweepAngle = new Rayon.Core.Types.RAngle(sweepDistance);
+
+                    //double startAngle = pArc.endAngle();
+                    newArcComp.StartAngle = new Rayon.Core.Types.RAngle(startAngle);
+                    Console.WriteLine("START ANG MODEIFIED: {0}", startAngle);
+                    double sweepDistance = ((OdDbArc)pEnt).startAngle() - ((OdDbArc)pEnt).endAngle();
+                    double sweepDistanceCorrected = sweepDistance > 0 ? sweepDistance : 2 * Math.PI + sweepDistance;
+                    Console.WriteLine("SWEEP MODIFIED: {0}", sweepDistanceCorrected);
+                    newArcComp.SweepAngle = new Rayon.Core.Types.RAngle(sweepDistance);
+                }
+                else 
+                {
+                    Console.WriteLine("Clockwise");
+                    Console.WriteLine("NORMAL: {0}", pArc.normal().z);
+                    Console.WriteLine("END ANG: {0}", ((OdDbArc)pEnt).endAngle());
+                    Console.WriteLine("START ANG: {0}", ((OdDbArc)pEnt).startAngle());
+
+                    double startAngle = pArc.startAngle();
+                    newArcComp.StartAngle = new Rayon.Core.Types.RAngle(startAngle);
+                    double sweepDistance = ((OdDbArc)pEnt).endAngle() - ((OdDbArc)pEnt).startAngle();
+                    double sweepDistanceCorrected = sweepDistance > 0 ? sweepDistance : 2 * Math.PI + sweepDistance;
+                    newArcComp.SweepAngle = new Rayon.Core.Types.RAngle(sweepDistanceCorrected);
+                }
+
+
+
+
+                //if (swipeDistance < 0) {
+                //    OdResult res = pArc.reverseCurve();
+                //}
+                //pArc.reverseCurve();
+
+
+                //double correctedAngleValue = swipeDistance > 0 ? swipeDistance : 2 * Math.PI + swipeDistance;
+
+
+
+
+                //double correctedStartAngle = swipeDistance > 0 ? ((OdDbArc)pEnt).startAngle() : Math.PI - (((OdDbArc)pEnt).endAngle());
+                //double correctedStartAngle = swipeDistance > 0 ? pArc.startAngle() : pArc.startAngle();
+                //newArcComp.StartAngle = new Rayon.Core.Types.RAngle(correctedStartAngle);
             }
 
             // to rayon
@@ -646,15 +700,39 @@ namespace OdReadExSwigMgd
         {
 
             OdDbSpline pSpline = OdDbSpline.cast(pEnt);
+            // return if cast failed
+            if (pSpline == null)
+            {
+                Console.WriteLine("cast OdDbEntity>OdDbSpline failed!");
+                return;
+            }
+
             OdDbCurve newCurve = OdDbPolyline.createObject();
-            // precsion value between 0 and 100%
-            int precision = 20;
+
+            // precision value between 0 and 100%
+            int precision = 1;
             OdResult conversionResult = pSpline.toPolyline(ref newCurve, true, true, precision);
+
+            //return if conversion failed
+            if (conversionResult.ToString() != "eOk") 
+            {
+                Console.WriteLine("toPolyline Conversion failed!");
+                return;
+            }
+
             OdDbPolyline pPoly = OdDbPolyline.cast(newCurve);
+            // return if cast failed
+            if (pPoly == null)
+            {
+                Console.WriteLine("cast OdDbCurve>OdDbPolyline failed!");
+                return;
+            }
 
             Rayon.Core.Components.PathComp newPathComp = new Rayon.Core.Components.PathComp();
             Rayon.Core.Types.RPoint2d closePoint = new Rayon.Core.Types.RPoint2d(0, 0);
+
             newPathComp.Closed = pPoly.isClosed();
+            
 
             // path layer
             Rayon.Core.Element thisElementLayer = Utils.getEntityLayer(pEnt, newModel);
@@ -663,10 +741,15 @@ namespace OdReadExSwigMgd
             // ID
             string pathId = pEnt.handle().ToString();
 
-            for (var i = 0; i < pPoly.numVerts() - 1; i++)
+            Console.WriteLine("***Test-{0}***", 4);
+
+            Console.WriteLine("*** {0} ***", pPoly.numVerts());
+
+            for (var i = 0; i < pPoly.numVerts()-1; i++)
             {
                 OdGePoint3d pt = new OdGePoint3d();
                 pPoly.getPointAt((uint)i, pt);
+
                 // Arc
                 if (i == 0)
                 {
@@ -694,6 +777,13 @@ namespace OdReadExSwigMgd
                             newPathComp.Verbs.Add(Rayon.Core.Components.PathComp.PathVerbEnum.CubicTo);
                         }
                     }
+                }
+
+                if (pPoly.vb_segType((uint)i).ToString() == "kLine") 
+                {
+                    Rayon.Core.Types.RPoint2d pointLine = Utils.OdGePoint3dToRPoint2d(pt);
+                    newPathComp.Verbs.Add(Rayon.Core.Components.PathComp.PathVerbEnum.LineTo);
+                    newPathComp.Points.Add(pointLine);
                 }
 
                 // End Point
@@ -1181,6 +1271,7 @@ namespace OdReadExSwigMgd
             int zIndex = 1;
             double defaultLineWidth = 1;
 
+            // add layers and their styles to the model
             for (pIter.start(); !pIter.done(); pIter.step())
             {
 
@@ -1258,6 +1349,25 @@ namespace OdReadExSwigMgd
                 }
                 Console.WriteLine(" ");
             }
+
+            // add generic block style to the model
+            Rayon.Core.Element entStyle = Rayon.Core.Element.CreateStrokeStyle(
+                // model
+                newModel,
+                // styleName
+                "Default_Block_Style",
+                //color
+                new Rayon.Core.Types.RColor(0, 0, 0, 1),
+                //line width,
+                1,
+                //line style
+                StrokeStyleComp.StrokePatternEnum.Solid
+                );
+
+            Utils.blockStyleId = entStyle.Handle.ToString();
+
+
+            newModel.Elements.Add(entStyle);
         }
 
         // printing DWG elements and adding them to Rayon model
@@ -1299,10 +1409,23 @@ namespace OdReadExSwigMgd
                     Console.WriteLine("Model Space ID: {0}", pBlock.handle());
                     DbDumper.ModelId = pBlock.handle().ToString();
                     Console.WriteLine("  ");
-
                 }
                 // process Block (excluding Paper Space blocks)
-                else if (!pBlock.getName().ToString().Contains("*Paper_Space"))
+                //else if (!pBlock.getName().ToString().Contains("*Paper_Space"))
+                //{
+
+                //    Console.WriteLine(" ");
+                //    Console.WriteLine("### NEW NODE ###");
+                //    Console.WriteLine(" ");
+                //    Console.WriteLine(" ");
+                //    Console.WriteLine("Node ID = {0}", pBlock.handle());
+                //    Console.WriteLine("Node Name = {0}", pBlock.getName());
+                //    Console.WriteLine(" ");
+
+                //    dumpBlock(pBlock, newModel, parentId);
+
+                //}
+                else
                 {
 
                     Console.WriteLine(" ");
@@ -1316,6 +1439,7 @@ namespace OdReadExSwigMgd
                     dumpBlock(pBlock, newModel, parentId);
 
                 }
+
                 // iterate through all blocks in model, and print/add to Rayon model
                 // supported types:
                 //      1. Polyline
@@ -1326,12 +1450,19 @@ namespace OdReadExSwigMgd
                 //      6. Ellipse
                 //      7. Spline
                 //      8. Block
-                //      9. Hatch
+                //      9. Hatch // Work in Progress
                 // missing types: Dimension, Text, ...
                 for (pEntIter.start(); !pEntIter.done(); pEntIter.step())
                 {
 
                     OdDbEntity pEnt = OdDbEntity.cast(pEntIter.objectId().openObject());
+                    if (pEnt == null)
+                    {
+                        Console.WriteLine("cast OdDbObjectIterator>OdDbEntity failed!");
+                        return;
+                    }
+
+                    Console.WriteLine(pEnt.GetType().ToString());
 
                     //  1. Polyline
                     if (pEnt.GetType().ToString() is "Teigha.TD.OdDbPolyline")
@@ -1400,10 +1531,10 @@ namespace OdReadExSwigMgd
                     }
 
                     // 9. Hatch
-                    if (pEnt.GetType().ToString() is "Teigha.TD.OdDbHatch")
-                    {
-                        dumpHatch(pEnt, newModel, parentId);
-                    }
+                    //if (pEnt.GetType().ToString() is "Teigha.TD.OdDbHatch")
+                    //{
+                    //    dumpHatch(pEnt, newModel, parentId);
+                    //}
 
                     Console.WriteLine(" ");
 
@@ -1440,6 +1571,7 @@ namespace OdReadExSwigMgd
                 if (comp.LinkedElement != null)
                 {
                     linkedElements.Add(comp.LinkedElement);
+                    //comp.;
                 }
             }
 
@@ -1456,6 +1588,17 @@ namespace OdReadExSwigMgd
             else
             {
                 Console.WriteLine("  PASSED: No Missing Refs!");
+            }
+
+            //count styles
+            foreach (Rayon.Core.Element elem in Model.Elements)
+            {
+                foreach (Rayon.Core.Components.Component comp in elem.Components) 
+                {
+
+                    //Console.WriteLine(comp.ComponentType);
+
+                } ;
             }
         }
 
