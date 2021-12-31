@@ -615,58 +615,15 @@ namespace OdReadExSwigMgd
 
                 OdDbArc pArc = (OdDbArc)pEnt;
 
-                // if Arc is clockwise
-                if (pArc.normal().z == -1)
-                {
-                    Console.WriteLine("COUNTER-clockwise");
-                    Console.WriteLine("NORMAL: {0}", pArc.normal().z);
-                    Console.WriteLine("END ANG: {0}", ((OdDbArc)pEnt).endAngle());
-                    Console.WriteLine("START ANG: {0}", ((OdDbArc)pEnt).startAngle());
+                // sweepAngle
+                double sweepAngle = pArc.startAngle() < pArc.endAngle() ? pArc.endAngle() - pArc.startAngle() : 2*Math.PI - pArc.startAngle() + pArc.endAngle();
+                newArcComp.SweepAngle = new Rayon.Core.Types.RAngle(sweepAngle);
 
-                    double startAngle = pArc.endAngle() < Math.PI ? Math.PI - pArc.endAngle() : 2 * Math.PI + Math.PI - pArc.endAngle();
-                    //newArcComp.StartAngle = new Rayon.Core.Types.RAngle(startAngle);
-                    //double sweepDistance = ((OdDbArc)pEnt).startAngle() - ((OdDbArc)pEnt).endAngle();
-                    //newArcComp.SweepAngle = new Rayon.Core.Types.RAngle(sweepDistance);
+                // startAngle
+                newArcComp.StartAngle = pArc.normal().z == -1 ? 
+                    new Rayon.Core.Types.RAngle(Math.PI - pArc.endAngle()) :
+                    new Rayon.Core.Types.RAngle(pArc.startAngle());
 
-                    //double startAngle = pArc.endAngle();
-                    newArcComp.StartAngle = new Rayon.Core.Types.RAngle(startAngle);
-                    Console.WriteLine("START ANG MODEIFIED: {0}", startAngle);
-                    double sweepDistance = ((OdDbArc)pEnt).startAngle() - ((OdDbArc)pEnt).endAngle();
-                    double sweepDistanceCorrected = sweepDistance > 0 ? sweepDistance : 2 * Math.PI + sweepDistance;
-                    Console.WriteLine("SWEEP MODIFIED: {0}", sweepDistanceCorrected);
-                    newArcComp.SweepAngle = new Rayon.Core.Types.RAngle(sweepDistance);
-                }
-                else 
-                {
-                    Console.WriteLine("Clockwise");
-                    Console.WriteLine("NORMAL: {0}", pArc.normal().z);
-                    Console.WriteLine("END ANG: {0}", ((OdDbArc)pEnt).endAngle());
-                    Console.WriteLine("START ANG: {0}", ((OdDbArc)pEnt).startAngle());
-
-                    double startAngle = pArc.startAngle();
-                    newArcComp.StartAngle = new Rayon.Core.Types.RAngle(startAngle);
-                    double sweepDistance = ((OdDbArc)pEnt).endAngle() - ((OdDbArc)pEnt).startAngle();
-                    double sweepDistanceCorrected = sweepDistance > 0 ? sweepDistance : 2 * Math.PI + sweepDistance;
-                    newArcComp.SweepAngle = new Rayon.Core.Types.RAngle(sweepDistanceCorrected);
-                }
-
-
-
-
-                //if (swipeDistance < 0) {
-                //    OdResult res = pArc.reverseCurve();
-                //}
-                //pArc.reverseCurve();
-
-
-                //double correctedAngleValue = swipeDistance > 0 ? swipeDistance : 2 * Math.PI + swipeDistance;
-
-
-
-
-                //double correctedStartAngle = swipeDistance > 0 ? ((OdDbArc)pEnt).startAngle() : Math.PI - (((OdDbArc)pEnt).endAngle());
-                //double correctedStartAngle = swipeDistance > 0 ? pArc.startAngle() : pArc.startAngle();
-                //newArcComp.StartAngle = new Rayon.Core.Types.RAngle(correctedStartAngle);
             }
 
             // to rayon
@@ -1009,18 +966,44 @@ namespace OdReadExSwigMgd
 
             // get transform matrix
             System.Drawing.Drawing2D.Matrix newMat = new System.Drawing.Drawing2D.Matrix();
+
+            Console.WriteLine("Rot: {0}", pBlkRef.rotation());
+            Console.WriteLine("Scale: {0} , {1}", pBlkRef.scaleFactors().sx, pBlkRef.scaleFactors().sy);
+            Console.WriteLine("Translate: {0} , {1}, {2}", pBlkRef.position().x, pBlkRef.position().y, pBlkRef.position().z);
+
             newMat.Rotate((float)(pBlkRef.rotation() * 180 / Math.PI));
             newMat.Scale((float)pBlkRef.scaleFactors().sx, (float)pBlkRef.scaleFactors().sy, System.Drawing.Drawing2D.MatrixOrder.Append);
             newMat.Translate((float)pBlkRef.position().x, (float)pBlkRef.position().y, System.Drawing.Drawing2D.MatrixOrder.Append);
 
+            Console.WriteLine(pBlkRef.blockTransform().getCsXAxis());
+            Console.WriteLine(pBlkRef.blockTransform().getCsYAxis());
+            Console.WriteLine(pBlkRef.blockTransform().getCsZAxis());
+
+            Console.WriteLine(pBlkRef.blockTransform());
+            OdGeMatrix3d matTransform = pBlkRef.blockTransform();
+
             List<double> transformValues = new List<double> {
-            newMat.Elements[0],
-            newMat.Elements[1],
-            newMat.Elements[2],
-            newMat.Elements[3],
-            newMat.Elements[4],
-            newMat.Elements[5]
+
+
+            matTransform[1,0],
+            matTransform[1,1],
+
+            matTransform[0,0],
+            matTransform[0,1],
+
+            //matTransform[3,1],
+            //matTransform[3,0]
+            0,0
             };
+
+            //List<double> transformValues = new List<double> {
+            //newMat.Elements[0],
+            //newMat.Elements[1],
+            //newMat.Elements[2],
+            //newMat.Elements[3],
+            //newMat.Elements[4],
+            //newMat.Elements[5]
+            //};
 
             // Instance 
             BlockInstanceComp newBlockInstanceComp = new BlockInstanceComp(pRecord.objectId().getHandle().ToString());
